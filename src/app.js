@@ -4,7 +4,7 @@ import {shellHTML, navigation} from './components/shell.js';
 import {openRecord, closeModal} from './components/modal.js';
 import {renderLibrary} from './pages/library.js';
 import {renderPractice, resetPractice, startSinglePractice, startComparisonPractice, handlePracticeKey} from './pages/practice.js';
-import {renderStructureWeb} from './pages/structure-web.js';
+import {renderStructureWeb, disposeStructureWeb} from './pages/structure-web.js';
 import {renderStructureComparison, selectComparison} from './pages/comparison.js';
 import {renderSources} from './pages/sources.js';
 
@@ -32,6 +32,7 @@ function practiseRecord(kind, record, style) {
 }
 const detail = record => openRecord(record, {startPractice: practiseRecord});
 function render() {
+  disposeStructureWeb();
   document.documentElement.lang = getLanguage();
   document.title = 'Terpene Atlas · ' + t(...navigation.find(([id]) => id === view)[2]);
   app.innerHTML = shellHTML(view);

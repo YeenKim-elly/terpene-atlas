@@ -8,6 +8,7 @@ and biosynthetic relationships.
 - Searchable reference library with **72 molecule entries**, **15 precursors**,
   **19 scaffold and ring models**, **37 functional motifs** and **28 enzyme reactions**.
 - Four structure webs: precursors, carotenoids, diterpenes, and scaffolds and rings.
+- Fullscreen graph viewing with zoom, full-network Fit and Escape-to-close.
 - Multiple-choice and typed-answer practice, hints, feedback and review.
 - Eight aligned structure comparisons, including stereochemical and functional-group differences.
 - English and Korean interface.
