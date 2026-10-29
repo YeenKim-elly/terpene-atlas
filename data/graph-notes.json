@@ -1,0 +1,14 @@
+[
+  {
+    "id": "clpp-variants",
+    "name": "Other CLPP stereoisomers",
+    "ko": "다른 CLPP 입체이성질체",
+    "category": "C20 diphosphate examples",
+    "image": "assets/structures/clpp-variants.svg",
+    "MolecularFormula": "C20 intermediates",
+    "note": "CLPP is a product-family label used for multiple defined clerodienyl diphosphates. Characterized class II TPS reactions include cis-trans CLPP from PvCPS1 and cis-cis products from selected variants; different NNPP experiments also gave alternative products. These products already possess clerodane-related carbon skeletons. This card is a labelled group, not a single molecular structure or an assertion that all stereoisomers follow one downstream route.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/30393911/",
+    "schematic": true,
+    "noteKo": "CLPP는 여러 입체배열의 clerodienyl diphosphate를 가리키는 계열 이름입니다. 검증된 class II TPS 반응에는 PvCPS1의 cis-trans CLPP와 일부 변이 효소의 cis-cis 생성물이 있으며, NNPP를 이용한 다른 실험에서는 별도의 생성물도 관찰됐습니다. 이들은 이미 clerodane 계열 탄소 골격을 갖습니다. 이 카드는 단일 분자가 아닌 계열 설명이며, 모든 입체이성질체가 같은 후속 경로를 따른다는 뜻은 아닙니다."
+  }
+]

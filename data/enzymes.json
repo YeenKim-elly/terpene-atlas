@@ -1,0 +1,203 @@
+{
+  "tps1": {
+    "name": "TPS · class I",
+    "ko": "TPS · class I",
+    "aliases": [
+      "tps",
+      "class i tps",
+      "class 1 tps",
+      "tps1",
+      "class i",
+      "class 1",
+      "terpene synthase",
+      "terpene cyclase"
+    ]
+  },
+  "tps2": {
+    "name": "TPS · class II",
+    "ko": "TPS · class II",
+    "aliases": [
+      "tps",
+      "class ii tps",
+      "class 2 tps",
+      "tps2",
+      "class ii",
+      "class 2",
+      "terpene synthase",
+      "terpene cyclase"
+    ]
+  },
+  "cyp": {
+    "name": "CYP / P450",
+    "ko": "CYP / P450",
+    "aliases": [
+      "cyp",
+      "p450",
+      "cytochrome p450",
+      "monooxygenase",
+      "cyp450"
+    ]
+  },
+  "ugt": {
+    "name": "UGT",
+    "ko": "UGT",
+    "aliases": [
+      "ugt",
+      "udp glycosyltransferase",
+      "glycosyltransferase",
+      "glucosyltransferase"
+    ]
+  },
+  "act": {
+    "name": "ACT · acyltransferase",
+    "ko": "ACT · acyltransferase",
+    "aliases": [
+      "act",
+      "at",
+      "acyltransferase",
+      "acetyltransferase",
+      "bahd",
+      "bahd acyltransferase"
+    ]
+  },
+  "osc": {
+    "name": "OSC",
+    "ko": "OSC",
+    "aliases": [
+      "osc",
+      "oxidosqualene cyclase",
+      "beta amyrin synthase",
+      "amyrin synthase"
+    ]
+  },
+  "pt": {
+    "name": "Prenyltransferase",
+    "ko": "Prenyltransferase",
+    "aliases": [
+      "prenyltransferase",
+      "pt",
+      "gpps",
+      "ggpps",
+      "prenyl diphosphate synthase"
+    ]
+  },
+  "psy": {
+    "name": "Phytoene synthase",
+    "ko": "Phytoene synthase",
+    "aliases": [
+      "psy",
+      "crtB",
+      "crtb",
+      "phytoene synthase",
+      "crtYB",
+      "crtyb"
+    ]
+  },
+  "desat": {
+    "name": "Phytoene desaturase · CrtI",
+    "ko": "Phytoene desaturase · CrtI",
+    "aliases": [
+      "crti",
+      "phytoene desaturase",
+      "desaturase",
+      "phytoene desaturase lycopene forming"
+    ]
+  },
+  "lycb": {
+    "name": "Lycopene β-cyclase",
+    "ko": "Lycopene β-cyclase",
+    "aliases": [
+      "lcyb",
+      "crtY",
+      "crty",
+      "crtyb",
+      "lycopene beta cyclase",
+      "beta cyclase"
+    ]
+  },
+  "lyce": {
+    "name": "Lycopene ε-cyclase",
+    "ko": "Lycopene ε-cyclase",
+    "aliases": [
+      "lcye",
+      "lycopene epsilon cyclase",
+      "epsilon cyclase"
+    ]
+  },
+  "bch": {
+    "name": "β-Ring hydroxylase",
+    "ko": "β-Ring hydroxylase",
+    "aliases": [
+      "crtz",
+      "bch",
+      "chyb",
+      "beta carotene hydroxylase",
+      "beta ring hydroxylase",
+      "carotene hydroxylase"
+    ]
+  },
+  "ketolase": {
+    "name": "Carotenoid ketolase",
+    "ko": "Carotenoid ketolase",
+    "aliases": [
+      "crtw",
+      "bkt",
+      "ketolase",
+      "beta carotene ketolase",
+      "carotenoid ketolase"
+    ]
+  },
+  "zep": {
+    "name": "Zeaxanthin epoxidase · ZEP",
+    "ko": "Zeaxanthin epoxidase · ZEP",
+    "aliases": [
+      "zep",
+      "zeaxanthin epoxidase",
+      "zeaxanthin epoxidase ferredoxin dependent"
+    ]
+  },
+  "vde": {
+    "name": "Violaxanthin de-epoxidase · VDE",
+    "ko": "Violaxanthin de-epoxidase · VDE",
+    "aliases": [
+      "vde",
+      "violaxanthin de epoxidase",
+      "de epoxidase"
+    ]
+  },
+  "phosphatase": {
+    "name": "Phosphatase",
+    "ko": "인산가수분해효소",
+    "aliases": [
+      "phosphatase",
+      "diphosphatase",
+      "phosphohydrolase",
+      "cip",
+      "calf intestinal phosphatase",
+      "인산가수분해효소"
+    ]
+  },
+  "cmt": {
+    "name": "Carboxyl methyltransferase",
+    "ko": "Carboxyl methyltransferase",
+    "aliases": [
+      "cmt",
+      "sdcmt",
+      "carboxyl methyltransferase",
+      "carboxyl o methyltransferase",
+      "methyltransferase",
+      "sabath"
+    ]
+  },
+  "xact": {
+    "name": "Xanthophyll acetyltransferase · XACT",
+    "ko": "Xanthophyll acetyltransferase · XACT",
+    "aliases": [
+      "xact",
+      "xanthophyll acetyltransferase",
+      "acetyltransferase",
+      "acyltransferase",
+      "act"
+    ]
+  }
+}

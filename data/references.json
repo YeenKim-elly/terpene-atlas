@@ -1,0 +1,147 @@
+[
+  {
+    "name": "Jia et al., 2016 · Characterized class II + class I pairs",
+    "detail": "Metabolic Engineering · 10.1016/j.ymben.2016.04.001; HPP/SsSS and KPP/SsSS examples.",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/"
+  },
+  {
+    "name": "Pelot et al., 2018 · Clerodane relative stereochemistry",
+    "detail": "Functional diversity of switchgrass diterpene synthases; C5/C10 and C8/C9 descriptors.",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6130043/"
+  },
+  {
+    "name": "IUBMB · Stemodene synthase",
+    "detail": "EC 4.2.3.34; syn-CPP substrate and class I product.",
+    "url": "https://iubmb.qmul.ac.uk/enzyme/EC4/2/3/34.html"
+  },
+  {
+    "name": "Cao et al., 2026 · XACT and multibranched fucoxanthin biosynthesis",
+    "detail": "PNAS · 10.1073/pnas.2525772123; organism-specific pathway interpretation.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41955116/"
+  },
+  {
+    "name": "Cao et al., 2023 · Fucoxanthin hydratase",
+    "detail": "The Plant Cell · 10.1093/plcell/koad116.",
+    "url": "https://doi.org/10.1093/plcell/koad116"
+  },
+  {
+    "name": "Pelot et al., 2018 · CLPP stereoisomers",
+    "detail": "Diterpene synthase-catalysed biosynthesis of distinct clerodane stereoisomers.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30393911/"
+  },
+  {
+    "name": "IUBMB · Kolavenyl diphosphate synthase",
+    "detail": "EC 5.5.1.28; KPP and CLPP naming in the Salvia route.",
+    "url": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/28.html"
+  },
+  {
+    "name": "IUPAC · Terpenoids and skeletal classes",
+    "detail": "Official nomenclature: terpene classes, carotenoids and oxygenated derivatives.",
+    "url": "https://iupac.qmul.ac.uk/class/terp.html"
+  },
+  {
+    "name": "PubChem · Compound records",
+    "detail": "Individual CIDs, isomeric SMILES and molecular formulas are linked on every compound card.",
+    "url": "https://pubchem.ncbi.nlm.nih.gov/"
+  },
+  {
+    "name": "Köksal et al., 2011 · Class II diTPS mechanism",
+    "detail": "Nature Chemical Biology · 10.1038/nchembio.578",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21602811/"
+  },
+  {
+    "name": "Ro et al., 2006 · CYP71AV1 oxidation",
+    "detail": "Nature · 10.1038/nature04640",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16612385/"
+  },
+  {
+    "name": "Richman et al., 2005 · Steviol UGTs",
+    "detail": "The Plant Journal · 10.1111/j.1365-313X.2004.02275.x",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15610349/"
+  },
+  {
+    "name": "Lee et al., 2019 · UGT76G1 sugar branching",
+    "detail": "PNAS · 10.1073/pnas.1902104116",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31182573/"
+  },
+  {
+    "name": "Walker & Croteau, 2000 · DBAT acetylation",
+    "detail": "PNAS · 10.1073/pnas.97.2.583",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC15373/"
+  },
+  {
+    "name": "Kushiro et al., 1998 · β-Amyrin synthase",
+    "detail": "Cloning and functional characterization of an oxidosqualene cyclase.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/9746369/"
+  },
+  {
+    "name": "IUBMB · Geranyl-diphosphate synthase",
+    "detail": "EC 2.5.1.1: DMAPP + IPP → GPP + diphosphate.",
+    "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/5/1/1.html"
+  },
+  {
+    "name": "Engineered S. cerevisiae carotenoid pathways, 2024",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11205050/",
+    "detail": "Source-specific reference transformations and structures."
+  },
+  {
+    "name": "CrtI product specificity and desaturation stages, 2020",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7713294/",
+    "detail": "Source-specific reference transformations and structures."
+  },
+  {
+    "name": "IUBMB: 15-cis-phytoene synthase",
+    "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/5/1/32.html",
+    "detail": "Source-specific reference transformations and structures."
+  },
+  {
+    "name": "Lutein biosynthesis in engineered yeast, 2021",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34077803/",
+    "detail": "Source-specific reference transformations and structures."
+  },
+  {
+    "name": "IUBMB: zeaxanthin epoxidase",
+    "url": "https://enzyme.expasy.org/EC/1.14.15.21",
+    "detail": "Source-specific reference transformations and structures."
+  },
+  {
+    "name": "IUBMB: violaxanthin de-epoxidase",
+    "url": "https://enzyme.expasy.org/EC/1.23.5.1",
+    "detail": "Source-specific reference transformations and structures."
+  },
+  {
+    "name": "Pelot et al.: distinct CLPP stereoisomers, 2019",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30393911/",
+    "detail": "Source-specific reference transformations and structures."
+  },
+  {
+    "name": "Chen et al.: KPP and analytical dephosphorylation, 2017",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5441855/",
+    "detail": "Source-specific reference transformations and structures."
+  },
+  {
+    "name": "Salvia divinorum genome and characterised tailoring enzymes, 2026",
+    "url": "https://doi.org/10.1038/s41467-026-70885-3",
+    "detail": "Source-specific reference transformations and structures."
+  },
+  {
+    "name": "Fukuda et al.: borapetoside A and borapetol A, 1985",
+    "url": "https://doi.org/10.1248/cpb.33.4438",
+    "detail": "Source-specific reference transformations and structures."
+  },
+  {
+    "name": "Fukuda et al.: borapetoside B and borapetol B, 1986",
+    "url": "https://doi.org/10.1248/cpb.34.2868",
+    "detail": "Source-specific reference transformations and structures."
+  },
+  {
+    "name": "Gao et al.: Tinospora clerodanes and structural evidence, 2016",
+    "url": "https://doi.org/10.1007/s13659-016-0109-3",
+    "detail": "Source-specific reference transformations and structures."
+  },
+  {
+    "name": "Cao et al.: xanthophyll acetyltransferases and branched pathways, 2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41955116/",
+    "detail": "Source-specific reference transformations and structures."
+  }
+]

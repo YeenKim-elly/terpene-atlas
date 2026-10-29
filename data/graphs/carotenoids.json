@@ -1,0 +1,317 @@
+{
+  "title": [
+    "A C40 core. Desaturation stages and branching end groups.",
+    "C40 골격, 탈수소화 단계와 말단 고리 분기."
+  ],
+  "intro": [
+    "A composite, source-labelled map. The PSY product is 15-cis-phytoene; later desaturation cards show selected all-trans stage references, not every transient geometric isomer. CrtI systems and plant PDS/ZDS/isomerase systems differ. Hydroxylation and ketolation are parallel branches.",
+    "출처를 구분한 통합 지도이다. PSY 산물은 15-cis-phytoene이며 이후 탈수소화 카드는 선택한 all-trans 단계 참고 구조이다. 일시적인 모든 기하이성질체를 표시한 것은 아니다. CrtI와 식물 PDS·ZDS·isomerase 계는 다르며 수산화와 ketolation은 평행 분기이다."
+  ],
+  "width": 1900,
+  "height": 1980,
+  "nodes": [
+    [
+      "ggpp",
+      40,
+      30
+    ],
+    [
+      "15-cis-phytoene",
+      360,
+      30
+    ],
+    [
+      "phytofluene",
+      680,
+      30
+    ],
+    [
+      "zeta-carotene",
+      1000,
+      30
+    ],
+    [
+      "neurosporene",
+      1320,
+      30
+    ],
+    [
+      "lycopene",
+      1640,
+      30
+    ],
+    [
+      "gamma-carotene",
+      1640,
+      290
+    ],
+    [
+      "beta-carotene",
+      1640,
+      550
+    ],
+    [
+      "delta-carotene",
+      1000,
+      290
+    ],
+    [
+      "alpha-carotene",
+      1000,
+      550
+    ],
+    [
+      "lutein",
+      680,
+      550
+    ],
+    [
+      "beta-cryptoxanthin",
+      1320,
+      810
+    ],
+    [
+      "echinenone",
+      1640,
+      810
+    ],
+    [
+      "zeaxanthin",
+      1320,
+      1070
+    ],
+    [
+      "canthaxanthin",
+      1640,
+      1070
+    ],
+    [
+      "adonixanthin",
+      1320,
+      1330
+    ],
+    [
+      "adonirubin",
+      1640,
+      1330
+    ],
+    [
+      "astaxanthin",
+      1500,
+      1630
+    ],
+    [
+      "antheraxanthin",
+      1000,
+      1070
+    ],
+    [
+      "violaxanthin",
+      680,
+      1070
+    ],
+    [
+      "neoxanthin",
+      680,
+      1330
+    ],
+    [
+      "diadinoxanthin",
+      360,
+      1630
+    ],
+    [
+      "fucoxanthin",
+      680,
+      1830
+    ]
+  ],
+  "edges": [
+    {
+      "from": "ggpp",
+      "to": "15-cis-phytoene",
+      "label": "2 GGPP - PSY / CrtB",
+      "type": "step",
+      "detail": "A suitable phytoene synthase produces the C40 15-cis product. Some fungal CrtYB proteins combine this activity with lycopene cyclisation.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC2/5/1/32.html"
+    },
+    {
+      "from": "15-cis-phytoene",
+      "to": "phytofluene",
+      "label": "CrtI stage / isomerisation",
+      "type": "summary",
+      "detail": "Desaturation-stage reference, with geometric isomerisation combined. The card depicts all-trans phytofluene; exact intermediate geometry and reaction order depend on the enzyme system.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7713294/"
+    },
+    {
+      "from": "phytofluene",
+      "to": "zeta-carotene",
+      "label": "CrtI - stage reference",
+      "type": "summary",
+      "detail": "Increasing conjugation. The selected all-trans records are stage references, not a universal plant cis-isomer sequence.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7713294/"
+    },
+    {
+      "from": "zeta-carotene",
+      "to": "neurosporene",
+      "label": "CrtI - stage reference",
+      "type": "summary",
+      "detail": "A further desaturation stage. Some CrtI enzymes stop at neurosporene rather than lycopene.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7713294/"
+    },
+    {
+      "from": "neurosporene",
+      "to": "lycopene",
+      "label": "CrtI - lycopene-forming",
+      "type": "step",
+      "detail": "A suitable lycopene-forming CrtI completes the desaturation sequence. Endpoint specificity varies.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7713294/"
+    },
+    {
+      "from": "lycopene",
+      "to": "gamma-carotene",
+      "label": "LCYB / CrtY - beta ring",
+      "type": "step",
+      "detail": "First beta-end cyclisation. Trivial gamma-carotene means beta,psi-carotene, not a gamma end group.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11205050/"
+    },
+    {
+      "from": "gamma-carotene",
+      "to": "beta-carotene",
+      "label": "LCYB / CrtY - beta ring",
+      "type": "step",
+      "detail": "Cyclisation of the remaining open end supplies the beta,beta framework.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11205050/"
+    },
+    {
+      "from": "lycopene",
+      "to": "delta-carotene",
+      "label": "LCYE - epsilon branch",
+      "type": "step",
+      "detail": "Representative epsilon cyclisation. The delta-carotene record leaves the ring stereocentre unassigned; it is not a complete stereospecific product assignment.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/34077803/"
+    },
+    {
+      "from": "delta-carotene",
+      "to": "alpha-carotene",
+      "label": "LCYB - beta end group",
+      "type": "summary",
+      "detail": "The beta,epsilon framework is produced by cyclising the open end. The alpha reference specifies 6-prime-R; this summary does not supply the missing stereochemical assignment in the delta record.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/34077803/"
+    },
+    {
+      "from": "alpha-carotene",
+      "to": "lutein",
+      "label": "Ring hydroxylases - stages",
+      "type": "summary",
+      "detail": "Several substrate-specific beta/epsilon-ring hydroxylations are summarised. This is not a single universal CrtZ reaction.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/34077803/"
+    },
+    {
+      "from": "beta-carotene",
+      "to": "beta-cryptoxanthin",
+      "label": "hydroxylation",
+      "type": "step",
+      "detail": "One β-ring hydroxylation, e.g. CrtZ/BCH depending on organism.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/22616944/"
+    },
+    {
+      "from": "beta-cryptoxanthin",
+      "to": "zeaxanthin",
+      "label": "hydroxylation",
+      "type": "step",
+      "detail": "Hydroxylation of the second β-ring.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/22616944/"
+    },
+    {
+      "from": "beta-carotene",
+      "to": "echinenone",
+      "label": "ketolation",
+      "type": "step",
+      "detail": "One keto group introduced, e.g. CrtW/BKT depending on organism.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/22616944/"
+    },
+    {
+      "from": "echinenone",
+      "to": "canthaxanthin",
+      "label": "ketolation",
+      "type": "step",
+      "detail": "Second keto group introduced.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/22616944/"
+    },
+    {
+      "from": "zeaxanthin",
+      "to": "adonixanthin",
+      "label": "ketolation",
+      "type": "step",
+      "detail": "Representative route where ketolase accepts hydroxylated rings.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/22616944/"
+    },
+    {
+      "from": "adonixanthin",
+      "to": "astaxanthin",
+      "label": "ketolation",
+      "type": "step",
+      "detail": "Second keto group introduced. Mixed reaction orders can also occur.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/22616944/"
+    },
+    {
+      "from": "canthaxanthin",
+      "to": "adonirubin",
+      "label": "hydroxylation",
+      "type": "step",
+      "detail": "Representative route where hydroxylase accepts ketolated rings.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/22616944/"
+    },
+    {
+      "from": "adonirubin",
+      "to": "astaxanthin",
+      "label": "hydroxylation",
+      "type": "step",
+      "detail": "Second hydroxyl group introduced.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/22616944/"
+    },
+    {
+      "from": "zeaxanthin",
+      "to": "antheraxanthin",
+      "label": "ZEP / VDE",
+      "type": "step",
+      "detail": "Forward epoxidation uses ZEP; reverse de-epoxidation uses VDE and ascorbate in the reference cycle. These are distinct enzymes, not one enzyme running backwards.",
+      "source": "https://enzyme.expasy.org/EC/1.23.5.1",
+      "reversible": true
+    },
+    {
+      "from": "antheraxanthin",
+      "to": "violaxanthin",
+      "label": "ZEP / VDE",
+      "type": "step",
+      "detail": "Forward epoxidation uses ZEP; reverse de-epoxidation uses VDE and ascorbate in the reference cycle. These are distinct enzymes, not one enzyme running backwards.",
+      "source": "https://enzyme.expasy.org/EC/1.23.5.1",
+      "reversible": true
+    },
+    {
+      "from": "violaxanthin",
+      "to": "neoxanthin",
+      "label": "NXS / algal VDL1",
+      "type": "step",
+      "detail": "Allene formation; enzyme identity varies by lineage. The all-trans neoxanthin record is shown.",
+      "source": "https://doi.org/10.1093/plcell/koad116"
+    },
+    {
+      "from": "neoxanthin",
+      "to": "diadinoxanthin",
+      "label": "algal branch · summarized",
+      "type": "summary",
+      "detail": "A pathway-level connection in studied algae; not a universal single characterized enzyme.",
+      "source": "https://doi.org/10.1093/plcell/koad116"
+    },
+    {
+      "from": "diadinoxanthin",
+      "to": "fucoxanthin",
+      "label": "multiple branches + intermediates",
+      "type": "summary",
+      "detail": "Diatom fucoxanthin formation involves VDL2, ZEP1, CRTISO5 and xanthophyll acetyltransferase (XACT), with intermediates and alternate reaction orders omitted. The 2026 XACT study supports a multibranched pathway. This is not one direct reaction or a universal pathway for all producing lineages.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/41955116/"
+    }
+  ]
+}

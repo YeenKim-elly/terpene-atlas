@@ -1,0 +1,680 @@
+[
+  {
+    "id": "glycoside",
+    "name": "O-Glycoside",
+    "ko": "O-배당체",
+    "image": "assets/motifs/glycoside.svg",
+    "note": "A sugar is connected at its anomeric carbon through oxygen. Glycoside describes a linkage or compound class, not a single atom group.",
+    "noteKo": "당의 anomeric 탄소가 산소를 통해 연결된다. Glycoside는 단일 원자 작용기보다 결합 또는 화합물 계열을 뜻한다.",
+    "smiles": "COC1OC(CO)C(O)C(O)C1O",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true
+  },
+  {
+    "id": "alcohol",
+    "name": "Alcohol",
+    "ko": "알코올",
+    "image": "assets/motifs/alcohol.svg",
+    "note": "A hydroxyl on a saturated carbon. An alcohol is distinct from a phenol or a carboxylic-acid OH.",
+    "noteKo": "포화 탄소에 붙은 hydroxyl이다. Phenol이나 carboxylic acid의 OH와 구분한다.",
+    "smiles": "CCC(O)CC",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true
+  },
+  {
+    "id": "ketone",
+    "name": "Ketone",
+    "ko": "케톤",
+    "image": "assets/motifs/ketone.svg",
+    "note": "A carbonyl carbon bonded to two carbon groups: R–C(=O)–R.",
+    "noteKo": "탄소기 2개에 연결된 카보닐 탄소: R–C(=O)–R.",
+    "smiles": "CCC(=O)CC",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true
+  },
+  {
+    "id": "aldehyde",
+    "name": "Aldehyde",
+    "ko": "알데하이드",
+    "image": "assets/motifs/aldehyde.svg",
+    "note": "A carbonyl carbon bearing a hydrogen: R–CHO.",
+    "noteKo": "수소가 붙은 카보닐 탄소: R–CHO.",
+    "smiles": "CCCC=O",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true
+  },
+  {
+    "id": "carboxylic-acid",
+    "name": "Carboxylic acid",
+    "ko": "카복실산",
+    "image": "assets/motifs/carboxylic-acid.svg",
+    "note": "The carbonyl and hydroxyl belong to the same carbon: R–C(=O)–OH.",
+    "noteKo": "같은 탄소에 carbonyl과 hydroxyl이 연결된다: R–C(=O)–OH.",
+    "smiles": "CCCC(=O)O",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true
+  },
+  {
+    "id": "ester",
+    "name": "Ester",
+    "ko": "에스터",
+    "image": "assets/motifs/ester.svg",
+    "note": "An acyl group connected through oxygen: R–C(=O)–O–R. Acetates are esters.",
+    "noteKo": "산소를 통해 연결된 acyl기: R–C(=O)–O–R. Acetate도 ester이다.",
+    "smiles": "CCC(=O)OCC",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true
+  },
+  {
+    "id": "lactone",
+    "name": "Lactone",
+    "ko": "락톤",
+    "image": "assets/motifs/lactone.svg",
+    "note": "A cyclic ester: both the carbonyl carbon and ester oxygen are in the ring.",
+    "noteKo": "고리형 ester이다. 카보닐 탄소와 ester 산소가 모두 고리에 포함된다.",
+    "smiles": "O=C1OCCC1",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true
+  },
+  {
+    "id": "epoxide",
+    "name": "Epoxide",
+    "ko": "에폭사이드",
+    "image": "assets/motifs/epoxide.svg",
+    "note": "A three-membered cyclic ether. A ring oxygen alone does not establish an epoxide.",
+    "noteKo": "3원환 cyclic ether이다. 고리에 산소가 있다는 것만으로 epoxide는 아니다.",
+    "smiles": "CCC1OC1C",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true
+  },
+  {
+    "id": "ether",
+    "name": "Ether",
+    "ko": "에터",
+    "image": "assets/motifs/ether.svg",
+    "note": "An oxygen linking two carbon groups, without an adjacent carbonyl.",
+    "noteKo": "인접 carbonyl 없이 탄소기 2개를 잇는 산소이다.",
+    "smiles": "CCOCC",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true
+  },
+  {
+    "id": "furan",
+    "name": "Furan",
+    "ko": "퓨란",
+    "image": "assets/motifs/furan.svg",
+    "note": "A five-membered aromatic oxygen heterocycle. Furan is a ring motif, not a lactone.",
+    "noteKo": "산소를 포함하는 방향족 5원환이다. Furan은 고리 모티프이며 lactone과 구분된다.",
+    "smiles": "Cc1ccoc1",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true
+  },
+  {
+    "id": "peroxide",
+    "name": "Peroxide",
+    "ko": "과산화물",
+    "image": "assets/motifs/peroxide.svg",
+    "note": "An O–O bond. Artemisinin contains an endoperoxide within a ring system.",
+    "noteKo": "O–O 결합이다. Artemisinin에는 고리 내부 endoperoxide가 존재한다.",
+    "smiles": "CCOOCC",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true
+  },
+  {
+    "id": "acetate",
+    "name": "Acetate ester",
+    "ko": "아세테이트 에스터",
+    "image": "assets/motifs/acetate.svg",
+    "note": "An ester whose acyl portion is acetyl: R–O–C(=O)–CH3. This is more specific than ester.",
+    "noteKo": "Acyl 부분이 acetyl인 ester: R–O–C(=O)–CH3. Ester보다 구체적인 분류이다.",
+    "smiles": "CCOC(C)=O",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true
+  },
+  {
+    "id": "alkene",
+    "name": "Alkene",
+    "ko": "알켄",
+    "image": "assets/motifs/alkene.svg",
+    "note": "A carbon–carbon double bond. Isolated alkenes, conjugated dienes and allenes have different connectivity; choose the most specific highlighted motif.",
+    "noteKo": "A carbon–carbon double bond. Isolated alkenes, conjugated dienes and allenes have different connectivity; choose the most specific highlighted motif.",
+    "smiles": "CC=CC",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true,
+    "aliases": [
+      "Alkene",
+      "alkene"
+    ],
+    "highlightAtoms": [
+      1,
+      2
+    ],
+    "smarts": "[CX3]=[CX3]"
+  },
+  {
+    "id": "exocyclic-alkene",
+    "name": "Exocyclic alkene",
+    "ko": "고리 밖 이중결합",
+    "image": "assets/motifs/exocyclic-alkene.svg",
+    "note": "One alkene carbon belongs to a ring and the other lies outside it. CPP and ent-kaurene illustrate exocyclic methylene groups.",
+    "noteKo": "One alkene carbon belongs to a ring and the other lies outside it. CPP and ent-kaurene illustrate exocyclic methylene groups.",
+    "smiles": "CC1CCC(=C)CC1",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true,
+    "aliases": [
+      "Exocyclic alkene",
+      "exocyclic-alkene"
+    ],
+    "highlightAtoms": [
+      4,
+      5
+    ],
+    "smarts": "[C;R]=[C;!R]"
+  },
+  {
+    "id": "conjugated-diene",
+    "name": "Conjugated diene",
+    "ko": "공액 다이엔",
+    "image": "assets/motifs/conjugated-diene.svg",
+    "note": "Two C=C bonds separated by one single bond. Carotenoid polyenes extend this conjugated pattern.",
+    "noteKo": "Two C=C bonds separated by one single bond. Carotenoid polyenes extend this conjugated pattern.",
+    "smiles": "CC=CC=CC",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true,
+    "aliases": [
+      "Conjugated diene",
+      "conjugated-diene"
+    ],
+    "highlightAtoms": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "smarts": "[C]=[C]-[C]=[C]"
+  },
+  {
+    "id": "allene",
+    "name": "Allene",
+    "ko": "알렌",
+    "image": "assets/motifs/allene.svg",
+    "note": "Cumulated C=C=C bonds share the central carbon. Fucoxanthin and neoxanthin contain an allenic unit; this differs from a conjugated diene.",
+    "noteKo": "Cumulated C=C=C bonds share the central carbon. Fucoxanthin and neoxanthin contain an allenic unit; this differs from a conjugated diene.",
+    "smiles": "CC=C=CC",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true,
+    "aliases": [
+      "Allene",
+      "allene"
+    ],
+    "highlightAtoms": [
+      1,
+      2,
+      3
+    ],
+    "smarts": "[C]=[C]=[C]"
+  },
+  {
+    "id": "alkyne",
+    "name": "Alkyne",
+    "ko": "알카인",
+    "image": "assets/motifs/alkyne.svg",
+    "note": "A carbon–carbon triple bond. Diadinoxanthin provides an acetylenic xanthophyll example.",
+    "noteKo": "A carbon–carbon triple bond. Diadinoxanthin provides an acetylenic xanthophyll example.",
+    "smiles": "CCC#CCC",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true,
+    "aliases": [
+      "Alkyne",
+      "alkyne"
+    ],
+    "highlightAtoms": [
+      2,
+      3
+    ],
+    "smarts": "[C]#[C]"
+  },
+  {
+    "id": "phenol",
+    "name": "Phenol",
+    "ko": "페놀",
+    "image": "assets/motifs/phenol.svg",
+    "note": "An OH directly attached to an aromatic carbon. Phenolic monoterpenoids include thymol and carvacrol.",
+    "noteKo": "An OH directly attached to an aromatic carbon. Phenolic monoterpenoids include thymol and carvacrol.",
+    "smiles": "Cc1ccc(O)cc1",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true,
+    "aliases": [
+      "Phenol",
+      "phenol"
+    ],
+    "highlightAtoms": [
+      4,
+      5
+    ],
+    "smarts": "[c][OX2H1]"
+  },
+  {
+    "id": "enone",
+    "name": "Enone",
+    "ko": "에논",
+    "image": "assets/motifs/enone.svg",
+    "note": "An alpha,beta-unsaturated ketone: the carbonyl is conjugated with C=C. This is more specific than ketone or alkene.",
+    "noteKo": "An alpha,beta-unsaturated ketone: the carbonyl is conjugated with C=C. This is more specific than ketone or alkene.",
+    "smiles": "CCC(=O)C=CC",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true,
+    "aliases": [
+      "Enone",
+      "enone"
+    ],
+    "highlightAtoms": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "smarts": "[CX3](=O)-[CX3]=[CX3]"
+  },
+  {
+    "id": "quinone",
+    "name": "Quinone",
+    "ko": "퀴논",
+    "image": "assets/motifs/quinone.svg",
+    "note": "A cyclic conjugated diketone motif, represented by a para-quinone model. Quinonoid diterpenoids include several tanshinones.",
+    "noteKo": "A cyclic conjugated diketone motif, represented by a para-quinone model. Quinonoid diterpenoids include several tanshinones.",
+    "smiles": "CC1=CC(=O)C=CC1=O",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true,
+    "aliases": [
+      "Quinone",
+      "quinone"
+    ],
+    "highlightAtoms": [
+      4,
+      3,
+      2,
+      1,
+      7,
+      8,
+      6,
+      5
+    ],
+    "smarts": "O=C1C=CC(=O)C=C1"
+  },
+  {
+    "id": "hemiacetal",
+    "name": "Hemiacetal",
+    "ko": "헤미아세탈",
+    "image": "assets/motifs/hemiacetal.svg",
+    "note": "The same carbon bears OH, OR, H and a carbon substituent. It differs from a hemiketal, which has two carbon substituents.",
+    "noteKo": "The same carbon bears OH, OR, H and a carbon substituent. It differs from a hemiketal, which has two carbon substituents.",
+    "smiles": "CCC(O)OCC",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true,
+    "aliases": [
+      "Hemiacetal",
+      "hemiacetal"
+    ],
+    "highlightAtoms": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "smarts": "[CX4H1]([OX2H1])([OX2][#6])"
+  },
+  {
+    "id": "hemiketal",
+    "name": "Hemiketal",
+    "ko": "헤미케탈",
+    "image": "assets/motifs/hemiketal.svg",
+    "note": "One tetrahedral carbon bears OH, OR and two carbon substituents. This is the ketone-derived analogue of a hemiacetal.",
+    "noteKo": "One tetrahedral carbon bears OH, OR and two carbon substituents. This is the ketone-derived analogue of a hemiacetal.",
+    "smiles": "CCC(O)(OC)CC",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true,
+    "aliases": [
+      "Hemiketal",
+      "hemiketal"
+    ],
+    "highlightAtoms": [
+      2,
+      3,
+      4,
+      5,
+      1,
+      6
+    ],
+    "smarts": "[CX4H0]([OX2H1])([OX2][#6])([#6])[#6]"
+  },
+  {
+    "id": "acetal",
+    "name": "Acetal",
+    "ko": "아세탈",
+    "image": "assets/motifs/acetal.svg",
+    "note": "A tetrahedral carbon bonded to two OR groups, H and carbon. Acetal is also used as the broader class including ketals.",
+    "noteKo": "A tetrahedral carbon bonded to two OR groups, H and carbon. Acetal is also used as the broader class including ketals.",
+    "smiles": "CCC(OCC)OCC",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true,
+    "aliases": [
+      "Acetal",
+      "acetal"
+    ],
+    "highlightAtoms": [
+      2,
+      3,
+      4,
+      6,
+      7
+    ],
+    "smarts": "[CX4H1]([OX2][#6])([OX2][#6])"
+  },
+  {
+    "id": "ketal",
+    "name": "Ketal",
+    "ko": "케탈",
+    "image": "assets/motifs/ketal.svg",
+    "note": "A ketone-derived acetal: one carbon bears two OR groups and two carbon substituents. This is the more specific label for this model.",
+    "noteKo": "A ketone-derived acetal: one carbon bears two OR groups and two carbon substituents. This is the more specific label for this model.",
+    "smiles": "CCC(OCC)(OCC)CC",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true,
+    "aliases": [
+      "Ketal",
+      "ketal"
+    ],
+    "highlightAtoms": [
+      2,
+      3,
+      4,
+      6,
+      7,
+      1,
+      9
+    ],
+    "smarts": "[CX4H0]([OX2][#6])([OX2][#6])([#6])[#6]"
+  },
+  {
+    "id": "lactol",
+    "name": "Lactol",
+    "ko": "락톨",
+    "image": "assets/motifs/lactol.svg",
+    "note": "A cyclic hemiacetal. An OH-bearing carbon is bonded to a ring oxygen; a lactone instead has a carbonyl at this position.",
+    "noteKo": "A cyclic hemiacetal. An OH-bearing carbon is bonded to a ring oxygen; a lactone instead has a carbonyl at this position.",
+    "smiles": "OC1OCCC1",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true,
+    "aliases": [
+      "Lactol",
+      "lactol"
+    ],
+    "highlightAtoms": [
+      1,
+      0,
+      2
+    ],
+    "smarts": "[C;R]([OX2H1])[O;R]"
+  },
+  {
+    "id": "amide",
+    "name": "Amide",
+    "ko": "아마이드",
+    "image": "assets/motifs/amide.svg",
+    "note": "A carbonyl carbon directly bonded to nitrogen. Paclitaxel contains an amide in its side chain.",
+    "noteKo": "A carbonyl carbon directly bonded to nitrogen. Paclitaxel contains an amide in its side chain.",
+    "smiles": "CCC(=O)NCC",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true,
+    "aliases": [
+      "Amide",
+      "amide"
+    ],
+    "highlightAtoms": [
+      2,
+      3,
+      4
+    ],
+    "smarts": "[CX3](=O)[NX3]"
+  },
+  {
+    "id": "amine",
+    "name": "Amine",
+    "ko": "아민",
+    "image": "assets/motifs/amine.svg",
+    "note": "An amine nitrogen without an adjacent acyl carbonyl. Nitrogen-containing diterpenoid alkaloids illustrate this broader chemistry.",
+    "noteKo": "An amine nitrogen without an adjacent acyl carbonyl. Nitrogen-containing diterpenoid alkaloids illustrate this broader chemistry.",
+    "smiles": "CCN(C)CC",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true,
+    "aliases": [
+      "Amine",
+      "amine"
+    ],
+    "highlightAtoms": [
+      2
+    ],
+    "smarts": "[NX3;!$(N-C=O)]"
+  },
+  {
+    "id": "methyl-ester",
+    "name": "Methyl ester",
+    "ko": "메틸 에스터",
+    "image": "assets/motifs/methyl-ester.svg",
+    "note": "The ester alcohol-derived portion is methyl: R-C(=O)-O-CH3. This differs from an acetate, where the acyl portion is CH3-C(=O)-.",
+    "noteKo": "The ester alcohol-derived portion is methyl: R-C(=O)-O-CH3. This differs from an acetate, where the acyl portion is CH3-C(=O)-.",
+    "smiles": "CCC(=O)OC",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true,
+    "aliases": [
+      "Methyl ester",
+      "methyl-ester"
+    ],
+    "highlightAtoms": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "smarts": "[CX3](=O)[OX2][CH3]"
+  },
+  {
+    "id": "methoxy",
+    "name": "Methoxy group",
+    "ko": "메톡시기",
+    "image": "assets/motifs/methoxy.svg",
+    "note": "An O-CH3 substituent represented as a methyl ether. This model has no adjacent carbonyl, unlike a methyl ester.",
+    "noteKo": "An O-CH3 substituent represented as a methyl ether. This model has no adjacent carbonyl, unlike a methyl ester.",
+    "smiles": "COC1CCCCC1",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true,
+    "aliases": [
+      "Methoxy group",
+      "methoxy"
+    ],
+    "highlightAtoms": [
+      0,
+      1,
+      2
+    ],
+    "smarts": "[CH3][OX2][CX4]"
+  },
+  {
+    "id": "hydroperoxide",
+    "name": "Hydroperoxide",
+    "ko": "하이드로퍼옥사이드",
+    "image": "assets/motifs/hydroperoxide.svg",
+    "note": "An R-O-O-H group. It differs from the R-O-O-R peroxide model and a cyclic endoperoxide.",
+    "noteKo": "An R-O-O-H group. It differs from the R-O-O-R peroxide model and a cyclic endoperoxide.",
+    "smiles": "CCCOO",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true,
+    "aliases": [
+      "Hydroperoxide",
+      "hydroperoxide"
+    ],
+    "highlightAtoms": [
+      3,
+      4
+    ],
+    "smarts": "[OX2][OX2H1]"
+  },
+  {
+    "id": "phosphate-ester",
+    "name": "Phosphate ester",
+    "ko": "인산 에스터",
+    "image": "assets/motifs/phosphate-ester.svg",
+    "note": "An organic O-phosphate linkage. This model shows one phosphate, rather than a diphosphate with a P-O-P bond.",
+    "noteKo": "An organic O-phosphate linkage. This model shows one phosphate, rather than a diphosphate with a P-O-P bond.",
+    "smiles": "CCCOP(=O)(O)O",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true,
+    "aliases": [
+      "Phosphate ester",
+      "phosphate-ester"
+    ],
+    "highlightAtoms": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "smarts": "[#6][OX2]P(=O)(O)O"
+  },
+  {
+    "id": "diphosphate",
+    "name": "Diphosphate",
+    "ko": "이인산",
+    "image": "assets/motifs/diphosphate.svg",
+    "note": "Two phosphate units joined by P-O-P. IPP, DMAPP, GPP, FPP, GGPP and cyclized diterpene precursors carry this motif; protonation varies with pH.",
+    "noteKo": "Two phosphate units joined by P-O-P. IPP, DMAPP, GPP, FPP, GGPP and cyclized diterpene precursors carry this motif; protonation varies with pH.",
+    "smiles": "CCCOP(=O)(O)OP(=O)(O)O",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true,
+    "aliases": [
+      "Diphosphate",
+      "diphosphate"
+    ],
+    "highlightAtoms": [
+      4,
+      5,
+      3,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "smarts": "P(=O)(O)OP(=O)(O)O"
+  },
+  {
+    "id": "sulfate-ester",
+    "name": "Sulfate ester",
+    "ko": "황산 에스터",
+    "image": "assets/motifs/sulfate-ester.svg",
+    "note": "An organic O-sulfate: R-O-S(=O)2-OH in this protonation model. Sulfated terpenoid metabolites are distinct from sulfones.",
+    "noteKo": "An organic O-sulfate: R-O-S(=O)2-OH in this protonation model. Sulfated terpenoid metabolites are distinct from sulfones.",
+    "smiles": "CCCOS(=O)(=O)O",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true,
+    "aliases": [
+      "Sulfate ester",
+      "sulfate-ester"
+    ],
+    "highlightAtoms": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "smarts": "[#6]OS(=O)(=O)O"
+  },
+  {
+    "id": "aromatic-ring",
+    "name": "Aromatic carbocycle",
+    "ko": "방향족 탄소 고리",
+    "image": "assets/motifs/aromatic-ring.svg",
+    "note": "A benzene-like aromatic carbon ring. Some abietane diterpenoids acquire aromatic rings during oxidative tailoring.",
+    "noteKo": "A benzene-like aromatic carbon ring. Some abietane diterpenoids acquire aromatic rings during oxidative tailoring.",
+    "smiles": "Cc1ccccc1",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true,
+    "aliases": [
+      "Aromatic carbocycle",
+      "aromatic-ring"
+    ],
+    "highlightAtoms": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "smarts": "c1ccccc1"
+  },
+  {
+    "id": "glycosyl-ester",
+    "name": "Glycosyl ester",
+    "ko": "글리코실 에스터",
+    "image": "assets/motifs/glycosyl-ester.svg",
+    "note": "An acyl group is linked through oxygen to a sugar anomeric carbon. It is both a glycosidic derivative and an ester; UGTs can catalyse this linkage, so an ester does not establish ACT activity.",
+    "noteKo": "An acyl group is linked through oxygen to a sugar anomeric carbon. It is both a glycosidic derivative and an ester; UGTs can catalyse this linkage, so an ester does not establish ACT activity.",
+    "smiles": "CCC(=O)OC1OC(CO)C(O)C(O)C1O",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true,
+    "aliases": [
+      "Glycosyl ester",
+      "glycosyl-ester"
+    ],
+    "highlightAtoms": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "smarts": "[CX3](=O)O[C;R][O;R]"
+  },
+  {
+    "id": "conjugated-polyene",
+    "name": "Conjugated polyene",
+    "ko": "공액 polyene",
+    "smiles": "CC/C=C/C=C/C=C/C=C/CC",
+    "smarts": "C=C-C=C-C=C-C=C",
+    "note": "A generic four-double-bond conjugated chain. Carotenoids have extended alternating C=C and C-C systems; this motif is more extensive than the existing conjugated diene. Conjugation length and E/Z configuration are distinct descriptors.",
+    "noteKo": "일반적인 공액 이중결합 4개 모델입니다. Conjugation 길이와 E/Z 배치는 서로 다른 특징입니다.",
+    "source": "https://doi.org/10.1038/s41598-020-77876-4",
+    "aliases": [
+      "polyene",
+      "conjugated tetraene",
+      "conjugated polyene chain"
+    ],
+    "image": "assets/motifs/conjugated-polyene.svg",
+    "schematic": true,
+    "highlightSmarts": "C=C-C=C-C=C-C=C"
+  },
+  {
+    "id": "unsaturated-lactone",
+    "name": "α,β-Unsaturated γ-lactone",
+    "ko": "α,β-불포화 γ-lactone",
+    "smiles": "O=C1OCC=C1",
+    "smarts": "[O]=[C;R]1[O;R][C;R][C;R]=[C;R]1",
+    "note": "A generic α,β-unsaturated five-membered cyclic ester (butenolide) model. The C=C bond is conjugated to the lactone carbonyl. It is both a lactone and a conjugated ester, not an aromatic furan. This does not imply that every Tinospora lactone is unsaturated.",
+    "noteKo": "이중결합이 carbonyl과 공액된 5원 불포화 cyclic ester 모델입니다. Furan과 구분되며 모든 Tinospora lactone이 이 형태라는 뜻은 아닙니다.",
+    "source": "https://goldbook.iupac.org/terms/view/L03439",
+    "aliases": [
+      "unsaturated lactone",
+      "butenolide",
+      "alpha beta unsaturated gamma lactone"
+    ],
+    "image": "assets/motifs/unsaturated-lactone.svg",
+    "schematic": true,
+    "highlightSmarts": "[O]=[C;R]1[O;R][C;R][C;R]=[C;R]1"
+  }
+]

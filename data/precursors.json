@@ -1,0 +1,386 @@
+[
+  {
+    "id": "ipp",
+    "query": "Isopentenyl diphosphate",
+    "CID": 1195,
+    "MolecularFormula": "C5H12O7P2",
+    "SMILES": "CC(=C)CCOP(=O)(O)OP(=O)(O)O",
+    "name": "IPP",
+    "ko": "IPP",
+    "role": "precursor",
+    "note": "C5 extender unit; IPP and DMAPP interconvert through IPP isomerase.",
+    "noteKo": "C5 extender unit; IPP and DMAPP interconvert through IPP isomerase.",
+    "aliases": [
+      "Isopentenyl diphosphate"
+    ],
+    "level": "core",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/1195",
+    "image": "assets/structures/ipp.svg",
+    "carbons": 5,
+    "skeleton": 5,
+    "family": "hemi"
+  },
+  {
+    "id": "dmapp",
+    "query": "Dimethylallyl diphosphate",
+    "CID": 647,
+    "MolecularFormula": "C5H12O7P2",
+    "SMILES": "CC(=CCOP(=O)(O)OP(=O)(O)O)C",
+    "name": "DMAPP",
+    "ko": "DMAPP",
+    "role": "precursor",
+    "note": "C5 allylic starter unit. Prenyltransferases combine DMAPP with IPP to build longer precursors.",
+    "noteKo": "C5 allylic starter unit. Prenyltransferases combine DMAPP with IPP to build longer precursors.",
+    "aliases": [
+      "Dimethylallyl diphosphate"
+    ],
+    "level": "core",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/647",
+    "image": "assets/structures/dmapp.svg",
+    "carbons": 5,
+    "skeleton": 5,
+    "family": "hemi"
+  },
+  {
+    "id": "gpp",
+    "query": "Geranyl diphosphate",
+    "CID": 445995,
+    "MolecularFormula": "C10H20O7P2",
+    "SMILES": "CC(=CCC/C(=C/COP(=O)(O)OP(=O)(O)O)/C)C",
+    "name": "GPP",
+    "ko": "GPP",
+    "role": "precursor",
+    "note": "C10 geranyl diphosphate, formed from DMAPP + IPP; a common monoterpene precursor.",
+    "noteKo": "C10 geranyl diphosphate, formed from DMAPP + IPP; a common monoterpene precursor.",
+    "aliases": [
+      "Geranyl diphosphate"
+    ],
+    "level": "core",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/445995",
+    "image": "assets/structures/gpp.svg",
+    "carbons": 10,
+    "skeleton": 10,
+    "family": "mono"
+  },
+  {
+    "id": "fpp",
+    "query": "Farnesyl diphosphate",
+    "CID": 445713,
+    "MolecularFormula": "C15H28O7P2",
+    "SMILES": "CC(=CCC/C(=C/CC/C(=C/COP(=O)(O)OP(=O)(O)O)/C)/C)C",
+    "name": "FPP",
+    "ko": "FPP",
+    "role": "precursor",
+    "note": "C15 farnesyl diphosphate; a common sesquiterpene precursor. Two FPP molecules supply C30 squalene.",
+    "noteKo": "C15 farnesyl diphosphate; a common sesquiterpene precursor. Two FPP molecules supply C30 squalene.",
+    "aliases": [
+      "Farnesyl diphosphate"
+    ],
+    "level": "core",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/445713",
+    "image": "assets/structures/fpp.svg",
+    "carbons": 15,
+    "skeleton": 15,
+    "family": "sesqui"
+  },
+  {
+    "id": "ggpp",
+    "query": "Geranylgeranyl diphosphate",
+    "CID": 447277,
+    "MolecularFormula": "C20H36O7P2",
+    "SMILES": "CC(=CCC/C(=C/CC/C(=C/CC/C(=C/COP(=O)(O)OP(=O)(O)O)/C)/C)/C)C",
+    "name": "GGPP",
+    "ko": "GGPP",
+    "role": "precursor",
+    "note": "C20 geranylgeranyl diphosphate supplies many diterpenes. Two GGPP molecules supply C40 phytoene.",
+    "noteKo": "C20 geranylgeranyl diphosphate supplies many diterpenes. Two GGPP molecules supply C40 phytoene.",
+    "aliases": [
+      "Geranylgeranyl diphosphate"
+    ],
+    "level": "core",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/447277",
+    "image": "assets/structures/ggpp.svg",
+    "carbons": 20,
+    "skeleton": 20,
+    "family": "di"
+  },
+  {
+    "id": "cpp",
+    "query": "Copalyl diphosphate",
+    "CID": 5281990,
+    "MolecularFormula": "C20H36O7P2",
+    "SMILES": "C/C(=C\\COP(=O)(O)OP(=O)(O)O)/CC[C@H]1C(=C)CC[C@@H]2[C@@]1(CCCC2(C)C)C",
+    "name": "(+)-CPP",
+    "ko": "(+)-CPP",
+    "role": "precursor",
+    "note": "The (+)-copalyl diphosphate stereoisomer is shown explicitly. Bare CPP can be a generic literature label; it does not identify absolute stereochemistry. This is the enantiomer of ent-CPP.",
+    "noteKo": "The (+)-copalyl diphosphate stereoisomer is shown explicitly. Bare CPP can be a generic literature label; it does not identify absolute stereochemistry. This is the enantiomer of ent-CPP.",
+    "aliases": [
+      "Copalyl diphosphate",
+      "cpp",
+      "(+)-copalyl diphosphate"
+    ],
+    "level": "core",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/5281990",
+    "image": "assets/structures/cpp.svg",
+    "carbons": 20,
+    "skeleton": 20,
+    "family": "di"
+  },
+  {
+    "id": "ent-cpp",
+    "query": "ent-Copalyl diphosphate",
+    "CID": 5280897,
+    "MolecularFormula": "C20H36O7P2",
+    "SMILES": "C/C(=C\\COP(=O)(O)OP(=O)(O)O)/CC[C@@H]1C(=C)CC[C@H]2[C@]1(CCCC2(C)C)C",
+    "name": "ent-CPP",
+    "ko": "ent-CPP",
+    "role": "precursor",
+    "note": "ent-Copalyl diphosphate is a labdane-related class II product. ent-Kaurene synthase converts it to ent-kaurene in gibberellin biosynthesis.",
+    "noteKo": "ent-Copalyl diphosphate is a labdane-related class II product. ent-Kaurene synthase converts it to ent-kaurene in gibberellin biosynthesis.",
+    "aliases": [
+      "ent-Copalyl diphosphate"
+    ],
+    "level": "core",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/5280897",
+    "image": "assets/structures/ent-cpp.svg",
+    "carbons": 20,
+    "skeleton": 20,
+    "family": "di"
+  },
+  {
+    "id": "syn-cpp",
+    "query": "syn-Copalyl diphosphate",
+    "CID": 5281991,
+    "MolecularFormula": "C20H36O7P2",
+    "SMILES": "C/C(=C\\COP(=O)(O)OP(=O)(O)O)/CC[C@@H]1C(=C)CC[C@@H]2[C@@]1(CCCC2(C)C)C",
+    "name": "syn-CPP",
+    "ko": "syn-CPP",
+    "role": "precursor",
+    "note": "syn-Copalyl diphosphate is a diastereomer of the (+)/ent pair. Identical formulas do not imply identical stereochemistry or downstream TPS compatibility.",
+    "noteKo": "syn-Copalyl diphosphate is a diastereomer of the (+)/ent pair. Identical formulas do not imply identical stereochemistry or downstream TPS compatibility.",
+    "aliases": [
+      "syn-Copalyl diphosphate"
+    ],
+    "level": "core",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/5281991",
+    "image": "assets/structures/syn-cpp.svg",
+    "carbons": 20,
+    "skeleton": 20,
+    "family": "di"
+  },
+  {
+    "id": "kpp",
+    "query": "Kolavenyl diphosphate",
+    "CID": 129626741,
+    "MolecularFormula": "C20H36O7P2",
+    "SMILES": "C[C@@H]1CC[C@@]2([C@@H]([C@@]1(C)CC/C(=C/COP(=O)(O)OP(=O)(O)O)/C)CCC=C2C)C",
+    "name": "(−)-KPP",
+    "ko": "(−)-KPP",
+    "role": "precursor",
+    "note": "A stereochemically specified (−)-kolavenyl diphosphate reference: neutral-acid PubChem CID 129626741 (ChEBI:139033). The selected structure retains the chiral core of (−)-kolavenol CID 6442554. CLPP is a broader literature label and is not an unambiguous name for this single stereoisomer.",
+    "noteKo": "입체배열이 지정된 (−)-kolavenyl diphosphate의 참고 구조로, 중성 산 형태의 PubChem CID 129626741(ChEBI:139033)이다. 선택한 구조는 (−)-kolavenol CID 6442554와 같은 입체배열의 핵심 골격을 가진다. CLPP는 더 넓은 문헌상 계열명이므로 이 입체이성질체 하나를 명확하게 지칭하는 이름은 아니다.",
+    "aliases": [
+      "(-)-KPP",
+      "(−)-KPP",
+      "(-)-kolavenyl diphosphate",
+      "negative kolavenyl diphosphate"
+    ],
+    "level": "core",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/129626741",
+    "image": "assets/structures/kpp.svg",
+    "carbons": 20,
+    "skeleton": 20,
+    "family": "di",
+    "literature": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5441855/"
+  },
+  {
+    "id": "hpp",
+    "query": "Halimadienyl diphosphate",
+    "CID": 46224564,
+    "MolecularFormula": "C20H33O7P2-3",
+    "SMILES": "C[C@H]1CC=C2[C@H]([C@]1(C)CC/C(=C/COP(=O)([O-])OP(=O)([O-])[O-])/C)CCCC2(C)C",
+    "name": "HPP",
+    "ko": "HPP",
+    "role": "precursor",
+    "note": "Halimadienyl diphosphate (tuberculosinol diphosphate), a halimane-related class II product. HPP is also used for other halimane diphosphates, so double-bond positions matter. This PubChem record is a trianion.",
+    "noteKo": "Halimadienyl diphosphate (tuberculosinol diphosphate), a halimane-related class II product. HPP is also used for other halimane diphosphates, so double-bond positions matter. This PubChem record is a trianion.",
+    "aliases": [
+      "Halimadienyl diphosphate",
+      "halimadienyl diphosphate"
+    ],
+    "level": "core",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/46224564",
+    "image": "assets/structures/hpp.svg",
+    "carbons": 20,
+    "skeleton": 20,
+    "family": "di"
+  },
+  {
+    "id": "gfpp",
+    "query": "geranylfarnesyl diphosphate",
+    "CID": 5280659,
+    "MolecularFormula": "C25H44O7P2",
+    "SMILES": "CC(=CCC/C(=C/CC/C(=C/CC/C(=C/CC/C(=C/COP(=O)(O)OP(=O)(O)O)/C)/C)/C)/C)C",
+    "name": "GFPP",
+    "ko": "GFPP",
+    "family": "sester",
+    "role": "precursor",
+    "level": "core",
+    "carbons": 25,
+    "skeleton": 25,
+    "note": "C25 geranylfarnesyl diphosphate. Addition of one C5 IPP unit to C20 GGPP gives C25, not C30. This requires a prenyltransferase with the appropriate chain-length specificity. GFPP supplies sesterterpene synthesis.",
+    "noteKo": "C25 geranylfarnesyl diphosphate. Addition of one C5 IPP unit to C20 GGPP gives C25, not C30. This requires a prenyltransferase with the appropriate chain-length specificity. GFPP supplies sesterterpene synthesis.",
+    "aliases": [
+      "geranylfarnesyl diphosphate",
+      "GFPP",
+      "C25 precursor"
+    ],
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/5280659",
+    "image": "assets/structures/gfpp.svg"
+  },
+  {
+    "id": "hexpp",
+    "query": "all-trans-hexaprenyl diphosphate",
+    "CID": 5280413,
+    "MolecularFormula": "C30H52O7P2",
+    "SMILES": "CC(=CCC/C(=C/CC/C(=C/CC/C(=C/CC/C(=C/CC/C(=C/COP(=O)(O)OP(=O)(O)O)/C)/C)/C)/C)/C)C",
+    "name": "Hexaprenyl diphosphate",
+    "ko": "Hexaprenyl diphosphate",
+    "family": "tri",
+    "role": "precursor",
+    "level": "core",
+    "carbons": 30,
+    "skeleton": 30,
+    "note": "C30 all-trans-hexaprenyl diphosphate. Its linear chain can be reached by two C5 extensions beyond GGPP, through C25 GFPP, with a suitable medium-chain prenyl diphosphate synthase. This is chemically distinct from C30 squalene, formed by coupling two C15 FPP units; one extra IPP does not make C30 from C20.",
+    "noteKo": "C30 all-trans-hexaprenyl diphosphate. Its linear chain can be reached by two C5 extensions beyond GGPP, through C25 GFPP, with a suitable medium-chain prenyl diphosphate synthase. This is chemically distinct from C30 squalene, formed by coupling two C15 FPP units; one extra IPP does not make C30 from C20.",
+    "aliases": [
+      "all-trans-hexaprenyl diphosphate",
+      "hexpp",
+      "C30 linear precursor"
+    ],
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/5280413",
+    "image": "assets/structures/hexpp.svg"
+  },
+  {
+    "id": "nnpp",
+    "name": "NNPP",
+    "ko": "NNPP",
+    "query": "NNPP",
+    "CID": 92449665,
+    "MolecularFormula": "C20H36O7P2",
+    "SMILES": "CC(=CCC/C(=C\\CC/C(=C\\CC/C(=C\\COP(=O)(O)OP(=O)(O)O)/C)/C)/C)C",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/92449665",
+    "literature": "https://doi.org/10.1002/cbic.201800580",
+    "role": "precursor",
+    "family": "di",
+    "skeleton": 20,
+    "level": "core",
+    "carbons": 20,
+    "note": "Nerylneryl diphosphate: the (Z,Z,Z) C20 geometric isomer used as an alternative substrate in characterised PvCPS1 experiments. It is compared with (E,E,E)-GGPP to explore substrate-folding effects. It is not assigned here as a native Tinospora precursor.",
+    "noteKo": "Nerylneryl diphosphate는 (Z,Z,Z) C20 기하이성질체입니다. PvCPS1 연구에서 (E,E,E)-GGPP와 비교한 대체 기질이며 기질 배치의 영향을 보여줍니다. Tinospora의 실제 전구체로 지정한 것은 아닙니다.",
+    "aliases": [
+      "nerylneryl diphosphate",
+      "(Z,Z,Z)-NNPP"
+    ],
+    "image": "assets/structures/nnpp.svg"
+  },
+  {
+    "id": "clpp-cis-trans",
+    "name": "cis-trans-CLPP · relative model",
+    "ko": "cis-trans-CLPP · 상대배치 모델",
+    "query": "cis-trans-CLPP",
+    "CID": null,
+    "MolecularFormula": "C20H36O7P2",
+    "SMILES": "CC(=CCOP(=O)(O)OP(=O)(O)O)CC[C@@]1(C)[C@H]2CCC=C(C)[C@@]2(C)CC[C@H]1C |o1:15,27,o2:17,23|",
+    "CXSMILES": "CC(=CCOP(=O)(O)OP(=O)(O)O)CC[C@@]1(C)[C@H]2CCC=C(C)[C@@]2(C)CC[C@H]1C |o1:15,27,o2:17,23|",
+    "ConnectivitySMILES": "CC1CCC2(C(C1(C)CCC(=CCOP(=O)(O)OP(=O)(O)O)C)CCC=C2C)C",
+    "source": "https://doi.org/10.1002/cbic.201800580",
+    "literature": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6130043/",
+    "role": "precursor",
+    "family": "di",
+    "skeleton": 20,
+    "carbons": 20,
+    "level": "core",
+    "note": "A relative-stereochemistry model of cis-trans clerodienyl diphosphate with full C20 diphosphate connectivity. Only cis C5/C10 ring fusion and trans C8/C9 methyl relationships are specified. Independent enhanced OR groups leave absolute and inter-pair stereochemistry unresolved; side-chain C13 E/Z is unassigned. This is a partial molecular model rather than a fully identified natural isolate. See the cited study for characterised CLPP stereoisomers.",
+    "noteKo": "C20 diphosphate 결합 관계를 표시한 cis-trans clerodienyl diphosphate의 상대입체배열 모형이다. Cis C5/C10 고리 접합과 trans C8/C9 methyl 관계만 지정한다. 독립적인 enhanced OR group을 사용하므로 절대 입체배열과 두 쌍 사이의 관계는 미정이며, 곁사슬 C13 E/Z도 지정하지 않았다. 완전히 동정된 천연 분리물 대신 부분적인 분자 모형이며, 확인된 CLPP 입체이성질체는 인용 문헌을 참고해야 한다.",
+    "aliases": [
+      "cis-trans CLPP",
+      "cis-trans clerodienyl diphosphate"
+    ],
+    "image": "assets/structures/clpp-cis-trans.svg",
+    "structureScope": "relative-pairs-only",
+    "relativeStereo": {
+      "ringFusion": "cis",
+      "substituentRelation": "trans",
+      "absolute": "unassigned",
+      "interPair": "unassigned",
+      "sideChainGeometry": "unassigned"
+    },
+    "enhancedStereoGroups": [
+      {
+        "type": "OR",
+        "conventionalCarbons": [
+          5,
+          10
+        ]
+      },
+      {
+        "type": "OR",
+        "conventionalCarbons": [
+          8,
+          9
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clpp-cis-cis",
+    "name": "cis-cis-CLPP · relative model",
+    "ko": "cis-cis-CLPP · 상대배치 모델",
+    "query": "cis-cis-CLPP",
+    "CID": null,
+    "MolecularFormula": "C20H36O7P2",
+    "SMILES": "CC(=CCOP(=O)(O)OP(=O)(O)O)CC[C@]1(C)[C@H]2CCC=C(C)[C@@]2(C)CC[C@H]1C |o1:15,27,o2:17,23|",
+    "CXSMILES": "CC(=CCOP(=O)(O)OP(=O)(O)O)CC[C@]1(C)[C@H]2CCC=C(C)[C@@]2(C)CC[C@H]1C |o1:15,27,o2:17,23|",
+    "ConnectivitySMILES": "CC1CCC2(C(C1(C)CCC(=CCOP(=O)(O)OP(=O)(O)O)C)CCC=C2C)C",
+    "source": "https://doi.org/10.1002/cbic.201800580",
+    "literature": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6130043/",
+    "role": "precursor",
+    "family": "di",
+    "skeleton": 20,
+    "carbons": 20,
+    "level": "core",
+    "note": "A relative-stereochemistry model of cis-cis clerodienyl diphosphate with full C20 diphosphate connectivity. Only cis C5/C10 ring fusion and cis C8/C9 methyl relationships are specified. Independent enhanced OR groups leave absolute and inter-pair stereochemistry unresolved; side-chain C13 E/Z is unassigned. This is a partial molecular model rather than a fully identified natural isolate. See the cited study for characterised CLPP stereoisomers.",
+    "noteKo": "C20 diphosphate 결합 관계를 표시한 cis-cis clerodienyl diphosphate의 상대입체배열 모형이다. Cis C5/C10 고리 접합과 cis C8/C9 methyl 관계만 지정한다. 독립적인 enhanced OR group을 사용하므로 절대 입체배열과 두 쌍 사이의 관계는 미정이며, 곁사슬 C13 E/Z도 지정하지 않았다. 완전히 동정된 천연 분리물 대신 부분적인 분자 모형이며, 확인된 CLPP 입체이성질체는 인용 문헌을 참고해야 한다.",
+    "aliases": [
+      "cis-cis CLPP",
+      "cis-cis clerodienyl diphosphate"
+    ],
+    "image": "assets/structures/clpp-cis-cis.svg",
+    "structureScope": "relative-pairs-only",
+    "relativeStereo": {
+      "ringFusion": "cis",
+      "substituentRelation": "cis",
+      "absolute": "unassigned",
+      "interPair": "unassigned",
+      "sideChainGeometry": "unassigned"
+    },
+    "enhancedStereoGroups": [
+      {
+        "type": "OR",
+        "conventionalCarbons": [
+          5,
+          10
+        ]
+      },
+      {
+        "type": "OR",
+        "conventionalCarbons": [
+          8,
+          9
+        ]
+      }
+    ]
+  }
+]

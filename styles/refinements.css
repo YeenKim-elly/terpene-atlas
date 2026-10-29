@@ -1,0 +1,29 @@
+.main:focus{outline:none}
+.nav{margin-bottom:20px}
+.mode-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.mode-card{padding-bottom:32px;min-height:160px}
+.library-tabs{flex-wrap:wrap;gap:14px 22px}
+.library-tabs small{font-size:10px;margin-left:4px;opacity:.75}
+.library-toolbar{flex-wrap:wrap;gap:10px}
+.library-toolbar .search{flex:1 1 260px;min-width:0}
+.library-toolbar select{max-width:100%;min-width:150px}
+.card-image .reaction{grid-template-columns:1fr 24px 1fr;gap:4px}
+.card-image .reactant{font:500 11px/1.6 var(--font);padding:7px 4px;border:0;background:transparent}
+.card-image .reaction-arrow{font-size:18px}.card-image .reaction-arrow small{display:none}
+.source-badge{display:inline-block;border:1px solid #dfd7e8;border-radius:20px;padding:5px 10px;font-size:10px;line-height:1.45;color:#76638a;background:#f0eef6}
+.source-badge.hypothesis{background:#f7efe3;color:#8b6939;border-color:#e5d5b9}
+.reference-links{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:17px}
+.reference-links a{font-size:11px;overflow-wrap:anywhere;display:inline-flex;align-items:center;gap:6px}
+.reference-links .atlas-icon{width:12px;height:12px}
+.collection-back{margin-bottom:18px}
+.detail-practice{border-top:1px solid var(--line);margin-top:22px;padding-top:12px}
+.detail-practice p{font-size:12px;color:var(--muted)}
+.source-figure-target{margin:8px 0 0;font-size:13px;font-weight:600;color:var(--green);text-align:center}
+.molecule-stage:has(.source-figure-target){height:auto;min-height:300px}.molecule-stage:has(.source-figure-target)>img{height:260px}
+.reaction .reactant{overflow-wrap:anywhere}.reaction{gap:16px}
+@media(max-width:1100px){.mode-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:850px){.rearrangement-current{grid-template-columns:1fr}.rearrangement-structure{max-width:600px;margin:auto}}
+@media(max-width:800px){.sidebar{flex-direction:column;align-items:stretch;gap:13px}.brand{align-self:flex-start}.nav{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));width:100%;gap:4px;margin:0}.nav button{min-width:0;padding:8px 5px;font-size:10px;line-height:1.4;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:5px;text-align:center;overflow-wrap:anywhere}}
+@media(max-width:600px){.nav button{font-size:9px}.library-toolbar select{flex:1 1 140px;min-width:0}.reaction{display:flex;flex-direction:column}.reaction .reactant{max-width:100%;font-size:16px}.card-image .reaction{display:grid;grid-template-columns:1fr 24px 1fr}.card-image .reactant{font-size:10px}.mode-card p{font-size:11px}.rearrangement-panel{padding:18px}.rearrangement-panel>h2{font-size:22px}.rearrangement-overview{align-items:stretch;flex-direction:column;gap:8px;text-align:center}.rearrangement-overview button{padding:5px}.rearrangement-overview>span{font-size:9px}}
+@media(max-width:440px){.mode-grid{grid-template-columns:1fr}.mode-card{min-height:132px}.mode-card .count{display:block}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

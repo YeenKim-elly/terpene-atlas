@@ -1,0 +1,498 @@
+[
+  {
+    "id": "compare-cpp-enantiomers",
+    "name": "Opposite configurations",
+    "ko": "Opposite configurations",
+    "prompt": "What is the stereochemical relationship of these two CPP records?",
+    "promptKo": "이 두 CPP 기록의 입체화학적 관계는 무엇인가요?",
+    "answer": "Enantiomers",
+    "answerKo": "Enantiomers",
+    "aliases": [
+      "enantiomer",
+      "enantiomers",
+      "mirror image pair",
+      "거울상 이성질체",
+      "거울상"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "Enantiomers",
+        "ko": "Enantiomers"
+      },
+      {
+        "id": "o1",
+        "label": "Identical stereoisomers",
+        "ko": "Identical stereoisomers"
+      },
+      {
+        "id": "o2",
+        "label": "Different carbon skeletons",
+        "ko": "Different carbon skeletons"
+      },
+      {
+        "id": "o3",
+        "label": "Different molecular formulas",
+        "ko": "Different molecular formulas"
+      }
+    ],
+    "correctId": "o0",
+    "note": "The records have the same connectivity and opposite configurations at C5, C9 and C10. Their formula is identical.",
+    "noteKo": "결합 관계는 같고 C5·C9·C10의 배열이 반대입니다. 분자식은 같습니다.",
+    "hint": "Compare all three highlighted stereocentres in the learning view.",
+    "hintKo": "학습 화면에서 세 입체중심의 배열을 비교해 보세요.",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/",
+    "figure": {
+      "comparePair": "cpp-ent",
+      "numbered": false
+    }
+  },
+  {
+    "id": "compare-cpp-c9",
+    "name": "Locate the changed centre",
+    "ko": "Locate the changed centre",
+    "prompt": "Which conventional carbon changes configuration between (+)-CPP and syn-CPP?",
+    "promptKo": "(+)-CPP와 syn-CPP 사이에서 배열이 달라지는 관용 탄소 번호는 무엇인가요?",
+    "answer": "C9",
+    "answerKo": "C9",
+    "aliases": [
+      "9",
+      "C9",
+      "carbon 9",
+      "9번",
+      "탄소9"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "C9",
+        "ko": "C9"
+      },
+      {
+        "id": "o1",
+        "label": "C5",
+        "ko": "C5"
+      },
+      {
+        "id": "o2",
+        "label": "C10",
+        "ko": "C10"
+      },
+      {
+        "id": "o3",
+        "label": "C15",
+        "ko": "C15"
+      }
+    ],
+    "correctId": "o0",
+    "note": "In the selected records, C5 and C10 are retained while C9 changes. Conventional numbering is shown; C18/C19 are intentionally an unresolved pair.",
+    "noteKo": "선택한 기록에서 C5·C10은 유지되고 C9의 배열이 달라집니다. 관용 번호를 표시하며 C18/C19는 의도적으로 미구분 쌍으로 남겨 둡니다.",
+    "hint": "Inspect the side-chain-bearing ring carbon.",
+    "hintKo": "곁사슬이 연결된 고리 탄소를 보세요.",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/",
+    "figure": {
+      "comparePair": "cpp-syn",
+      "numbered": true
+    }
+  },
+  {
+    "id": "compare-ent-syn",
+    "name": "Not every stereoisomer pair is a mirror pair",
+    "ko": "Not every stereoisomer pair is a mirror pair",
+    "prompt": "What relationship fits ent-CPP and syn-CPP here?",
+    "promptKo": "여기서 ent-CPP와 syn-CPP의 관계는 무엇인가요?",
+    "answer": "Diastereomers",
+    "answerKo": "Diastereomers",
+    "aliases": [
+      "diastereomer",
+      "diastereomers",
+      "부분입체이성질체",
+      "부분 입체 이성질체"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "Diastereomers",
+        "ko": "Diastereomers"
+      },
+      {
+        "id": "o1",
+        "label": "Enantiomers",
+        "ko": "Enantiomers"
+      },
+      {
+        "id": "o2",
+        "label": "Different molecular formulas",
+        "ko": "Different molecular formulas"
+      },
+      {
+        "id": "o3",
+        "label": "A glycoside and its aglycone",
+        "ko": "A glycoside and its aglycone"
+      }
+    ],
+    "correctId": "o0",
+    "note": "C9 configuration is shared while C5 and C10 differ. Only part of the stereochemical pattern changes.",
+    "noteKo": "C9의 배열은 같고 C5·C10은 다릅니다. 입체배열의 일부가 달라지는 관계입니다.",
+    "hint": "Ask whether every stereocentre is inverted.",
+    "hintKo": "모든 입체중심이 반전됐는지 확인하세요.",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/",
+    "figure": {
+      "comparePair": "ent-syn",
+      "numbered": true
+    }
+  },
+  {
+    "id": "compare-ce-connectivity",
+    "name": "Same formula, different attachments",
+    "ko": "Same formula, different attachments",
+    "prompt": "Which structural property distinguishes the glycoside/lactone arrangement in these C and E records?",
+    "promptKo": "이 C·E 기록에서 glycoside/lactone 배치를 구분하는 구조적 성질은 무엇인가요?",
+    "answer": "Connectivity",
+    "answerKo": "Connectivity",
+    "aliases": [
+      "connectivity",
+      "bond connectivity",
+      "attachment sites",
+      "attachment positions",
+      "결합 관계",
+      "연결 위치"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "Connectivity",
+        "ko": "Connectivity"
+      },
+      {
+        "id": "o1",
+        "label": "Only the molecular formula",
+        "ko": "Only the molecular formula"
+      },
+      {
+        "id": "o2",
+        "label": "Only total carbon count",
+        "ko": "Only total carbon count"
+      },
+      {
+        "id": "o3",
+        "label": "Only a drawing rotation",
+        "ko": "Only a drawing rotation"
+      }
+    ],
+    "correctId": "o0",
+    "note": "Both records are C27H36O11, but glycoside and lactone attachment sites differ at C6/C12. They are not simply an epimer pair.",
+    "noteKo": "두 기록은 모두 C27H36O11이지만 C6/C12의 glycoside·lactone 연결 위치가 다릅니다. 단순한 epimer 쌍으로 볼 수 없습니다.",
+    "hint": "Follow which carbon is bonded to the glycosidic and lactone oxygen.",
+    "hintKo": "Glycoside와 lactone 산소가 어떤 탄소에 연결되는지 따라가 보세요.",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4791997/",
+    "figure": {
+      "comparePair": "borapetoside-c-e",
+      "numbered": true
+    }
+  },
+  {
+    "id": "compare-ce-c6",
+    "name": "Locate the glycoside in C",
+    "ko": "Locate the glycoside in C",
+    "prompt": "At which conventional parent carbon is the glycosidic oxygen attached in structure A (borapetoside C)?",
+    "promptKo": "구조 A(borapetoside C)에서 glycoside 산소가 연결된 모체 탄소 번호는 무엇인가요?",
+    "answer": "C6",
+    "answerKo": "C6",
+    "aliases": [
+      "6",
+      "C6",
+      "carbon 6",
+      "6번",
+      "탄소6"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "C6",
+        "ko": "C6"
+      },
+      {
+        "id": "o1",
+        "label": "C12",
+        "ko": "C12"
+      },
+      {
+        "id": "o2",
+        "label": "C18",
+        "ko": "C18"
+      },
+      {
+        "id": "o3",
+        "label": "C20",
+        "ko": "C20"
+      }
+    ],
+    "correctId": "o0",
+    "note": "The selected C record is glycosylated through C6. Its C6 glucosyloxy orientation was revised in the 2012 primary study; connectivity numbering does not independently validate every database stereocentre.",
+    "noteKo": "선택한 C 기록의 glycoside는 C6에 연결됩니다. C6 glucosyloxy 방향은 2012년 원 논문에서 수정됐으며 번호 표시가 데이터베이스의 모든 입체배열을 검증하는 것은 아닙니다.",
+    "hint": "Locate the sugar-to-parent oxygen bond in A.",
+    "hintKo": "A에서 당과 모체를 잇는 산소 결합을 찾으세요.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/22283497/",
+    "figure": {
+      "comparePair": "borapetoside-c-e",
+      "numbered": true
+    }
+  },
+  {
+    "id": "compare-ce-order",
+    "name": "Structure similarity versus pathway order",
+    "ko": "Structure similarity versus pathway order",
+    "prompt": "What can these structures alone establish about a native C-to-E biosynthetic conversion?",
+    "promptKo": "이 구조만으로 식물의 C→E 생합성 전환에 대해 무엇을 결론 낼 수 있나요?",
+    "answer": "Not established",
+    "answerKo": "Not established",
+    "aliases": [
+      "not established",
+      "unassigned",
+      "cannot establish",
+      "not proven",
+      "unknown",
+      "no",
+      "미확인",
+      "확정할 수 없다",
+      "알 수 없다"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "Not established",
+        "ko": "Not established"
+      },
+      {
+        "id": "o1",
+        "label": "A proven single-step conversion",
+        "ko": "A proven single-step conversion"
+      },
+      {
+        "id": "o2",
+        "label": "A confirmed native glycosyltransferase",
+        "ko": "확인된 천연 glycosyltransferase"
+      },
+      {
+        "id": "o3",
+        "label": "The native reaction order",
+        "ko": "The native reaction order"
+      }
+    ],
+    "correctId": "o0",
+    "note": "The comparison shows structural differences. A native substrate–product relationship and the responsible enzyme need experimental evidence.",
+    "noteKo": "구조 비교는 차이를 보여줍니다. 식물의 기질–생성물 관계와 담당 효소에는 실험 근거가 필요합니다.",
+    "hint": "A structural comparison is not an enzyme assay.",
+    "hintKo": "구조 비교는 효소 반응 실험이 아닙니다.",
+    "source": "https://doi.org/10.1007/s13659-016-0109-3",
+    "figure": {
+      "comparePair": "borapetoside-c-e",
+      "numbered": false
+    }
+  },
+  {
+    "id": "compare-bc-oh",
+    "name": "Additional oxygen-containing group",
+    "ko": "Additional oxygen-containing group",
+    "prompt": "Which additional motif occurs at C2 in structure A (the selected borapetoside B record)?",
+    "promptKo": "구조 A(선택한 borapetoside B 기록)의 C2에 추가로 있는 작용기는 무엇인가요?",
+    "answer": "Hydroxyl group",
+    "answerKo": "Hydroxyl group",
+    "aliases": [
+      "hydroxyl",
+      "hydroxyl group",
+      "alcohol",
+      "OH",
+      "hydroxy",
+      "하이드록실기",
+      "수산기",
+      "알코올"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "Hydroxyl group",
+        "ko": "Hydroxyl group"
+      },
+      {
+        "id": "o1",
+        "label": "Phosphate group",
+        "ko": "Phosphate group"
+      },
+      {
+        "id": "o2",
+        "label": "Additional glucose",
+        "ko": "Additional glucose"
+      },
+      {
+        "id": "o3",
+        "label": "Ketone group",
+        "ko": "Ketone group"
+      }
+    ],
+    "correctId": "o0",
+    "note": "The selected B record contains a C2 hydroxyl not present in C. A separate C8 stereo difference in the database records remains subject to the provenance caveat.",
+    "noteKo": "선택한 B 기록에는 C에 없는 C2 hydroxyl이 있습니다. 별도로 보이는 C8 입체배열 차이에는 데이터베이스 출처 주의사항이 적용됩니다.",
+    "hint": "Compare the oxygen attached to numbered C2.",
+    "hintKo": "번호 C2에 연결된 산소를 비교하세요.",
+    "source": "https://doi.org/10.1007/s13659-016-0109-3",
+    "figure": {
+      "comparePair": "borapetoside-b-c",
+      "numbered": true
+    }
+  },
+  {
+    "id": "compare-bc-provenance",
+    "name": "What a coloured centre means",
+    "ko": "What a coloured centre means",
+    "prompt": "What is the strongest warranted description of the displayed C8 difference in this selected-record comparison?",
+    "promptKo": "이 선택 기록 비교에서 보이는 C8 차이에 대한 적절한 설명은 무엇인가요?",
+    "answer": "A selected-record difference",
+    "answerKo": "A selected-record difference",
+    "aliases": [
+      "selected record difference",
+      "a selected-record difference",
+      "database record difference",
+      "a database record difference",
+      "record difference",
+      "기록 차이",
+      "데이터베이스 기록 차이"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "A selected-record difference",
+        "ko": "A selected-record difference"
+      },
+      {
+        "id": "o1",
+        "label": "A resolved native enzyme reaction",
+        "ko": "A resolved native enzyme reaction"
+      },
+      {
+        "id": "o2",
+        "label": "Proof that B is made from C",
+        "ko": "Proof that B is made from C"
+      },
+      {
+        "id": "o3",
+        "label": "A newly established absolute assignment",
+        "ko": "A newly established absolute assignment"
+      }
+    ],
+    "correctId": "o0",
+    "note": "B CID 91884898 has unresolved provenance against another record and the primary isolate. The 2012 revision of C must also be tracked. Colour alone is not new stereochemical evidence.",
+    "noteKo": "B의 CID 91884898은 다른 기록 및 원 분리물과의 대조가 미해결입니다. C의 2012년 수정도 함께 추적해야 합니다. 색상 표시 자체가 새로운 입체화학 근거는 아닙니다.",
+    "hint": "Distinguish database depiction from independently assigned natural structure.",
+    "hintKo": "데이터베이스 표현과 독립적으로 확인한 천연 구조를 구분하세요.",
+    "source": "https://doi.org/10.1007/s13659-016-0109-3",
+    "figure": {
+      "comparePair": "borapetoside-b-c",
+      "numbered": true
+    }
+  },
+  {
+    "id": "compare-acetate-alcohol",
+    "name": "Read the local motif change",
+    "ko": "Read the local motif change",
+    "prompt": "Which local functional-group difference distinguishes A from B in this comparison?",
+    "promptKo": "이 비교에서 A와 B를 구분하는 국소 작용기 차이는 무엇인가요?",
+    "answer": "Acetate ester versus alcohol",
+    "answerKo": "Acetate ester versus alcohol",
+    "aliases": [
+      "acetate ester versus alcohol",
+      "ester versus alcohol",
+      "acetate to alcohol",
+      "acetate ester to alcohol",
+      "ester to alcohol",
+      "ester alcohol",
+      "에스터와 알코올",
+      "acetate ester와 alcohol"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "Acetate ester versus alcohol",
+        "ko": "Acetate ester versus alcohol"
+      },
+      {
+        "id": "o1",
+        "label": "Epoxide versus furan",
+        "ko": "Epoxide versus furan"
+      },
+      {
+        "id": "o2",
+        "label": "Glucose versus diphosphate",
+        "ko": "Glucose versus diphosphate"
+      },
+      {
+        "id": "o3",
+        "label": "Ketone versus phosphate",
+        "ko": "Ketone versus phosphate"
+      }
+    ],
+    "correctId": "o0",
+    "note": "The aligned drawings show an acetate ester in A corresponding to an alcohol in B. The total formula difference is C2H2O.",
+    "noteKo": "정렬된 그림에서 A의 acetate ester에 해당하는 자리가 B에서는 alcohol입니다. 전체 분자식 차이는 C2H2O입니다.",
+    "hint": "Look for the extra acetyl carbonyl and methyl group in A.",
+    "hintKo": "A에서 추가 acetyl carbonyl과 methyl을 찾으세요.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/23855953/",
+    "figure": {
+      "comparePair": "taccalonolide-a-b",
+      "numbered": false
+    }
+  },
+  {
+    "id": "compare-cpp-compatibility",
+    "name": "Stereochemistry and enzyme testing",
+    "ko": "Stereochemistry and enzyme testing",
+    "prompt": "What is needed before assigning the same downstream enzyme compatibility to both CPP stereoisomers?",
+    "promptKo": "두 CPP 입체이성질체에 동일한 후속 효소 호환성을 부여하려면 무엇이 필요한가요?",
+    "answer": "Enzyme testing",
+    "answerKo": "Enzyme testing",
+    "aliases": [
+      "enzyme testing",
+      "enzyme assay",
+      "enzyme assays",
+      "experimental testing",
+      "substrate testing",
+      "효소 시험",
+      "효소 실험",
+      "효소 반응 실험",
+      "실험 검증"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "Enzyme testing",
+        "ko": "Enzyme testing"
+      },
+      {
+        "id": "o1",
+        "label": "Only an identical formula",
+        "ko": "Only an identical formula"
+      },
+      {
+        "id": "o2",
+        "label": "Only a shared CPP name",
+        "ko": "Only a shared CPP name"
+      },
+      {
+        "id": "o3",
+        "label": "Only matching carbon count",
+        "ko": "Only matching carbon count"
+      }
+    ],
+    "correctId": "o0",
+    "note": "Downstream specificity is enzyme-dependent. Some characterised enzymes are promiscuous, but equal formulas or similar names do not establish compatibility for a new enzyme.",
+    "noteKo": "후속 효소의 특이성은 효소마다 다릅니다. 여러 기질을 받는 효소도 보고됐지만 같은 분자식·비슷한 이름만으로 새 효소의 호환성을 정할 수는 없습니다.",
+    "hint": "Test substrate-to-product conversion for the enzyme of interest.",
+    "hintKo": "관심 효소에서 기질→생성물 전환을 시험하세요.",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/",
+    "figure": {
+      "comparePair": "cpp-syn",
+      "numbered": false
+    }
+  }
+]

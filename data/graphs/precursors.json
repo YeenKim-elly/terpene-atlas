@@ -1,0 +1,266 @@
+{
+  "title": [
+    "Two C5 inputs. One growing carbon chain.",
+    "두 C5 기질에서 시작하는 탄소 사슬."
+  ],
+  "intro": [
+    "DMAPP + IPP → GPP. Each further IPP adds C5: C20 GGPP → C25 GFPP → a C30 linear diphosphate with suitable enzymes. C30 squalene instead comes from 2 × C15 FPP. KPP and other CLPP examples already carry clerodane backbones; dotted lines indicate scaffold membership.",
+    "IPP는 한 번에 C5를 더합니다. GGPP(C20) → GFPP(C25) → 선형 C30 이인산과, 2 FPP에서 만들어지는 C30 squalene은 구분해야 합니다. KPP와 다른 CLPP는 이미 clerodane 골격을 가진 중간체입니다."
+  ],
+  "width": 1900,
+  "height": 1640,
+  "nodes": [
+    [
+      "ipp",
+      100,
+      30
+    ],
+    [
+      "dmapp",
+      470,
+      30
+    ],
+    [
+      "gpp",
+      280,
+      320
+    ],
+    [
+      "fpp",
+      620,
+      320
+    ],
+    [
+      "ggpp",
+      960,
+      320
+    ],
+    [
+      "gfpp",
+      1300,
+      320
+    ],
+    [
+      "hexpp",
+      1640,
+      320
+    ],
+    [
+      "limonene",
+      280,
+      650
+    ],
+    [
+      "alpha-humulene",
+      620,
+      650
+    ],
+    [
+      "kpp",
+      960,
+      650
+    ],
+    [
+      "clpp-variants",
+      1260,
+      650
+    ],
+    [
+      "squalene",
+      430,
+      1050
+    ],
+    [
+      "clerodane",
+      1100,
+      1410
+    ],
+    [
+      "15-cis-phytoene",
+      1640,
+      1050
+    ],
+    [
+      "nnpp",
+      1600,
+      650
+    ],
+    [
+      "clpp-cis-trans",
+      960,
+      1050
+    ],
+    [
+      "clpp-cis-cis",
+      1260,
+      1050
+    ]
+  ],
+  "edges": [
+    {
+      "from": "ipp",
+      "to": "dmapp",
+      "label": "IDI · IPP ⇌ DMAPP",
+      "type": "step",
+      "detail": "Reversible isomerization interconverts IPP and DMAPP. The arrow has heads at both ends; this does not replace the separate condensation reaction.",
+      "source": "",
+      "reversible": true
+    },
+    {
+      "from": "ipp",
+      "to": "gpp",
+      "label": "IPP input · GPPS",
+      "type": "step",
+      "detail": "IPP is consumed together with DMAPP: DMAPP + IPP → GPP + diphosphate. The two incoming lines depict the two co-substrates of one condensation, not two independent GPP-producing reactions.",
+      "source": "",
+      "reactionGroup": "gpp-condensation",
+      "coSubstrate": "dmapp"
+    },
+    {
+      "from": "dmapp",
+      "to": "gpp",
+      "label": "DMAPP input · GPPS",
+      "type": "step",
+      "detail": "DMAPP and IPP are both required in this common C10-forming condensation. Neither line represents substrate-alone conversion.",
+      "source": "",
+      "reactionGroup": "gpp-condensation",
+      "coSubstrate": "ipp"
+    },
+    {
+      "from": "gpp",
+      "to": "fpp",
+      "label": "+ IPP · FPPS",
+      "type": "step",
+      "detail": "GPP + IPP → FPP + diphosphate in the common sequential elongation scheme.",
+      "source": ""
+    },
+    {
+      "from": "fpp",
+      "to": "ggpp",
+      "label": "+ IPP · GGPPS",
+      "type": "step",
+      "detail": "FPP + IPP → GGPP + diphosphate in a common elongation scheme.",
+      "source": ""
+    },
+    {
+      "from": "gpp",
+      "to": "limonene",
+      "label": "TPS I · C10",
+      "type": "step",
+      "detail": "Representative monoterpene cyclization.",
+      "source": ""
+    },
+    {
+      "from": "fpp",
+      "to": "alpha-humulene",
+      "label": "TPS I · C15",
+      "type": "step",
+      "detail": "Representative sesquiterpene cyclization.",
+      "source": ""
+    },
+    {
+      "from": "fpp",
+      "to": "squalene",
+      "label": "2 FPP · SQS · C30",
+      "type": "summary",
+      "detail": "Two FPP molecules supply squalene through presqualene diphosphate, with NADPH.",
+      "source": ""
+    },
+    {
+      "from": "ggpp",
+      "to": "kpp",
+      "label": "KPS · TPS II · C20",
+      "type": "step",
+      "detail": "Class II cyclization creates a C20 clerodane-related diphosphate. GGPP also supplies CPP, ent-CPP, syn-CPP and HPP branches in the diterpene view.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/28.html"
+    },
+    {
+      "from": "kpp",
+      "to": "clerodane",
+      "label": "C20 scaffold relationship",
+      "type": "structure",
+      "detail": "KPP is one specific clerodane-related C20 diphosphate. The generic clerodane family is not exclusively derived from this single absolute stereoisomer; other CLPP configurations also carry this scaffold. This dotted line denotes structural membership only.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6130043/"
+    },
+    {
+      "from": "ggpp",
+      "to": "15-cis-phytoene",
+      "label": "2 GGPP · PSY · C40",
+      "type": "step",
+      "detail": "Two C20 GGPP molecules condense into C40 phytoene. This branch increases the parent carbon skeleton to C40.",
+      "source": ""
+    },
+    {
+      "from": "ggpp",
+      "to": "gfpp",
+      "label": "+ IPP · C20 + C5 = C25",
+      "type": "step",
+      "detail": "One C5 addition yields C25 geranylfarnesyl diphosphate, with an enzyme of suitable chain-length specificity. It does not yield C30.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC2/5/1/81.html"
+    },
+    {
+      "from": "gfpp",
+      "to": "hexpp",
+      "label": "+ IPP · C25 + C5 = C30",
+      "type": "step",
+      "detail": "Further C5 elongation gives a C30 linear hexaprenyl diphosphate in suitable medium-chain prenyltransferase systems. This is not the two-FPP coupling used to make squalene.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC139513/"
+    },
+    {
+      "from": "ggpp",
+      "to": "clpp-variants",
+      "label": "other characterized TPS II products",
+      "type": "step",
+      "detail": "Different class II TPSs or tested variants produce distinct CLPP stereoisomers; one example is cis-trans CLPP from PvCPS1. The panel is illustrative, not an exhaustive substrate–enzyme catalogue.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/30393911/"
+    },
+    {
+      "from": "clpp-variants",
+      "to": "clerodane",
+      "label": "already a clerodane-related C20 core",
+      "type": "structure",
+      "detail": "These diphosphates already contain clerodane-related carbon skeletons. This line denotes scaffold membership, not conversion into a free saturated clerodane parent compound.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/30393911/"
+    },
+    {
+      "from": "clpp-variants",
+      "to": "clpp-cis-trans",
+      "label": "Relative molecular model",
+      "type": "structure",
+      "detail": "C20 diphosphate connectivity with independently defined relative pairs. Absolute configuration, relationships between the two pairs and side-chain E/Z are not assigned.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/30393911/"
+    },
+    {
+      "from": "clpp-cis-trans",
+      "to": "clerodane",
+      "label": "Clerodane scaffold class",
+      "type": "structure",
+      "detail": "Scaffold membership only; this is not an additional biochemical conversion.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/30393911/"
+    },
+    {
+      "from": "clpp-variants",
+      "to": "clpp-cis-cis",
+      "label": "Relative molecular model",
+      "type": "structure",
+      "detail": "C20 diphosphate connectivity with independently defined relative pairs. Absolute configuration, relationships between the two pairs and side-chain E/Z are not assigned.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/30393911/"
+    },
+    {
+      "from": "clpp-cis-cis",
+      "to": "clerodane",
+      "label": "Clerodane scaffold class",
+      "type": "structure",
+      "detail": "Scaffold membership only; this is not an additional biochemical conversion.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/30393911/"
+    },
+    {
+      "from": "nnpp",
+      "to": "clpp-variants",
+      "label": "PvCPS1 / variants - reference",
+      "type": "summary",
+      "detail": "The study used the cis-prenyl substrate NNPP to obtain an alternative CLPP diastereomer. This is not a Tinospora substrate or product assignment.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/30393911/"
+    }
+  ]
+}

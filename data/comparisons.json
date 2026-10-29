@@ -1,0 +1,1199 @@
+[
+  {
+    "id": "cpp-ent",
+    "title": [
+      "(+)-CPP and ent-CPP",
+      "(+)-CPP와 ent-CPP"
+    ],
+    "leftId": "cpp",
+    "rightId": "ent-cpp",
+    "types": [
+      "stereochemistry"
+    ],
+    "explanation": [
+      "The displayed records have the same connectivity and formula, with opposite configurations at C5, C9 and C10. This is an enantiomer comparison.",
+      "표시한 기록은 결합 관계와 분자식이 같고 C5·C9·C10의 배열이 반대인 enantiomer 쌍입니다."
+    ],
+    "changeSummary": [
+      "Configuration changes at C5, C9 and C10.",
+      "C5·C9·C10의 입체배열이 달라집니다."
+    ],
+    "caveat": [
+      "CPP names in a paper must be matched to its defined stereoisomer; a shared formula does not establish downstream enzyme compatibility.",
+      "논문의 CPP 이름은 정의된 입체이성질체와 확인해야 합니다. 분자식이 같다고 후속 효소의 호환성이 입증되는 것은 아닙니다."
+    ],
+    "sources": [
+      {
+        "name": "Jia et al., 2016 · CPP stereochemistry and labdane numbering",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/"
+      },
+      {
+        "name": "(+)-CPP · PubChem CID 5281990",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5281990"
+      },
+      {
+        "name": "ent-CPP · PubChem CID 5280897",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280897"
+      }
+    ],
+    "numberingAvailable": true,
+    "numberingNote": [
+      "Conventional labdane parent carbon numbering (C1–C20). The two C4 methyl carbons are labelled 18/19 as a pair; no stereotopic C18-versus-C19 assignment is made.",
+      "관용적인 labdane 모체 탄소 번호(C1–C20)입니다. C4의 두 methyl 탄소는 18/19 쌍으로 표시하며 각각의 stereotopic 번호를 지정하지 않습니다."
+    ],
+    "mapping": {
+      "left": {
+        "conventionalCarbonToAtom": {
+          "1": 22,
+          "2": 23,
+          "3": 24,
+          "4": 25,
+          "5": 20,
+          "6": 19,
+          "7": 18,
+          "8": 16,
+          "9": 15,
+          "10": 21,
+          "11": 14,
+          "12": 13,
+          "13": 1,
+          "14": 2,
+          "15": 3,
+          "16": 0,
+          "17": 17,
+          "20": 28
+        },
+        "ambiguousGeminalPair": {
+          "labels": [
+            18,
+            19
+          ],
+          "atoms": [
+            26,
+            27
+          ]
+        },
+        "recordId": "cpp",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5281990",
+        "formula": "C20H36O7P2"
+      },
+      "right": {
+        "conventionalCarbonToAtom": {
+          "1": 22,
+          "2": 23,
+          "3": 24,
+          "4": 25,
+          "5": 20,
+          "6": 19,
+          "7": 18,
+          "8": 16,
+          "9": 15,
+          "10": 21,
+          "11": 14,
+          "12": 13,
+          "13": 1,
+          "14": 2,
+          "15": 3,
+          "16": 0,
+          "17": 17,
+          "20": 28
+        },
+        "ambiguousGeminalPair": {
+          "labels": [
+            18,
+            19
+          ],
+          "atoms": [
+            26,
+            27
+          ]
+        },
+        "recordId": "ent-cpp",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5280897",
+        "formula": "C20H36O7P2"
+      }
+    },
+    "changes": [
+      {
+        "type": "stereochemistry",
+        "positions": [
+          "C5",
+          "C9",
+          "C10"
+        ],
+        "detail": [
+          "Configuration changes at C5, C9 and C10.",
+          "C5·C9·C10의 입체배열이 달라집니다."
+        ]
+      }
+    ],
+    "computedDifferences": {
+      "bondChanges": [],
+      "leftOnlyAtoms": [],
+      "rightOnlyAtoms": [],
+      "stereoCentres": [
+        "C10",
+        "C5",
+        "C9"
+      ]
+    },
+    "alignment": {
+      "method": "Curated atom map with hard common-core coordinate constraints",
+      "alignedAtoms": 29,
+      "sameScale": true,
+      "maximumCanvasDiscrepancyPx": 0
+    },
+    "left": {
+      "plain": "assets/comparisons/compare-cpp-ent-left-plain.svg",
+      "highlighted": "assets/comparisons/compare-cpp-ent-left-highlighted.svg",
+      "numbered": "assets/comparisons/compare-cpp-ent-left-numbered.svg",
+      "numberedHighlighted": "assets/comparisons/compare-cpp-ent-left-numberedHighlighted.svg"
+    },
+    "right": {
+      "plain": "assets/comparisons/compare-cpp-ent-right-plain.svg",
+      "highlighted": "assets/comparisons/compare-cpp-ent-right-highlighted.svg",
+      "numbered": "assets/comparisons/compare-cpp-ent-right-numbered.svg",
+      "numberedHighlighted": "assets/comparisons/compare-cpp-ent-right-numberedHighlighted.svg"
+    }
+  },
+  {
+    "id": "cpp-syn",
+    "title": [
+      "(+)-CPP and syn-CPP",
+      "(+)-CPP와 syn-CPP"
+    ],
+    "leftId": "cpp",
+    "rightId": "syn-cpp",
+    "types": [
+      "stereochemistry"
+    ],
+    "explanation": [
+      "These records retain C5 and C10 configuration while changing C9. They are diastereomers with identical formulas.",
+      "이 기록에서는 C5·C10을 유지하고 C9의 배열이 바뀝니다. 분자식이 같은 diastereomer입니다."
+    ],
+    "changeSummary": [
+      "Configuration changes at C9.",
+      "C9의 입체배열이 달라집니다."
+    ],
+    "caveat": [
+      "This is a structure comparison, not a reaction arrow between isolated CPP stereoisomers.",
+      "분리된 CPP 입체이성질체 사이의 반응이 아닌 구조 비교입니다."
+    ],
+    "sources": [
+      {
+        "name": "Jia et al., 2016 · CPP stereochemistry and labdane numbering",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/"
+      },
+      {
+        "name": "(+)-CPP · PubChem CID 5281990",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5281990"
+      },
+      {
+        "name": "syn-CPP · PubChem CID 5281991",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5281991"
+      }
+    ],
+    "numberingAvailable": true,
+    "numberingNote": [
+      "Conventional labdane parent carbon numbering (C1–C20). The two C4 methyl carbons are labelled 18/19 as a pair; no stereotopic C18-versus-C19 assignment is made.",
+      "관용적인 labdane 모체 탄소 번호(C1–C20)입니다. C4의 두 methyl 탄소는 18/19 쌍으로 표시하며 각각의 stereotopic 번호를 지정하지 않습니다."
+    ],
+    "mapping": {
+      "left": {
+        "conventionalCarbonToAtom": {
+          "1": 22,
+          "2": 23,
+          "3": 24,
+          "4": 25,
+          "5": 20,
+          "6": 19,
+          "7": 18,
+          "8": 16,
+          "9": 15,
+          "10": 21,
+          "11": 14,
+          "12": 13,
+          "13": 1,
+          "14": 2,
+          "15": 3,
+          "16": 0,
+          "17": 17,
+          "20": 28
+        },
+        "ambiguousGeminalPair": {
+          "labels": [
+            18,
+            19
+          ],
+          "atoms": [
+            26,
+            27
+          ]
+        },
+        "recordId": "cpp",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5281990",
+        "formula": "C20H36O7P2"
+      },
+      "right": {
+        "conventionalCarbonToAtom": {
+          "1": 22,
+          "2": 23,
+          "3": 24,
+          "4": 25,
+          "5": 20,
+          "6": 19,
+          "7": 18,
+          "8": 16,
+          "9": 15,
+          "10": 21,
+          "11": 14,
+          "12": 13,
+          "13": 1,
+          "14": 2,
+          "15": 3,
+          "16": 0,
+          "17": 17,
+          "20": 28
+        },
+        "ambiguousGeminalPair": {
+          "labels": [
+            18,
+            19
+          ],
+          "atoms": [
+            26,
+            27
+          ]
+        },
+        "recordId": "syn-cpp",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5281991",
+        "formula": "C20H36O7P2"
+      }
+    },
+    "changes": [
+      {
+        "type": "stereochemistry",
+        "positions": [
+          "C9"
+        ],
+        "detail": [
+          "Configuration changes at C9.",
+          "C9의 입체배열이 달라집니다."
+        ]
+      }
+    ],
+    "computedDifferences": {
+      "bondChanges": [],
+      "leftOnlyAtoms": [],
+      "rightOnlyAtoms": [],
+      "stereoCentres": [
+        "C9"
+      ]
+    },
+    "alignment": {
+      "method": "Curated atom map with hard common-core coordinate constraints",
+      "alignedAtoms": 29,
+      "sameScale": true,
+      "maximumCanvasDiscrepancyPx": 0
+    },
+    "left": {
+      "plain": "assets/comparisons/compare-cpp-syn-left-plain.svg",
+      "highlighted": "assets/comparisons/compare-cpp-syn-left-highlighted.svg",
+      "numbered": "assets/comparisons/compare-cpp-syn-left-numbered.svg",
+      "numberedHighlighted": "assets/comparisons/compare-cpp-syn-left-numberedHighlighted.svg"
+    },
+    "right": {
+      "plain": "assets/comparisons/compare-cpp-syn-right-plain.svg",
+      "highlighted": "assets/comparisons/compare-cpp-syn-right-highlighted.svg",
+      "numbered": "assets/comparisons/compare-cpp-syn-right-numbered.svg",
+      "numberedHighlighted": "assets/comparisons/compare-cpp-syn-right-numberedHighlighted.svg"
+    }
+  },
+  {
+    "id": "ent-syn",
+    "title": [
+      "ent-CPP and syn-CPP",
+      "ent-CPP와 syn-CPP"
+    ],
+    "leftId": "ent-cpp",
+    "rightId": "syn-cpp",
+    "types": [
+      "stereochemistry"
+    ],
+    "explanation": [
+      "These records share C9 configuration and differ at C5 and C10. They are diastereomers rather than an enantiomer pair.",
+      "이 기록은 C9의 배열이 같고 C5·C10이 다릅니다. Enantiomer 쌍이 아닌 diastereomer입니다."
+    ],
+    "changeSummary": [
+      "Configuration changes at C5 and C10.",
+      "C5·C10의 입체배열이 달라집니다."
+    ],
+    "caveat": [
+      "The common prefix is not sufficient to infer an enzyme pairing or native pathway.",
+      "이름의 공통 부분만으로 효소 조합이나 식물 경로를 정할 수는 없습니다."
+    ],
+    "sources": [
+      {
+        "name": "Jia et al., 2016 · CPP stereochemistry and labdane numbering",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/"
+      },
+      {
+        "name": "ent-CPP · PubChem CID 5280897",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280897"
+      },
+      {
+        "name": "syn-CPP · PubChem CID 5281991",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5281991"
+      }
+    ],
+    "numberingAvailable": true,
+    "numberingNote": [
+      "Conventional labdane parent carbon numbering (C1–C20). The two C4 methyl carbons are labelled 18/19 as a pair; no stereotopic C18-versus-C19 assignment is made.",
+      "관용적인 labdane 모체 탄소 번호(C1–C20)입니다. C4의 두 methyl 탄소는 18/19 쌍으로 표시하며 각각의 stereotopic 번호를 지정하지 않습니다."
+    ],
+    "mapping": {
+      "left": {
+        "conventionalCarbonToAtom": {
+          "1": 22,
+          "2": 23,
+          "3": 24,
+          "4": 25,
+          "5": 20,
+          "6": 19,
+          "7": 18,
+          "8": 16,
+          "9": 15,
+          "10": 21,
+          "11": 14,
+          "12": 13,
+          "13": 1,
+          "14": 2,
+          "15": 3,
+          "16": 0,
+          "17": 17,
+          "20": 28
+        },
+        "ambiguousGeminalPair": {
+          "labels": [
+            18,
+            19
+          ],
+          "atoms": [
+            26,
+            27
+          ]
+        },
+        "recordId": "ent-cpp",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5280897",
+        "formula": "C20H36O7P2"
+      },
+      "right": {
+        "conventionalCarbonToAtom": {
+          "1": 22,
+          "2": 23,
+          "3": 24,
+          "4": 25,
+          "5": 20,
+          "6": 19,
+          "7": 18,
+          "8": 16,
+          "9": 15,
+          "10": 21,
+          "11": 14,
+          "12": 13,
+          "13": 1,
+          "14": 2,
+          "15": 3,
+          "16": 0,
+          "17": 17,
+          "20": 28
+        },
+        "ambiguousGeminalPair": {
+          "labels": [
+            18,
+            19
+          ],
+          "atoms": [
+            26,
+            27
+          ]
+        },
+        "recordId": "syn-cpp",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5281991",
+        "formula": "C20H36O7P2"
+      }
+    },
+    "changes": [
+      {
+        "type": "stereochemistry",
+        "positions": [
+          "C5",
+          "C10"
+        ],
+        "detail": [
+          "Configuration changes at C5 and C10.",
+          "C5·C10의 입체배열이 달라집니다."
+        ]
+      }
+    ],
+    "computedDifferences": {
+      "bondChanges": [],
+      "leftOnlyAtoms": [],
+      "rightOnlyAtoms": [],
+      "stereoCentres": [
+        "C10",
+        "C5"
+      ]
+    },
+    "alignment": {
+      "method": "Curated atom map with hard common-core coordinate constraints",
+      "alignedAtoms": 29,
+      "sameScale": true,
+      "maximumCanvasDiscrepancyPx": 0
+    },
+    "left": {
+      "plain": "assets/comparisons/compare-ent-syn-left-plain.svg",
+      "highlighted": "assets/comparisons/compare-ent-syn-left-highlighted.svg",
+      "numbered": "assets/comparisons/compare-ent-syn-left-numbered.svg",
+      "numberedHighlighted": "assets/comparisons/compare-ent-syn-left-numberedHighlighted.svg"
+    },
+    "right": {
+      "plain": "assets/comparisons/compare-ent-syn-right-plain.svg",
+      "highlighted": "assets/comparisons/compare-ent-syn-right-highlighted.svg",
+      "numbered": "assets/comparisons/compare-ent-syn-right-numbered.svg",
+      "numberedHighlighted": "assets/comparisons/compare-ent-syn-right-numberedHighlighted.svg"
+    }
+  },
+  {
+    "id": "borapetoside-c-e",
+    "title": [
+      "Borapetoside C and E",
+      "Borapetoside C와 E"
+    ],
+    "leftId": "borapetoside-c",
+    "rightId": "borapetoside-e",
+    "types": [
+      "connectivity"
+    ],
+    "explanation": [
+      "Both records are C27H36O11. In C, the glycosidic oxygen attaches at C6 and the C17 lactone closes through C12; in E these attachment sites are exchanged (glycoside at C12, lactone through C6).",
+      "두 기록 모두 C27H36O11입니다. C에서는 C6에 glycoside가 결합하고 C17 lactone은 C12를 통해 닫힙니다. E에서는 glycoside가 C12에, lactone의 산소 연결이 C6에 있습니다."
+    ],
+    "changeSummary": [
+      "Same formula; different glycoside and lactone attachment sites at C6/C12.",
+      "분자식은 같지만 C6/C12의 glycoside·lactone 연결 위치가 다릅니다."
+    ],
+    "caveat": [
+      "These selected records differ in connectivity and must not be treated as a simple epimer pair or a demonstrated biosynthetic conversion. The 2016 study assigned borapetoside E C12 as relative S*; this is not a new absolute assignment of every database centre.",
+      "선택한 기록은 결합 관계가 달라 단순 epimer 쌍이나 확인된 생합성 전환으로 해석하면 안 됩니다. 2016년 논문은 E의 C12 상대배열을 S*로 지정했으며, 데이터베이스의 모든 중심에 절대배열을 새로 부여한 것은 아닙니다."
+    ],
+    "sources": [
+      {
+        "name": "Gao et al., 2016 · Clerodane structures and C12 relative configuration",
+        "url": "https://doi.org/10.1007/s13659-016-0109-3"
+      },
+      {
+        "name": "Hossen et al., 2016 · Borapetoside E carbon assignments",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4791997/"
+      },
+      {
+        "name": "Lam et al., 2012 · Revision of borapetoside C C6 glucosyloxy orientation",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22283497/"
+      },
+      {
+        "name": "Borapetoside C · PubChem CID 15934414",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/15934414"
+      },
+      {
+        "name": "Borapetoside E · PubChem CID 124578182",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/124578182"
+      }
+    ],
+    "numberingAvailable": true,
+    "numberingNote": [
+      "Conventional clerodane C1–C20 connectivity numbering. Sugar and methyl-ester carbons are intentionally not numbered as part of the C20 parent. Numbering does not validate a database stereochemical assignment.",
+      "관용적인 clerodane C1–C20 결합 번호입니다. 당과 methyl ester의 탄소는 C20 모체 번호에 포함하지 않습니다. 번호 표시가 데이터베이스의 입체배열을 검증하는 것은 아닙니다."
+    ],
+    "mapping": {
+      "left": {
+        "conventionalCarbonToAtom": {
+          "1": 12,
+          "2": 13,
+          "3": 14,
+          "4": 15,
+          "5": 10,
+          "6": 9,
+          "7": 8,
+          "8": 7,
+          "9": 1,
+          "10": 11,
+          "11": 2,
+          "12": 3,
+          "13": 33,
+          "14": 37,
+          "15": 36,
+          "16": 34,
+          "17": 5,
+          "18": 16,
+          "19": 20,
+          "20": 0
+        },
+        "recordId": "borapetoside-c",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/15934414",
+        "formula": "C27H36O11"
+      },
+      "right": {
+        "conventionalCarbonToAtom": {
+          "1": 3,
+          "2": 4,
+          "3": 5,
+          "4": 6,
+          "5": 7,
+          "6": 8,
+          "7": 9,
+          "8": 10,
+          "9": 1,
+          "10": 2,
+          "11": 19,
+          "12": 20,
+          "13": 21,
+          "14": 25,
+          "15": 24,
+          "16": 22,
+          "17": 11,
+          "18": 15,
+          "19": 14,
+          "20": 0
+        },
+        "recordId": "borapetoside-e",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/124578182",
+        "formula": "C27H36O11"
+      }
+    },
+    "changes": [
+      {
+        "type": "connectivity",
+        "positions": [
+          "C6",
+          "C12"
+        ],
+        "detail": [
+          "Same formula; different glycoside and lactone attachment sites at C6/C12.",
+          "분자식은 같지만 C6/C12의 glycoside·lactone 연결 위치가 다릅니다."
+        ]
+      }
+    ],
+    "computedDifferences": {
+      "bondChanges": [
+        [
+          "C12",
+          "O.glyco"
+        ],
+        [
+          "C12",
+          "O.lactone"
+        ],
+        [
+          "C6",
+          "O.glyco"
+        ],
+        [
+          "C6",
+          "O.lactone"
+        ]
+      ],
+      "leftOnlyAtoms": [],
+      "rightOnlyAtoms": [],
+      "stereoCentres": []
+    },
+    "alignment": {
+      "method": "Curated atom map with hard common-core coordinate constraints",
+      "alignedAtoms": 19,
+      "sameScale": true,
+      "maximumCanvasDiscrepancyPx": 0
+    },
+    "left": {
+      "plain": "assets/comparisons/compare-borapetoside-c-e-left-plain.svg",
+      "highlighted": "assets/comparisons/compare-borapetoside-c-e-left-highlighted.svg",
+      "numbered": "assets/comparisons/compare-borapetoside-c-e-left-numbered.svg",
+      "numberedHighlighted": "assets/comparisons/compare-borapetoside-c-e-left-numberedHighlighted.svg"
+    },
+    "right": {
+      "plain": "assets/comparisons/compare-borapetoside-c-e-right-plain.svg",
+      "highlighted": "assets/comparisons/compare-borapetoside-c-e-right-highlighted.svg",
+      "numbered": "assets/comparisons/compare-borapetoside-c-e-right-numbered.svg",
+      "numberedHighlighted": "assets/comparisons/compare-borapetoside-c-e-right-numberedHighlighted.svg"
+    }
+  },
+  {
+    "id": "borapetoside-b-c",
+    "title": [
+      "Borapetoside B and C records",
+      "Borapetoside B·C 기록 비교"
+    ],
+    "leftId": "borapetoside-b",
+    "rightId": "borapetoside-c",
+    "types": [
+      "oxygenation",
+      "stereochemistry"
+    ],
+    "explanation": [
+      "The selected B record has one additional C2 hydroxyl oxygen compared with C. The atom-mapped records also show a C8 stereochemical difference; this is explicitly a database-record observation subject to the provenance caveat.",
+      "선택한 B 기록은 C보다 C2 hydroxyl 산소가 하나 많습니다. 원자 대응한 두 기록에는 C8 입체배열 차이도 보이며, 이는 아래 출처 주의사항이 적용되는 데이터베이스 기록의 관찰입니다."
+    ],
+    "changeSummary": [
+      "Additional C2 hydroxyl in B; a selected-record C8 stereo difference.",
+      "B의 C2 hydroxyl 추가와 선택한 기록의 C8 입체배열 차이입니다."
+    ],
+    "caveat": [
+      "Selected database records are compared, not independently redetermined natural isolates. B CID 91884898 conflicts stereochemically with CID 21636042; C6 orientation in borapetoside C was revised in the 2012 primary study. Do not use the coloured stereo difference alone as a resolved B-versus-C biological assignment.",
+      "선택한 데이터베이스 기록의 비교이며 천연 분리물의 구조를 재확정한 것은 아닙니다. B의 CID 91884898과 21636042는 입체배열 정의가 다르며, C의 C6 glucosyloxy 방향은 2012년 원 논문에서 수정됐습니다. 색칠된 입체배열 차이만으로 B·C의 생물학적 관계를 확정하지 마세요."
+    ],
+    "sources": [
+      {
+        "name": "Gao et al., 2016 · Clerodane structures and C12 relative configuration",
+        "url": "https://doi.org/10.1007/s13659-016-0109-3"
+      },
+      {
+        "name": "Lam et al., 2012 · Revision of borapetoside C C6 glucosyloxy orientation",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22283497/"
+      },
+      {
+        "name": "Borapetoside B · PubChem CID 91884898",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/91884898"
+      },
+      {
+        "name": "Borapetoside C · PubChem CID 15934414",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/15934414"
+      }
+    ],
+    "numberingAvailable": true,
+    "numberingNote": [
+      "Conventional clerodane C1–C20 connectivity numbering. Sugar and methyl-ester carbons are intentionally not numbered as part of the C20 parent. Numbering does not validate a database stereochemical assignment.",
+      "관용적인 clerodane C1–C20 결합 번호입니다. 당과 methyl ester의 탄소는 C20 모체 번호에 포함하지 않습니다. 번호 표시가 데이터베이스의 입체배열을 검증하는 것은 아닙니다."
+    ],
+    "mapping": {
+      "left": {
+        "conventionalCarbonToAtom": {
+          "1": 12,
+          "2": 13,
+          "3": 14,
+          "4": 15,
+          "5": 10,
+          "6": 9,
+          "7": 8,
+          "8": 7,
+          "9": 1,
+          "10": 11,
+          "11": 2,
+          "12": 3,
+          "13": 34,
+          "14": 38,
+          "15": 37,
+          "16": 35,
+          "17": 5,
+          "18": 16,
+          "19": 21,
+          "20": 0
+        },
+        "recordId": "borapetoside-b",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/91884898",
+        "formula": "C27H36O12"
+      },
+      "right": {
+        "conventionalCarbonToAtom": {
+          "1": 12,
+          "2": 13,
+          "3": 14,
+          "4": 15,
+          "5": 10,
+          "6": 9,
+          "7": 8,
+          "8": 7,
+          "9": 1,
+          "10": 11,
+          "11": 2,
+          "12": 3,
+          "13": 33,
+          "14": 37,
+          "15": 36,
+          "16": 34,
+          "17": 5,
+          "18": 16,
+          "19": 20,
+          "20": 0
+        },
+        "recordId": "borapetoside-c",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/15934414",
+        "formula": "C27H36O11"
+      }
+    },
+    "changes": [
+      {
+        "type": "oxygenation",
+        "positions": [
+          "C2"
+        ],
+        "detail": [
+          "Additional C2 hydroxyl in B; a selected-record C8 stereo difference.",
+          "B의 C2 hydroxyl 추가와 선택한 기록의 C8 입체배열 차이입니다."
+        ]
+      },
+      {
+        "type": "stereochemistry",
+        "positions": [
+          "C8"
+        ],
+        "detail": [
+          "Additional C2 hydroxyl in B; a selected-record C8 stereo difference.",
+          "B의 C2 hydroxyl 추가와 선택한 기록의 C8 입체배열 차이입니다."
+        ]
+      }
+    ],
+    "computedDifferences": {
+      "bondChanges": [
+        [
+          "C2",
+          "O2"
+        ]
+      ],
+      "leftOnlyAtoms": [
+        "O2"
+      ],
+      "rightOnlyAtoms": [],
+      "stereoCentres": [
+        "C8"
+      ]
+    },
+    "alignment": {
+      "method": "Curated atom map with hard common-core coordinate constraints",
+      "alignedAtoms": 38,
+      "sameScale": true,
+      "maximumCanvasDiscrepancyPx": 0
+    },
+    "left": {
+      "plain": "assets/comparisons/compare-borapetoside-b-c-left-plain.svg",
+      "highlighted": "assets/comparisons/compare-borapetoside-b-c-left-highlighted.svg",
+      "numbered": "assets/comparisons/compare-borapetoside-b-c-left-numbered.svg",
+      "numberedHighlighted": "assets/comparisons/compare-borapetoside-b-c-left-numberedHighlighted.svg"
+    },
+    "right": {
+      "plain": "assets/comparisons/compare-borapetoside-b-c-right-plain.svg",
+      "highlighted": "assets/comparisons/compare-borapetoside-b-c-right-highlighted.svg",
+      "numbered": "assets/comparisons/compare-borapetoside-b-c-right-numbered.svg",
+      "numberedHighlighted": "assets/comparisons/compare-borapetoside-b-c-right-numberedHighlighted.svg"
+    }
+  },
+  {
+    "id": "taccalonolide-a-b",
+    "title": [
+      "Taccalonolide A and B",
+      "Taccalonolide A와 B"
+    ],
+    "leftId": "taccalonolide-a",
+    "rightId": "taccalonolide-b",
+    "types": [
+      "functional-group"
+    ],
+    "explanation": [
+      "An acetate ester in A corresponds to an alcohol in B. The molecular formula difference is C2H2O. Laboratory hydrolysis of A to B is documented, but it does not identify a native Tacca enzyme.",
+      "A의 acetate ester 자리가 B에서는 alcohol입니다. 분자식 차이는 C2H2O이며 A→B의 실험실 가수분해가 보고됐지만 식물의 담당 효소를 지정하는 것은 아닙니다."
+    ],
+    "changeSummary": [
+      "Acetate ester versus alcohol.",
+      "Acetate ester와 alcohol의 차이입니다."
+    ],
+    "caveat": [
+      "Only common-core alignment and the local ester/alcohol difference are shown. Full conventional steroid carbon numbering has not been validated here.",
+      "공통 골격 정렬과 국소적인 ester/alcohol 차이를 표시합니다. 이 비교에서는 steroid 전체의 관용 탄소 번호를 검증하지 않았습니다."
+    ],
+    "sources": [
+      {
+        "name": "Peng et al., 2013 · Taccalonolide hydrolysis",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/23855953/"
+      },
+      {
+        "name": "Taccalonolide A · PubChem CID 441685",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/441685"
+      },
+      {
+        "name": "Taccalonolide B · PubChem CID 56662029",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/56662029"
+      }
+    ],
+    "numberingAvailable": false,
+    "numberingNote": [
+      "Only common-core alignment and the local ester/alcohol difference are shown. Full conventional steroid carbon numbering has not been validated here.",
+      "공통 골격 정렬과 국소적인 ester/alcohol 차이를 표시합니다. 이 비교에서는 steroid 전체의 관용 탄소 번호를 검증하지 않았습니다."
+    ],
+    "mapping": {
+      "left": {
+        "conventionalCarbonToAtom": {},
+        "recordId": "taccalonolide-a",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/441685",
+        "formula": "C36H46O14"
+      },
+      "right": {
+        "conventionalCarbonToAtom": {},
+        "recordId": "taccalonolide-b",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/56662029",
+        "formula": "C34H44O13"
+      }
+    },
+    "changes": [
+      {
+        "type": "functional-group",
+        "positions": [],
+        "detail": [
+          "Acetate ester versus alcohol.",
+          "Acetate ester와 alcohol의 차이입니다."
+        ]
+      }
+    ],
+    "computedDifferences": {
+      "bondChanges": [
+        [
+          "A.only.11",
+          "A.only.12"
+        ],
+        [
+          "A.only.11",
+          "A.only.13"
+        ],
+        [
+          "A.only.11",
+          "M10"
+        ]
+      ],
+      "leftOnlyAtoms": [
+        "A.only.11",
+        "A.only.12",
+        "A.only.13"
+      ],
+      "rightOnlyAtoms": [],
+      "stereoCentres": []
+    },
+    "alignment": {
+      "method": "Curated atom map with hard common-core coordinate constraints",
+      "alignedAtoms": 47,
+      "sameScale": true,
+      "maximumCanvasDiscrepancyPx": 0
+    },
+    "left": {
+      "plain": "assets/comparisons/compare-taccalonolide-a-b-left-plain.svg",
+      "highlighted": "assets/comparisons/compare-taccalonolide-a-b-left-highlighted.svg",
+      "numbered": null,
+      "numberedHighlighted": null
+    },
+    "right": {
+      "plain": "assets/comparisons/compare-taccalonolide-a-b-right-plain.svg",
+      "highlighted": "assets/comparisons/compare-taccalonolide-a-b-right-highlighted.svg",
+      "numbered": null,
+      "numberedHighlighted": null
+    }
+  },
+  {
+    "id": "borapetol-a-glycoside",
+    "title": [
+      "Borapetol A and borapetoside A",
+      "Borapetol A와 borapetoside A"
+    ],
+    "leftId": "borapetol-a",
+    "rightId": "borapetoside-a",
+    "types": [
+      "functional-group"
+    ],
+    "explanation": [
+      "The complete aglycone is an exact chirality-aware substructure of the selected glycoside record. Orange highlights show the added glucosyl residue and the junction oxygen.",
+      "선택한 glycoside 기록 안에 aglycone의 전체 구조와 지정된 입체배치가 그대로 포함된다. 주황색은 추가된 glucosyl 잔기와 결합 부분을 강조한다."
+    ],
+    "changeSummary": [
+      "One glucosyl residue is added at the aglycone oxygen; formula difference C6H10O5.",
+      "Aglycone의 산소에 glucosyl 잔기가 결합하며 분자식 차이는 C6H10O5이다."
+    ],
+    "caveat": [
+      "This matched database-record comparison shows a structural relationship, not a demonstrated native Tinospora UGT reaction or biosynthetic order. Conventional full carbon numbering has not been validated for this added pair.",
+      "이 비교는 출처를 맞춘 데이터베이스 구조 관계이며, Tinospora 천연 UGT 반응이나 생합성 순서를 입증하지 않는다. 전체 관용 탄소 번호는 이 추가 구조 쌍에서 검증하지 않았다."
+    ],
+    "sources": [
+      {
+        "name": "Fukuda et al. · isolation of the aglycone/glycoside pair",
+        "url": "https://doi.org/10.1248/cpb.33.4438"
+      },
+      {
+        "name": "Borapetol A · PubChem CID 21636047",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/21636047"
+      },
+      {
+        "name": "Borapetoside A · PubChem CID 21636215",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/21636215"
+      }
+    ],
+    "numberingAvailable": false,
+    "numberingNote": [
+      "Common-core alignment is exact for the selected records. Full conventional clerodane carbon numbering has not been validated for this pair.",
+      "선택한 기록의 공통 핵심 구조는 정확히 정렬했으며, 전체 관용 clerodane 탄소 번호는 별도로 검증하지 않았다."
+    ],
+    "mapping": {
+      "left": {
+        "recordId": "borapetol-a",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/21636047",
+        "formula": "C20H24O7",
+        "conventionalCarbonToAtom": {}
+      },
+      "right": {
+        "recordId": "borapetoside-a",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/21636215",
+        "formula": "C26H34O12",
+        "conventionalCarbonToAtom": {}
+      }
+    },
+    "changes": [
+      {
+        "type": "functional-group",
+        "positions": [],
+        "detail": [
+          "One glucosyl residue is added at the aglycone oxygen; formula difference C6H10O5.",
+          "Aglycone의 산소에 glucosyl 잔기가 결합하며 분자식 차이는 C6H10O5이다."
+        ]
+      }
+    ],
+    "computedDifferences": {
+      "bondChanges": [
+        [
+          "Glc.21",
+          "Glc.22"
+        ],
+        [
+          "Glc.21",
+          "Glc.26"
+        ],
+        [
+          "Glc.21",
+          "M20"
+        ],
+        [
+          "Glc.22",
+          "Glc.23"
+        ],
+        [
+          "Glc.22",
+          "Glc.31"
+        ],
+        [
+          "Glc.23",
+          "Glc.24"
+        ],
+        [
+          "Glc.23",
+          "Glc.30"
+        ],
+        [
+          "Glc.24",
+          "Glc.25"
+        ],
+        [
+          "Glc.24",
+          "Glc.29"
+        ],
+        [
+          "Glc.25",
+          "Glc.26"
+        ],
+        [
+          "Glc.25",
+          "Glc.27"
+        ],
+        [
+          "Glc.27",
+          "Glc.28"
+        ]
+      ],
+      "leftOnlyAtoms": [],
+      "rightOnlyAtoms": [
+        "Glc.21",
+        "Glc.22",
+        "Glc.23",
+        "Glc.24",
+        "Glc.25",
+        "Glc.26",
+        "Glc.27",
+        "Glc.28",
+        "Glc.29",
+        "Glc.30",
+        "Glc.31"
+      ],
+      "stereoCentres": []
+    },
+    "alignment": {
+      "method": "Unique exact chirality-aware aglycone substructure with hard common-core coordinate constraints",
+      "alignedAtoms": 27,
+      "sameScale": true,
+      "maximumCanvasDiscrepancyPx": 0
+    },
+    "left": {
+      "numbered": null,
+      "numberedHighlighted": null,
+      "plain": "assets/comparisons/compare-borapetol-a-glycoside-left-plain.svg",
+      "highlighted": "assets/comparisons/compare-borapetol-a-glycoside-left-highlighted.svg"
+    },
+    "right": {
+      "numbered": null,
+      "numberedHighlighted": null,
+      "plain": "assets/comparisons/compare-borapetol-a-glycoside-right-plain.svg",
+      "highlighted": "assets/comparisons/compare-borapetol-a-glycoside-right-highlighted.svg"
+    }
+  },
+  {
+    "id": "borapetol-b-glycoside",
+    "title": [
+      "Borapetol B and borapetoside B",
+      "Borapetol B와 borapetoside B"
+    ],
+    "leftId": "borapetol-b",
+    "rightId": "borapetoside-b-matched",
+    "types": [
+      "functional-group"
+    ],
+    "explanation": [
+      "The complete aglycone is an exact chirality-aware substructure of the selected glycoside record. Orange highlights show the added glucosyl residue and the junction oxygen.",
+      "선택한 glycoside 기록 안에 aglycone의 전체 구조와 지정된 입체배치가 그대로 포함된다. 주황색은 추가된 glucosyl 잔기와 결합 부분을 강조한다."
+    ],
+    "changeSummary": [
+      "One glucosyl residue is added at the aglycone oxygen; formula difference C6H10O5.",
+      "Aglycone의 산소에 glucosyl 잔기가 결합하며 분자식 차이는 C6H10O5이다."
+    ],
+    "caveat": [
+      "This matched database-record comparison shows a structural relationship, not a demonstrated native Tinospora UGT reaction or biosynthetic order. Conventional full carbon numbering has not been validated for this added pair. The glycoside is specifically CID 21636042, selected to match the aglycone; do not substitute conflicting CID 91884898.",
+      "이 비교는 출처를 맞춘 데이터베이스 구조 관계이며, Tinospora 천연 UGT 반응이나 생합성 순서를 입증하지 않는다. 전체 관용 탄소 번호는 이 추가 구조 쌍에서 검증하지 않았다."
+    ],
+    "sources": [
+      {
+        "name": "Fukuda et al. · isolation of the aglycone/glycoside pair",
+        "url": "https://doi.org/10.1248/cpb.34.2868"
+      },
+      {
+        "name": "Borapetol B · PubChem CID 21636044",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/21636044"
+      },
+      {
+        "name": "Borapetoside B · matched record · PubChem CID 21636042",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/21636042"
+      }
+    ],
+    "numberingAvailable": false,
+    "numberingNote": [
+      "Common-core alignment is exact for the selected records. Full conventional clerodane carbon numbering has not been validated for this pair.",
+      "선택한 기록의 공통 핵심 구조는 정확히 정렬했으며, 전체 관용 clerodane 탄소 번호는 별도로 검증하지 않았다."
+    ],
+    "mapping": {
+      "left": {
+        "recordId": "borapetol-b",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/21636044",
+        "formula": "C21H26O7",
+        "conventionalCarbonToAtom": {}
+      },
+      "right": {
+        "recordId": "borapetoside-b-matched",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/21636042",
+        "formula": "C27H36O12",
+        "conventionalCarbonToAtom": {}
+      }
+    },
+    "changes": [
+      {
+        "type": "functional-group",
+        "positions": [],
+        "detail": [
+          "One glucosyl residue is added at the aglycone oxygen; formula difference C6H10O5.",
+          "Aglycone의 산소에 glucosyl 잔기가 결합하며 분자식 차이는 C6H10O5이다."
+        ]
+      }
+    ],
+    "computedDifferences": {
+      "bondChanges": [
+        [
+          "Glc.23",
+          "Glc.24"
+        ],
+        [
+          "Glc.23",
+          "Glc.28"
+        ],
+        [
+          "Glc.23",
+          "M22"
+        ],
+        [
+          "Glc.24",
+          "Glc.25"
+        ],
+        [
+          "Glc.24",
+          "Glc.33"
+        ],
+        [
+          "Glc.25",
+          "Glc.26"
+        ],
+        [
+          "Glc.25",
+          "Glc.32"
+        ],
+        [
+          "Glc.26",
+          "Glc.27"
+        ],
+        [
+          "Glc.26",
+          "Glc.31"
+        ],
+        [
+          "Glc.27",
+          "Glc.28"
+        ],
+        [
+          "Glc.27",
+          "Glc.29"
+        ],
+        [
+          "Glc.29",
+          "Glc.30"
+        ]
+      ],
+      "leftOnlyAtoms": [],
+      "rightOnlyAtoms": [
+        "Glc.23",
+        "Glc.24",
+        "Glc.25",
+        "Glc.26",
+        "Glc.27",
+        "Glc.28",
+        "Glc.29",
+        "Glc.30",
+        "Glc.31",
+        "Glc.32",
+        "Glc.33"
+      ],
+      "stereoCentres": []
+    },
+    "alignment": {
+      "method": "Unique exact chirality-aware aglycone substructure with hard common-core coordinate constraints",
+      "alignedAtoms": 28,
+      "sameScale": true,
+      "maximumCanvasDiscrepancyPx": 0
+    },
+    "left": {
+      "numbered": null,
+      "numberedHighlighted": null,
+      "plain": "assets/comparisons/compare-borapetol-b-glycoside-left-plain.svg",
+      "highlighted": "assets/comparisons/compare-borapetol-b-glycoside-left-highlighted.svg"
+    },
+    "right": {
+      "numbered": null,
+      "numberedHighlighted": null,
+      "plain": "assets/comparisons/compare-borapetol-b-glycoside-right-plain.svg",
+      "highlighted": "assets/comparisons/compare-borapetol-b-glycoside-right-highlighted.svg"
+    }
+  }
+]

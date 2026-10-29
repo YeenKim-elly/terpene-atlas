@@ -1,0 +1,24 @@
+[
+  {
+    "id": "taccalonolide-a",
+    "name": "Taccalonolide A",
+    "CID": 441685,
+    "MolecularFormula": "C36H46O14",
+    "SMILES": "C[C@@H]1C=C2[C@@]([C@H]3[C@H]1[C@@]4([C@@H]([C@H]3OC(=O)C)[C@H]5[C@H]([C@@H]([C@@H]4OC(=O)C)OC(=O)C)[C@@]6([C@H](C[C@H]7[C@@H]([C@@H]6OC(=O)C)O7)C(=O)[C@@H]5O)C)C)([C@](C(=O)O2)(C)O)C",
+    "IUPACName": "[(1S,2S,3R,5S,7S,9S,10R,11R,12S,13S,14R,15R,16S,17S,22S,23S,24R,25R)-10,14,25-triacetyloxy-3,22-dihydroxy-11,15,17,22,23-pentamethyl-4,21-dioxo-8,20-dioxaheptacyclo[13.10.0.02,12.05,11.07,9.016,24.019,23]pentacos-18-en-13-yl] acetate",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/441685",
+    "image": "assets/structures/taccalonolide-a.svg",
+    "ko": "Taccalonolide A"
+  },
+  {
+    "id": "taccalonolide-b",
+    "name": "Taccalonolide B",
+    "CID": 56662029,
+    "MolecularFormula": "C34H44O13",
+    "SMILES": "C[C@@H]1C=C2[C@@]([C@H]3[C@H]1[C@@]4([C@@H]([C@H]3O)[C@H]5[C@H]([C@@H]([C@@H]4OC(=O)C)OC(=O)C)[C@@]6([C@H](C[C@H]7[C@@H]([C@@H]6OC(=O)C)O7)C(=O)[C@@H]5O)C)C)([C@](C(=O)O2)(C)O)C",
+    "IUPACName": "[(1S,2S,3R,5S,7S,9S,10R,11R,12S,13S,14R,15R,16S,17S,22S,23S,24R,25R)-10,14-diacetyloxy-3,22,25-trihydroxy-11,15,17,22,23-pentamethyl-4,21-dioxo-8,20-dioxaheptacyclo[13.10.0.02,12.05,11.07,9.016,24.019,23]pentacos-18-en-13-yl] acetate",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/56662029",
+    "image": "assets/structures/taccalonolide-b.svg",
+    "ko": "Taccalonolide B"
+  }
+]

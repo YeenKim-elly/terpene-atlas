@@ -1,0 +1,38 @@
+import {catalogue} from '../lib/catalogue.js';
+import {icon as I} from '../components/icons.js';
+
+
+
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const comparisonPairs=catalogue.comparisons;
+const referenceStructures=catalogue.comparisonStructures;
+const state={pair:'cpp-ent',highlight:true,numbered:false,zoom:1};
+export function selectComparison(id){if(comparisonPairs.some(p=>p.id===id))state.pair=id;}
+export function comparisonAsset(pair,side,{highlight=false,numbered=false}={}){
+ const key=numbered&&pair.numberingAvailable?(highlight?'numberedHighlighted':'numbered'):(highlight?'highlighted':'plain');
+ return pair[side][key]||pair[side].plain;
+}
+export function comparisonQuestionFigure(id,{numbered=false,lang='en'}={}){
+ const pair=comparisonPairs.find(p=>p.id===id);if(!pair)return '';
+ return '<div class="comparison-question">'+['left','right'].map((side,i)=>'<div><span class="comparison-letter">'+String.fromCharCode(65+i)+'</span><img src="'+comparisonAsset(pair,side,{numbered})+'" alt="'+(lang==='ko'?'비교 구조 ':'Comparison structure ')+String.fromCharCode(65+i)+(numbered&&pair.numberingAvailable?(lang==='ko'?' · 관용 탄소 번호':' · conventional core carbon numbers'):'')+'"></div>').join('')+'</div>';
+}
+export function renderStructureComparison(root,ctx){
+ const t=(en,ko)=>ctx.lang==='ko'?ko:en,pair=comparisonPairs.find(p=>p.id===state.pair)||comparisonPairs[0];
+ const records=new Map([...ctx.molecules,...referenceStructures].map(m=>[m.id,m]));
+ if(!pair.numberingAvailable)state.numbered=false;
+ const changeLabel=type=>({stereochemistry:t('Stereochemistry','입체배열'),connectivity:t('Connectivity','결합 관계'),oxygenation:t('Oxygenation','산소 작용기'),'functional-group':t('Functional group','작용기')})[type]||type;
+ root.innerHTML='<button class="text-button collection-back" id="compare-back">'+I('back')+t('Back to the previous collection','이전 모음으로 돌아가기')+'</button><div class="eyebrow">'+t('ALIGNED STRUCTURES / CONVENTIONAL CORE NUMBERS','골격 정렬 / 관용 모체 탄소 번호')+'</div><div class="page-heading"><h1>'+t('Look for the difference.','구조의 차이를 찾아보세요.')+'</h1><p>'+t('Compare matched parent frameworks, inspect the changed sites and keep the source evidence in view.','대응하는 모체 골격을 비교하고 달라진 위치와 출처의 근거를 함께 살펴보세요.')+'</p></div><div class="comparison-controls"><label for="comparison-pair">'+t('Choose a comparison','비교 조합 선택')+'<select id="comparison-pair">'+comparisonPairs.map(p=>'<option value="'+p.id+'" '+(pair.id===p.id?'selected':'')+'>'+esc(t(...p.title))+'</option>').join('')+'</select></label><label class="compare-checkbox"><input type="checkbox" id="comparison-highlight" '+(state.highlight?'checked':'')+'>'+t('Highlight differences','차이 강조')+'</label><label class="compare-checkbox"><input type="checkbox" id="comparison-numbered" '+(state.numbered?'checked':'')+' '+(!pair.numberingAvailable?'disabled':'')+'>'+t('Core carbon numbers','모체 탄소 번호')+'</label></div><div class="comparison-zoom"><button class="secondary" id="comparison-zoom-out" aria-label="'+t('Zoom out','축소')+'">'+I('minus')+'</button><span id="comparison-zoom-value">'+Math.round(state.zoom*100)+'%</span><button class="secondary" id="comparison-zoom-in" aria-label="'+t('Zoom in','확대')+'">'+I('plus')+'</button><button class="text-button" id="comparison-zoom-reset">'+t('Reset zoom','확대 초기화')+'</button><small>'+t('Both structures use the same zoom.','두 구조에 같은 확대 비율을 적용합니다.')+'</small></div><div class="comparison-legend"><span><i class="compare-stereo"></i>'+t('Configuration','입체배열')+'</span><span><i class="compare-connectivity"></i>'+t('Connectivity / ester–alcohol change','결합 / ester–alcohol 변화')+'</span><span><i class="compare-oxygenation"></i>'+t('Additional oxygen site','추가 산소 위치')+'</span></div><div class="comparison-grid">'+['left','right'].map((side,i)=>{
+  const m=records.get(pair[side+'Id']);return '<article class="compare-record comparison-molecule"><div class="compare-card-top"><h2><small>'+String.fromCharCode(65+i)+'</small>'+esc(m.name)+'</h2><span class="tag">'+esc(m.MolecularFormula)+'</span></div><div class="comparison-image-frame"><img style="width:'+(state.zoom*100)+'%" src="'+comparisonAsset(pair,side,stateForAssets())+'" alt="'+esc(m.name)+' '+t('aligned molecular structure','정렬된 분자 구조')+'"></div><p><a href="'+esc(m.source)+'" target="_blank" rel="noopener noreferrer">'+t('Source molecular record','분자 참고 기록')+' ↗</a></p><button class="secondary" data-compare-record="'+m.id+'">'+t('Full structure record','전체 구조 정보')+'</button></article>';
+ }).join('')+'</div>'+((state.numbered||!pair.numberingAvailable)?'<p class="comparison-numbering-note">'+esc(t(...pair.numberingNote))+'</p>':'')+'<section class="note-card compare-space"><h2>'+t('What changes?','무엇이 달라지나요?')+'</h2><div class="comparison-changes">'+pair.changes.map(c=>'<article><span class="source-badge reference">'+changeLabel(c.type)+(c.positions.length?' · '+esc(c.positions.join(', ')):'')+'</span><p>'+esc(t(...c.detail))+'</p></article>').join('')+'</div><p>'+esc(t(...pair.explanation))+'</p></section><section class="compare-callout comparison-caveat"><h2>'+t('Read the comparison with its evidence.','근거와 함께 비교하세요.')+'</h2><p>'+esc(t(...pair.caveat))+'</p>'+(pair.id==='borapetoside-c-e'?'<p>'+t('The C6 glucosyloxy orientation of borapetoside C was revised in the 2012 study. These drawings retain the selected database representations.','Borapetoside C의 C6 glucosyloxy 방향은 2012년 연구에서 수정됐습니다. 이 그림은 선택한 데이터베이스 기록을 유지합니다.')+'</p>':'')+'<div class="reference-links">'+pair.sources.map(s=>'<a class="source-link" href="'+esc(s.url)+'" target="_blank" rel="noopener noreferrer">'+esc(s.name)+I('learn')+'</a>').join('')+'</div></section><section class="practice-banner"><div><div class="eyebrow">'+t('SEE THE DIFFERENCE / EXPLAIN THE EVIDENCE','차이를 보고 / 근거를 설명하기')+'</div><h2>'+t('Practise structural distinctions.','구조를 구분하는 연습.')+'</h2><p>'+t('Aligned structures without difference colours; choice and typing questions with explanations.','차이 색상을 숨긴 정렬 구조를 보고 선택형·입력형 문제를 풀어보세요.')+'</p></div><div class="practice-buttons"><button class="primary" data-difference-practice="choice">'+t('Choose answers','정답 선택')+'</button><button class="secondary" data-difference-practice="typing">'+t('Type from memory','기억해서 입력')+'</button></div></section>';
+ function stateForAssets(){return {highlight:state.highlight,numbered:state.numbered};}
+ root.querySelector('#compare-back').onclick=ctx.back;
+ root.querySelectorAll('[data-compare-record]').forEach(b=>b.onclick=()=>ctx.openRecord?.(b.dataset.compareRecord));
+ for(const [id,delta] of [['comparison-zoom-out',-.25],['comparison-zoom-in',.25],['comparison-zoom-reset',0]]){
+  root.querySelector('#'+id).onclick=()=>{state.zoom=delta===0?1:Math.max(1,Math.min(3,state.zoom+delta));root.querySelectorAll('.comparison-image-frame img').forEach(img=>img.style.width=(state.zoom*100)+'%');root.querySelector('#comparison-zoom-value').textContent=Math.round(state.zoom*100)+'%';};
+ }
+ root.querySelector('#comparison-pair').onchange=e=>{state.pair=e.target.value;renderStructureComparison(root,ctx);root.querySelector('#comparison-pair').focus();};
+ for(const [id,key] of [['comparison-highlight','highlight'],['comparison-numbered','numbered']]){
+  root.querySelector('#'+id).onchange=e=>{state[key]=e.target.checked;renderStructureComparison(root,ctx);root.querySelector('#'+id).focus();};
+ }
+ root.querySelectorAll('[data-difference-practice]').forEach(b=>b.onclick=()=>ctx.startPractice(b.dataset.differencePractice));
+}

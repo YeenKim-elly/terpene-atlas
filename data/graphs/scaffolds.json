@@ -1,0 +1,214 @@
+{
+  "title": [
+    "Two ring-fusion branches. Four clerodane classes.",
+    "두 고리융합 분기, 네 clerodane 계열."
+  ],
+  "intro": [
+    "Follow the dotted classification lines: cis-decalin cores group cis–cis and cis–trans clerodanes; trans-decalin cores group trans–cis and trans–trans clerodanes. These lines classify structures; they do not depict conversion of free decalin into a diterpene.",
+    "점선은 구조 분류입니다. cis-decalin 골격에는 cis–cis와 cis–trans, trans-decalin 골격에는 trans–cis와 trans–trans clerodane이 묶입니다."
+  ],
+  "width": 1580,
+  "height": 2020,
+  "nodes": [
+    [
+      "clerodane",
+      680,
+      30
+    ],
+    [
+      "cis-decalin",
+      320,
+      330
+    ],
+    [
+      "trans-decalin",
+      1050,
+      330
+    ],
+    [
+      "clerodane-cis-cis",
+      100,
+      680
+    ],
+    [
+      "clerodane-cis-trans",
+      500,
+      680
+    ],
+    [
+      "clerodane-trans-cis",
+      900,
+      680
+    ],
+    [
+      "clerodane-trans-trans",
+      1300,
+      680
+    ],
+    [
+      "decalin",
+      680,
+      1020
+    ],
+    [
+      "labdane",
+      160,
+      1020
+    ],
+    [
+      "halimane",
+      1180,
+      1020
+    ],
+    [
+      "cyclopentane",
+      30,
+      1350
+    ],
+    [
+      "cyclohexane",
+      290,
+      1350
+    ],
+    [
+      "bridged",
+      550,
+      1350
+    ],
+    [
+      "spiro",
+      810,
+      1350
+    ],
+    [
+      "macrocycle",
+      1070,
+      1350
+    ],
+    [
+      "alpha-humulene",
+      1330,
+      1350
+    ],
+    [
+      "furanoclerodane-monolactone",
+      120,
+      1700
+    ],
+    [
+      "furanoclerodane-bislactone",
+      520,
+      1700
+    ],
+    [
+      "beta-carotenoid-end-group",
+      1000,
+      1700
+    ],
+    [
+      "epsilon-carotenoid-end-group",
+      1300,
+      1700
+    ]
+  ],
+  "edges": [
+    {
+      "from": "clerodane",
+      "to": "cis-decalin",
+      "label": "cis-fused core · C5/C10",
+      "type": "structure",
+      "detail": "Structural classification only: these are alternative ring-fusion classes of a C20 clerodane core, not reactions consuming free decalin."
+    },
+    {
+      "from": "clerodane",
+      "to": "trans-decalin",
+      "label": "trans-fused core · C5/C10",
+      "type": "structure",
+      "detail": "Structural classification only: these are alternative ring-fusion classes of a C20 clerodane core, not reactions consuming free decalin."
+    },
+    {
+      "from": "cis-decalin",
+      "to": "clerodane-cis-cis",
+      "label": "cis–cis clerodane",
+      "type": "structure",
+      "detail": "The first descriptor is the C5/C10 ring-fusion relationship (H10/C19); the second is the C8/C9 substituent relationship (C17/C20). Structural classification only: these are alternative ring-fusion classes of a C20 clerodane core, not reactions consuming free decalin.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6130043/"
+    },
+    {
+      "from": "cis-decalin",
+      "to": "clerodane-cis-trans",
+      "label": "cis–trans clerodane",
+      "type": "structure",
+      "detail": "The first descriptor is the C5/C10 ring-fusion relationship (H10/C19); the second is the C8/C9 substituent relationship (C17/C20). Structural classification only: these are alternative ring-fusion classes of a C20 clerodane core, not reactions consuming free decalin.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6130043/"
+    },
+    {
+      "from": "trans-decalin",
+      "to": "clerodane-trans-cis",
+      "label": "trans–cis clerodane",
+      "type": "structure",
+      "detail": "The first descriptor is the C5/C10 ring-fusion relationship (H10/C19); the second is the C8/C9 substituent relationship (C17/C20). Structural classification only: these are alternative ring-fusion classes of a C20 clerodane core, not reactions consuming free decalin.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6130043/"
+    },
+    {
+      "from": "trans-decalin",
+      "to": "clerodane-trans-trans",
+      "label": "trans–trans clerodane",
+      "type": "structure",
+      "detail": "The first descriptor is the C5/C10 ring-fusion relationship (H10/C19); the second is the C8/C9 substituent relationship (C17/C20). Structural classification only: these are alternative ring-fusion classes of a C20 clerodane core, not reactions consuming free decalin.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6130043/"
+    },
+    {
+      "from": "decalin",
+      "to": "clerodane",
+      "label": "C10 fused core within C20 scaffold",
+      "type": "structure",
+      "detail": "Clerodane includes the C1–C10 decalin core plus a six-carbon side chain and four additional carbons; absolute stereochemistry is not assigned by this parent name."
+    },
+    {
+      "from": "decalin",
+      "to": "labdane",
+      "label": "labdane-related C20 scaffold",
+      "type": "structure",
+      "detail": "Structural comparison, not a biosynthetic conversion."
+    },
+    {
+      "from": "decalin",
+      "to": "halimane",
+      "label": "halimane-related C20 scaffold",
+      "type": "structure",
+      "detail": "Structural comparison, not a biosynthetic conversion."
+    },
+    {
+      "from": "macrocycle",
+      "to": "alpha-humulene",
+      "label": "11-membered ring example",
+      "type": "structure",
+      "detail": "An eleven-membered ring in a C15 sesquiterpene."
+    },
+    {
+      "from": "clerodane",
+      "to": "furanoclerodane-monolactone",
+      "label": "Decorated ring example",
+      "type": "structure",
+      "detail": "Actual borapetoside C / columbin reference with highlighted furan and lactone rings. This is a structure-class relation, not a native pathway assignment.",
+      "source": "https://doi.org/10.1007/s13659-016-0109-3"
+    },
+    {
+      "from": "clerodane",
+      "to": "furanoclerodane-bislactone",
+      "label": "Decorated ring example",
+      "type": "structure",
+      "detail": "Actual borapetoside C / columbin reference with highlighted furan and lactone rings. This is a structure-class relation, not a native pathway assignment.",
+      "source": "https://doi.org/10.1007/s13659-016-0109-3"
+    },
+    {
+      "from": "beta-carotenoid-end-group",
+      "to": "epsilon-carotenoid-end-group",
+      "label": "End-group connectivity comparison",
+      "type": "structure",
+      "detail": "The end-ring double-bond location differs. R marks continuation of a carotenoid chain, not an isolated precursor.",
+      "source": "https://iupac.qmul.ac.uk/carot/car1t7.html"
+    }
+  ]
+}

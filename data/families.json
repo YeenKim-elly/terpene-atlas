@@ -1,0 +1,109 @@
+{
+  "hemi": {
+    "name": "C5 isoprenoid precursor",
+    "ko": "C5 전구체",
+    "short": "C5",
+    "carbon": 5,
+    "units": 1,
+    "precursor": "IPP / DMAPP",
+    "aliases": [
+      "hemiterpene",
+      "hemiterpenoid",
+      "c5",
+      "isoprenoid precursor"
+    ]
+  },
+  "mono": {
+    "name": "Monoterpenoid",
+    "ko": "모노테르페노이드",
+    "short": "Mono",
+    "carbon": 10,
+    "units": 2,
+    "precursor": "GPP",
+    "aliases": [
+      "monoterpene",
+      "monoterpenoids",
+      "monoterpenes",
+      "mono",
+      "모노테르펜"
+    ]
+  },
+  "sesqui": {
+    "name": "Sesquiterpenoid",
+    "ko": "세스퀴테르페노이드",
+    "short": "Sesqui",
+    "carbon": 15,
+    "units": 3,
+    "precursor": "FPP",
+    "aliases": [
+      "sesquiterpene",
+      "sesquiterpenoids",
+      "sesquiterpenes",
+      "sesqui",
+      "세스퀴테르펜"
+    ]
+  },
+  "di": {
+    "name": "Diterpenoid",
+    "ko": "디테르페노이드",
+    "short": "Di",
+    "carbon": 20,
+    "units": 4,
+    "precursor": "GGPP",
+    "aliases": [
+      "diterpene",
+      "diterpenoids",
+      "diterpenes",
+      "di",
+      "디테르펜"
+    ]
+  },
+  "sester": {
+    "name": "Sesterterpenoid",
+    "ko": "세스터테르페노이드",
+    "short": "Sester",
+    "carbon": 25,
+    "units": 5,
+    "precursor": "GFPP",
+    "aliases": [
+      "sesterterpene",
+      "sesterterpenoids",
+      "sesterterpenes",
+      "sester",
+      "세스터테르펜"
+    ]
+  },
+  "tri": {
+    "name": "Triterpenoid",
+    "ko": "트리테르페노이드",
+    "short": "Tri",
+    "carbon": 30,
+    "units": 6,
+    "precursor": "Squalene (2 × FPP)",
+    "aliases": [
+      "triterpene",
+      "triterpenoids",
+      "triterpenes",
+      "tri",
+      "트리테르펜"
+    ]
+  },
+  "tetra": {
+    "name": "Tetraterpenoid",
+    "ko": "테트라테르페노이드",
+    "short": "Tetra",
+    "carbon": 40,
+    "units": 8,
+    "precursor": "Phytoene (2 × GGPP)",
+    "aliases": [
+      "tetraterpene",
+      "tetraterpenoids",
+      "tetraterpenes",
+      "tetra",
+      "carotenoid",
+      "carotenoids",
+      "테트라테르펜",
+      "카로티노이드"
+    ]
+  }
+}
