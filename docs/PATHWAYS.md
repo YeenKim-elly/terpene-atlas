@@ -32,3 +32,19 @@ C40 cleavage. The NCED annotation retains the C25 coproduct and
 
 Runtime records and sources live in `data/`; the six graph files and
 `data/pathway-notes.json` define the maps and scientific qualifications.
+
+## Scaffold and ring references
+
+The scaffold gallery includes nine additional references connected to these
+pathways: iridoid lactol/lactone, the artemisinin peroxide ring system, kaurane,
+the GA12 gibberellin framework, taxane, poly-cis carotenoid geometry,
+epoxidised carotenoid end rings and the ABA cleavage framework.
+
+These are reference entries, not nine additional carbon skeletal families.
+Ring/oxidation and geometric variants are labelled explicitly. Carotenoid
+esterification remains decoration of the C40 core. The ABA example has its
+own C40-derived C15 gallery group rather than an FPP-derived C15 assignment.
+
+Each example reuses its selected molecule's validated SVG, SMILES, formula and
+source stereochemistry. Individual pathway buttons connect the gallery to the
+existing focused maps.

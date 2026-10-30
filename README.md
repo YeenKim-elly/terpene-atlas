@@ -6,9 +6,10 @@ and biosynthetic relationships.
 ## Features
 
 - Searchable reference library with **111 molecule entries**, **17 precursors**,
-  **33 scaffold and ring models**, **37 functional motifs** and **59 enzyme reactions**.
+  **42 scaffold and ring references**, **37 functional motifs** and **59 enzyme reactions**.
 - Six family tabs with fourteen structure-web maps, including C10/C15/C20 precursor–enzyme–framework maps and a C40 end-group overview.
-- Scaffold galleries with C10, C15, C20, C40 and shared ring-system filters in both the library and Structure web.
+- Scaffold galleries with C10, C15, C20, C40, C40-derived apocarotenoid and shared ring-system filters in both the library and Structure web.
+- Pathway-linked iridoid, artemisinin, kaurane, gibberellin and taxane examples, with carotenoid geometry/ring variants explicitly labelled.
 - Diterpenoid subviews for precursor frameworks, expanded pathways and C20 ring fusion, rearrangements and clerodane classes.
 - Focused iridoid, artemisinin, gibberellin, plant poly-cis carotenoid, astaxanthin ester and ABA cleavage pathways.
 - C40-derived C15 apocarotenoid classification, with the NCED C25 coproduct annotated.

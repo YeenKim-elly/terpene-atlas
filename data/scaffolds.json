@@ -509,7 +509,14 @@
     "exampleName": "Amorpha-4,11-diene",
     "structureSource": "https://pubchem.ncbi.nlm.nih.gov/compound/11052747",
     "structureScope": "framework-example",
-    "schematic": true
+    "schematic": true,
+    "pathwayLink": {
+      "graph": "artemisinin",
+      "label": [
+        "Artemisinin pathway",
+        "Artemisinin 경로"
+      ]
+    }
   },
   {
     "id": "eremophilane",
@@ -564,7 +571,14 @@
     "exampleName": "Lycopene",
     "structureSource": "https://pubchem.ncbi.nlm.nih.gov/compound/446925",
     "structureScope": "framework-example",
-    "schematic": true
+    "schematic": true,
+    "pathwayLink": {
+      "graph": "plant-carotenoids",
+      "label": [
+        "Plant poly-cis pathway",
+        "식물 poly-cis 경로"
+      ]
+    }
   },
   {
     "id": "carotenoid-beta-psi",
@@ -635,8 +649,8 @@
       "two beta rings",
       "베타 고리 둘"
     ],
-    "note": "Two beta end groups, illustrated by beta-carotene. Hydroxylation and ketolation yield related xanthophylls while retaining the represented end-group framework.",
-    "noteKo": "Beta-carotene을 예로 든 beta 말단 고리 두 개의 C40 계열입니다. Hydroxylation·ketolation 후에도 표시한 말단 골격은 유지될 수 있습니다.",
+    "note": "Two beta end groups, illustrated by beta-carotene. Hydroxylation and ketolation yield related xanthophylls while retaining the represented end-group framework. Astaxanthin esterification retains the C40 core; acylation is decoration, not a new skeleton.",
+    "noteKo": "Beta-carotene을 예로 든 beta 말단 고리 두 개의 C40 계열입니다. Hydroxylation·ketolation 후에도 표시한 말단 골격은 유지될 수 있습니다. Astaxanthin ester화는 C40 핵심 골격을 유지하며, acyl화는 새로운 골격이 아닌 치환기 변형입니다.",
     "category": "Framework · C40",
     "framework": true,
     "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/19.html",
@@ -648,7 +662,14 @@
     "exampleName": "β-Carotene",
     "structureSource": "https://pubchem.ncbi.nlm.nih.gov/compound/5280489",
     "structureScope": "framework-example",
-    "schematic": true
+    "schematic": true,
+    "pathwayLink": {
+      "graph": "astaxanthin-esters",
+      "label": [
+        "Astaxanthin ester forms",
+        "Astaxanthin ester 형태"
+      ]
+    }
   },
   {
     "id": "carotenoid-beta-epsilon",
@@ -677,5 +698,369 @@
     "structureSource": "https://pubchem.ncbi.nlm.nih.gov/compound/6419725",
     "structureScope": "framework-example",
     "schematic": true
+  },
+  {
+    "id": "iridoid-core",
+    "name": "Iridoid core · lactol example",
+    "ko": "Iridoid 골격 · lactol 예시",
+    "query": "iridoid core",
+    "referenceKind": "framework",
+    "family": "mono",
+    "skeleton": 10,
+    "carbons": 10,
+    "category": "Framework · C10",
+    "CID": null,
+    "exampleCID": 11652906,
+    "exampleId": "cis-trans-nepetalactol",
+    "exampleName": "cis-trans-Nepetalactol",
+    "structureScope": "framework-example",
+    "framework": true,
+    "schematic": true,
+    "MolecularFormula": "C10H16O2",
+    "SMILES": "CC1=COC(O)[C@H]2[C@@H]1CC[C@@H]2C",
+    "image": "assets/structures/cis-trans-nepetalactol.svg",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6513753/",
+    "structureSource": "https://pubchem.ncbi.nlm.nih.gov/compound/11652906",
+    "note": "A C10 iridoid illustrated by cis-trans-nepetalactol, with a five-membered carbocycle fused to a six-membered oxygen heterocycle. The source-defined core stereochemistry is retained; the C1 lactol anomer remains unassigned. This is an actual compound example, not an extra saturated pathway intermediate.",
+    "noteKo": "Cis-trans-nepetalactol로 C10 iridoid의 5원 탄소 고리와 산소를 포함한 6원 융합 고리를 보여줍니다. 원 출처의 핵심 입체배열을 유지하며 C1 lactol anomer는 미지정입니다. 실제 화합물 예시이며 추가적인 포화 경로 중간체가 아닙니다.",
+    "aliases": [
+      "iridoid core",
+      "Iridoid core · lactol example",
+      "Iridoid 골격 · lactol 예시"
+    ],
+    "projects": [
+      "general-reference"
+    ],
+    "pathwayLink": {
+      "graph": "iridoids",
+      "label": [
+        "Iridoid pathway",
+        "Iridoid 경로"
+      ]
+    }
+  },
+  {
+    "id": "iridoid-lactone",
+    "name": "Iridoid lactone · ring variant",
+    "ko": "Iridoid lactone · 고리 변형",
+    "query": "iridoid lactone",
+    "referenceKind": "ring-variant",
+    "family": "mono",
+    "skeleton": 10,
+    "carbons": 10,
+    "category": "Ring variant · C10",
+    "CID": null,
+    "exampleCID": 161367,
+    "exampleId": "cis-trans-nepetalactone",
+    "exampleName": "cis-trans-Nepetalactone",
+    "structureScope": "framework-example",
+    "framework": true,
+    "schematic": true,
+    "MolecularFormula": "C10H14O2",
+    "SMILES": "CC1=COC(=O)[C@H]2[C@@H]1CC[C@@H]2C",
+    "image": "assets/structures/cis-trans-nepetalactone.svg",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6513753/",
+    "structureSource": "https://pubchem.ncbi.nlm.nih.gov/compound/161367",
+    "note": "The nepetalactone example retains the fused 5/6 iridoid topology. Oxidising the matching lactol introduces an ester carbonyl and removes its C1 anomeric centre. This is an oxidation-state and ring-function variant, not a separate carbon skeletal family.",
+    "noteKo": "Nepetalactone 예시는 iridoid의 융합 5/6 고리를 유지합니다. 대응 lactol을 산화하면 ester carbonyl이 생기고 C1 anomeric 중심이 사라집니다. 별개의 탄소 골격 계열이 아닌 산화 상태·고리 작용기의 변형입니다.",
+    "aliases": [
+      "iridoid lactone",
+      "Iridoid lactone · ring variant",
+      "Iridoid lactone · 고리 변형"
+    ],
+    "projects": [
+      "general-reference"
+    ],
+    "parentFrameworkId": "iridoid-core",
+    "pathwayLink": {
+      "graph": "iridoids",
+      "label": [
+        "Lactol → lactone pathway",
+        "Lactol → lactone 경로"
+      ]
+    }
+  },
+  {
+    "id": "artemisinin-ring-system",
+    "name": "Artemisinin · peroxide ring system",
+    "ko": "Artemisinin · peroxide 고리계",
+    "query": "artemisinin ring system",
+    "referenceKind": "ring-system",
+    "family": "sesqui",
+    "skeleton": 15,
+    "carbons": 15,
+    "category": "Ring system · C15",
+    "CID": null,
+    "exampleCID": 68827,
+    "exampleId": "artemisinin",
+    "exampleName": "Artemisinin",
+    "structureScope": "framework-example",
+    "framework": true,
+    "schematic": true,
+    "MolecularFormula": "C15H22O5",
+    "SMILES": "C[C@@H]1CC[C@H]2[C@H](C(=O)O[C@H]3[C@@]24[C@H]1CC[C@](O3)(OO4)C)C",
+    "image": "assets/structures/artemisinin.svg",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/31859509/",
+    "structureSource": "https://pubchem.ncbi.nlm.nih.gov/compound/68827",
+    "note": "Artemisinin illustrates an oxygen-rich C15 ring system with an endoperoxide O–O bond, a six-membered 1,2,4-trioxane ring and a lactone. Late oxidative chemistry creates the oxygen bridges; this card does not imply that one TPS directly forms artemisinin.",
+    "noteKo": "Artemisinin은 endoperoxide O–O 결합, 6원 1,2,4-trioxane 고리와 lactone을 포함하는 C15 고리계의 예입니다. 산소 가교는 후기 산화 화학에서 형성되며 단일 TPS가 artemisinin을 직접 만든다는 뜻이 아닙니다.",
+    "aliases": [
+      "artemisinin ring system",
+      "Artemisinin · peroxide ring system",
+      "Artemisinin · peroxide 고리계"
+    ],
+    "projects": [
+      "general-reference"
+    ],
+    "pathwayLink": {
+      "graph": "artemisinin",
+      "label": [
+        "Artemisinin pathway",
+        "Artemisinin 경로"
+      ]
+    }
+  },
+  {
+    "id": "kaurane",
+    "name": "Kaurane · ent-kaurene example",
+    "ko": "Kaurane 골격 · ent-kaurene 예시",
+    "query": "kaurane",
+    "referenceKind": "framework",
+    "family": "di",
+    "skeleton": 20,
+    "carbons": 20,
+    "category": "Framework · C20",
+    "CID": null,
+    "exampleCID": 11966109,
+    "exampleId": "ent-kaurene",
+    "exampleName": "ent-Kaurene",
+    "structureScope": "framework-example",
+    "framework": true,
+    "schematic": true,
+    "MolecularFormula": "C20H32",
+    "SMILES": "C[C@@]12CCCC([C@H]1CC[C@]34[C@H]2CC[C@H](C3)C(=C)C4)(C)C",
+    "image": "assets/structures/ent-kaurene.svg",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/9952446/",
+    "structureSource": "https://pubchem.ncbi.nlm.nih.gov/compound/11966109",
+    "note": "The tetracyclic C20 kaurane framework is illustrated by ent-kaurene, retaining its selected absolute configuration and exocyclic double bond. The represented ring set has three six-membered carbocycles and one five-membered carbocycle. This is an unsaturated example, not an additional saturated kaurane intermediate.",
+    "noteKo": "입체배열과 고리 밖 이중결합을 유지한 ent-kaurene으로 사중 고리 C20 kaurane 골격을 보여줍니다. 고리 집합에는 6원 탄소 고리 3개와 5원 탄소 고리 1개가 있습니다. 불포화 예시이며 추가적인 포화 kaurane 중간체가 아닙니다.",
+    "aliases": [
+      "kaurane",
+      "Kaurane · ent-kaurene example",
+      "Kaurane 골격 · ent-kaurene 예시"
+    ],
+    "projects": [
+      "general-reference"
+    ],
+    "pathwayLink": {
+      "graph": "gibberellins",
+      "label": [
+        "Kaurane → GA12 pathway",
+        "Kaurane → GA12 경로"
+      ]
+    }
+  },
+  {
+    "id": "gibberellin-framework",
+    "name": "Gibberellin framework · GA12",
+    "ko": "Gibberellin 골격 · GA12",
+    "query": "gibberellin framework",
+    "referenceKind": "framework",
+    "family": "di",
+    "skeleton": 20,
+    "carbons": 20,
+    "category": "Framework · C20",
+    "CID": null,
+    "exampleCID": 443450,
+    "exampleId": "ga12",
+    "exampleName": "Gibberellin A12",
+    "structureScope": "framework-example",
+    "framework": true,
+    "schematic": true,
+    "MolecularFormula": "C20H28O4",
+    "SMILES": "C=C1C[C@]23C[C@H]1CC[C@H]2[C@]1(C)CCC[C@@](C)(C(=O)O)[C@H]1[C@@H]3C(=O)O",
+    "image": "assets/structures/ga12.svg",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/11172076/",
+    "structureSource": "https://pubchem.ncbi.nlm.nih.gov/compound/Gibberellin-A12",
+    "note": "GA12 illustrates the C20 gibberellin framework after plant KAO-mediated ring-B contraction. Its tetracyclic carbon framework contains two five-membered and two six-membered rings. The formula and carboxylic acids belong to this GA12 example, not a hypothetical hydrocarbon parent. Other gibberellins can have C19 skeletons.",
+    "noteKo": "GA12는 식물 KAO의 B 고리 축소 후 형성되는 C20 gibberellin 골격의 예입니다. 사중 탄소 고리에는 5원 고리 2개와 6원 고리 2개가 있습니다. 분자식과 carboxylic acid는 이 GA12 예시의 것이며 가상의 탄화수소 모체가 아닙니다. 다른 gibberellin 중에는 C19 골격도 있습니다.",
+    "aliases": [
+      "gibberellin framework",
+      "Gibberellin framework · GA12",
+      "Gibberellin 골격 · GA12"
+    ],
+    "projects": [
+      "general-reference"
+    ],
+    "pathwayLink": {
+      "graph": "gibberellins",
+      "label": [
+        "KAO ring contraction pathway",
+        "KAO 고리 축소 경로"
+      ]
+    }
+  },
+  {
+    "id": "taxane",
+    "name": "Taxane · taxadiene example",
+    "ko": "Taxane 골격 · taxadiene 예시",
+    "query": "taxane",
+    "referenceKind": "framework",
+    "family": "di",
+    "skeleton": 20,
+    "carbons": 20,
+    "category": "Framework · C20",
+    "CID": null,
+    "exampleCID": 443484,
+    "exampleId": "taxadiene",
+    "exampleName": "Taxadiene",
+    "structureScope": "framework-example",
+    "framework": true,
+    "schematic": true,
+    "MolecularFormula": "C20H32",
+    "SMILES": "CC1=C2CC[C@@]3(CCC=C([C@H]3C[C@@H](C2(C)C)CC1)C)C",
+    "image": "assets/structures/taxadiene.svg",
+    "source": "https://iubmb.qmul.ac.uk/enzyme/EC4/2/3/17.html",
+    "structureSource": "https://pubchem.ncbi.nlm.nih.gov/compound/443484",
+    "note": "Taxadiene illustrates a tricyclic C20 taxane framework with a 6/8/6 carbon ring topology. Unsaturation and stereochemistry belong to the selected taxadiene example. Taxadiene synthase uses GGPP directly as a class I TPS, without a required preceding class II cyclase.",
+    "noteKo": "Taxadiene은 6/8/6 탄소 고리 형태의 삼중 고리 C20 taxane 골격을 보여줍니다. 불포화도와 입체배열은 선택한 taxadiene 예시의 것입니다. Taxadiene synthase는 선행 class II 효소 없이 GGPP를 직접 사용하는 class I TPS입니다.",
+    "aliases": [
+      "taxane",
+      "Taxane · taxadiene example",
+      "Taxane 골격 · taxadiene 예시"
+    ],
+    "projects": [
+      "general-reference"
+    ],
+    "pathwayLink": {
+      "graph": "diterpene-pathway",
+      "label": [
+        "Taxane pathway",
+        "Taxane 경로"
+      ]
+    }
+  },
+  {
+    "id": "carotenoid-poly-cis",
+    "name": "C40 poly-cis · geometry variant",
+    "ko": "C40 poly-cis · 기하배열 변형",
+    "query": "carotenoid poly cis",
+    "referenceKind": "geometry-variant",
+    "family": "tetra",
+    "skeleton": 40,
+    "carbons": 40,
+    "category": "Geometry variant · C40",
+    "CID": null,
+    "exampleCID": 10918539,
+    "exampleId": "prolycopene",
+    "exampleName": "Prolycopene · tetra-cis-Lycopene",
+    "structureScope": "framework-example",
+    "framework": true,
+    "schematic": true,
+    "MolecularFormula": "C40H56",
+    "SMILES": "CC(C)=CCC/C(C)=C/C=C\\C(C)=C/C=C/C(C)=C/C=C/C=C(C)/C=C/C=C(C)\\C=C/C=C(\\C)CCC=C(C)C",
+    "image": "assets/structures/prolycopene.svg",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/21209101/",
+    "structureSource": "https://www.rhea-db.org/rhea/30955",
+    "note": "Prolycopene has four cis double bonds at 7,9,7′,9′ and the same carbon connectivity as all-trans lycopene. It remains an acyclic C40 ψ,ψ framework. Poly-cis describes geometry, not a new skeletal class or ring type; CRTISO changes this geometry in the plant pathway.",
+    "noteKo": "Prolycopene은 7,9,7′,9′에 cis 이중결합 4개가 있으며 all-trans lycopene과 탄소 연결 구조가 같습니다. 비고리형 C40 ψ,ψ 골격을 유지합니다. Poly-cis는 새로운 골격 계열이나 고리 종류가 아닌 기하배열이며 식물 경로에서 CRTISO가 이를 바꿉니다.",
+    "aliases": [
+      "carotenoid poly cis",
+      "C40 poly-cis · geometry variant",
+      "C40 poly-cis · 기하배열 변형"
+    ],
+    "projects": [
+      "general-reference"
+    ],
+    "parentFrameworkId": "carotenoid-psi-psi",
+    "pathwayLink": {
+      "graph": "plant-carotenoids",
+      "label": [
+        "Plant poly-cis pathway",
+        "식물 poly-cis 경로"
+      ]
+    }
+  },
+  {
+    "id": "carotenoid-epoxy-ring",
+    "name": "C40 epoxy end rings · ring variant",
+    "ko": "C40 epoxy 말단 고리 · 고리 변형",
+    "query": "carotenoid epoxy ring",
+    "referenceKind": "ring-variant",
+    "family": "tetra",
+    "skeleton": 40,
+    "carbons": 40,
+    "category": "Ring variant · C40",
+    "CID": null,
+    "exampleCID": 5282218,
+    "exampleId": "9-cis-violaxanthin",
+    "exampleName": "9-cis-Violaxanthin",
+    "structureScope": "framework-example",
+    "framework": true,
+    "schematic": true,
+    "MolecularFormula": "C40H56O4",
+    "SMILES": "CC(=C/C=C/C(C)=C/C=C/C=C(C)/C=C/C=C(C)/C=C/[C@@]12O[C@]1(C)C[C@@H](O)CC2(C)C)/C=C/[C@@]12O[C@]1(C)C[C@@H](O)CC2(C)C",
+    "image": "assets/structures/9-cis-violaxanthin.svg",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/9188535/",
+    "structureSource": "https://www.ebi.ac.uk/chebi/CHEBI:35305",
+    "note": "The selected 9-cis-violaxanthin example has two three-membered 5,6-epoxide rings fused to six-membered carotenoid end rings. This changes ring functionality while retaining the C40 carbon skeleton. It is a ring variant, not a new carbon skeletal family; the defined 9-cis geometry matters for NCED cleavage.",
+    "noteKo": "선택한 9-cis-violaxanthin에는 6원 carotenoid 말단 고리에 융합된 3원 5,6-epoxide 고리 2개가 있습니다. 고리 작용기가 바뀌어도 C40 탄소 골격은 유지됩니다. 새로운 탄소 골격 계열이 아닌 고리 변형이며 지정된 9-cis 배열은 NCED 절단에 중요합니다.",
+    "aliases": [
+      "carotenoid epoxy ring",
+      "C40 epoxy end rings · ring variant",
+      "C40 epoxy 말단 고리 · 고리 변형"
+    ],
+    "projects": [
+      "general-reference"
+    ],
+    "parentFrameworkId": "carotenoid-beta-beta",
+    "pathwayLink": {
+      "graph": "aba-cleavage",
+      "label": [
+        "Epoxycarotenoid → ABA pathway",
+        "Epoxycarotenoid → ABA 경로"
+      ]
+    }
+  },
+  {
+    "id": "apo-aba-ring",
+    "name": "ABA C15 · cleavage framework",
+    "ko": "ABA의 C15 골격 · 절단 유래",
+    "query": "apo aba ring",
+    "referenceKind": "cleavage-framework",
+    "family": "apo",
+    "skeleton": 15,
+    "carbons": 15,
+    "originSkeleton": 40,
+    "category": "Cleavage framework · C15",
+    "CID": null,
+    "exampleCID": 5280896,
+    "exampleId": "abscisic-acid",
+    "exampleName": "(+)-Abscisic acid",
+    "structureScope": "framework-example",
+    "framework": true,
+    "schematic": true,
+    "MolecularFormula": "C15H20O4",
+    "SMILES": "CC1=CC(=O)CC(C)(C)[C@@]1(O)/C=C/C(C)=C\\C(=O)O",
+    "image": "assets/structures/abscisic-acid.svg",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/12172025/",
+    "structureSource": "https://www.ebi.ac.uk/chebi/CHEBI:2365",
+    "note": "Natural (+)-(1′S,2Z,4E)-ABA illustrates an oxygenated six-membered carbocycle and a dienoic-acid side chain. Its C15 apocarotenoid framework derives from C40 cleavage through xanthoxin and abscisic aldehyde. Carbon count alone does not make it an FPP-derived sesquiterpenoid.",
+    "noteKo": "천연 (+)-(1′S,2Z,4E)-ABA는 산소 작용기가 있는 6원 탄소 고리와 dienoic-acid 곁사슬의 예입니다. C15 apocarotenoid 골격은 C40 절단 후 xanthoxin·abscisic aldehyde를 거쳐 유래합니다. 탄소 수만으로 FPP 유래 sesquiterpenoid로 분류하지 않습니다.",
+    "aliases": [
+      "apo aba ring",
+      "ABA C15 · cleavage framework",
+      "ABA의 C15 골격 · 절단 유래"
+    ],
+    "projects": [
+      "general-reference"
+    ],
+    "pathwayLink": {
+      "graph": "aba-cleavage",
+      "label": [
+        "Carotenoid cleavage → ABA",
+        "Carotenoid 절단 → ABA"
+      ]
+    }
   }
 ]
