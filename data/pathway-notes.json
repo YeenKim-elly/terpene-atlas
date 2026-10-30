@@ -294,12 +294,12 @@
   },
   "astaxanthin-esters": {
     "viewerNote": [
-      "Palmitates are structural examples. Acyltransferase evidence, analytical hydrolysis, storage and extracellular recovery have distinct meanings.",
-      "Palmitate는 구조 예시입니다. Acyltransferase 근거·분석용 가수분해·저장·세포외 회수는 구분합니다."
+      "Palmitates are structural examples. Distinguish ester formation from analytical hydrolysis; the C40 carotenoid core is retained.",
+      "Palmitate는 구조 예시입니다. Ester 형성과 분석용 가수분해를 구분하며 C40 carotenoid 핵심 골격은 유지됩니다."
     ],
     "modelNote": [
-      "Palmitates are structural examples. Acyltransferase evidence, analytical hydrolysis, storage and extracellular recovery have distinct meanings.",
-      "Palmitate는 구조 예시입니다. Acyltransferase 근거·분석용 가수분해·저장·세포외 회수는 구분합니다."
+      "Palmitates are structural examples. Distinguish ester formation from analytical hydrolysis; the C40 carotenoid core is retained.",
+      "Palmitate는 구조 예시입니다. Ester 형성과 분석용 가수분해를 구분하며 C40 carotenoid 핵심 골격은 유지됩니다."
     ],
     "comparisons": [],
     "callouts": [
@@ -309,19 +309,19 @@
           "어디까지 확인됐나요?"
         ],
         "text": [
-          "ScDGAT2-1 has astaxanthin–DHA monoester and lipid-droplet evidence. HpDGAT1 has recombinant assay evidence. These studies do not establish the displayed palmitates as their exact products.",
-          "ScDGAT2-1에는 astaxanthin–DHA monoester와 lipid droplet 축적 근거가 있으며 HpDGAT1에는 재조합 실험 근거가 있습니다. 그림의 palmitate를 해당 효소의 정확한 생성물로 확정하지는 않습니다."
+          "ScDGAT2-1 has experimental evidence for astaxanthin–DHA monoester formation. HpDGAT1 has recombinant assay evidence. These studies do not establish the displayed palmitates as their exact products.",
+          "ScDGAT2-1에는 astaxanthin–DHA monoester 형성 실험 근거가 있으며 HpDGAT1에는 재조합 실험 근거가 있습니다. 그림의 palmitate를 해당 효소의 정확한 생성물로 확정하지는 않습니다."
         ],
         "source": "https://pubmed.ncbi.nlm.nih.gov/38344823/"
       },
       {
         "title": [
-          "Analytical hydrolysis and transport",
-          "분석용 가수분해와 수송"
+          "Analytical hydrolysis and chemical form",
+          "분석용 가수분해와 화학적 형태"
         ],
         "text": [
-          "Cholesterol esterase releases free astaxanthin from extracted esters in tested in-vitro conditions. This is separate from native biosynthesis and transport. Esterification retains the C40 core despite increased total carbon; it does not prove improved export.",
-          "Cholesterol esterase는 실험된 시험관 조건에서 추출된 ester를 유리 astaxanthin으로 가수분해합니다. 천연 생합성·수송과는 구분합니다. Ester화는 총 탄소 수를 늘려도 C40 핵심 골격을 유지하며 수송 향상을 입증하지 않습니다."
+          "Cholesterol esterase releases free astaxanthin from extracted esters under tested in-vitro conditions. This is an analytical treatment. Esterification changes the attached acyl groups and total formula while retaining the C40 carotenoid core.",
+          "Cholesterol esterase는 실험된 시험관 조건에서 추출된 ester를 유리 astaxanthin으로 가수분해합니다. 분석 처리 과정입니다. Ester화는 부착된 acyl기와 전체 분자식을 바꾸면서 C40 carotenoid 핵심 골격은 유지합니다."
         ],
         "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0278504"
       }

@@ -774,8 +774,8 @@
     "cofactor": "Acyl donor · assay-dependent",
     "title": "Astaxanthin esterification: characterised DGAT example",
     "ko": "Astaxanthin ester화: 규명된 DGAT 사례",
-    "note": "ScDGAT2-1 has characterised astaxanthin–DHA monoester evidence. This reaction-class card does not assign palmitoyl-donor specificity or claim a native export reaction.",
-    "noteKo": "ScDGAT2-1에는 astaxanthin–DHA monoester 형성 근거가 있습니다. 반응 종류를 익히는 카드이며 palmitoyl donor 특이성이나 천연 수송 반응을 주장하지 않습니다.",
+    "note": "ScDGAT2-1 has characterised astaxanthin–DHA monoester evidence. This reaction-class card does not assign palmitoyl-donor specificity or establish a native biosynthetic step.",
+    "noteKo": "ScDGAT2-1에는 astaxanthin–DHA monoester 형성 근거가 있습니다. 반응 종류를 익히는 카드이며 palmitoyl donor 특이성이나 천연 생합성 단계를 확정하지 않습니다.",
     "source": "https://pubmed.ncbi.nlm.nih.gov/38344823/",
     "pathway": "astaxanthin-esters"
   },
@@ -787,8 +787,8 @@
     "cofactor": "H₂O · in vitro",
     "title": "Astaxanthin: analytical de-esterification",
     "ko": "Astaxanthin: 분석용 탈에스터화",
-    "note": "An in-vitro analytical treatment that releases free astaxanthin and fatty acid. It is not a native export reaction.",
-    "noteKo": "추출 시료의 시험관 분석 처리로 유리 astaxanthin과 지방산을 방출합니다. 천연 수송 반응이 아닙니다.",
+    "note": "An in-vitro analytical treatment that releases free astaxanthin and fatty acid. The arrow describes an analytical treatment.",
+    "noteKo": "추출 시료의 시험관 분석 처리로 유리 astaxanthin과 지방산을 방출합니다. 화살표는 분석 처리 과정을 나타냅니다.",
     "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0278504",
     "pathway": "astaxanthin-esters"
   }

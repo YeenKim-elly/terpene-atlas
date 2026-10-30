@@ -282,8 +282,8 @@
     "skeleton": 20,
     "level": "core",
     "carbons": 20,
-    "note": "Nerylneryl diphosphate: the (Z,Z,Z) C20 geometric isomer used as an alternative substrate in characterised PvCPS1 experiments. It is compared with (E,E,E)-GGPP to explore substrate-folding effects. It is not assigned here as a native Tinospora precursor.",
-    "noteKo": "Nerylneryl diphosphate는 (Z,Z,Z) C20 기하이성질체입니다. PvCPS1 연구에서 (E,E,E)-GGPP와 비교한 대체 기질이며 기질 배치의 영향을 보여줍니다. Tinospora의 실제 전구체로 지정한 것은 아닙니다.",
+    "note": "Nerylneryl diphosphate: the (Z,Z,Z) C20 geometric isomer used as an alternative substrate in characterised PvCPS1 experiments. It is compared with (E,E,E)-GGPP to explore substrate-folding effects. Its occurrence as a native precursor is not established by this substrate assay.",
+    "noteKo": "Nerylneryl diphosphate는 (Z,Z,Z) C20 기하이성질체입니다. PvCPS1 연구에서 (E,E,E)-GGPP와 비교한 대체 기질이며 기질 배치의 영향을 보여줍니다. 이 기질 실험만으로 천연 전구체임을 입증하지는 않습니다.",
     "aliases": [
       "nerylneryl diphosphate",
       "(Z,Z,Z)-NNPP"

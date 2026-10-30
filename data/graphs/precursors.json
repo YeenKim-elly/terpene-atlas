@@ -274,7 +274,7 @@
       "to": "clpp-variants",
       "label": "PvCPS1 / variants - reference",
       "type": "summary",
-      "detail": "The study used the cis-prenyl substrate NNPP to obtain an alternative CLPP diastereomer. This is not a Tinospora substrate or product assignment.",
+      "detail": "The study used the cis-prenyl substrate NNPP to obtain an alternative CLPP diastereomer. This does not assign a substrate or product to an uncharacterised enzyme.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/30393911/"
     },
     {

@@ -665,8 +665,8 @@
     "ko": "α,β-불포화 γ-lactone",
     "smiles": "O=C1OCC=C1",
     "smarts": "[O]=[C;R]1[O;R][C;R][C;R]=[C;R]1",
-    "note": "A generic α,β-unsaturated five-membered cyclic ester (butenolide) model. The C=C bond is conjugated to the lactone carbonyl. It is both a lactone and a conjugated ester, not an aromatic furan. This does not imply that every Tinospora lactone is unsaturated.",
-    "noteKo": "이중결합이 carbonyl과 공액된 5원 불포화 cyclic ester 모델입니다. Furan과 구분되며 모든 Tinospora lactone이 이 형태라는 뜻은 아닙니다.",
+    "note": "A generic α,β-unsaturated five-membered cyclic ester (butenolide) model. The C=C bond is conjugated to the lactone carbonyl. It is both a lactone and a conjugated ester, not an aromatic furan. This does not imply that every lactone is unsaturated.",
+    "noteKo": "이중결합이 carbonyl과 공액된 5원 불포화 cyclic ester 모델입니다. Furan과 구분되며 모든 lactone이 이 형태라는 뜻은 아닙니다.",
     "source": "https://goldbook.iupac.org/terms/view/L03439",
     "aliases": [
       "unsaturated lactone",

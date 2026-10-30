@@ -912,8 +912,8 @@
       "Aglycone의 산소에 glucosyl 잔기가 결합하며 분자식 차이는 C6H10O5이다."
     ],
     "caveat": [
-      "This matched database-record comparison shows a structural relationship, not a demonstrated native Tinospora UGT reaction or biosynthetic order. Conventional full carbon numbering has not been validated for this added pair.",
-      "이 비교는 출처를 맞춘 데이터베이스 구조 관계이며, Tinospora 천연 UGT 반응이나 생합성 순서를 입증하지 않는다. 전체 관용 탄소 번호는 이 추가 구조 쌍에서 검증하지 않았다."
+      "This matched database-record comparison shows a structural relationship, not a demonstrated native UGT reaction or biosynthetic order. Conventional full carbon numbering has not been validated for this added pair.",
+      "이 비교는 출처를 맞춘 데이터베이스 구조 관계이며, 천연 UGT 반응이나 생합성 순서를 입증하지 않는다. 전체 관용 탄소 번호는 이 추가 구조 쌍에서 검증하지 않았다."
     ],
     "sources": [
       {
@@ -1064,8 +1064,8 @@
       "Aglycone의 산소에 glucosyl 잔기가 결합하며 분자식 차이는 C6H10O5이다."
     ],
     "caveat": [
-      "This matched database-record comparison shows a structural relationship, not a demonstrated native Tinospora UGT reaction or biosynthetic order. Conventional full carbon numbering has not been validated for this added pair. The glycoside is specifically CID 21636042, selected to match the aglycone; do not substitute conflicting CID 91884898.",
-      "이 비교는 출처를 맞춘 데이터베이스 구조 관계이며, Tinospora 천연 UGT 반응이나 생합성 순서를 입증하지 않는다. 전체 관용 탄소 번호는 이 추가 구조 쌍에서 검증하지 않았다."
+      "This matched database-record comparison shows a structural relationship, not a demonstrated native UGT reaction or biosynthetic order. Conventional full carbon numbering has not been validated for this added pair. The glycoside is specifically CID 21636042, selected to match the aglycone; do not substitute conflicting CID 91884898.",
+      "이 비교는 출처를 맞춘 데이터베이스 구조 관계이며, 천연 UGT 반응이나 생합성 순서를 입증하지 않는다. 전체 관용 탄소 번호는 이 추가 구조 쌍에서 검증하지 않았다."
     ],
     "sources": [
       {

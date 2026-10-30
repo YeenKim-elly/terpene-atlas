@@ -1,7 +1,10 @@
 # Terpene Atlas
 
-A bilingual learning atlas for exploring terpene structures, functional motifs
-and biosynthetic relationships.
+A bilingual terpene learning and structure-exploration site.
+
+Learn to recognise terpene families, inspect molecular structures, compare
+functional groups and stereochemistry, and follow source-linked biosynthetic
+pathways through interactive maps and practice.
 
 ## Features
 
@@ -107,3 +110,9 @@ Scientific records and illustrations retain their source information.
 See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for attribution and
 asset-specific licence terms. Source-derived Crispene figure panels are subject
 to CC BY-NC-SA 3.0.
+
+## GitHub Pages
+
+In Settings → Pages, select **Deploy from a branch**, **main** and **/(root)**.
+The application is static and requires no build step. The .nojekyll file is
+included. Future pushes to the publishing branch update the site automatically.

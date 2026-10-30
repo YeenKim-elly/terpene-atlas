@@ -52,10 +52,10 @@
       "to": "astaxanthin",
       "label": "Cholesterol esterase · analytical hydrolysis",
       "type": "summary",
-      "detail": "An in-vitro analytical treatment that releases free astaxanthin and fatty acid. It is not a native export reaction.",
+      "detail": "An in-vitro analytical treatment that releases free astaxanthin and fatty acid. The arrow describes an analytical treatment.",
       "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0278504",
       "labelKo": "Cholesterol esterase · 분석용 가수분해",
-      "detailKo": "추출 시료의 시험관 분석 처리로 유리 astaxanthin과 지방산을 방출합니다. 천연 수송 반응이 아닙니다."
+      "detailKo": "추출 시료의 시험관 분석 처리로 유리 astaxanthin과 지방산을 방출합니다. 화살표는 분석 처리 과정을 나타냅니다."
     },
     {
       "from": "astaxanthin-dipalmitate",

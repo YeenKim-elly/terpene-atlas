@@ -244,7 +244,7 @@
     "referenceCompoundId": "borapetoside-c",
     "schematic": false,
     "lactoneCount": 1,
-    "note": "An actual Borapetoside C molecular record with its furan and 1 lactone ring highlighted. Sugar and other decorations remain visible. This is a composite ring reference, not a bare parent skeleton or an assigned Tinospora pathway intermediate. The selected borapetoside C database stereochemistry must be read with the published C6 revision and source caveats.",
+    "note": "An actual Borapetoside C molecular record with its furan and 1 lactone ring highlighted. Sugar and other decorations remain visible. This is a composite ring reference, not a bare parent skeleton or an assigned native pathway intermediate. The selected borapetoside C database stereochemistry must be read with the published C6 revision and source caveats.",
     "noteKo": "선택한 borapetoside C 구조의 furan 고리와 lactone 고리 1개를 강조한 실제 분자 예시이다. 당과 methyl ester를 그대로 유지하며, 단순한 모골격이나 입증된 생합성 중간체를 뜻하지 않는다. C6 당 결합의 문헌 수정과 선택한 데이터베이스 입체표현의 주의점을 함께 확인한다.",
     "highlightedAtoms": [
       1,
@@ -274,8 +274,8 @@
     "referenceCompoundId": "columbin",
     "schematic": false,
     "lactoneCount": 2,
-    "note": "An actual Columbin molecular record with its furan and 2 lactone rings highlighted. Sugar and other decorations remain visible. This is a composite ring reference, not a bare parent skeleton or an assigned Tinospora pathway intermediate. A comparator record does not establish occurrence in every Tinospora species.",
-    "noteKo": "선택한 columbin 구조의 furan 고리와 lactone 고리 2개를 강조한 실제 분자 예시이다. 고리 수와 연결 위치를 비교하기 위한 자료이며, 모든 Tinospora 종에서 같은 경로나 중간체를 가진다는 뜻은 아니다.",
+    "note": "An actual Columbin molecular record with its furan and 2 lactone rings highlighted. Its functional groups remain visible. This is a composite ring reference, not a bare parent skeleton or an assigned native pathway intermediate. A comparator record does not establish an organism-specific pathway.",
+    "noteKo": "선택한 columbin 구조의 furan 고리와 lactone 고리 2개를 강조한 실제 분자 예시이다. 고리 수와 연결 위치를 비교하기 위한 자료이며, 특정 생물의 실제 경로나 중간체를 확정하는 자료는 아니다.",
     "highlightedAtoms": [
       1,
       4,
@@ -728,9 +728,6 @@
       "Iridoid core · lactol example",
       "Iridoid 골격 · lactol 예시"
     ],
-    "projects": [
-      "general-reference"
-    ],
     "pathwayLink": {
       "graph": "iridoids",
       "label": [
@@ -767,9 +764,6 @@
       "iridoid lactone",
       "Iridoid lactone · ring variant",
       "Iridoid lactone · 고리 변형"
-    ],
-    "projects": [
-      "general-reference"
     ],
     "parentFrameworkId": "iridoid-core",
     "pathwayLink": {
@@ -809,9 +803,6 @@
       "Artemisinin · peroxide ring system",
       "Artemisinin · peroxide 고리계"
     ],
-    "projects": [
-      "general-reference"
-    ],
     "pathwayLink": {
       "graph": "artemisinin",
       "label": [
@@ -848,9 +839,6 @@
       "kaurane",
       "Kaurane · ent-kaurene example",
       "Kaurane 골격 · ent-kaurene 예시"
-    ],
-    "projects": [
-      "general-reference"
     ],
     "pathwayLink": {
       "graph": "gibberellins",
@@ -889,9 +877,6 @@
       "Gibberellin framework · GA12",
       "Gibberellin 골격 · GA12"
     ],
-    "projects": [
-      "general-reference"
-    ],
     "pathwayLink": {
       "graph": "gibberellins",
       "label": [
@@ -929,9 +914,6 @@
       "Taxane · taxadiene example",
       "Taxane 골격 · taxadiene 예시"
     ],
-    "projects": [
-      "general-reference"
-    ],
     "pathwayLink": {
       "graph": "diterpene-pathway",
       "label": [
@@ -968,9 +950,6 @@
       "carotenoid poly cis",
       "C40 poly-cis · geometry variant",
       "C40 poly-cis · 기하배열 변형"
-    ],
-    "projects": [
-      "general-reference"
     ],
     "parentFrameworkId": "carotenoid-psi-psi",
     "pathwayLink": {
@@ -1010,9 +989,6 @@
       "C40 epoxy end rings · ring variant",
       "C40 epoxy 말단 고리 · 고리 변형"
     ],
-    "projects": [
-      "general-reference"
-    ],
     "parentFrameworkId": "carotenoid-beta-beta",
     "pathwayLink": {
       "graph": "aba-cleavage",
@@ -1051,9 +1027,6 @@
       "apo aba ring",
       "ABA C15 · cleavage framework",
       "ABA의 C15 골격 · 절단 유래"
-    ],
-    "projects": [
-      "general-reference"
     ],
     "pathwayLink": {
       "graph": "aba-cleavage",
