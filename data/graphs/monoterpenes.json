@@ -1,0 +1,274 @@
+{
+  "title": [
+    "C10 pools branch into different frameworks.",
+    "C10 전구체에서 서로 다른 골격으로."
+  ],
+  "intro": [
+    "Follow GPP and the genuine alternative NPP branch. The selected cyclases use class I ionisation chemistry; bornyl diphosphate retains diphosphate. Framework cards describe structural membership, while the peppermint branch shows later tailoring.",
+    "GPP와 실제 대체 기질인 NPP의 분기를 따라가세요. 선택한 고리화 효소는 class I 이온화 기전을 사용하며 bornyl diphosphate는 diphosphate를 유지합니다. 골격 카드는 구조 계열을, peppermint 가지는 후속 변형을 보여줍니다."
+  ],
+  "width": 1900,
+  "height": 1740,
+  "nodes": [
+    [
+      "gpp",
+      650,
+      30
+    ],
+    [
+      "npp",
+      1450,
+      30
+    ],
+    [
+      "myrcene",
+      30,
+      360
+    ],
+    [
+      "linalool",
+      350,
+      360
+    ],
+    [
+      "minus-limonene",
+      730,
+      360
+    ],
+    [
+      "minus-alpha-pinene",
+      1110,
+      360
+    ],
+    [
+      "bornyl-dp",
+      1510,
+      360
+    ],
+    [
+      "mono-acyclic",
+      190,
+      710
+    ],
+    [
+      "plus-pulegone",
+      600,
+      710
+    ],
+    [
+      "pinane",
+      1040,
+      710
+    ],
+    [
+      "beta-phellandrene",
+      1350,
+      710
+    ],
+    [
+      "bornane",
+      1680,
+      710
+    ],
+    [
+      "geraniol",
+      30,
+      1060
+    ],
+    [
+      "minus-menthone",
+      600,
+      1060
+    ],
+    [
+      "camphor",
+      1510,
+      1060
+    ],
+    [
+      "minus-menthol",
+      350,
+      1410
+    ],
+    [
+      "plus-neomenthol",
+      730,
+      1410
+    ],
+    [
+      "p-menthane",
+      1130,
+      1410
+    ]
+  ],
+  "edges": [
+    {
+      "from": "gpp",
+      "to": "myrcene",
+      "label": "Myrcene synthase · TPS I",
+      "type": "step",
+      "detail": "An acyclic GPP-to-myrcene branch. Required metal ions depend on the characterised enzyme.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC4/2/3/15.html"
+    },
+    {
+      "from": "gpp",
+      "to": "linalool",
+      "label": "Linalool synthase · water capture",
+      "type": "step",
+      "detail": "Stereospecific linalool synthases differ. The linalool card is a stereounassigned connectivity reference, not an R/S assignment.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC4/2/3/25.html"
+    },
+    {
+      "from": "gpp",
+      "to": "minus-limonene",
+      "label": "(-)-Limonene synthase · TPS I",
+      "type": "step",
+      "detail": "A characterised stereospecific cyclisation to the displayed (-)-(4S)-limonene record.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1838495/"
+    },
+    {
+      "from": "gpp",
+      "to": "minus-alpha-pinene",
+      "label": "(-)-α-Pinene synthase · TPS I",
+      "type": "step",
+      "detail": "Representative pinane-forming class I cyclisation. The displayed negative stereoisomer must not be assigned to a positive-pinene synthase.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC4/2/3/119.html"
+    },
+    {
+      "from": "gpp",
+      "to": "bornyl-dp",
+      "label": "(+)-BPS · TPS I · diphosphate retained",
+      "type": "step",
+      "detail": "GPP ionises, rearranges and cyclises; diphosphate is recaptured. There is no net PPi release in GPP-to-bornyl-diphosphate conversion. Retention is not evidence for TPS II.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/8.html"
+    },
+    {
+      "from": "npp",
+      "to": "beta-phellandrene",
+      "label": "Tomato PHS1 · major product",
+      "type": "step",
+      "detail": "Tomato type VI trichome PHS1 uses NPP to produce beta-phellandrene as a major product with additional monoterpenes. The displayed connectivity record leaves its stereocentre unassigned.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2705607/"
+    },
+    {
+      "from": "gpp",
+      "to": "geraniol",
+      "label": "GES · ionisation / water capture",
+      "type": "step",
+      "detail": "Geranyl diphosphate diphosphatase forms geraniol with water capture; this is not ring-forming chemistry.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC3/1/7/11.html"
+    },
+    {
+      "from": "minus-limonene",
+      "to": "plus-pulegone",
+      "label": "Peppermint tailoring · several stages",
+      "type": "summary",
+      "detail": "Multiple hydroxylation, dehydrogenation, reduction and isomerisation steps are condensed. This is not one enzyme reaction.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1065388/"
+    },
+    {
+      "from": "plus-pulegone",
+      "to": "minus-menthone",
+      "label": "Pulegone reductase · NADPH",
+      "type": "step",
+      "detail": "The peppermint enzyme forms (-)-menthone and (+)-isomenthone. This map follows one product branch; the enzyme is not exclusive for the displayed product.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/3/1/81.html"
+    },
+    {
+      "from": "minus-menthone",
+      "to": "minus-menthol",
+      "label": "MMR · major alcohol product",
+      "type": "step",
+      "detail": "Recombinant peppermint MMR produced 95% (-)-menthol and 5% (+)-neomenthol from (-)-menthone in the cited assay.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1065388/"
+    },
+    {
+      "from": "minus-menthone",
+      "to": "plus-neomenthol",
+      "label": "MNR · different major epimer",
+      "type": "step",
+      "detail": "Recombinant MNR produced 94% (+)-neomenthol and 6% (-)-menthol. The two enzymes favour different major products; the products are not exclusive.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1065388/"
+    },
+    {
+      "from": "myrcene",
+      "to": "mono-acyclic",
+      "label": "Framework membership",
+      "type": "structure",
+      "detail": "An acyclic C10 framework example. This dotted line is classification, not an additional reaction.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1838495/"
+    },
+    {
+      "from": "linalool",
+      "to": "mono-acyclic",
+      "label": "Framework membership",
+      "type": "structure",
+      "detail": "An acyclic C10 framework example. This dotted line is classification, not an additional reaction.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1838495/"
+    },
+    {
+      "from": "geraniol",
+      "to": "mono-acyclic",
+      "label": "Framework membership",
+      "type": "structure",
+      "detail": "An acyclic C10 framework example. This dotted line is classification, not an additional reaction.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1838495/"
+    },
+    {
+      "from": "minus-limonene",
+      "to": "p-menthane",
+      "label": "Framework membership",
+      "type": "structure",
+      "detail": "Shared p-menthane carbon framework; oxidation state, unsaturation and stereochemistry can differ.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1065388/"
+    },
+    {
+      "from": "beta-phellandrene",
+      "to": "p-menthane",
+      "label": "Framework membership",
+      "type": "structure",
+      "detail": "Shared p-menthane carbon framework; oxidation state, unsaturation and stereochemistry can differ.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1065388/"
+    },
+    {
+      "from": "minus-menthol",
+      "to": "p-menthane",
+      "label": "Framework membership",
+      "type": "structure",
+      "detail": "Shared p-menthane carbon framework; oxidation state, unsaturation and stereochemistry can differ.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1065388/"
+    },
+    {
+      "from": "plus-neomenthol",
+      "to": "p-menthane",
+      "label": "Framework membership",
+      "type": "structure",
+      "detail": "Shared p-menthane carbon framework; oxidation state, unsaturation and stereochemistry can differ.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1065388/"
+    },
+    {
+      "from": "minus-alpha-pinene",
+      "to": "pinane",
+      "label": "Framework membership",
+      "type": "structure",
+      "detail": "The product contains the bridged pinane carbon framework.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1838495/"
+    },
+    {
+      "from": "bornyl-dp",
+      "to": "bornane",
+      "label": "Framework membership",
+      "type": "structure",
+      "detail": "Bornyl diphosphate already contains a bornane-related C10 core. This is scaffold membership, not removal of diphosphate.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/8.html"
+    },
+    {
+      "from": "camphor",
+      "to": "bornane",
+      "label": "Framework membership",
+      "type": "structure",
+      "detail": "Camphor is a bornane-related ketone. The displayed generic camphor record leaves absolute stereochemistry unspecified.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/8.html"
+    }
+  ]
+}

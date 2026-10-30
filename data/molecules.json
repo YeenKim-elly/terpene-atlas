@@ -15,7 +15,8 @@
     "source": "https://pubchem.ncbi.nlm.nih.gov/compound/22311",
     "image": "assets/structures/limonene.svg",
     "note": "A cyclic C10 hydrocarbon: two isoprene units. Terpene is the precise term for this oxygen-free member.",
-    "noteKo": "고리형 C10 탄화수소로 isoprene 단위 2개에 해당한다. 산소가 없는 경우 엄밀한 용어는 terpene이다."
+    "noteKo": "고리형 C10 탄화수소로 isoprene 단위 2개에 해당한다. 산소가 없는 경우 엄밀한 용어는 terpene이다.",
+    "frameworkId": "p-menthane"
   },
   {
     "id": "geraniol",
@@ -33,7 +34,8 @@
     "source": "https://pubchem.ncbi.nlm.nih.gov/compound/637566",
     "image": "assets/structures/geraniol.svg",
     "note": "An acyclic C10 primary alcohol. Compare its two isoprene units with the three in farnesol.",
-    "noteKo": "비고리형 C10 1차 알코올이다. 두 isoprene 단위를 farnesol의 3개와 비교해보자."
+    "noteKo": "비고리형 C10 1차 알코올이다. 두 isoprene 단위를 farnesol의 3개와 비교해보자.",
+    "frameworkId": "mono-acyclic"
   },
   {
     "id": "linalool",
@@ -51,7 +53,8 @@
     "source": "https://pubchem.ncbi.nlm.nih.gov/compound/6549",
     "image": "assets/structures/linalool.svg",
     "note": "A C10 tertiary alcohol. Oxygenation does not change the terpene size class.",
-    "noteKo": "C10 3차 알코올이다. 산소화가 terpene 크기 분류를 바꾸지는 않는다."
+    "noteKo": "C10 3차 알코올이다. 산소화가 terpene 크기 분류를 바꾸지는 않는다.",
+    "frameworkId": "mono-acyclic"
   },
   {
     "id": "menthol",
@@ -69,7 +72,8 @@
     "source": "https://pubchem.ncbi.nlm.nih.gov/compound/1254",
     "image": "assets/structures/menthol.svg",
     "note": "The saturated six-membered ring and its carbon branches give a C10 skeleton.",
-    "noteKo": "포화 6원환과 곁가지를 합쳐 C10 골격을 이룬다."
+    "noteKo": "포화 6원환과 곁가지를 합쳐 C10 골격을 이룬다.",
+    "frameworkId": "p-menthane"
   },
   {
     "id": "camphor",
@@ -87,7 +91,8 @@
     "source": "https://pubchem.ncbi.nlm.nih.gov/compound/2537",
     "image": "assets/structures/camphor.svg",
     "note": "A bicyclic C10 ketone. Ring count and terpene size class are different properties.",
-    "noteKo": "이중 고리 C10 케톤이다. 고리 수와 terpene 크기 분류는 별개이다."
+    "noteKo": "이중 고리 C10 케톤이다. 고리 수와 terpene 크기 분류는 별개이다.",
+    "frameworkId": "bornane"
   },
   {
     "id": "bornyl-acetate",
@@ -105,7 +110,8 @@
     "source": "https://pubchem.ncbi.nlm.nih.gov/compound/93009",
     "image": "assets/structures/bornyl-acetate.svg",
     "note": "C12 overall = C10 bornyl skeleton + a C2 acetyl group. The terpene parent remains monoterpenoid-derived.",
-    "noteKo": "전체 C12 = C10 bornyl 골격 + C2 acetyl기. 원래 terpene 골격은 monoterpenoid 유래이다."
+    "noteKo": "전체 C12 = C10 bornyl 골격 + C2 acetyl기. 원래 terpene 골격은 monoterpenoid 유래이다.",
+    "frameworkId": "bornane"
   },
   {
     "id": "beta-caryophyllene",
@@ -123,7 +129,8 @@
     "source": "https://pubchem.ncbi.nlm.nih.gov/compound/5281515",
     "image": "assets/structures/beta-caryophyllene.svg",
     "note": "A C15 hydrocarbon with a distinctive four-membered ring: three isoprene units.",
-    "noteKo": "특징적인 4원환을 가진 C15 탄화수소로 isoprene 단위 3개에 해당한다."
+    "noteKo": "특징적인 4원환을 가진 C15 탄화수소로 isoprene 단위 3개에 해당한다.",
+    "frameworkId": "caryophyllane"
   },
   {
     "id": "alpha-humulene",
@@ -141,7 +148,8 @@
     "source": "https://pubchem.ncbi.nlm.nih.gov/compound/5281520",
     "image": "assets/structures/alpha-humulene.svg",
     "note": "A macrocyclic C15 sesquiterpene. A large ring alone does not indicate a diterpene.",
-    "noteKo": "큰 고리를 가진 C15 sesquiterpene이다. 큰 고리만으로 diterpene이라고 할 수 없다."
+    "noteKo": "큰 고리를 가진 C15 sesquiterpene이다. 큰 고리만으로 diterpene이라고 할 수 없다.",
+    "frameworkId": "humulane"
   },
   {
     "id": "artemisinin",
@@ -177,7 +185,8 @@
     "source": "https://pubchem.ncbi.nlm.nih.gov/compound/1268142",
     "image": "assets/structures/nootkatone.svg",
     "note": "A bicyclic C15 ketone. Carbonyl formation retains the sesquiterpenoid skeleton.",
-    "noteKo": "이중 고리 C15 케톤이다. 카보닐 형성 후에도 sesquiterpenoid 골격을 유지한다."
+    "noteKo": "이중 고리 C15 케톤이다. 카보닐 형성 후에도 sesquiterpenoid 골격을 유지한다.",
+    "frameworkId": "eremophilane"
   },
   {
     "id": "phytol",
@@ -429,7 +438,8 @@
     "source": "https://pubchem.ncbi.nlm.nih.gov/compound/5280489",
     "image": "assets/structures/beta-carotene.svg",
     "note": "A C40 carotene with two end rings and no oxygen atoms: eight isoprene-derived units.",
-    "noteKo": "말단 고리 2개를 가진 산소 없는 C40 carotene으로 isoprene 유래 단위 8개에 해당한다."
+    "noteKo": "말단 고리 2개를 가진 산소 없는 C40 carotene으로 isoprene 유래 단위 8개에 해당한다.",
+    "frameworkId": "carotenoid-beta-beta"
   },
   {
     "id": "lycopene",
@@ -447,7 +457,8 @@
     "source": "https://pubchem.ncbi.nlm.nih.gov/compound/446925",
     "image": "assets/structures/lycopene.svg",
     "note": "An acyclic C40 carotene. Its long conjugated polyene chain is a useful visual cue.",
-    "noteKo": "비고리형 C40 carotene이다. 긴 공액 polyene 사슬이 유용한 시각적 단서이다."
+    "noteKo": "비고리형 C40 carotene이다. 긴 공액 polyene 사슬이 유용한 시각적 단서이다.",
+    "frameworkId": "carotenoid-psi-psi"
   },
   {
     "id": "lutein",
@@ -465,7 +476,8 @@
     "source": "https://pubchem.ncbi.nlm.nih.gov/compound/5281243",
     "image": "assets/structures/lutein.svg",
     "note": "A C40 oxygenated carotenoid (xanthophyll) with two alcohol groups.",
-    "noteKo": "알코올기 2개를 가진 C40 산소화 carotenoid, 즉 xanthophyll이다."
+    "noteKo": "알코올기 2개를 가진 C40 산소화 carotenoid, 즉 xanthophyll이다.",
+    "frameworkId": "carotenoid-beta-epsilon"
   },
   {
     "id": "zeaxanthin",
@@ -483,7 +495,8 @@
     "source": "https://pubchem.ncbi.nlm.nih.gov/compound/5280899",
     "image": "assets/structures/zeaxanthin.svg",
     "note": "A C40 xanthophyll with two alcohol groups. Its end-ring double-bond positions differ from lutein.",
-    "noteKo": "알코올기 2개를 가진 C40 xanthophyll이다. Lutein과 말단 고리의 이중결합 위치가 다르다."
+    "noteKo": "알코올기 2개를 가진 C40 xanthophyll이다. Lutein과 말단 고리의 이중결합 위치가 다르다.",
+    "frameworkId": "carotenoid-beta-beta"
   },
   {
     "id": "geranylfarnesol",
@@ -537,7 +550,8 @@
     "source": "https://pubchem.ncbi.nlm.nih.gov/compound/445070",
     "image": "assets/structures/farnesol.svg",
     "note": "An acyclic C15 primary alcohol: three isoprene-derived units.",
-    "noteKo": "비고리형 C15 1차 알코올로 isoprene 유래 단위 3개에 해당한다."
+    "noteKo": "비고리형 C15 1차 알코올로 isoprene 유래 단위 3개에 해당한다.",
+    "frameworkId": "sesqui-acyclic"
   },
   {
     "id": "squalene",
@@ -573,7 +587,8 @@
     "source": "https://pubchem.ncbi.nlm.nih.gov/compound/5281224",
     "image": "assets/structures/astaxanthin.svg",
     "note": "A C40 xanthophyll with two ketones and two alcohols. Oxygenation retains the tetraterpenoid skeleton.",
-    "noteKo": "케톤 2개와 알코올 2개를 가진 C40 xanthophyll이다. 산소화 후에도 tetraterpenoid 골격을 유지한다."
+    "noteKo": "케톤 2개와 알코올 2개를 가진 C40 xanthophyll이다. 산소화 후에도 tetraterpenoid 골격을 유지한다.",
+    "frameworkId": "carotenoid-beta-beta"
   },
   {
     "id": "fucoxanthin",
@@ -615,7 +630,8 @@
     "image": "assets/structures/canthaxanthin.svg",
     "carbons": 40,
     "skeleton": 40,
-    "family": "tetra"
+    "family": "tetra",
+    "frameworkId": "carotenoid-beta-beta"
   },
   {
     "id": "neoxanthin",
@@ -679,7 +695,8 @@
     "image": "assets/structures/phytoene.svg",
     "carbons": 40,
     "skeleton": 40,
-    "family": "tetra"
+    "family": "tetra",
+    "frameworkId": "carotenoid-psi-psi"
   },
   {
     "id": "antheraxanthin",
@@ -742,7 +759,8 @@
     "image": "assets/structures/echinenone.svg",
     "carbons": 40,
     "skeleton": 40,
-    "family": "tetra"
+    "family": "tetra",
+    "frameworkId": "carotenoid-beta-beta"
   },
   {
     "id": "beta-cryptoxanthin",
@@ -763,7 +781,8 @@
     "image": "assets/structures/beta-cryptoxanthin.svg",
     "carbons": 40,
     "skeleton": 40,
-    "family": "tetra"
+    "family": "tetra",
+    "frameworkId": "carotenoid-beta-beta"
   },
   {
     "id": "adonixanthin",
@@ -784,7 +803,8 @@
     "image": "assets/structures/adonixanthin.svg",
     "carbons": 40,
     "skeleton": 40,
-    "family": "tetra"
+    "family": "tetra",
+    "frameworkId": "carotenoid-beta-beta"
   },
   {
     "id": "adonirubin",
@@ -805,7 +825,8 @@
     "image": "assets/structures/adonirubin.svg",
     "carbons": 40,
     "skeleton": 40,
-    "family": "tetra"
+    "family": "tetra",
+    "frameworkId": "carotenoid-beta-beta"
   },
   {
     "id": "miltiradiene",
@@ -1187,7 +1208,8 @@
     "carbons": 40,
     "skeleton": 40,
     "source": "https://pubchem.ncbi.nlm.nih.gov/compound/6436722",
-    "image": "assets/structures/phytofluene.svg"
+    "image": "assets/structures/phytofluene.svg",
+    "frameworkId": "carotenoid-psi-psi"
   },
   {
     "id": "zeta-carotene",
@@ -1214,7 +1236,8 @@
     "carbons": 40,
     "skeleton": 40,
     "source": "https://pubchem.ncbi.nlm.nih.gov/compound/5280788",
-    "image": "assets/structures/zeta-carotene.svg"
+    "image": "assets/structures/zeta-carotene.svg",
+    "frameworkId": "carotenoid-psi-psi"
   },
   {
     "id": "neurosporene",
@@ -1239,7 +1262,8 @@
     "carbons": 40,
     "skeleton": 40,
     "source": "https://pubchem.ncbi.nlm.nih.gov/compound/5280789",
-    "image": "assets/structures/neurosporene.svg"
+    "image": "assets/structures/neurosporene.svg",
+    "frameworkId": "carotenoid-psi-psi"
   },
   {
     "id": "gamma-carotene",
@@ -1265,7 +1289,8 @@
     "carbons": 40,
     "skeleton": 40,
     "source": "https://pubchem.ncbi.nlm.nih.gov/compound/5280791",
-    "image": "assets/structures/gamma-carotene.svg"
+    "image": "assets/structures/gamma-carotene.svg",
+    "frameworkId": "carotenoid-beta-psi"
   },
   {
     "id": "alpha-carotene",
@@ -1292,7 +1317,8 @@
     "carbons": 40,
     "skeleton": 40,
     "source": "https://pubchem.ncbi.nlm.nih.gov/compound/6419725",
-    "image": "assets/structures/alpha-carotene.svg"
+    "image": "assets/structures/alpha-carotene.svg",
+    "frameworkId": "carotenoid-beta-epsilon"
   },
   {
     "id": "delta-carotene",
@@ -1318,7 +1344,8 @@
     "carbons": 40,
     "skeleton": 40,
     "source": "https://pubchem.ncbi.nlm.nih.gov/compound/6384254",
-    "image": "assets/structures/delta-carotene.svg"
+    "image": "assets/structures/delta-carotene.svg",
+    "frameworkId": "carotenoid-epsilon-psi"
   },
   {
     "id": "15-cis-phytoene",
@@ -1344,7 +1371,8 @@
     "carbons": 40,
     "skeleton": 40,
     "source": "https://pubchem.ncbi.nlm.nih.gov/compound/9963391",
-    "image": "assets/structures/15-cis-phytoene.svg"
+    "image": "assets/structures/15-cis-phytoene.svg",
+    "frameworkId": "carotenoid-psi-psi"
   },
   {
     "id": "kolavenol",
@@ -1500,5 +1528,251 @@
       "licenceUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
       "attribution": "Hossen F, Ahasan R, Haque MR, Begum B, Hasan CM (2016), Pharmacognosy Magazine 12(Suppl 1):S37-S41, Figure 1. Cropped; chemical drawing unchanged."
     }
+  },
+  {
+    "CID": 31253,
+    "MolecularFormula": "C10H16",
+    "SMILES": "CC(=CCCC(=C)C=C)C",
+    "ConnectivitySMILES": "CC(=CCCC(=C)C=C)C",
+    "id": "myrcene",
+    "name": "β-Myrcene",
+    "ko": "β-미르센",
+    "family": "mono",
+    "level": "core",
+    "skeleton": 10,
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/31253",
+    "image": "assets/structures/myrcene.svg",
+    "aliases": [
+      "Myrcene",
+      "beta-myrcene"
+    ],
+    "note": "An acyclic C10 hydrocarbon formed from GPP by myrcene synthases. Product profiles and metal requirements depend on the enzyme.",
+    "noteKo": "GPP에서 myrcene synthase로 형성되는 비고리형 C10 탄화수소이다. 산물 분포와 금속 요구성은 효소마다 다르다.",
+    "carbons": 10,
+    "frameworkId": "mono-acyclic"
+  },
+  {
+    "CID": 440968,
+    "MolecularFormula": "C10H16",
+    "SMILES": "CC1=CC[C@H]2C[C@@H]1C2(C)C",
+    "ConnectivitySMILES": "CC1=CCC2CC1C2(C)C",
+    "id": "minus-alpha-pinene",
+    "name": "(−)-α-Pinene",
+    "ko": "(−)-α-피넨",
+    "family": "mono",
+    "level": "core",
+    "skeleton": 10,
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/440968",
+    "image": "assets/structures/minus-alpha-pinene.svg",
+    "aliases": [
+      "(-)-alpha-pinene",
+      "(1S,5S)-alpha-pinene"
+    ],
+    "note": "A stereochemically defined pinane monoterpene. This bridged C10 topology differs from the monocyclic p-menthane core of limonene.",
+    "noteKo": "입체배열을 지정한 pinane 계열 모노테르펜이다. 가교된 C10 고리는 limonene의 단일 p-menthane 고리와 다르다.",
+    "carbons": 10,
+    "frameworkId": "pinane"
+  },
+  {
+    "CID": 439250,
+    "MolecularFormula": "C10H16",
+    "SMILES": "CC1=CC[C@H](CC1)C(=C)C",
+    "ConnectivitySMILES": "CC1=CCC(CC1)C(=C)C",
+    "id": "minus-limonene",
+    "name": "(−)-(4S)-Limonene",
+    "ko": "(−)-(4S)-리모넨",
+    "family": "mono",
+    "level": "core",
+    "skeleton": 10,
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/439250",
+    "image": "assets/structures/minus-limonene.svg",
+    "aliases": [
+      "(-)-limonene",
+      "(S)-limonene",
+      "(4S)-limonene",
+      "l-limonene"
+    ],
+    "note": "The defined (4S) limonene record used for peppermint-pathway teaching. It is separate from the generic limonene connectivity record.",
+    "noteKo": "Peppermint 경로 학습에 사용하는 (4S) limonene 기록이다. 입체배열을 지정하지 않은 일반 limonene 기록과 구분한다.",
+    "carbons": 10,
+    "frameworkId": "p-menthane"
+  },
+  {
+    "CID": 26447,
+    "MolecularFormula": "C10H18O",
+    "SMILES": "C[C@@H]1CC[C@H](C(=O)C1)C(C)C",
+    "ConnectivitySMILES": "CC1CCC(C(=O)C1)C(C)C",
+    "id": "minus-menthone",
+    "name": "(−)-Menthone",
+    "ko": "(−)-멘톤",
+    "family": "mono",
+    "level": "core",
+    "skeleton": 10,
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/26447",
+    "image": "assets/structures/minus-menthone.svg",
+    "aliases": [
+      "(-)-menthone",
+      "l-menthone"
+    ],
+    "note": "A p-menthane ketone. Selected peppermint reductases convert it mainly to different menthol epimers; a single exclusive product is not implied.",
+    "noteKo": "p-Menthane 계열 케톤이다. Peppermint 환원효소에 따라 서로 다른 menthol epimer가 주산물이 되며 단일 산물만 생긴다는 뜻은 아니다.",
+    "carbons": 10,
+    "frameworkId": "p-menthane"
+  },
+  {
+    "CID": 442495,
+    "MolecularFormula": "C10H16O",
+    "SMILES": "C[C@@H]1CCC(=C(C)C)C(=O)C1",
+    "ConnectivitySMILES": "CC1CCC(=C(C)C)C(=O)C1",
+    "id": "plus-pulegone",
+    "name": "(+)-Pulegone",
+    "ko": "(+)-풀레곤",
+    "family": "mono",
+    "level": "core",
+    "skeleton": 10,
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/442495",
+    "image": "assets/structures/plus-pulegone.svg",
+    "aliases": [
+      "(+)-pulegone",
+      "(R)-pulegone"
+    ],
+    "note": "A defined p-menthane enone. Peppermint pulegone reductase reduces its exocyclic double bond to menthone and isomenthone.",
+    "noteKo": "입체배열을 지정한 p-menthane enone이다. Peppermint pulegone reductase가 고리 밖 이중결합을 환원하여 menthone과 isomenthone을 만든다.",
+    "carbons": 10,
+    "frameworkId": "p-menthane"
+  },
+  {
+    "CID": 16666,
+    "MolecularFormula": "C10H20O",
+    "SMILES": "C[C@@H]1CC[C@H]([C@@H](C1)O)C(C)C",
+    "ConnectivitySMILES": "CC1CCC(C(C1)O)C(C)C",
+    "id": "minus-menthol",
+    "name": "(−)-Menthol",
+    "ko": "(−)-멘톨",
+    "family": "mono",
+    "level": "core",
+    "skeleton": 10,
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/16666",
+    "image": "assets/structures/minus-menthol.svg",
+    "aliases": [
+      "(-)-menthol",
+      "l-menthol",
+      "levomenthol"
+    ],
+    "note": "The defined (1R,2S,5R) cyclohexan-1-ol record. Compared with (+)-neomenthol, only the alcohol-bearing stereocentre is inverted.",
+    "noteKo": "Cyclohexan-1-ol 기준 (1R,2S,5R) 기록이다. (+)-Neomenthol과 비교하면 alcohol이 붙은 입체중심의 배열만 반대이다.",
+    "carbons": 10,
+    "frameworkId": "p-menthane"
+  },
+  {
+    "CID": 439263,
+    "MolecularFormula": "C10H20O",
+    "SMILES": "C[C@@H]1CC[C@H]([C@H](C1)O)C(C)C",
+    "ConnectivitySMILES": "CC1CCC(C(C1)O)C(C)C",
+    "id": "plus-neomenthol",
+    "name": "(+)-Neomenthol",
+    "ko": "(+)-네오멘톨",
+    "family": "mono",
+    "level": "core",
+    "skeleton": 10,
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/439263",
+    "image": "assets/structures/plus-neomenthol.svg",
+    "aliases": [
+      "(+)-neomenthol",
+      "d-neomenthol"
+    ],
+    "note": "The defined (1S,2S,5R) cyclohexan-1-ol record. It is a diastereomer and alcohol-centre epimer of (−)-menthol, not its enantiomer.",
+    "noteKo": "Cyclohexan-1-ol 기준 (1S,2S,5R) 기록이다. (−)-Menthol과 alcohol 중심의 epimer인 diastereomer이며 enantiomer가 아니다.",
+    "carbons": 10,
+    "frameworkId": "p-menthane"
+  },
+  {
+    "CID": 11142,
+    "MolecularFormula": "C10H16",
+    "SMILES": "CC(C)C1CCC(=C)C=C1",
+    "ConnectivitySMILES": "CC(C)C1CCC(=C)C=C1",
+    "id": "beta-phellandrene",
+    "name": "β-Phellandrene · stereo unassigned",
+    "ko": "β-펠란드렌 · 입체배열 미지정",
+    "family": "mono",
+    "level": "core",
+    "skeleton": 10,
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/11142",
+    "image": "assets/structures/beta-phellandrene.svg",
+    "aliases": [
+      "beta-phellandrene",
+      "β-phellandrene"
+    ],
+    "note": "A p-menthane connectivity reference with unassigned stereochemistry. Tomato PHS1 uses neryl diphosphate; this generic record does not assign its product enantiomer.",
+    "noteKo": "입체배열을 지정하지 않은 p-menthane 연결 구조 참고 기록이다. Tomato PHS1은 neryl diphosphate를 사용하지만 이 일반 기록이 산물의 enantiomer를 지정하지는 않는다.",
+    "carbons": 10,
+    "frameworkId": "p-menthane"
+  },
+  {
+    "CID": 9855795,
+    "MolecularFormula": "C15H24",
+    "SMILES": "C[C@@H]1CCC=C2[C@]1(C[C@@H](CC2)C(=C)C)C",
+    "ConnectivitySMILES": "CC1CCC=C2C1(CC(CC2)C(=C)C)C",
+    "id": "valencene",
+    "name": "(+)-Valencene",
+    "ko": "(+)-발렌센",
+    "family": "sesqui",
+    "level": "core",
+    "skeleton": 15,
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/9855795",
+    "image": "assets/structures/valencene.svg",
+    "aliases": [
+      "(+)-valencene",
+      "valencene"
+    ],
+    "note": "An eremophilane-type C15 hydrocarbon made by valencene synthases from FPP. It is the substrate of the selected Alpinia nootkatone reference pathway.",
+    "noteKo": "FPP에서 valencene synthase로 형성되는 eremophilane형 C15 탄화수소이다. 선택한 Alpinia nootkatone 참고 경로의 기질이다.",
+    "carbons": 15,
+    "frameworkId": "eremophilane"
+  },
+  {
+    "CID": 182645,
+    "MolecularFormula": "C15H24O",
+    "SMILES": "C[C@@H]1C[C@@H](C=C2[C@]1(C[C@@H](CC2)C(=C)C)C)O",
+    "ConnectivitySMILES": "CC1CC(C=C2C1(CC(CC2)C(=C)C)C)O",
+    "id": "beta-nootkatol",
+    "name": "β-Nootkatol · defined record",
+    "ko": "β-누트카톨 · 입체배열 지정",
+    "family": "sesqui",
+    "level": "core",
+    "skeleton": 15,
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/182645",
+    "image": "assets/structures/beta-nootkatol.svg",
+    "aliases": [
+      "beta-nootkatol",
+      "β-nootkatol"
+    ],
+    "note": "The explicit (2S,4R,4aS,6R) record. Historical nootkatol/epinootkatol names are inconsistent; this entry does not equate all such synonyms or all oxidase products.",
+    "noteKo": "(2S,4R,4aS,6R) 배열을 지정한 기록이다. 과거 nootkatol·epinootkatol 이름에는 혼동이 있어 모든 동의어나 산화효소 산물을 같은 것으로 해석하지 않는다.",
+    "carbons": 15,
+    "frameworkId": "eremophilane"
+  },
+  {
+    "CID": 11052747,
+    "MolecularFormula": "C15H24",
+    "SMILES": "C[C@@H]1CC[C@H]([C@@H]2[C@H]1CCC(=C2)C)C(=C)C",
+    "ConnectivitySMILES": "CC1CCC(C2C1CCC(=C2)C)C(=C)C",
+    "id": "amorpha-diene",
+    "name": "Amorpha-4,11-diene",
+    "ko": "Amorpha-4,11-diene",
+    "family": "sesqui",
+    "level": "core",
+    "skeleton": 15,
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/11052747",
+    "image": "assets/structures/amorpha-diene.svg",
+    "aliases": [
+      "amorphadiene",
+      "amorpha-4,11-diene",
+      "(-)-amorpha-4,11-diene"
+    ],
+    "note": "An assigned amorphane-type C15 TPS product. Its connection to artemisinin summarizes several tailoring and oxidative stages, rather than one direct reaction.",
+    "noteKo": "입체배열을 지정한 amorphane형 C15 TPS 산물이다. Artemisinin과의 연결은 단일 직접 반응이 아닌 여러 후속 변형과 산화 단계를 요약한다.",
+    "carbons": 15,
+    "frameworkId": "amorphane"
   }
 ]

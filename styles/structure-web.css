@@ -51,3 +51,45 @@
  .web-stage.is-expanded .web-zoom{width:100%;margin:0;justify-content:flex-end}
  .web-stage.is-expanded .web-legend{font-size:9px;gap:6px 12px}
 }
+
+/* Source-linked precursor-to-framework guides. */
+.web-submaps{display:flex;gap:6px;margin:18px 0 8px;padding:4px;background:#ecf0e4;border-radius:9px;width:fit-content;max-width:100%}
+.web-submaps button{padding:8px 14px;border-radius:6px;font-size:12px;color:#6b7960}
+.web-submaps button.active{background:#fff;color:#34552f;box-shadow:0 1px 4px #263f2510}
+.framework-guide{margin:24px 0 20px;border-top:1px solid #dfe5d6;padding-top:20px}
+.framework-guide-heading{display:flex;justify-content:space-between;gap:20px;align-items:end}
+.framework-guide-heading h2{font:500 22px/1.3 Georgia,serif;margin:9px 0 0}
+.framework-guide-heading>span{max-width:280px;font-size:11px;color:var(--muted);line-height:1.7}
+.framework-reading-order{display:flex;flex-wrap:wrap;gap:8px 20px;margin:16px 0 12px;font-size:10px;color:#78856c}
+.framework-reading-order span{display:flex;align-items:center;gap:7px}
+.framework-reading-order b{font-weight:500;color:#9eaa92}
+.framework-branches{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}
+.framework-branch{text-align:left;display:flex;flex-direction:column;border:1px solid #dce4d1;background:#fff;border-radius:10px;padding:13px 12px;min-width:0}
+.framework-branch:hover,.framework-branch:focus-visible{background:#f0f5e8;border-color:#8fa77a}
+.framework-input{font-size:9px;letter-spacing:.8px;text-transform:uppercase;color:#879772}
+.framework-branch strong{display:block;margin:6px 0;font:500 20px/1.2 Georgia,serif;color:#355333}
+.framework-enzyme{font-size:10px;line-height:1.6;color:#697b5d;min-height:32px}
+.framework-examples{font-size:10px;line-height:1.6;color:#8a947f;margin:6px 0 11px;overflow-wrap:anywhere}
+.framework-locate{display:flex;align-items:center;gap:5px;margin-top:auto;font-size:9px;color:#527344}
+.framework-locate svg{width:12px;height:12px}
+.framework-guide-footer{margin:22px 0 30px}
+.framework-comparisons{display:grid;grid-template-columns:minmax(170px,.8fr) minmax(0,1.4fr);gap:24px;padding:22px;background:#edf3e5;border:1px solid #dce6ce;border-radius:12px}
+.framework-comparisons h2{font:500 23px/1.4 Georgia,serif;margin:9px 0}
+.framework-comparisons p{font-size:12px;line-height:1.8;color:#6b7a60}
+.framework-comparisons>div:last-child{display:flex;flex-direction:column;gap:7px;justify-content:center}
+.framework-comparisons button{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;font-size:11px;text-align:left;background:#ffffffb8}
+.framework-comparisons button svg{width:14px;height:14px;flex-shrink:0}
+.framework-callouts{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;margin-top:14px}
+.framework-callouts details{border:1px solid #dde4d5;background:#fff;border-radius:9px;padding:14px 16px}
+.framework-callouts summary{cursor:pointer;font-size:12px;font-weight:600;color:#506748}
+.framework-callouts p{font-size:12px;line-height:1.9;color:#728069;margin-bottom:10px}
+.framework-callouts a{display:inline-flex;align-items:center;gap:5px;font-size:10px}
+.framework-callouts a svg{width:12px;height:12px}
+.framework-model-note,.web-framework-caption{font-size:10px!important;line-height:1.8!important;color:#89967e!important}
+.web-framework-link{display:block;margin:10px 0;padding:7px 10px;background:#eff5e7;border:1px solid #d8e3cc;border-radius:6px;text-align:left;font-size:11px;color:#4b6b3c}
+.framework-shortcuts{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
+.framework-shortcuts button{font-size:11px}
+@media(max-width:650px){.framework-guide-heading{display:block}.framework-guide-heading>span{display:block;max-width:none;margin-top:10px}.framework-branches{grid-template-columns:repeat(2,minmax(0,1fr))}.framework-comparisons{grid-template-columns:1fr;gap:10px}.framework-comparisons h2{font-size:22px}.framework-reading-order{gap:8px 13px}.web-submaps{width:100%}.web-submaps button{flex:1;padding:8px 10px;font-size:11px}}
+@media(max-width:380px){.framework-branches{grid-template-columns:1fr}}
+
+.web-tabs{flex-wrap:wrap}.framework-input{margin-bottom:6px}

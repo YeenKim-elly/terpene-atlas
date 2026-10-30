@@ -94,6 +94,21 @@
       "clpp-cis-cis",
       1260,
       1050
+    ],
+    [
+      "npp",
+      30,
+      650
+    ],
+    [
+      "bornyl-dp",
+      100,
+      1410
+    ],
+    [
+      "bornane",
+      460,
+      1410
     ]
   ],
   "edges": [
@@ -261,6 +276,42 @@
       "type": "summary",
       "detail": "The study used the cis-prenyl substrate NNPP to obtain an alternative CLPP diastereomer. This is not a Tinospora substrate or product assignment.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/30393911/"
+    },
+    {
+      "from": "ipp",
+      "to": "npp",
+      "label": "IPP input · NDPS1",
+      "type": "step",
+      "detail": "DMAPP and IPP are consumed together to form NPP. These two lines are co-substrate inputs to the same condensation, not independent substrate-alone conversions.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2705607/",
+      "reactionGroup": "npp-condensation",
+      "coSubstrate": "dmapp"
+    },
+    {
+      "from": "dmapp",
+      "to": "npp",
+      "label": "DMAPP input · NDPS1",
+      "type": "step",
+      "detail": "DMAPP and IPP are consumed together to form NPP. These two lines are co-substrate inputs to the same condensation, not independent substrate-alone conversions.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2705607/",
+      "reactionGroup": "npp-condensation",
+      "coSubstrate": "ipp"
+    },
+    {
+      "from": "gpp",
+      "to": "bornyl-dp",
+      "label": "(+)-BPS · TPS I · C10",
+      "type": "step",
+      "detail": "Class I bornyl diphosphate synthase cyclises GPP and recaptures diphosphate. Diphosphate retention does not establish TPS II chemistry.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/8.html"
+    },
+    {
+      "from": "bornyl-dp",
+      "to": "bornane",
+      "label": "C10 framework membership",
+      "type": "structure",
+      "detail": "Bornyl diphosphate already carries a bornane-related C10 framework. This dotted line is classification, not a conversion to a saturated free parent.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/8.html"
     }
   ]
 }

@@ -1,7 +1,8 @@
+export const graphIds=['precursors','carotenoids','diterpenes','scaffolds','monoterpenes','sesquiterpenes','carotenoid-frameworks'];
 export const catalogue = {
   molecules: [], precursors: [], scaffolds: [], motifs: [], reactions: [],
   comparisons: [], comparisonStructures: [], graphNotes: [], comparisonQuestions: [],
-  references: [], families: {}, enzymes: {}, graphs: {}
+  references: [], families: {}, enzymes: {}, graphs: {}, familyGuides: {}
 };
 
 export const catalogueFiles = {
@@ -16,7 +17,8 @@ export const catalogueFiles = {
   comparisonQuestions: 'questions/comparisons.json',
   references: 'references.json',
   families: 'families.json',
-  enzymes: 'enzymes.json'
+  enzymes: 'enzymes.json',
+  familyGuides: 'framework-guides.json'
 };
 
 export function hydrateCatalogue(records, graphs) {
@@ -47,7 +49,7 @@ export async function loadCatalogue(fetcher = fetch) {
     Object.entries(catalogueFiles).map(async ([key, path]) => [key, await read(path)])
   ));
   const graphs = Object.fromEntries(await Promise.all(
-    ['precursors', 'carotenoids', 'diterpenes', 'scaffolds'].map(
+    graphIds.map(
       async id => [id, await read('graphs/' + id + '.json')]
     )
   ));

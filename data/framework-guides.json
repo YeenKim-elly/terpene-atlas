@@ -1,0 +1,414 @@
+{
+  "monoterpenes": {
+    "family": "mono",
+    "title": [
+      "From C10 precursor to framework",
+      "C10 전구체에서 골격으로"
+    ],
+    "intro": [
+      "Select a framework card to locate it in the map.",
+      "골격 카드를 선택하면 지도에서 해당 골격을 찾습니다."
+    ],
+    "stages": [
+      [
+        "Precursor pools",
+        "전구체"
+      ],
+      [
+        "Product-forming enzymes",
+        "생성물 형성 효소"
+      ],
+      [
+        "Framework membership",
+        "골격 계열"
+      ]
+    ],
+    "frameworkIds": [
+      "mono-acyclic",
+      "p-menthane",
+      "pinane",
+      "bornane"
+    ],
+    "branches": [
+      {
+        "framework": "mono-acyclic",
+        "input": "GPP",
+        "enzyme": "Myrcene / linalool / geraniol enzymes",
+        "examples": [
+          "myrcene",
+          "linalool",
+          "geraniol"
+        ]
+      },
+      {
+        "framework": "p-menthane",
+        "input": "GPP or NPP",
+        "enzyme": "Substrate-specific TPS + tailoring",
+        "examples": [
+          "minus-limonene",
+          "beta-phellandrene",
+          "minus-menthol"
+        ]
+      },
+      {
+        "framework": "pinane",
+        "input": "GPP",
+        "enzyme": "(-)-α-Pinene synthase · TPS I",
+        "examples": [
+          "minus-alpha-pinene"
+        ]
+      },
+      {
+        "framework": "bornane",
+        "input": "GPP",
+        "enzyme": "(+)-Bornyl diphosphate synthase · TPS I",
+        "examples": [
+          "bornyl-dp",
+          "camphor"
+        ]
+      }
+    ],
+    "comparisons": [
+      "gpp-npp",
+      "menthone-menthol",
+      "menthol-neomenthol"
+    ],
+    "callouts": [
+      {
+        "title": [
+          "Where is LPP?",
+          "LPP는 어디에 있나요?"
+        ],
+        "text": [
+          "In studied GPP-dependent limonene cyclases, linalyl diphosphate is an enzyme-bound isomerisation intermediate. It belongs inside the mechanism, not a universal free precursor pool. NPP is a genuine alternative substrate in the tomato example.",
+          "기능이 규명된 GPP 사용 limonene cyclase에서 LPP는 효소에 결합된 이성질화 중간체입니다. 보편적인 자유 전구체 풀과 구분합니다. 토마토의 NPP는 실제 대체 기질 사례입니다."
+        ],
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1838495/"
+      },
+      {
+        "title": [
+          "Diphosphate retained does not mean TPS II",
+          "Diphosphate 유지와 TPS II는 다릅니다"
+        ],
+        "text": [
+          "Bornyl diphosphate synthase is a class I cyclase that recaptures diphosphate after ionisation. The selected C10/C15 examples use class I chemistry; this is not a claim that every cyclase in those size classes is class I.",
+          "Bornyl diphosphate synthase는 이온화 뒤 diphosphate를 다시 붙잡는 class I 고리화 효소입니다. 선택한 C10/C15 사례가 class I이며 모든 동종 크기 효소를 일반화하지 않습니다."
+        ],
+        "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/8.html"
+      }
+    ]
+  },
+  "sesquiterpenes": {
+    "family": "sesqui",
+    "title": [
+      "From FPP to C15 frameworks",
+      "FPP에서 C15 골격으로"
+    ],
+    "intro": [
+      "Separate scaffold formation from later oxidation.",
+      "골격 형성과 후속 산화를 구분하세요."
+    ],
+    "stages": [
+      [
+        "FPP · C15",
+        "FPP · C15"
+      ],
+      [
+        "Cyclisation or hydrolysis",
+        "고리화 또는 가수분해"
+      ],
+      [
+        "Framework + tailoring",
+        "골격과 후속 변형"
+      ]
+    ],
+    "frameworkIds": [
+      "sesqui-acyclic",
+      "humulane",
+      "caryophyllane",
+      "amorphane",
+      "eremophilane"
+    ],
+    "branches": [
+      {
+        "framework": "sesqui-acyclic",
+        "input": "FPP",
+        "enzyme": "Phosphatase · hydrolysis",
+        "examples": [
+          "farnesol"
+        ]
+      },
+      {
+        "framework": "humulane",
+        "input": "FPP",
+        "enzyme": "Humulene synthase · TPS I",
+        "examples": [
+          "alpha-humulene"
+        ]
+      },
+      {
+        "framework": "caryophyllane",
+        "input": "FPP",
+        "enzyme": "β-Caryophyllene synthase · TPS I",
+        "examples": [
+          "beta-caryophyllene"
+        ]
+      },
+      {
+        "framework": "amorphane",
+        "input": "FPP",
+        "enzyme": "Amorpha-diene synthase · TPS I",
+        "examples": [
+          "amorpha-diene"
+        ]
+      },
+      {
+        "framework": "eremophilane",
+        "input": "FPP",
+        "enzyme": "Valencene synthase → CYP / SDR",
+        "examples": [
+          "valencene",
+          "beta-nootkatol",
+          "nootkatone"
+        ]
+      }
+    ],
+    "comparisons": [
+      "nootkatol-nootkatone"
+    ],
+    "callouts": [
+      {
+        "title": [
+          "A decalin ring does not determine C20",
+          "Decalin 고리가 C20을 뜻하지는 않습니다"
+        ],
+        "text": [
+          "Valencene and nootkatone are eremophilane-type C15 compounds. Framework topology and isoprenoid carbon class answer different questions.",
+          "Valencene과 nootkatone은 eremophilane 계열 C15 화합물입니다. 고리 연결 방식과 isoprenoid 탄소 계열은 서로 다른 정보입니다."
+        ],
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6273169/"
+      }
+    ]
+  },
+  "carotenoid-frameworks": {
+    "family": "tetra",
+    "title": [
+      "From two C20 inputs to C40 end groups",
+      "C20 두 분자에서 C40 말단 고리로"
+    ],
+    "intro": [
+      "Build the full chain first; cyclases then change its ends.",
+      "먼저 C40 사슬을 만들고 고리화 효소가 말단을 바꿉니다."
+    ],
+    "stages": [
+      [
+        "2 × GGPP → phytoene",
+        "GGPP 두 분자 → phytoene"
+      ],
+      [
+        "Desaturation / isomerisation",
+        "탈수소화·이성질화"
+      ],
+      [
+        "β / ε end-group choice",
+        "β / ε 말단 선택"
+      ]
+    ],
+    "frameworkIds": [
+      "carotenoid-psi-psi",
+      "carotenoid-beta-psi",
+      "carotenoid-epsilon-psi",
+      "carotenoid-beta-beta",
+      "carotenoid-beta-epsilon"
+    ],
+    "branches": [
+      {
+        "framework": "carotenoid-psi-psi",
+        "input": "2 × GGPP",
+        "enzyme": "PSY + desaturation stages",
+        "examples": [
+          "15-cis-phytoene",
+          "lycopene"
+        ]
+      },
+      {
+        "framework": "carotenoid-beta-psi",
+        "input": "Lycopene",
+        "enzyme": "LCYB · one β end",
+        "examples": [
+          "gamma-carotene"
+        ]
+      },
+      {
+        "framework": "carotenoid-epsilon-psi",
+        "input": "Lycopene",
+        "enzyme": "LCYE · one ε end",
+        "examples": [
+          "delta-carotene"
+        ]
+      },
+      {
+        "framework": "carotenoid-beta-beta",
+        "input": "Lycopene",
+        "enzyme": "LCYB / CrtY · two β ends",
+        "examples": [
+          "beta-carotene",
+          "zeaxanthin",
+          "astaxanthin"
+        ]
+      },
+      {
+        "framework": "carotenoid-beta-epsilon",
+        "input": "Lycopene",
+        "enzyme": "Matched LCYE + LCYB",
+        "examples": [
+          "alpha-carotene",
+          "lutein"
+        ]
+      }
+    ],
+    "comparisons": [
+      "carotene-zeaxanthin",
+      "canthaxanthin-astaxanthin",
+      "zeaxanthin-astaxanthin",
+      "beta-alpha-carotene",
+      "zeaxanthin-lutein",
+      "phytoene-geometry"
+    ],
+    "callouts": [
+      {
+        "title": [
+          "β versus ε is not cis versus trans",
+          "β / ε와 cis / trans는 다릅니다"
+        ],
+        "text": [
+          "Beta and epsilon end groups differ in ring double-bond placement. E/Z geometry is a separate property, demonstrated by the all-trans / 15-cis phytoene comparison.",
+          "Beta와 epsilon은 고리 이중결합 위치가 다릅니다. E/Z 기하배열은 별도 성질이며 all-trans / 15-cis phytoene 비교로 연습합니다."
+        ],
+        "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/18.html"
+      },
+      {
+        "title": [
+          "The rings form on C40",
+          "고리는 C40 사슬 위에서 형성됩니다"
+        ],
+        "text": [
+          "LCYB and LCYE act on carotenoid end groups. A detached beta ring or beta-ionone molecule is not a precursor co-substrate for building the displayed C40 frameworks.",
+          "LCYB·LCYE는 carotenoid의 말단에 작용합니다. 분리된 beta 고리나 beta-ionone이 표시한 C40 골격의 전구체 함께 쓰이는 기질로 들어가는 것은 아닙니다."
+        ],
+        "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/19.html"
+      }
+    ]
+  },
+  "carotenoids": {
+    "family": "tetra",
+    "title": [
+      "From two C20 inputs to C40 end groups",
+      "C20 두 분자에서 C40 말단 고리로"
+    ],
+    "intro": [
+      "Build the full chain first; cyclases then change its ends.",
+      "먼저 C40 사슬을 만들고 고리화 효소가 말단을 바꿉니다."
+    ],
+    "stages": [
+      [
+        "2 × GGPP → phytoene",
+        "GGPP 두 분자 → phytoene"
+      ],
+      [
+        "Desaturation / isomerisation",
+        "탈수소화·이성질화"
+      ],
+      [
+        "β / ε end-group choice",
+        "β / ε 말단 선택"
+      ]
+    ],
+    "frameworkIds": [
+      "carotenoid-psi-psi",
+      "carotenoid-beta-psi",
+      "carotenoid-epsilon-psi",
+      "carotenoid-beta-beta",
+      "carotenoid-beta-epsilon"
+    ],
+    "branches": [
+      {
+        "framework": "carotenoid-psi-psi",
+        "input": "2 × GGPP",
+        "enzyme": "PSY + desaturation stages",
+        "examples": [
+          "15-cis-phytoene",
+          "lycopene"
+        ]
+      },
+      {
+        "framework": "carotenoid-beta-psi",
+        "input": "Lycopene",
+        "enzyme": "LCYB · one β end",
+        "examples": [
+          "gamma-carotene"
+        ]
+      },
+      {
+        "framework": "carotenoid-epsilon-psi",
+        "input": "Lycopene",
+        "enzyme": "LCYE · one ε end",
+        "examples": [
+          "delta-carotene"
+        ]
+      },
+      {
+        "framework": "carotenoid-beta-beta",
+        "input": "Lycopene",
+        "enzyme": "LCYB / CrtY · two β ends",
+        "examples": [
+          "beta-carotene",
+          "zeaxanthin",
+          "astaxanthin"
+        ]
+      },
+      {
+        "framework": "carotenoid-beta-epsilon",
+        "input": "Lycopene",
+        "enzyme": "Matched LCYE + LCYB",
+        "examples": [
+          "alpha-carotene",
+          "lutein"
+        ]
+      }
+    ],
+    "comparisons": [
+      "carotene-zeaxanthin",
+      "canthaxanthin-astaxanthin",
+      "zeaxanthin-astaxanthin",
+      "beta-alpha-carotene",
+      "zeaxanthin-lutein",
+      "phytoene-geometry"
+    ],
+    "callouts": [
+      {
+        "title": [
+          "β versus ε is not cis versus trans",
+          "β / ε와 cis / trans는 다릅니다"
+        ],
+        "text": [
+          "Beta and epsilon end groups differ in ring double-bond placement. E/Z geometry is a separate property, demonstrated by the all-trans / 15-cis phytoene comparison.",
+          "Beta와 epsilon은 고리 이중결합 위치가 다릅니다. E/Z 기하배열은 별도 성질이며 all-trans / 15-cis phytoene 비교로 연습합니다."
+        ],
+        "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/18.html"
+      },
+      {
+        "title": [
+          "The rings form on C40",
+          "고리는 C40 사슬 위에서 형성됩니다"
+        ],
+        "text": [
+          "LCYB and LCYE act on carotenoid end groups. A detached beta ring or beta-ionone molecule is not a precursor co-substrate for building the displayed C40 frameworks.",
+          "LCYB·LCYE는 carotenoid의 말단에 작용합니다. 분리된 beta 고리나 beta-ionone이 표시한 C40 골격의 전구체 함께 쓰이는 기질로 들어가는 것은 아닙니다."
+        ],
+        "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/19.html"
+      }
+    ],
+    "targetGraph": "carotenoid-frameworks"
+  }
+}

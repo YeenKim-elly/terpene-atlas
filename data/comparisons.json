@@ -1195,5 +1195,3916 @@
       "plain": "assets/comparisons/compare-borapetol-b-glycoside-right-plain.svg",
       "highlighted": "assets/comparisons/compare-borapetol-b-glycoside-right-highlighted.svg"
     }
+  },
+  {
+    "id": "menthone-menthol",
+    "title": [
+      "(−)-Menthone and (−)-menthol",
+      "(−)-Menthone과 (−)-menthol"
+    ],
+    "leftId": "minus-menthone",
+    "rightId": "minus-menthol",
+    "types": [
+      "functional-group"
+    ],
+    "explanation": [
+      "Reduction changes the ketone into a secondary alcohol and adds H2. The selected product also defines the alcohol-bearing stereocentre.",
+      "Ketone을 secondary alcohol로 환원하면 H2가 더해집니다. 선택한 산물은 alcohol이 붙은 입체중심도 지정합니다."
+    ],
+    "changeSummary": [
+      "Ketone to secondary alcohol; H2 added.",
+      "Ketone에서 secondary alcohol로 변화하며 H2가 더해집니다."
+    ],
+    "caveat": [
+      "The selected peppermint MMR favours (−)-menthol but also produces minor (+)-neomenthol. The comparison does not imply an exclusive product.",
+      "선택한 peppermint MMR은 (−)-menthol을 주로 만들지만 소량의 (+)-neomenthol도 만듭니다. 단일 산물만 생긴다는 뜻은 아닙니다."
+    ],
+    "sources": [
+      {
+        "name": "Davis et al., 2005 · Peppermint menthone reductases",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1065388/"
+      },
+      {
+        "name": "(−)-Menthone · PubChem CID 26447",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/26447"
+      },
+      {
+        "name": "(−)-Menthol · PubChem CID 16666",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/16666"
+      }
+    ],
+    "numberingAvailable": false,
+    "numberingNote": [
+      "Full common-atom alignment is validated. Map labels are internal correspondence keys, not conventional carbon numbers; conventional numbering is not displayed.",
+      "전체 공통 원자 정렬을 검증했습니다. 대응표의 표기는 내부 식별자이며 관용 탄소 번호가 아니므로 번호는 표시하지 않습니다."
+    ],
+    "commonAtomMap": [
+      {
+        "key": "M0",
+        "leftAtom": 0,
+        "rightAtom": 0,
+        "element": "C"
+      },
+      {
+        "key": "M1",
+        "leftAtom": 1,
+        "rightAtom": 1,
+        "element": "C"
+      },
+      {
+        "key": "M10",
+        "leftAtom": 10,
+        "rightAtom": 10,
+        "element": "C"
+      },
+      {
+        "key": "M2",
+        "leftAtom": 2,
+        "rightAtom": 2,
+        "element": "C"
+      },
+      {
+        "key": "M3",
+        "leftAtom": 3,
+        "rightAtom": 3,
+        "element": "C"
+      },
+      {
+        "key": "M4",
+        "leftAtom": 4,
+        "rightAtom": 4,
+        "element": "C"
+      },
+      {
+        "key": "M5",
+        "leftAtom": 5,
+        "rightAtom": 5,
+        "element": "C"
+      },
+      {
+        "key": "M6",
+        "leftAtom": 7,
+        "rightAtom": 6,
+        "element": "C"
+      },
+      {
+        "key": "M7",
+        "leftAtom": 6,
+        "rightAtom": 7,
+        "element": "O"
+      },
+      {
+        "key": "M8",
+        "leftAtom": 8,
+        "rightAtom": 8,
+        "element": "C"
+      },
+      {
+        "key": "M9",
+        "leftAtom": 9,
+        "rightAtom": 9,
+        "element": "C"
+      }
+    ],
+    "sharedCarbonMap": [
+      {
+        "key": "M0",
+        "leftAtom": 0,
+        "rightAtom": 0
+      },
+      {
+        "key": "M1",
+        "leftAtom": 1,
+        "rightAtom": 1
+      },
+      {
+        "key": "M2",
+        "leftAtom": 2,
+        "rightAtom": 2
+      },
+      {
+        "key": "M3",
+        "leftAtom": 3,
+        "rightAtom": 3
+      },
+      {
+        "key": "M4",
+        "leftAtom": 4,
+        "rightAtom": 4
+      },
+      {
+        "key": "M5",
+        "leftAtom": 5,
+        "rightAtom": 5
+      },
+      {
+        "key": "M6",
+        "leftAtom": 7,
+        "rightAtom": 6
+      },
+      {
+        "key": "M8",
+        "leftAtom": 8,
+        "rightAtom": 8
+      },
+      {
+        "key": "M9",
+        "leftAtom": 9,
+        "rightAtom": 9
+      },
+      {
+        "key": "M10",
+        "leftAtom": 10,
+        "rightAtom": 10
+      }
+    ],
+    "computedDifferences": {
+      "bondChanges": [
+        [
+          "M5",
+          "M7"
+        ]
+      ],
+      "leftOnlyAtoms": [],
+      "rightOnlyAtoms": [],
+      "stereoCentres": [],
+      "newStereoCentres": [
+        "M5"
+      ],
+      "lostStereoCentres": []
+    },
+    "changes": [
+      {
+        "type": "functional-group",
+        "positions": [],
+        "detail": [
+          "Ketone to secondary alcohol; H2 added.",
+          "Ketone에서 secondary alcohol로 변화하며 H2가 더해집니다."
+        ]
+      }
+    ],
+    "mapping": {
+      "left": {
+        "conventionalCarbonToAtom": {},
+        "commonAtomToAtom": {
+          "M0": 0,
+          "M1": 1,
+          "M2": 2,
+          "M3": 3,
+          "M4": 4,
+          "M5": 5,
+          "M6": 7,
+          "M7": 6,
+          "M8": 8,
+          "M9": 9,
+          "M10": 10
+        },
+        "recordId": "minus-menthone",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/26447",
+        "formula": "C10H18O"
+      },
+      "right": {
+        "conventionalCarbonToAtom": {},
+        "commonAtomToAtom": {
+          "M0": 0,
+          "M1": 1,
+          "M2": 2,
+          "M3": 3,
+          "M4": 4,
+          "M5": 5,
+          "M6": 6,
+          "M7": 7,
+          "M8": 8,
+          "M9": 9,
+          "M10": 10
+        },
+        "recordId": "minus-menthol",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/16666",
+        "formula": "C10H20O"
+      }
+    },
+    "alignment": {
+      "method": "Complete common-heavy-atom mapping with hard coordinate constraints",
+      "alignedAtoms": 11,
+      "sharedCarbons": 10,
+      "sameScale": true,
+      "maximumCanvasDiscrepancyPx": 0
+    },
+    "left": {
+      "plain": "assets/comparisons/compare-menthone-menthol-left-plain.svg",
+      "highlighted": "assets/comparisons/compare-menthone-menthol-left-highlighted.svg",
+      "numbered": null,
+      "numberedHighlighted": null
+    },
+    "right": {
+      "plain": "assets/comparisons/compare-menthone-menthol-right-plain.svg",
+      "highlighted": "assets/comparisons/compare-menthone-menthol-right-highlighted.svg",
+      "numbered": null,
+      "numberedHighlighted": null
+    },
+    "family": "mono"
+  },
+  {
+    "id": "menthol-neomenthol",
+    "title": [
+      "(−)-Menthol and (+)-neomenthol",
+      "(−)-Menthol과 (+)-neomenthol"
+    ],
+    "leftId": "minus-menthol",
+    "rightId": "plus-neomenthol",
+    "types": [
+      "stereochemistry"
+    ],
+    "explanation": [
+      "These records have the same formula and connectivity. Only the alcohol-bearing stereocentre is inverted; they are epimers and diastereomers, not enantiomers.",
+      "분자식과 결합 관계는 같으며 alcohol이 붙은 입체중심만 반대입니다. Epimer인 diastereomer 쌍이며 enantiomer가 아닙니다."
+    ],
+    "changeSummary": [
+      "One alcohol-bearing stereocentre is inverted.",
+      "Alcohol이 붙은 입체중심 하나의 배열이 반대입니다."
+    ],
+    "caveat": [
+      "This is a structure comparison, not a direct menthol-to-neomenthol reaction. The peppermint reductases favour different major products from menthone.",
+      "직접적인 menthol→neomenthol 반응이 아닌 구조 비교입니다. Peppermint 환원효소들은 menthone에서 서로 다른 주산물을 만듭니다."
+    ],
+    "sources": [
+      {
+        "name": "Davis et al., 2005 · Peppermint menthone reductases",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1065388/"
+      },
+      {
+        "name": "(−)-Menthol · PubChem CID 16666",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/16666"
+      },
+      {
+        "name": "(+)-Neomenthol · PubChem CID 439263",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/439263"
+      }
+    ],
+    "numberingAvailable": false,
+    "numberingNote": [
+      "Full common-atom alignment is validated. Map labels are internal correspondence keys, not conventional carbon numbers; conventional numbering is not displayed.",
+      "전체 공통 원자 정렬을 검증했습니다. 대응표의 표기는 내부 식별자이며 관용 탄소 번호가 아니므로 번호는 표시하지 않습니다."
+    ],
+    "commonAtomMap": [
+      {
+        "key": "M0",
+        "leftAtom": 0,
+        "rightAtom": 0,
+        "element": "C"
+      },
+      {
+        "key": "M1",
+        "leftAtom": 1,
+        "rightAtom": 1,
+        "element": "C"
+      },
+      {
+        "key": "M10",
+        "leftAtom": 10,
+        "rightAtom": 10,
+        "element": "C"
+      },
+      {
+        "key": "M2",
+        "leftAtom": 2,
+        "rightAtom": 2,
+        "element": "C"
+      },
+      {
+        "key": "M3",
+        "leftAtom": 3,
+        "rightAtom": 3,
+        "element": "C"
+      },
+      {
+        "key": "M4",
+        "leftAtom": 4,
+        "rightAtom": 4,
+        "element": "C"
+      },
+      {
+        "key": "M5",
+        "leftAtom": 5,
+        "rightAtom": 5,
+        "element": "C"
+      },
+      {
+        "key": "M6",
+        "leftAtom": 6,
+        "rightAtom": 6,
+        "element": "C"
+      },
+      {
+        "key": "M7",
+        "leftAtom": 7,
+        "rightAtom": 7,
+        "element": "O"
+      },
+      {
+        "key": "M8",
+        "leftAtom": 8,
+        "rightAtom": 8,
+        "element": "C"
+      },
+      {
+        "key": "M9",
+        "leftAtom": 9,
+        "rightAtom": 9,
+        "element": "C"
+      }
+    ],
+    "sharedCarbonMap": [
+      {
+        "key": "M0",
+        "leftAtom": 0,
+        "rightAtom": 0
+      },
+      {
+        "key": "M1",
+        "leftAtom": 1,
+        "rightAtom": 1
+      },
+      {
+        "key": "M2",
+        "leftAtom": 2,
+        "rightAtom": 2
+      },
+      {
+        "key": "M3",
+        "leftAtom": 3,
+        "rightAtom": 3
+      },
+      {
+        "key": "M4",
+        "leftAtom": 4,
+        "rightAtom": 4
+      },
+      {
+        "key": "M5",
+        "leftAtom": 5,
+        "rightAtom": 5
+      },
+      {
+        "key": "M6",
+        "leftAtom": 6,
+        "rightAtom": 6
+      },
+      {
+        "key": "M8",
+        "leftAtom": 8,
+        "rightAtom": 8
+      },
+      {
+        "key": "M9",
+        "leftAtom": 9,
+        "rightAtom": 9
+      },
+      {
+        "key": "M10",
+        "leftAtom": 10,
+        "rightAtom": 10
+      }
+    ],
+    "computedDifferences": {
+      "bondChanges": [],
+      "leftOnlyAtoms": [],
+      "rightOnlyAtoms": [],
+      "stereoCentres": [
+        "M5"
+      ],
+      "newStereoCentres": [],
+      "lostStereoCentres": []
+    },
+    "changes": [
+      {
+        "type": "stereochemistry",
+        "positions": [],
+        "detail": [
+          "One alcohol-bearing stereocentre is inverted.",
+          "Alcohol이 붙은 입체중심 하나의 배열이 반대입니다."
+        ]
+      }
+    ],
+    "mapping": {
+      "left": {
+        "conventionalCarbonToAtom": {},
+        "commonAtomToAtom": {
+          "M0": 0,
+          "M1": 1,
+          "M2": 2,
+          "M3": 3,
+          "M4": 4,
+          "M5": 5,
+          "M6": 6,
+          "M7": 7,
+          "M8": 8,
+          "M9": 9,
+          "M10": 10
+        },
+        "recordId": "minus-menthol",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/16666",
+        "formula": "C10H20O"
+      },
+      "right": {
+        "conventionalCarbonToAtom": {},
+        "commonAtomToAtom": {
+          "M0": 0,
+          "M1": 1,
+          "M2": 2,
+          "M3": 3,
+          "M4": 4,
+          "M5": 5,
+          "M6": 6,
+          "M7": 7,
+          "M8": 8,
+          "M9": 9,
+          "M10": 10
+        },
+        "recordId": "plus-neomenthol",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/439263",
+        "formula": "C10H20O"
+      }
+    },
+    "alignment": {
+      "method": "Complete common-heavy-atom mapping with hard coordinate constraints",
+      "alignedAtoms": 11,
+      "sharedCarbons": 10,
+      "sameScale": true,
+      "maximumCanvasDiscrepancyPx": 0
+    },
+    "left": {
+      "plain": "assets/comparisons/compare-menthol-neomenthol-left-plain.svg",
+      "highlighted": "assets/comparisons/compare-menthol-neomenthol-left-highlighted.svg",
+      "numbered": null,
+      "numberedHighlighted": null
+    },
+    "right": {
+      "plain": "assets/comparisons/compare-menthol-neomenthol-right-plain.svg",
+      "highlighted": "assets/comparisons/compare-menthol-neomenthol-right-highlighted.svg",
+      "numbered": null,
+      "numberedHighlighted": null
+    },
+    "family": "mono"
+  },
+  {
+    "id": "nootkatol-nootkatone",
+    "title": [
+      "β-Nootkatol and (+)-nootkatone",
+      "β-Nootkatol과 (+)-nootkatone"
+    ],
+    "leftId": "beta-nootkatol",
+    "rightId": "nootkatone",
+    "types": [
+      "functional-group"
+    ],
+    "explanation": [
+      "Oxidation changes the secondary alcohol into a ketone and removes H2. The remaining mapped stereochemical core is retained in these selected records.",
+      "Secondary alcohol을 ketone으로 산화하면 H2가 줄어듭니다. 선택한 기록에서는 나머지 대응 입체골격이 유지됩니다."
+    ],
+    "changeSummary": [
+      "Secondary alcohol to ketone; H2 removed.",
+      "Secondary alcohol에서 ketone으로 변화하며 H2가 줄어듭니다."
+    ],
+    "caveat": [
+      "The exact β-nootkatol stereochemical record is used. Historical nootkatol and epinootkatol names do not always denote the same epimer. AoSDR3 is a characterised reference, not a universal oxidase assignment.",
+      "입체배열을 지정한 β-nootkatol 기록을 사용합니다. 과거 nootkatol·epinootkatol 이름이 항상 같은 epimer를 뜻하지는 않습니다. AoSDR3는 규명된 참고 효소이며 모든 종의 담당 효소를 지정하지 않습니다."
+    ],
+    "sources": [
+      {
+        "name": "Deng et al., 2024 · Alpinia nootkatone pathway",
+        "url": "https://doi.org/10.1111/nph.19375"
+      },
+      {
+        "name": "β-Nootkatol · defined record · PubChem CID 182645",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/182645"
+      },
+      {
+        "name": "Nootkatone · PubChem CID 1268142",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1268142"
+      }
+    ],
+    "numberingAvailable": false,
+    "numberingNote": [
+      "Full common-atom alignment is validated. Map labels are internal correspondence keys, not conventional carbon numbers; conventional numbering is not displayed.",
+      "전체 공통 원자 정렬을 검증했습니다. 대응표의 표기는 내부 식별자이며 관용 탄소 번호가 아니므로 번호는 표시하지 않습니다."
+    ],
+    "commonAtomMap": [
+      {
+        "key": "M0",
+        "leftAtom": 0,
+        "rightAtom": 0,
+        "element": "C"
+      },
+      {
+        "key": "M1",
+        "leftAtom": 1,
+        "rightAtom": 1,
+        "element": "C"
+      },
+      {
+        "key": "M10",
+        "leftAtom": 10,
+        "rightAtom": 11,
+        "element": "C"
+      },
+      {
+        "key": "M11",
+        "leftAtom": 11,
+        "rightAtom": 12,
+        "element": "C"
+      },
+      {
+        "key": "M12",
+        "leftAtom": 12,
+        "rightAtom": 13,
+        "element": "C"
+      },
+      {
+        "key": "M13",
+        "leftAtom": 13,
+        "rightAtom": 14,
+        "element": "C"
+      },
+      {
+        "key": "M14",
+        "leftAtom": 14,
+        "rightAtom": 15,
+        "element": "C"
+      },
+      {
+        "key": "M15",
+        "leftAtom": 15,
+        "rightAtom": 4,
+        "element": "O"
+      },
+      {
+        "key": "M2",
+        "leftAtom": 2,
+        "rightAtom": 2,
+        "element": "C"
+      },
+      {
+        "key": "M3",
+        "leftAtom": 3,
+        "rightAtom": 3,
+        "element": "C"
+      },
+      {
+        "key": "M4",
+        "leftAtom": 4,
+        "rightAtom": 5,
+        "element": "C"
+      },
+      {
+        "key": "M5",
+        "leftAtom": 5,
+        "rightAtom": 6,
+        "element": "C"
+      },
+      {
+        "key": "M6",
+        "leftAtom": 6,
+        "rightAtom": 7,
+        "element": "C"
+      },
+      {
+        "key": "M7",
+        "leftAtom": 7,
+        "rightAtom": 8,
+        "element": "C"
+      },
+      {
+        "key": "M8",
+        "leftAtom": 8,
+        "rightAtom": 9,
+        "element": "C"
+      },
+      {
+        "key": "M9",
+        "leftAtom": 9,
+        "rightAtom": 10,
+        "element": "C"
+      }
+    ],
+    "sharedCarbonMap": [
+      {
+        "key": "M0",
+        "leftAtom": 0,
+        "rightAtom": 0
+      },
+      {
+        "key": "M1",
+        "leftAtom": 1,
+        "rightAtom": 1
+      },
+      {
+        "key": "M2",
+        "leftAtom": 2,
+        "rightAtom": 2
+      },
+      {
+        "key": "M3",
+        "leftAtom": 3,
+        "rightAtom": 3
+      },
+      {
+        "key": "M4",
+        "leftAtom": 4,
+        "rightAtom": 5
+      },
+      {
+        "key": "M5",
+        "leftAtom": 5,
+        "rightAtom": 6
+      },
+      {
+        "key": "M6",
+        "leftAtom": 6,
+        "rightAtom": 7
+      },
+      {
+        "key": "M7",
+        "leftAtom": 7,
+        "rightAtom": 8
+      },
+      {
+        "key": "M8",
+        "leftAtom": 8,
+        "rightAtom": 9
+      },
+      {
+        "key": "M9",
+        "leftAtom": 9,
+        "rightAtom": 10
+      },
+      {
+        "key": "M10",
+        "leftAtom": 10,
+        "rightAtom": 11
+      },
+      {
+        "key": "M11",
+        "leftAtom": 11,
+        "rightAtom": 12
+      },
+      {
+        "key": "M12",
+        "leftAtom": 12,
+        "rightAtom": 13
+      },
+      {
+        "key": "M13",
+        "leftAtom": 13,
+        "rightAtom": 14
+      },
+      {
+        "key": "M14",
+        "leftAtom": 14,
+        "rightAtom": 15
+      }
+    ],
+    "computedDifferences": {
+      "bondChanges": [
+        [
+          "M15",
+          "M3"
+        ]
+      ],
+      "leftOnlyAtoms": [],
+      "rightOnlyAtoms": [],
+      "stereoCentres": [],
+      "newStereoCentres": [],
+      "lostStereoCentres": [
+        "M3"
+      ]
+    },
+    "changes": [
+      {
+        "type": "functional-group",
+        "positions": [],
+        "detail": [
+          "Secondary alcohol to ketone; H2 removed.",
+          "Secondary alcohol에서 ketone으로 변화하며 H2가 줄어듭니다."
+        ]
+      }
+    ],
+    "mapping": {
+      "left": {
+        "conventionalCarbonToAtom": {},
+        "commonAtomToAtom": {
+          "M0": 0,
+          "M1": 1,
+          "M2": 2,
+          "M3": 3,
+          "M4": 4,
+          "M5": 5,
+          "M6": 6,
+          "M7": 7,
+          "M8": 8,
+          "M9": 9,
+          "M10": 10,
+          "M11": 11,
+          "M12": 12,
+          "M13": 13,
+          "M14": 14,
+          "M15": 15
+        },
+        "recordId": "beta-nootkatol",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/182645",
+        "formula": "C15H24O"
+      },
+      "right": {
+        "conventionalCarbonToAtom": {},
+        "commonAtomToAtom": {
+          "M0": 0,
+          "M1": 1,
+          "M2": 2,
+          "M3": 3,
+          "M4": 5,
+          "M5": 6,
+          "M6": 7,
+          "M7": 8,
+          "M8": 9,
+          "M9": 10,
+          "M10": 11,
+          "M11": 12,
+          "M12": 13,
+          "M13": 14,
+          "M14": 15,
+          "M15": 4
+        },
+        "recordId": "nootkatone",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/1268142",
+        "formula": "C15H22O"
+      }
+    },
+    "alignment": {
+      "method": "Complete common-heavy-atom mapping with hard coordinate constraints",
+      "alignedAtoms": 16,
+      "sharedCarbons": 15,
+      "sameScale": true,
+      "maximumCanvasDiscrepancyPx": 0
+    },
+    "left": {
+      "plain": "assets/comparisons/compare-nootkatol-nootkatone-left-plain.svg",
+      "highlighted": "assets/comparisons/compare-nootkatol-nootkatone-left-highlighted.svg",
+      "numbered": null,
+      "numberedHighlighted": null
+    },
+    "right": {
+      "plain": "assets/comparisons/compare-nootkatol-nootkatone-right-plain.svg",
+      "highlighted": "assets/comparisons/compare-nootkatol-nootkatone-right-highlighted.svg",
+      "numbered": null,
+      "numberedHighlighted": null
+    },
+    "family": "sesqui"
+  },
+  {
+    "id": "carotene-zeaxanthin",
+    "leftId": "beta-carotene",
+    "rightId": "zeaxanthin",
+    "types": [
+      "oxygenation"
+    ],
+    "title": [
+      "β-Carotene and zeaxanthin",
+      "β-Carotene과 zeaxanthin"
+    ],
+    "explanation": [
+      "Zeaxanthin adds one hydroxyl to each β end ring while retaining the C40 framework. Its hydroxyl-bearing stereocentres are assigned in the selected record.",
+      "Zeaxanthin은 두 β 말단 고리에 hydroxyl을 하나씩 가지며 C40 골격을 유지합니다. 관련 입체중심은 선택한 기록에 지정되어 있습니다."
+    ],
+    "changeSummary": [
+      "Two hydroxyl groups; retained C40 skeleton.",
+      "Hydroxyl 2개가 추가되며 C40 골격은 유지됩니다."
+    ],
+    "caveat": [
+      "This summarises two hydroxylations, commonly through β-cryptoxanthin. Enzyme-specific substrate preferences and product stereochemistry must be checked.",
+      "두 번의 수산화를 요약하며 일반적으로 β-cryptoxanthin을 거칩니다. 효소별 기질 선호도와 산물 입체배열을 확인해야 합니다."
+    ],
+    "sources": [
+      {
+        "name": "IUBMB EC 1.14.15.24 · β-carotene 3-hydroxylase",
+        "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/14/15/24.html"
+      },
+      {
+        "name": "β-Carotene · PubChem CID 5280489",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280489"
+      },
+      {
+        "name": "Zeaxanthin · PubChem CID 5280899",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280899"
+      }
+    ],
+    "numberingAvailable": false,
+    "numberingNote": [
+      "Conventional carbon numbers are not overlaid. Highlights are calculated from an atom map of the selected C40 structures; internal atom indices are not conventional carotenoid numbering.",
+      "관용 탄소 번호를 덧붙이지 않았습니다. 강조는 선택한 C40 구조의 원자 대응에서 계산했으며 내부 원자 인덱스는 관용 carotenoid 번호가 아닙니다."
+    ],
+    "changes": [
+      {
+        "type": "oxygenation",
+        "positions": [],
+        "detail": [
+          "Two hydroxyl groups; retained C40 skeleton.",
+          "Hydroxyl 2개가 추가되며 C40 골격은 유지됩니다."
+        ]
+      }
+    ],
+    "computedDifferences": {
+      "bondChanges": [],
+      "leftOnlyAtoms": [],
+      "rightOnlyAtoms": [
+        7,
+        36
+      ],
+      "stereoCentres": [],
+      "doubleBondStereoChanges": [],
+      "addedBonds": [
+        {
+          "rightAtoms": [
+            5,
+            7
+          ],
+          "rightOrder": "SINGLE"
+        },
+        {
+          "rightAtoms": [
+            31,
+            36
+          ],
+          "rightOrder": "SINGLE"
+        }
+      ],
+      "removedBonds": [],
+      "tetrahedralChanges": [
+        {
+          "leftAtom": 5,
+          "rightAtom": 5,
+          "kind": "right-assigned"
+        },
+        {
+          "leftAtom": 30,
+          "rightAtom": 31,
+          "kind": "right-assigned"
+        }
+      ],
+      "leftFormula": "C40H56",
+      "rightFormula": "C40H56O2",
+      "elementDeltaRightMinusLeft": {
+        "O": 2
+      },
+      "leftOxygenCount": 0,
+      "rightOxygenCount": 2
+    },
+    "mapping": {
+      "left": {
+        "recordId": "beta-carotene",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5280489",
+        "formula": "C40H56",
+        "conventionalCarbonToAtom": {}
+      },
+      "right": {
+        "recordId": "zeaxanthin",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5280899",
+        "formula": "C40H56O2",
+        "conventionalCarbonToAtom": {}
+      },
+      "carbonAtomCorrespondence": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          17,
+          18
+        ],
+        [
+          18,
+          19
+        ],
+        [
+          19,
+          20
+        ],
+        [
+          20,
+          21
+        ],
+        [
+          21,
+          22
+        ],
+        [
+          22,
+          23
+        ],
+        [
+          23,
+          24
+        ],
+        [
+          24,
+          25
+        ],
+        [
+          25,
+          26
+        ],
+        [
+          26,
+          27
+        ],
+        [
+          27,
+          28
+        ],
+        [
+          28,
+          29
+        ],
+        [
+          29,
+          30
+        ],
+        [
+          30,
+          31
+        ],
+        [
+          31,
+          32
+        ],
+        [
+          32,
+          33
+        ],
+        [
+          33,
+          34
+        ],
+        [
+          34,
+          35
+        ],
+        [
+          35,
+          37
+        ],
+        [
+          36,
+          38
+        ],
+        [
+          37,
+          39
+        ],
+        [
+          38,
+          40
+        ],
+        [
+          39,
+          41
+        ]
+      ],
+      "coordinateConstraints": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          17,
+          18
+        ],
+        [
+          18,
+          19
+        ],
+        [
+          19,
+          20
+        ],
+        [
+          20,
+          21
+        ],
+        [
+          21,
+          22
+        ],
+        [
+          22,
+          23
+        ],
+        [
+          23,
+          24
+        ],
+        [
+          24,
+          25
+        ],
+        [
+          25,
+          26
+        ],
+        [
+          26,
+          27
+        ],
+        [
+          27,
+          28
+        ],
+        [
+          28,
+          29
+        ],
+        [
+          29,
+          30
+        ],
+        [
+          30,
+          31
+        ],
+        [
+          31,
+          32
+        ],
+        [
+          32,
+          33
+        ],
+        [
+          33,
+          34
+        ],
+        [
+          34,
+          35
+        ],
+        [
+          35,
+          37
+        ],
+        [
+          36,
+          38
+        ],
+        [
+          37,
+          39
+        ],
+        [
+          38,
+          40
+        ],
+        [
+          39,
+          41
+        ]
+      ]
+    },
+    "alignment": {
+      "method": "Carbon-connectivity graph match (bond order ignored only for matching); hard common-core coordinate constraints",
+      "alignedAtoms": 40,
+      "carbonCorrespondences": 40,
+      "sameScale": true,
+      "partialAlignment": false,
+      "scope": "All 40 carbon atoms and matched oxygen atoms",
+      "symmetryMappingsConsidered": 8,
+      "maximumCanvasDiscrepancyPx": 0
+    },
+    "left": {
+      "numbered": null,
+      "numberedHighlighted": null,
+      "plain": "assets/comparisons/compare-carotene-zeaxanthin-left-plain.svg",
+      "highlighted": "assets/comparisons/compare-carotene-zeaxanthin-left-highlighted.svg"
+    },
+    "right": {
+      "numbered": null,
+      "numberedHighlighted": null,
+      "plain": "assets/comparisons/compare-carotene-zeaxanthin-right-plain.svg",
+      "highlighted": "assets/comparisons/compare-carotene-zeaxanthin-right-highlighted.svg"
+    },
+    "family": "tetra"
+  },
+  {
+    "id": "canthaxanthin-astaxanthin",
+    "leftId": "canthaxanthin",
+    "rightId": "astaxanthin",
+    "types": [
+      "oxygenation"
+    ],
+    "title": [
+      "Canthaxanthin and astaxanthin",
+      "Canthaxanthin과 astaxanthin"
+    ],
+    "explanation": [
+      "Both structures already contain two ketones. Astaxanthin additionally contains two hydroxyls, with assigned stereochemistry in the selected record.",
+      "두 구조 모두 이미 ketone 2개를 가집니다. 선택한 astaxanthin 기록에는 hydroxyl 2개가 추가로 있으며 관련 입체배열이 지정되어 있습니다."
+    ],
+    "changeSummary": [
+      "Two hydroxyls are added to the ketocarotenoid framework.",
+      "Ketocarotenoid 골격에 hydroxyl 2개가 추가됩니다."
+    ],
+    "caveat": [
+      "Canthaxanthin hydroxylation is enzyme dependent and can proceed through adonirubin. The selected record does not specify the stereochemical product of every hydroxylase.",
+      "Canthaxanthin 수산화는 효소에 따라 다르며 adonirubin을 거칠 수 있습니다. 선택한 기록만으로 모든 hydroxylase의 입체화학적 산물을 지정할 수는 없습니다."
+    ],
+    "sources": [
+      {
+        "name": "IUBMB EC 1.14.15.24 · β-carotene 3-hydroxylase",
+        "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/14/15/24.html"
+      },
+      {
+        "name": "Canthaxanthin · PubChem CID 5281227",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5281227"
+      },
+      {
+        "name": "Astaxanthin · PubChem CID 5281224",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5281224"
+      }
+    ],
+    "numberingAvailable": false,
+    "numberingNote": [
+      "Conventional carbon numbers are not overlaid. Highlights are calculated from an atom map of the selected C40 structures; internal atom indices are not conventional carotenoid numbering.",
+      "관용 탄소 번호를 덧붙이지 않았습니다. 강조는 선택한 C40 구조의 원자 대응에서 계산했으며 내부 원자 인덱스는 관용 carotenoid 번호가 아닙니다."
+    ],
+    "changes": [
+      {
+        "type": "oxygenation",
+        "positions": [],
+        "detail": [
+          "Two hydroxyls are added to the ketocarotenoid framework.",
+          "Ketocarotenoid 골격에 hydroxyl 2개가 추가됩니다."
+        ]
+      }
+    ],
+    "computedDifferences": {
+      "bondChanges": [],
+      "leftOnlyAtoms": [],
+      "rightOnlyAtoms": [
+        8,
+        38
+      ],
+      "stereoCentres": [],
+      "doubleBondStereoChanges": [],
+      "addedBonds": [
+        {
+          "rightAtoms": [
+            5,
+            8
+          ],
+          "rightOrder": "SINGLE"
+        },
+        {
+          "rightAtoms": [
+            33,
+            38
+          ],
+          "rightOrder": "SINGLE"
+        }
+      ],
+      "removedBonds": [],
+      "tetrahedralChanges": [
+        {
+          "leftAtom": 5,
+          "rightAtom": 5,
+          "kind": "right-assigned"
+        },
+        {
+          "leftAtom": 32,
+          "rightAtom": 33,
+          "kind": "right-assigned"
+        }
+      ],
+      "leftFormula": "C40H52O2",
+      "rightFormula": "C40H52O4",
+      "elementDeltaRightMinusLeft": {
+        "O": 2
+      },
+      "leftOxygenCount": 2,
+      "rightOxygenCount": 4
+    },
+    "mapping": {
+      "left": {
+        "recordId": "canthaxanthin",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5281227",
+        "formula": "C40H52O2",
+        "conventionalCarbonToAtom": {}
+      },
+      "right": {
+        "recordId": "astaxanthin",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5281224",
+        "formula": "C40H52O4",
+        "conventionalCarbonToAtom": {}
+      },
+      "carbonAtomCorrespondence": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          17,
+          18
+        ],
+        [
+          18,
+          19
+        ],
+        [
+          19,
+          20
+        ],
+        [
+          20,
+          21
+        ],
+        [
+          21,
+          22
+        ],
+        [
+          22,
+          23
+        ],
+        [
+          23,
+          24
+        ],
+        [
+          24,
+          25
+        ],
+        [
+          25,
+          26
+        ],
+        [
+          26,
+          27
+        ],
+        [
+          27,
+          28
+        ],
+        [
+          28,
+          29
+        ],
+        [
+          29,
+          30
+        ],
+        [
+          30,
+          31
+        ],
+        [
+          32,
+          33
+        ],
+        [
+          33,
+          34
+        ],
+        [
+          34,
+          35
+        ],
+        [
+          35,
+          36
+        ],
+        [
+          36,
+          37
+        ],
+        [
+          37,
+          39
+        ],
+        [
+          38,
+          40
+        ],
+        [
+          39,
+          41
+        ],
+        [
+          40,
+          42
+        ],
+        [
+          41,
+          43
+        ]
+      ],
+      "coordinateConstraints": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          17,
+          18
+        ],
+        [
+          18,
+          19
+        ],
+        [
+          19,
+          20
+        ],
+        [
+          20,
+          21
+        ],
+        [
+          21,
+          22
+        ],
+        [
+          22,
+          23
+        ],
+        [
+          23,
+          24
+        ],
+        [
+          24,
+          25
+        ],
+        [
+          25,
+          26
+        ],
+        [
+          26,
+          27
+        ],
+        [
+          27,
+          28
+        ],
+        [
+          28,
+          29
+        ],
+        [
+          29,
+          30
+        ],
+        [
+          30,
+          31
+        ],
+        [
+          31,
+          32
+        ],
+        [
+          32,
+          33
+        ],
+        [
+          33,
+          34
+        ],
+        [
+          34,
+          35
+        ],
+        [
+          35,
+          36
+        ],
+        [
+          36,
+          37
+        ],
+        [
+          37,
+          39
+        ],
+        [
+          38,
+          40
+        ],
+        [
+          39,
+          41
+        ],
+        [
+          40,
+          42
+        ],
+        [
+          41,
+          43
+        ]
+      ]
+    },
+    "alignment": {
+      "method": "Carbon-connectivity graph match (bond order ignored only for matching); hard common-core coordinate constraints",
+      "alignedAtoms": 42,
+      "carbonCorrespondences": 40,
+      "sameScale": true,
+      "partialAlignment": false,
+      "scope": "All 40 carbon atoms and matched oxygen atoms",
+      "symmetryMappingsConsidered": 8,
+      "maximumCanvasDiscrepancyPx": 0
+    },
+    "left": {
+      "numbered": null,
+      "numberedHighlighted": null,
+      "plain": "assets/comparisons/compare-canthaxanthin-astaxanthin-left-plain.svg",
+      "highlighted": "assets/comparisons/compare-canthaxanthin-astaxanthin-left-highlighted.svg"
+    },
+    "right": {
+      "numbered": null,
+      "numberedHighlighted": null,
+      "plain": "assets/comparisons/compare-canthaxanthin-astaxanthin-right-plain.svg",
+      "highlighted": "assets/comparisons/compare-canthaxanthin-astaxanthin-right-highlighted.svg"
+    },
+    "family": "tetra"
+  },
+  {
+    "id": "zeaxanthin-astaxanthin",
+    "leftId": "zeaxanthin",
+    "rightId": "astaxanthin",
+    "types": [
+      "functional-group",
+      "oxygenation"
+    ],
+    "title": [
+      "Zeaxanthin and astaxanthin",
+      "Zeaxanthin과 astaxanthin"
+    ],
+    "explanation": [
+      "Astaxanthin has two additional ketones next to the hydroxyl-bearing ring carbons. The formula changes by +O2−H4. Both drawings retain the selected records' assigned stereochemistry; changed CIP labels after oxidation alone would not establish inversion.",
+      "Astaxanthin은 hydroxyl이 붙은 고리 탄소 옆에 ketone 2개를 추가로 가집니다. 분자식 변화는 +O2−H4입니다. 두 그림은 선택한 기록의 지정된 입체배열을 유지하며 산화 후 CIP 표기 변화만으로 반전을 입증할 수는 없습니다."
+    ],
+    "changeSummary": [
+      "Two ketones are added while both hydroxyls remain.",
+      "Hydroxyl 2개를 유지하면서 ketone 2개가 추가됩니다."
+    ],
+    "caveat": [
+      "Ketolase compatibility must be checked. IUBMB distinguishes zeaxanthin-accepting EC 1.14.99.64 from EC 1.14.99.63, whose entry excludes β rings already hydroxylated at position 3. The comparison summarises multiple transformations.",
+      "Ketolase의 기질 호환성을 확인해야 합니다. IUBMB는 zeaxanthin을 받는 EC 1.14.99.64와 EC 1.14.99.63을 구분하며 후자는 3번 위치가 이미 수산화된 β 고리를 제외합니다. 이 비교는 여러 변환을 요약합니다."
+    ],
+    "sources": [
+      {
+        "name": "IUBMB EC 1.14.99.64 · zeaxanthin 4-ketolase",
+        "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/14/99/64.html"
+      },
+      {
+        "name": "IUBMB EC 1.14.99.63 · β-carotene 4-ketolase",
+        "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/14/99/63.html"
+      },
+      {
+        "name": "Zeaxanthin · PubChem CID 5280899",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280899"
+      },
+      {
+        "name": "Astaxanthin · PubChem CID 5281224",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5281224"
+      }
+    ],
+    "numberingAvailable": false,
+    "numberingNote": [
+      "Conventional carbon numbers are not overlaid. Highlights are calculated from an atom map of the selected C40 structures; internal atom indices are not conventional carotenoid numbering.",
+      "관용 탄소 번호를 덧붙이지 않았습니다. 강조는 선택한 C40 구조의 원자 대응에서 계산했으며 내부 원자 인덱스는 관용 carotenoid 번호가 아닙니다."
+    ],
+    "changes": [
+      {
+        "type": "functional-group",
+        "positions": [],
+        "detail": [
+          "Two ketones are added while both hydroxyls remain.",
+          "Hydroxyl 2개를 유지하면서 ketone 2개가 추가됩니다."
+        ]
+      },
+      {
+        "type": "oxygenation",
+        "positions": [],
+        "detail": [
+          "Two ketones are added while both hydroxyls remain.",
+          "Hydroxyl 2개를 유지하면서 ketone 2개가 추가됩니다."
+        ]
+      }
+    ],
+    "computedDifferences": {
+      "bondChanges": [],
+      "leftOnlyAtoms": [],
+      "rightOnlyAtoms": [
+        7,
+        32
+      ],
+      "stereoCentres": [],
+      "doubleBondStereoChanges": [],
+      "addedBonds": [
+        {
+          "rightAtoms": [
+            6,
+            7
+          ],
+          "rightOrder": "DOUBLE"
+        },
+        {
+          "rightAtoms": [
+            31,
+            32
+          ],
+          "rightOrder": "DOUBLE"
+        }
+      ],
+      "removedBonds": [],
+      "tetrahedralChanges": [],
+      "leftFormula": "C40H56O2",
+      "rightFormula": "C40H52O4",
+      "elementDeltaRightMinusLeft": {
+        "H": -4,
+        "O": 2
+      },
+      "leftOxygenCount": 2,
+      "rightOxygenCount": 4
+    },
+    "mapping": {
+      "left": {
+        "recordId": "zeaxanthin",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5280899",
+        "formula": "C40H56O2",
+        "conventionalCarbonToAtom": {}
+      },
+      "right": {
+        "recordId": "astaxanthin",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5281224",
+        "formula": "C40H52O4",
+        "conventionalCarbonToAtom": {}
+      },
+      "carbonAtomCorrespondence": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          17,
+          18
+        ],
+        [
+          18,
+          19
+        ],
+        [
+          19,
+          20
+        ],
+        [
+          20,
+          21
+        ],
+        [
+          21,
+          22
+        ],
+        [
+          22,
+          23
+        ],
+        [
+          23,
+          24
+        ],
+        [
+          24,
+          25
+        ],
+        [
+          25,
+          26
+        ],
+        [
+          26,
+          27
+        ],
+        [
+          27,
+          28
+        ],
+        [
+          28,
+          29
+        ],
+        [
+          29,
+          30
+        ],
+        [
+          30,
+          31
+        ],
+        [
+          31,
+          33
+        ],
+        [
+          32,
+          34
+        ],
+        [
+          33,
+          35
+        ],
+        [
+          34,
+          36
+        ],
+        [
+          35,
+          37
+        ],
+        [
+          37,
+          39
+        ],
+        [
+          38,
+          40
+        ],
+        [
+          39,
+          41
+        ],
+        [
+          40,
+          42
+        ],
+        [
+          41,
+          43
+        ]
+      ],
+      "coordinateConstraints": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          17,
+          18
+        ],
+        [
+          18,
+          19
+        ],
+        [
+          19,
+          20
+        ],
+        [
+          20,
+          21
+        ],
+        [
+          21,
+          22
+        ],
+        [
+          22,
+          23
+        ],
+        [
+          23,
+          24
+        ],
+        [
+          24,
+          25
+        ],
+        [
+          25,
+          26
+        ],
+        [
+          26,
+          27
+        ],
+        [
+          27,
+          28
+        ],
+        [
+          28,
+          29
+        ],
+        [
+          29,
+          30
+        ],
+        [
+          30,
+          31
+        ],
+        [
+          31,
+          33
+        ],
+        [
+          32,
+          34
+        ],
+        [
+          33,
+          35
+        ],
+        [
+          34,
+          36
+        ],
+        [
+          35,
+          37
+        ],
+        [
+          36,
+          38
+        ],
+        [
+          37,
+          39
+        ],
+        [
+          38,
+          40
+        ],
+        [
+          39,
+          41
+        ],
+        [
+          40,
+          42
+        ],
+        [
+          41,
+          43
+        ]
+      ]
+    },
+    "alignment": {
+      "method": "Carbon-connectivity graph match (bond order ignored only for matching); hard common-core coordinate constraints",
+      "alignedAtoms": 42,
+      "carbonCorrespondences": 40,
+      "sameScale": true,
+      "partialAlignment": false,
+      "scope": "All 40 carbon atoms and matched oxygen atoms",
+      "symmetryMappingsConsidered": 8,
+      "maximumCanvasDiscrepancyPx": 0
+    },
+    "left": {
+      "numbered": null,
+      "numberedHighlighted": null,
+      "plain": "assets/comparisons/compare-zeaxanthin-astaxanthin-left-plain.svg",
+      "highlighted": "assets/comparisons/compare-zeaxanthin-astaxanthin-left-highlighted.svg"
+    },
+    "right": {
+      "numbered": null,
+      "numberedHighlighted": null,
+      "plain": "assets/comparisons/compare-zeaxanthin-astaxanthin-right-plain.svg",
+      "highlighted": "assets/comparisons/compare-zeaxanthin-astaxanthin-right-highlighted.svg"
+    },
+    "family": "tetra"
+  },
+  {
+    "id": "beta-alpha-carotene",
+    "leftId": "beta-carotene",
+    "rightId": "alpha-carotene",
+    "types": [
+      "connectivity",
+      "stereochemistry"
+    ],
+    "title": [
+      "β-Carotene and α-carotene",
+      "β-Carotene과 α-carotene"
+    ],
+    "explanation": [
+      "The formulas are identical. β-Carotene has two β end rings; α-carotene has β,ε end groups. One end-ring double-bond position differs, and the selected α record specifies a 6′R stereocentre.",
+      "분자식은 같습니다. β-Carotene은 β 말단 고리 2개를 가지며 α-carotene은 β,ε 말단 구조입니다. 한 말단 고리의 이중결합 위치가 다르며 선택한 α 기록에는 6′R 입체중심이 지정되어 있습니다."
+    ],
+    "changeSummary": [
+      "β,β versus β,ε: one ring double-bond position differs.",
+      "β,β와 β,ε: 한 고리의 이중결합 위치가 다릅니다."
+    ],
+    "caveat": [
+      "These are alternative cyclisation products, not a demonstrated direct β-carotene-to-α-carotene isomerisation. Bond highlights mark bond-order placement rather than cis/trans geometry.",
+      "서로 다른 고리화 산물의 비교이며 β-carotene에서 α-carotene으로 직접 이성질화된다는 뜻은 아닙니다. 결합 강조는 cis/trans 기하배열이 아닌 결합 차수의 위치를 나타냅니다."
+    ],
+    "sources": [
+      {
+        "name": "Cunningham & Gantt, 2001 · β/ε end groups and cyclase specificity",
+        "url": "https://doi.org/10.1073/pnas.051618398"
+      },
+      {
+        "name": "Bian et al., 2021 · α-carotene and lutein biosynthesis in yeast",
+        "url": "https://doi.org/10.1016/j.ymben.2021.05.008"
+      },
+      {
+        "name": "β-Carotene · PubChem CID 5280489",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280489"
+      },
+      {
+        "name": "(6′R)-α-Carotene · PubChem CID 6419725",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6419725"
+      }
+    ],
+    "stereoChangeSummary": [
+      "The selected α-carotene record assigns an additional ε-ring stereocentre; no opposing β-carotene configuration is implied.",
+      "선택한 α-carotene 기록에는 ε 고리 입체중심이 추가로 지정되어 있습니다. β-Carotene에 반대 배열이 있다는 뜻은 아닙니다."
+    ],
+    "numberingAvailable": false,
+    "numberingNote": [
+      "Conventional carbon numbers are not overlaid. Highlights are calculated from an atom map of the selected C40 structures; internal atom indices are not conventional carotenoid numbering.",
+      "관용 탄소 번호를 덧붙이지 않았습니다. 강조는 선택한 C40 구조의 원자 대응에서 계산했으며 내부 원자 인덱스는 관용 carotenoid 번호가 아닙니다."
+    ],
+    "changes": [
+      {
+        "type": "connectivity",
+        "positions": [],
+        "detail": [
+          "β,β versus β,ε: one ring double-bond position differs.",
+          "β,β와 β,ε: 한 고리의 이중결합 위치가 다릅니다."
+        ]
+      },
+      {
+        "type": "stereochemistry",
+        "positions": [],
+        "detail": [
+          "The selected α-carotene record assigns an additional ε-ring stereocentre; no opposing β-carotene configuration is implied.",
+          "선택한 α-carotene 기록에는 ε 고리 입체중심이 추가로 지정되어 있습니다. β-Carotene에 반대 배열이 있다는 뜻은 아닙니다."
+        ]
+      }
+    ],
+    "computedDifferences": {
+      "bondChanges": [
+        {
+          "leftAtoms": [
+            27,
+            28
+          ],
+          "rightAtoms": [
+            29,
+            30
+          ],
+          "leftOrder": "DOUBLE",
+          "rightOrder": "SINGLE"
+        },
+        {
+          "leftAtoms": [
+            28,
+            29
+          ],
+          "rightAtoms": [
+            30,
+            31
+          ],
+          "leftOrder": "SINGLE",
+          "rightOrder": "DOUBLE"
+        }
+      ],
+      "leftOnlyAtoms": [],
+      "rightOnlyAtoms": [],
+      "stereoCentres": [],
+      "doubleBondStereoChanges": [],
+      "addedBonds": [],
+      "removedBonds": [],
+      "tetrahedralChanges": [
+        {
+          "leftAtom": 27,
+          "rightAtom": 29,
+          "kind": "right-assigned"
+        }
+      ],
+      "leftFormula": "C40H56",
+      "rightFormula": "C40H56",
+      "elementDeltaRightMinusLeft": {},
+      "leftOxygenCount": 0,
+      "rightOxygenCount": 0
+    },
+    "mapping": {
+      "left": {
+        "recordId": "beta-carotene",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5280489",
+        "formula": "C40H56",
+        "conventionalCarbonToAtom": {}
+      },
+      "right": {
+        "recordId": "alpha-carotene",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/6419725",
+        "formula": "C40H56",
+        "conventionalCarbonToAtom": {}
+      },
+      "carbonAtomCorrespondence": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          13,
+          13
+        ],
+        [
+          14,
+          14
+        ],
+        [
+          15,
+          15
+        ],
+        [
+          16,
+          16
+        ],
+        [
+          17,
+          17
+        ],
+        [
+          18,
+          18
+        ],
+        [
+          19,
+          19
+        ],
+        [
+          20,
+          20
+        ],
+        [
+          21,
+          22
+        ],
+        [
+          22,
+          23
+        ],
+        [
+          23,
+          24
+        ],
+        [
+          24,
+          25
+        ],
+        [
+          25,
+          27
+        ],
+        [
+          26,
+          28
+        ],
+        [
+          27,
+          29
+        ],
+        [
+          28,
+          30
+        ],
+        [
+          29,
+          31
+        ],
+        [
+          30,
+          32
+        ],
+        [
+          31,
+          33
+        ],
+        [
+          32,
+          34
+        ],
+        [
+          33,
+          35
+        ],
+        [
+          34,
+          36
+        ],
+        [
+          35,
+          37
+        ],
+        [
+          36,
+          26
+        ],
+        [
+          37,
+          21
+        ],
+        [
+          38,
+          38
+        ],
+        [
+          39,
+          39
+        ]
+      ],
+      "coordinateConstraints": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          13,
+          13
+        ],
+        [
+          14,
+          14
+        ],
+        [
+          15,
+          15
+        ],
+        [
+          16,
+          16
+        ],
+        [
+          17,
+          17
+        ],
+        [
+          18,
+          18
+        ],
+        [
+          19,
+          19
+        ],
+        [
+          20,
+          20
+        ],
+        [
+          21,
+          22
+        ],
+        [
+          22,
+          23
+        ],
+        [
+          23,
+          24
+        ],
+        [
+          24,
+          25
+        ],
+        [
+          25,
+          27
+        ],
+        [
+          26,
+          28
+        ],
+        [
+          27,
+          29
+        ],
+        [
+          28,
+          30
+        ],
+        [
+          29,
+          31
+        ],
+        [
+          30,
+          32
+        ],
+        [
+          31,
+          33
+        ],
+        [
+          32,
+          34
+        ],
+        [
+          33,
+          35
+        ],
+        [
+          34,
+          36
+        ],
+        [
+          35,
+          37
+        ],
+        [
+          36,
+          26
+        ],
+        [
+          37,
+          21
+        ],
+        [
+          38,
+          38
+        ],
+        [
+          39,
+          39
+        ]
+      ]
+    },
+    "alignment": {
+      "method": "Carbon-connectivity graph match (bond order ignored only for matching); hard common-core coordinate constraints",
+      "alignedAtoms": 40,
+      "carbonCorrespondences": 40,
+      "sameScale": true,
+      "partialAlignment": false,
+      "scope": "All 40 carbon atoms and matched oxygen atoms",
+      "symmetryMappingsConsidered": 8,
+      "maximumCanvasDiscrepancyPx": 0
+    },
+    "left": {
+      "numbered": null,
+      "numberedHighlighted": null,
+      "plain": "assets/comparisons/compare-beta-alpha-carotene-left-plain.svg",
+      "highlighted": "assets/comparisons/compare-beta-alpha-carotene-left-highlighted.svg"
+    },
+    "right": {
+      "numbered": null,
+      "numberedHighlighted": null,
+      "plain": "assets/comparisons/compare-beta-alpha-carotene-right-plain.svg",
+      "highlighted": "assets/comparisons/compare-beta-alpha-carotene-right-highlighted.svg"
+    },
+    "family": "tetra"
+  },
+  {
+    "id": "zeaxanthin-lutein",
+    "leftId": "zeaxanthin",
+    "rightId": "lutein",
+    "types": [
+      "connectivity",
+      "stereochemistry"
+    ],
+    "title": [
+      "Zeaxanthin and lutein",
+      "Zeaxanthin과 lutein"
+    ],
+    "explanation": [
+      "Both records have formula C40H56O2 and two hydroxyl groups. Zeaxanthin has β,β end groups; lutein has β,ε end groups. Read the changed ε-ring double bond together with the selected record's assigned ring stereochemistry. The selected records also differ in the mapped tetrahedral orientation at the hydroxyl-bearing site on the changed end ring.",
+      "두 기록 모두 C40H56O2이며 hydroxyl 2개를 가집니다. Zeaxanthin은 β,β 말단 구조이고 lutein은 β,ε 말단 구조입니다. ε 고리의 이중결합 위치와 선택한 기록에 지정된 고리 입체배열을 함께 보아야 합니다. 선택한 두 기록에서는 바뀐 말단 고리의 hydroxyl 탄소에서 대응하는 사면체 방향도 다릅니다."
+    ],
+    "changeSummary": [
+      "Same formula and hydroxyl count; β,β versus β,ε end groups.",
+      "분자식과 hydroxyl 수는 같지만 β,β와 β,ε 말단 구조가 다릅니다."
+    ],
+    "caveat": [
+      "These selected records are not enantiomers. This comparison does not claim direct zeaxanthin-to-lutein conversion; the highlights do not replace interpretation of the depicted stereobonds.",
+      "선택한 기록은 enantiomer 쌍이 아닙니다. Zeaxanthin에서 lutein으로 직접 전환된다고 주장하지 않으며 결합 강조만으로 표시된 입체결합의 해석을 대신할 수 없습니다."
+    ],
+    "sources": [
+      {
+        "name": "Cunningham & Gantt, 2001 · β/ε end groups and cyclase specificity",
+        "url": "https://doi.org/10.1073/pnas.051618398"
+      },
+      {
+        "name": "Bian et al., 2021 · α-carotene and lutein biosynthesis in yeast",
+        "url": "https://doi.org/10.1016/j.ymben.2021.05.008"
+      },
+      {
+        "name": "Zeaxanthin · PubChem CID 5280899",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280899"
+      },
+      {
+        "name": "Lutein · PubChem CID 5281243",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5281243"
+      }
+    ],
+    "stereoChangeSummary": [
+      "The selected lutein record assigns an additional ε-ring stereocentre. Its mapped hydroxyl-bearing centre also has a different tetrahedral orientation in these selected records. This is not a claim of universal biosynthetic epimerisation.",
+      "선택한 lutein 기록에는 ε 고리 입체중심이 추가로 지정되어 있습니다. 이 선택 기록들에서는 대응하는 hydroxyl 탄소의 사면체 방향도 다릅니다. 보편적인 생합성 epimerisation을 주장하는 것은 아닙니다."
+    ],
+    "numberingAvailable": false,
+    "numberingNote": [
+      "Conventional carbon numbers are not overlaid. Highlights are calculated from an atom map of the selected C40 structures; internal atom indices are not conventional carotenoid numbering.",
+      "관용 탄소 번호를 덧붙이지 않았습니다. 강조는 선택한 C40 구조의 원자 대응에서 계산했으며 내부 원자 인덱스는 관용 carotenoid 번호가 아닙니다."
+    ],
+    "changes": [
+      {
+        "type": "connectivity",
+        "positions": [],
+        "detail": [
+          "Same formula and hydroxyl count; β,β versus β,ε end groups.",
+          "분자식과 hydroxyl 수는 같지만 β,β와 β,ε 말단 구조가 다릅니다."
+        ]
+      },
+      {
+        "type": "stereochemistry",
+        "positions": [],
+        "detail": [
+          "The selected lutein record assigns an additional ε-ring stereocentre. Its mapped hydroxyl-bearing centre also has a different tetrahedral orientation in these selected records. This is not a claim of universal biosynthetic epimerisation.",
+          "선택한 lutein 기록에는 ε 고리 입체중심이 추가로 지정되어 있습니다. 이 선택 기록들에서는 대응하는 hydroxyl 탄소의 사면체 방향도 다릅니다. 보편적인 생합성 epimerisation을 주장하는 것은 아닙니다."
+        ]
+      }
+    ],
+    "computedDifferences": {
+      "bondChanges": [
+        {
+          "leftAtoms": [
+            28,
+            29
+          ],
+          "rightAtoms": [
+            30,
+            31
+          ],
+          "leftOrder": "DOUBLE",
+          "rightOrder": "SINGLE"
+        },
+        {
+          "leftAtoms": [
+            29,
+            30
+          ],
+          "rightAtoms": [
+            31,
+            32
+          ],
+          "leftOrder": "SINGLE",
+          "rightOrder": "DOUBLE"
+        }
+      ],
+      "leftOnlyAtoms": [],
+      "rightOnlyAtoms": [],
+      "stereoCentres": [
+        31
+      ],
+      "doubleBondStereoChanges": [],
+      "addedBonds": [],
+      "removedBonds": [],
+      "tetrahedralChanges": [
+        {
+          "leftAtom": 28,
+          "rightAtom": 30,
+          "kind": "right-assigned"
+        },
+        {
+          "leftAtom": 31,
+          "rightAtom": 33,
+          "kind": "mapped-parity-difference"
+        }
+      ],
+      "leftFormula": "C40H56O2",
+      "rightFormula": "C40H56O2",
+      "elementDeltaRightMinusLeft": {},
+      "leftOxygenCount": 2,
+      "rightOxygenCount": 2
+    },
+    "mapping": {
+      "left": {
+        "recordId": "zeaxanthin",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5280899",
+        "formula": "C40H56O2",
+        "conventionalCarbonToAtom": {}
+      },
+      "right": {
+        "recordId": "lutein",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5281243",
+        "formula": "C40H56O2",
+        "conventionalCarbonToAtom": {}
+      },
+      "carbonAtomCorrespondence": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          13,
+          13
+        ],
+        [
+          14,
+          14
+        ],
+        [
+          15,
+          15
+        ],
+        [
+          16,
+          16
+        ],
+        [
+          17,
+          17
+        ],
+        [
+          18,
+          18
+        ],
+        [
+          19,
+          19
+        ],
+        [
+          20,
+          20
+        ],
+        [
+          21,
+          21
+        ],
+        [
+          22,
+          23
+        ],
+        [
+          23,
+          24
+        ],
+        [
+          24,
+          25
+        ],
+        [
+          25,
+          26
+        ],
+        [
+          26,
+          28
+        ],
+        [
+          27,
+          29
+        ],
+        [
+          28,
+          30
+        ],
+        [
+          29,
+          31
+        ],
+        [
+          30,
+          32
+        ],
+        [
+          31,
+          33
+        ],
+        [
+          32,
+          34
+        ],
+        [
+          33,
+          35
+        ],
+        [
+          34,
+          36
+        ],
+        [
+          35,
+          37
+        ],
+        [
+          37,
+          39
+        ],
+        [
+          38,
+          27
+        ],
+        [
+          39,
+          22
+        ],
+        [
+          40,
+          40
+        ],
+        [
+          41,
+          41
+        ]
+      ],
+      "coordinateConstraints": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          13,
+          13
+        ],
+        [
+          14,
+          14
+        ],
+        [
+          15,
+          15
+        ],
+        [
+          16,
+          16
+        ],
+        [
+          17,
+          17
+        ],
+        [
+          18,
+          18
+        ],
+        [
+          19,
+          19
+        ],
+        [
+          20,
+          20
+        ],
+        [
+          21,
+          21
+        ],
+        [
+          22,
+          23
+        ],
+        [
+          23,
+          24
+        ],
+        [
+          24,
+          25
+        ],
+        [
+          25,
+          26
+        ],
+        [
+          26,
+          28
+        ],
+        [
+          27,
+          29
+        ],
+        [
+          28,
+          30
+        ],
+        [
+          29,
+          31
+        ],
+        [
+          30,
+          32
+        ],
+        [
+          31,
+          33
+        ],
+        [
+          32,
+          34
+        ],
+        [
+          33,
+          35
+        ],
+        [
+          34,
+          36
+        ],
+        [
+          35,
+          37
+        ],
+        [
+          36,
+          38
+        ],
+        [
+          37,
+          39
+        ],
+        [
+          38,
+          27
+        ],
+        [
+          39,
+          22
+        ],
+        [
+          40,
+          40
+        ],
+        [
+          41,
+          41
+        ]
+      ]
+    },
+    "alignment": {
+      "method": "Carbon-connectivity graph match (bond order ignored only for matching); hard common-core coordinate constraints",
+      "alignedAtoms": 42,
+      "carbonCorrespondences": 40,
+      "sameScale": true,
+      "partialAlignment": false,
+      "scope": "All 40 carbon atoms and matched oxygen atoms",
+      "symmetryMappingsConsidered": 8,
+      "maximumCanvasDiscrepancyPx": 0
+    },
+    "left": {
+      "numbered": null,
+      "numberedHighlighted": null,
+      "plain": "assets/comparisons/compare-zeaxanthin-lutein-left-plain.svg",
+      "highlighted": "assets/comparisons/compare-zeaxanthin-lutein-left-highlighted.svg"
+    },
+    "right": {
+      "numbered": null,
+      "numberedHighlighted": null,
+      "plain": "assets/comparisons/compare-zeaxanthin-lutein-right-plain.svg",
+      "highlighted": "assets/comparisons/compare-zeaxanthin-lutein-right-highlighted.svg"
+    },
+    "family": "tetra"
+  },
+  {
+    "id": "phytoene-geometry",
+    "leftId": "phytoene",
+    "rightId": "15-cis-phytoene",
+    "types": [
+      "stereochemistry"
+    ],
+    "title": [
+      "all-trans-Phytoene and 15-cis-phytoene",
+      "all-trans-Phytoene과 15-cis-phytoene"
+    ],
+    "explanation": [
+      "Identical connectivity and C40H64 formula; only central C15=C15′ geometry differs (16E versus 16Z in systematic numbering). One half-chain is aligned while the other retains the bend needed by the cis configuration.",
+      "결합 관계와 C40H64 분자식이 같으며 중앙 C15=C15′의 기하배열만 다릅니다(계통명 번호로 16E와 16Z). 사슬의 한쪽 절반만 정렬하고 반대쪽에는 cis 배열에 필요한 굽힘을 유지했습니다."
+    ],
+    "changeSummary": [
+      "Central E/Z geometry changes; connectivity and formula stay the same.",
+      "중앙 E/Z 기하배열이 달라지며 결합 관계와 분자식은 같습니다."
+    ],
+    "caveat": [
+      "15-cis-Phytoene is the PSY product shown in the pathway. All-trans-phytoene is a geometric reference, not an obligatory intermediate. The former all-trans-phytoene-synthase EC entry was deleted because of a photoisomerisation artefact. These are 2D depictions, not conformational models.",
+      "경로에 표시하는 PSY 산물은 15-cis-phytoene입니다. All-trans 구조는 기하배열 참고 자료이며 필수 중간체가 아닙니다. 과거 all-trans-phytoene synthase EC 항목은 광이성질화에 기인한 활성으로 판명되어 삭제되었습니다. 그림은 2D 묘사이며 입체배좌 모형이 아닙니다."
+    ],
+    "sources": [
+      {
+        "name": "IUBMB EC 2.5.1.32 · 15-cis-phytoene synthase",
+        "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/5/1/32.html"
+      },
+      {
+        "name": "IUBMB deleted EC 2.5.1.99 · photoisomerisation qualification",
+        "url": "https://iubmb.qmul.ac.uk/enzyme/EC2/5/1/99.html"
+      },
+      {
+        "name": "all-trans-Phytoene · PubChem CID 5280784",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280784"
+      },
+      {
+        "name": "15-cis-Phytoene · PubChem CID 9963391",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/9963391"
+      }
+    ],
+    "numberingAvailable": false,
+    "numberingNote": [
+      "Conventional carbon numbers are not overlaid. Highlights are calculated from an atom map of the selected C40 structures; internal atom indices are not conventional carotenoid numbering.",
+      "관용 탄소 번호를 덧붙이지 않았습니다. 강조는 선택한 C40 구조의 원자 대응에서 계산했으며 내부 원자 인덱스는 관용 carotenoid 번호가 아닙니다."
+    ],
+    "changes": [
+      {
+        "type": "stereochemistry",
+        "positions": [],
+        "detail": [
+          "Central E/Z geometry changes; connectivity and formula stay the same.",
+          "중앙 E/Z 기하배열이 달라지며 결합 관계와 분자식은 같습니다."
+        ]
+      }
+    ],
+    "computedDifferences": {
+      "bondChanges": [],
+      "leftOnlyAtoms": [],
+      "rightOnlyAtoms": [],
+      "stereoCentres": [],
+      "doubleBondStereoChanges": [
+        {
+          "leftAtoms": [
+            15,
+            16
+          ],
+          "rightAtoms": [
+            15,
+            16
+          ],
+          "leftGeometry": "STEREOE",
+          "rightGeometry": "STEREOZ"
+        }
+      ],
+      "addedBonds": [],
+      "removedBonds": [],
+      "tetrahedralChanges": [],
+      "leftFormula": "C40H64",
+      "rightFormula": "C40H64",
+      "elementDeltaRightMinusLeft": {},
+      "leftOxygenCount": 0,
+      "rightOxygenCount": 0
+    },
+    "mapping": {
+      "left": {
+        "recordId": "phytoene",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5280784",
+        "formula": "C40H64",
+        "conventionalCarbonToAtom": {}
+      },
+      "right": {
+        "recordId": "15-cis-phytoene",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/9963391",
+        "formula": "C40H64",
+        "conventionalCarbonToAtom": {}
+      },
+      "carbonAtomCorrespondence": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          13,
+          13
+        ],
+        [
+          14,
+          14
+        ],
+        [
+          15,
+          15
+        ],
+        [
+          16,
+          16
+        ],
+        [
+          17,
+          17
+        ],
+        [
+          18,
+          18
+        ],
+        [
+          19,
+          19
+        ],
+        [
+          20,
+          20
+        ],
+        [
+          21,
+          21
+        ],
+        [
+          22,
+          22
+        ],
+        [
+          23,
+          23
+        ],
+        [
+          24,
+          24
+        ],
+        [
+          25,
+          25
+        ],
+        [
+          26,
+          26
+        ],
+        [
+          27,
+          27
+        ],
+        [
+          28,
+          28
+        ],
+        [
+          29,
+          29
+        ],
+        [
+          30,
+          30
+        ],
+        [
+          31,
+          31
+        ],
+        [
+          32,
+          32
+        ],
+        [
+          33,
+          33
+        ],
+        [
+          34,
+          34
+        ],
+        [
+          35,
+          35
+        ],
+        [
+          36,
+          36
+        ],
+        [
+          37,
+          37
+        ],
+        [
+          38,
+          38
+        ],
+        [
+          39,
+          39
+        ]
+      ],
+      "coordinateConstraints": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          13,
+          13
+        ],
+        [
+          14,
+          14
+        ],
+        [
+          15,
+          15
+        ],
+        [
+          16,
+          16
+        ],
+        [
+          36,
+          36
+        ],
+        [
+          37,
+          37
+        ],
+        [
+          38,
+          38
+        ],
+        [
+          39,
+          39
+        ]
+      ]
+    },
+    "alignment": {
+      "method": "Carbon-connectivity graph match (bond order ignored only for matching); hard common-core coordinate constraints",
+      "alignedAtoms": 21,
+      "carbonCorrespondences": 40,
+      "sameScale": true,
+      "partialAlignment": true,
+      "scope": "One half-chain and central alkene endpoints; the other half preserves the Z bend",
+      "symmetryMappingsConsidered": 8,
+      "maximumCanvasDiscrepancyPx": 0
+    },
+    "left": {
+      "numbered": null,
+      "numberedHighlighted": null,
+      "plain": "assets/comparisons/compare-phytoene-geometry-left-plain.svg",
+      "highlighted": "assets/comparisons/compare-phytoene-geometry-left-highlighted.svg"
+    },
+    "right": {
+      "numbered": null,
+      "numberedHighlighted": null,
+      "plain": "assets/comparisons/compare-phytoene-geometry-right-plain.svg",
+      "highlighted": "assets/comparisons/compare-phytoene-geometry-right-highlighted.svg"
+    },
+    "family": "tetra"
+  },
+  {
+    "id": "gpp-npp",
+    "family": "mono",
+    "title": [
+      "GPP and NPP",
+      "GPP와 NPP"
+    ],
+    "leftId": "gpp",
+    "rightId": "npp",
+    "types": [
+      "stereochemistry"
+    ],
+    "explanation": [
+      "The near-head alkene geometry differs between geranyl diphosphate (2E) and neryl diphosphate (2Z). These are geometric isomers with the same C10 diphosphate connectivity.",
+      "Diphosphate 가까이의 이중결합 배열이 geranyl diphosphate(2E)와 neryl diphosphate(2Z)에서 다릅니다. 같은 C10 diphosphate 결합 관계를 갖는 기하이성질체입니다."
+    ],
+    "changeSummary": [
+      "GPP has a 2E alkene; NPP has the corresponding 2Z alkene. Connectivity and formula are unchanged.",
+      "GPP는 2E, NPP는 대응하는 2Z 이중결합을 갖습니다. 결합 관계와 분자식은 같습니다."
+    ],
+    "caveat": [
+      "NPP is a real substrate in the characterised tomato NDPS1/PHS1 pathway. It is distinct from enzyme-bound linalyl diphosphate, and this structural comparison does not assert a direct GPP-to-NPP reaction.",
+      "NPP는 기능이 규명된 토마토 NDPS1/PHS1 경로의 실제 기질입니다. 효소에 결합된 linalyl diphosphate와 구분하며, 이 구조 비교가 GPP에서 NPP로의 직접 반응을 뜻하지는 않습니다."
+    ],
+    "sources": [
+      {
+        "name": "Schilmiller et al., 2009 · NPP-dependent monoterpene biosynthesis",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2705607/"
+      },
+      {
+        "name": "GPP · PubChem CID 445995",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/445995"
+      },
+      {
+        "name": "Neryl diphosphate (NPP) · PubChem CID 5280528",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280528"
+      }
+    ],
+    "numberingAvailable": false,
+    "numberingNote": [
+      "Only the diphosphate head, attached carbon and head-side alkene endpoint are constrained together. The remaining chain is free to retain the real E/Z bend. Both drawings use one scale. Internal atom-map keys are not conventional carbon numbers.",
+      "Diphosphate 머리와 연결 탄소·이중결합의 머리 쪽 끝만 함께 정렬했습니다. 나머지 사슬은 실제 E/Z 굽힘을 유지하며 두 그림의 축척은 같습니다. 내부 원자 대응 키는 관용 탄소 번호가 아닙니다."
+    ],
+    "commonAtomMap": [
+      {
+        "key": "M0",
+        "leftAtom": 0,
+        "rightAtom": 0,
+        "element": "C"
+      },
+      {
+        "key": "M1",
+        "leftAtom": 1,
+        "rightAtom": 1,
+        "element": "C"
+      },
+      {
+        "key": "M2",
+        "leftAtom": 2,
+        "rightAtom": 2,
+        "element": "C"
+      },
+      {
+        "key": "M3",
+        "leftAtom": 3,
+        "rightAtom": 3,
+        "element": "C"
+      },
+      {
+        "key": "M4",
+        "leftAtom": 4,
+        "rightAtom": 4,
+        "element": "C"
+      },
+      {
+        "key": "M5",
+        "leftAtom": 5,
+        "rightAtom": 5,
+        "element": "C"
+      },
+      {
+        "key": "M6",
+        "leftAtom": 6,
+        "rightAtom": 6,
+        "element": "C"
+      },
+      {
+        "key": "M7",
+        "leftAtom": 7,
+        "rightAtom": 7,
+        "element": "C"
+      },
+      {
+        "key": "M8",
+        "leftAtom": 8,
+        "rightAtom": 8,
+        "element": "O"
+      },
+      {
+        "key": "M9",
+        "leftAtom": 9,
+        "rightAtom": 9,
+        "element": "P"
+      },
+      {
+        "key": "M10",
+        "leftAtom": 10,
+        "rightAtom": 10,
+        "element": "O"
+      },
+      {
+        "key": "M11",
+        "leftAtom": 11,
+        "rightAtom": 11,
+        "element": "O"
+      },
+      {
+        "key": "M12",
+        "leftAtom": 12,
+        "rightAtom": 12,
+        "element": "O"
+      },
+      {
+        "key": "M13",
+        "leftAtom": 13,
+        "rightAtom": 13,
+        "element": "P"
+      },
+      {
+        "key": "M14",
+        "leftAtom": 14,
+        "rightAtom": 14,
+        "element": "O"
+      },
+      {
+        "key": "M15",
+        "leftAtom": 15,
+        "rightAtom": 15,
+        "element": "O"
+      },
+      {
+        "key": "M16",
+        "leftAtom": 16,
+        "rightAtom": 16,
+        "element": "O"
+      },
+      {
+        "key": "M17",
+        "leftAtom": 17,
+        "rightAtom": 17,
+        "element": "C"
+      },
+      {
+        "key": "M18",
+        "leftAtom": 18,
+        "rightAtom": 18,
+        "element": "C"
+      }
+    ],
+    "sharedCarbonMap": [
+      {
+        "key": "M0",
+        "leftAtom": 0,
+        "rightAtom": 0
+      },
+      {
+        "key": "M1",
+        "leftAtom": 1,
+        "rightAtom": 1
+      },
+      {
+        "key": "M2",
+        "leftAtom": 2,
+        "rightAtom": 2
+      },
+      {
+        "key": "M3",
+        "leftAtom": 3,
+        "rightAtom": 3
+      },
+      {
+        "key": "M4",
+        "leftAtom": 4,
+        "rightAtom": 4
+      },
+      {
+        "key": "M5",
+        "leftAtom": 5,
+        "rightAtom": 5
+      },
+      {
+        "key": "M6",
+        "leftAtom": 6,
+        "rightAtom": 6
+      },
+      {
+        "key": "M7",
+        "leftAtom": 7,
+        "rightAtom": 7
+      },
+      {
+        "key": "M17",
+        "leftAtom": 17,
+        "rightAtom": 17
+      },
+      {
+        "key": "M18",
+        "leftAtom": 18,
+        "rightAtom": 18
+      }
+    ],
+    "computedDifferences": {
+      "bondChanges": [],
+      "leftOnlyAtoms": [],
+      "rightOnlyAtoms": [],
+      "stereoCentres": [],
+      "doubleBondStereoChanges": [
+        {
+          "leftAtoms": [
+            5,
+            6
+          ],
+          "rightAtoms": [
+            5,
+            6
+          ],
+          "leftGeometry": "STEREOE",
+          "rightGeometry": "STEREOZ"
+        }
+      ],
+      "leftFormula": "C10H20O7P2",
+      "rightFormula": "C10H20O7P2",
+      "elementDeltaRightMinusLeft": {}
+    },
+    "changes": [
+      {
+        "type": "stereochemistry",
+        "positions": [],
+        "detail": [
+          "GPP has a 2E alkene; NPP has the corresponding 2Z alkene. Connectivity and formula are unchanged.",
+          "GPP는 2E, NPP는 대응하는 2Z 이중결합을 갖습니다. 결합 관계와 분자식은 같습니다."
+        ]
+      }
+    ],
+    "mapping": {
+      "left": {
+        "recordId": "gpp",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/445995",
+        "formula": "C10H20O7P2",
+        "conventionalCarbonToAtom": {},
+        "commonAtomToAtom": {
+          "M0": 0,
+          "M1": 1,
+          "M2": 2,
+          "M3": 3,
+          "M4": 4,
+          "M5": 5,
+          "M6": 6,
+          "M7": 7,
+          "M8": 8,
+          "M9": 9,
+          "M10": 10,
+          "M11": 11,
+          "M12": 12,
+          "M13": 13,
+          "M14": 14,
+          "M15": 15,
+          "M16": 16,
+          "M17": 17,
+          "M18": 18
+        }
+      },
+      "right": {
+        "recordId": "npp",
+        "recordUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5280528",
+        "formula": "C10H20O7P2",
+        "conventionalCarbonToAtom": {},
+        "commonAtomToAtom": {
+          "M0": 0,
+          "M1": 1,
+          "M2": 2,
+          "M3": 3,
+          "M4": 4,
+          "M5": 5,
+          "M6": 6,
+          "M7": 7,
+          "M8": 8,
+          "M9": 9,
+          "M10": 10,
+          "M11": 11,
+          "M12": 12,
+          "M13": 13,
+          "M14": 14,
+          "M15": 15,
+          "M16": 16,
+          "M17": 17,
+          "M18": 18
+        }
+      },
+      "coordinateConstraints": [
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          13,
+          13
+        ],
+        [
+          14,
+          14
+        ],
+        [
+          15,
+          15
+        ],
+        [
+          16,
+          16
+        ]
+      ]
+    },
+    "alignment": {
+      "method": "Hard coordinate constraints on diphosphate head and local head-side alkene endpoint; free tail preserves geometric isomerism",
+      "alignedAtoms": 11,
+      "sharedCarbons": 10,
+      "carbonCorrespondences": 10,
+      "sameScale": true,
+      "partialAlignment": true,
+      "scope": "Diphosphate head, attached carbon and head-side alkene endpoint; tail geometry remains free",
+      "maximumCanvasDiscrepancyPx": 0
+    },
+    "left": {
+      "numbered": null,
+      "numberedHighlighted": null,
+      "plain": "assets/comparisons/compare-gpp-npp-left-plain.svg",
+      "highlighted": "assets/comparisons/compare-gpp-npp-left-highlighted.svg"
+    },
+    "right": {
+      "numbered": null,
+      "numberedHighlighted": null,
+      "plain": "assets/comparisons/compare-gpp-npp-right-plain.svg",
+      "highlighted": "assets/comparisons/compare-gpp-npp-right-highlighted.svg"
+    }
   }
 ]

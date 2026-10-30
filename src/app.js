@@ -44,7 +44,8 @@ function render() {
   }});
   else if (view === 'web') renderStructureWeb(root, {
     molecules: [...catalogue.molecules, ...catalogue.precursors],
-    scaffolds: catalogue.scaffolds, webNotes: catalogue.graphNotes, lang: getLanguage(), open: detail
+    scaffolds: catalogue.scaffolds, webNotes: catalogue.graphNotes, lang: getLanguage(), open: detail,
+    openCompare: id => { selectComparison(id); navigate('compare'); }
   });
   else if (view === 'compare') renderStructureComparison(root, {
     molecules: [...catalogue.molecules, ...catalogue.precursors], lang: getLanguage(),
@@ -53,7 +54,7 @@ function render() {
       if (record) detail(record);
     },
     back: () => navigate('library'),
-    startPractice: style => { startComparisonPractice(style); navigate('practice'); }
+    startPractice: (style, pairId) => { startComparisonPractice(style, pairId); navigate('practice'); }
   });
   else renderSources(root);
   app.querySelectorAll('[data-nav]').forEach(button => button.onclick = event => {

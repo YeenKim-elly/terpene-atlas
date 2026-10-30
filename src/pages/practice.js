@@ -31,8 +31,9 @@ export function resetPractice() { session = null; currentRoot = null; }
 export function startSinglePractice(kind, item, style) {
   startQuestions([createQuestion(kind, item)], style);
 }
-export function startComparisonPractice(style) {
-  startQuestions(shuffle(catalogue.comparisonQuestions).map(item => createQuestion('comparison', item)), style);
+export function startComparisonPractice(style, pairId) {
+  const questions = pairId ? catalogue.comparisonQuestions.filter(q => q.figure?.comparePair === pairId) : catalogue.comparisonQuestions;
+  startQuestions(shuffle(questions).map(item => createQuestion('comparison', item)), style);
 }
 function startQuestions(questions, style = settings.style) {
   if (!questions.length) return;

@@ -382,5 +382,51 @@
         ]
       }
     ]
+  },
+  {
+    "CID": 5280528,
+    "MolecularFormula": "C10H20O7P2",
+    "SMILES": "CC(=CCC/C(=C\\COP(=O)(O)OP(=O)(O)O)/C)C",
+    "ConnectivitySMILES": "CC(=CCCC(=CCOP(=O)(O)OP(=O)(O)O)C)C",
+    "id": "npp",
+    "name": "Neryl diphosphate (NPP)",
+    "ko": "Neryl diphosphate (NPP)",
+    "family": "mono",
+    "level": "core",
+    "skeleton": 10,
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/5280528",
+    "image": "assets/structures/npp.svg",
+    "aliases": [
+      "NPP",
+      "neryl diphosphate",
+      "neryl pyrophosphate"
+    ],
+    "note": "A real (2Z) C10 prenyl diphosphate substrate used by selected monoterpene synthases. It is distinct from enzyme-bound linalyl diphosphate in GPP-cyclase mechanisms.",
+    "noteKo": "특정 monoterpene synthase가 사용하는 실제 (2Z) C10 prenyl diphosphate 기질이다. GPP 고리화 기전에서 효소에 결합된 linalyl diphosphate와 구분한다.",
+    "role": "precursor",
+    "carbons": 10
+  },
+  {
+    "CID": 194197,
+    "MolecularFormula": "C10H20O7P2",
+    "SMILES": "C[C@@]12CC[C@@H](C1(C)C)C[C@@H]2OP(=O)(O)OP(=O)(O)O",
+    "ConnectivitySMILES": "CC1(C2CCC1(C(C2)OP(=O)(O)OP(=O)(O)O)C)C",
+    "id": "bornyl-dp",
+    "name": "(+)-Bornyl diphosphate",
+    "ko": "(+)-Bornyl diphosphate",
+    "family": "mono",
+    "level": "core",
+    "skeleton": 10,
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/194197",
+    "image": "assets/structures/bornyl-dp.svg",
+    "aliases": [
+      "(+)-bornyl diphosphate",
+      "(+)-bornyl pyrophosphate"
+    ],
+    "note": "A cyclic C10 diphosphate with a bornane core. Bornyl diphosphate synthase uses class I ionization and diphosphate recapture; retained diphosphate does not imply class II chemistry.",
+    "noteKo": "Bornane 골격을 가진 고리형 C10 diphosphate이다. Synthase는 class I 이온화와 diphosphate 재포획을 사용하며 diphosphate가 남는다고 class II 반응인 것은 아니다.",
+    "role": "precursor",
+    "carbons": 10,
+    "frameworkId": "bornane"
   }
 ]

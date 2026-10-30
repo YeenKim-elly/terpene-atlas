@@ -364,5 +364,185 @@
     "source": "https://pubmed.ncbi.nlm.nih.gov/41955116/",
     "evidence": "Characterised reference",
     "scope": "Reference transformation; organism and enzyme specificity apply."
+  },
+  {
+    "id": "pt-npp",
+    "enzyme": "pt",
+    "left": "DMAPP + IPP",
+    "right": "NPP + PPi",
+    "title": "Build a cis C10 prenyl substrate",
+    "ko": "Cis C10 prenyl 기질 형성",
+    "note": "Tomato NDPS1 makes NPP from DMAPP and IPP. Both C5 substrates are required; NPP is a genuine alternative substrate to GPP in this characterised system.",
+    "noteKo": "토마토 NDPS1은 DMAPP와 IPP로 NPP를 만듭니다. C5 기질 두 종류가 모두 필요하며, NPP는 기능이 규명된 계에서 GPP의 실제 대체 기질입니다.",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2705607/",
+    "cofactor": "Cis-prenyltransferase",
+    "families": [
+      "mono"
+    ]
+  },
+  {
+    "id": "tps-myrcene",
+    "enzyme": "tps1",
+    "left": "GPP",
+    "right": "β-Myrcene + PPi",
+    "title": "Terminate without making a ring",
+    "ko": "고리를 만들지 않고 종료",
+    "note": "An acyclic monoterpene-forming TPS branch. Product formation need not mean cyclisation.",
+    "noteKo": "비고리형 monoterpene을 만드는 TPS 가지입니다. TPS 생성물 형성이 반드시 고리화를 뜻하지는 않습니다.",
+    "source": "https://iubmb.qmul.ac.uk/enzyme/EC4/2/3/15.html",
+    "cofactor": "Enzyme-dependent ions",
+    "families": [
+      "mono"
+    ]
+  },
+  {
+    "id": "tps-minus-pinene",
+    "enzyme": "tps1",
+    "left": "GPP",
+    "right": "(-)-α-Pinene + PPi",
+    "title": "Build a pinane framework",
+    "ko": "Pinane 골격 형성",
+    "note": "The stereospecific negative alpha-pinene branch is a class I cyclisation. Product configuration must match the tested enzyme.",
+    "noteKo": "입체선택적인 (-)-alpha-pinene 가지는 class I 고리화입니다. 생성물의 배열은 시험한 효소와 맞춰야 합니다.",
+    "source": "https://iubmb.qmul.ac.uk/enzyme/EC4/2/3/119.html",
+    "cofactor": "Ionisation / cyclisation",
+    "families": [
+      "mono"
+    ]
+  },
+  {
+    "id": "tps-bornyl-dp",
+    "enzyme": "tps1",
+    "left": "GPP",
+    "right": "(+)-Bornyl diphosphate",
+    "title": "Cyclise and recapture diphosphate",
+    "ko": "고리화 후 diphosphate 재포획",
+    "note": "Bornyl diphosphate synthase uses class I ionisation chemistry followed by diphosphate recapture. The net reaction retains diphosphate and releases no net PPi.",
+    "noteKo": "Bornyl diphosphate synthase는 class I 이온화 뒤 diphosphate를 다시 붙잡습니다. 순반응에서 diphosphate가 유지되며 PPi 순방출은 없습니다.",
+    "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/8.html",
+    "cofactor": "Mg²⁺",
+    "families": [
+      "mono"
+    ]
+  },
+  {
+    "id": "tps-npp-phellandrene",
+    "enzyme": "tps1",
+    "left": "NPP",
+    "right": "β-Phellandrene + PPi",
+    "title": "Use an alternative C10 substrate",
+    "ko": "대체 C10 기질 사용",
+    "note": "Tomato PHS1 uses NPP to form beta-phellandrene as the major product with other monoterpenes. A generic beta-phellandrene drawing does not specify an enantiomer.",
+    "noteKo": "토마토 PHS1은 NPP로 beta-phellandrene을 주요 생성물로 만들며 다른 monoterpene도 생성합니다. 일반 beta-phellandrene 그림만으로 enantiomer를 지정하지 않습니다.",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2705607/",
+    "cofactor": "Substrate-specific TPS",
+    "families": [
+      "mono"
+    ]
+  },
+  {
+    "id": "ene-pulegone",
+    "enzyme": "eneReductase",
+    "left": "(+)-Pulegone + NADPH",
+    "right": "(-)-Menthone + (+)-Isomenthone",
+    "title": "Reduce an alkene",
+    "ko": "이중결합 환원",
+    "note": "Pulegone reductase reduces the conjugated double bond; this is distinct from ketone-to-alcohol reduction. The enzyme forms both menthone and isomenthone.",
+    "noteKo": "Pulegone reductase는 공액 이중결합을 환원하며 케톤→알코올 환원과 구분됩니다. Menthone과 isomenthone을 모두 생성합니다.",
+    "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/3/1/81.html",
+    "cofactor": "NADPH",
+    "families": [
+      "mono"
+    ]
+  },
+  {
+    "id": "sdr-menthol",
+    "enzyme": "sdr",
+    "left": "(-)-Menthone + NADPH",
+    "right": "(-)-Menthol · major product",
+    "title": "Reduce a ketone to an alcohol",
+    "ko": "케톤을 알코올로 환원",
+    "note": "Recombinant peppermint MMR produced 95% (-)-menthol and 5% (+)-neomenthol in the cited assay. Major-product selectivity is not exclusivity.",
+    "noteKo": "인용한 시험에서 재조합 peppermint MMR은 (-)-menthol 95%, (+)-neomenthol 5%를 생성했습니다. 주요 생성물 선택성이 배타성을 뜻하지는 않습니다.",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1065388/",
+    "cofactor": "NADPH",
+    "families": [
+      "mono"
+    ]
+  },
+  {
+    "id": "sdr-neomenthol",
+    "enzyme": "sdr",
+    "left": "(-)-Menthone + NADPH",
+    "right": "(+)-Neomenthol · major product",
+    "title": "Favour a different alcohol epimer",
+    "ko": "다른 알코올 epimer 선호",
+    "note": "Recombinant MNR produced 94% (+)-neomenthol and 6% (-)-menthol from (-)-menthone. The displayed menthol/neomenthol records differ at the alcohol stereocentre.",
+    "noteKo": "재조합 MNR은 (-)-menthone으로 (+)-neomenthol 94%, (-)-menthol 6%를 생성했습니다. Menthol/neomenthol 비교는 알코올 입체중심의 차이를 보여줍니다.",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1065388/",
+    "cofactor": "NADPH",
+    "families": [
+      "mono"
+    ]
+  },
+  {
+    "id": "tps-valencene",
+    "enzyme": "tps1",
+    "left": "FPP",
+    "right": "(+)-Valencene + PPi",
+    "title": "Build an eremophilane-type C15 core",
+    "ko": "Eremophilane 계열 C15 골격 형성",
+    "note": "Valencene synthase supplies a C15 framework for the published Alpinia oxidation pathway. It is not a C20 diterpene despite its decalin-related topology.",
+    "noteKo": "Valencene synthase는 규명된 Alpinia 산화 경로에 C15 골격을 공급합니다. Decalin 관련 고리를 가져도 C20 diterpene이 아닙니다.",
+    "source": "https://doi.org/10.1111/nph.19375",
+    "cofactor": "Ionisation / cyclisation",
+    "families": [
+      "sesqui"
+    ]
+  },
+  {
+    "id": "cyp-valencene",
+    "enzyme": "cyp",
+    "left": "(+)-Valencene",
+    "right": "β-Nootkatol",
+    "title": "Hydroxylate a C15 framework",
+    "ko": "C15 골격 수산화",
+    "note": "Published Alpinia CYP71BB2, CYP71CX8 and CYP701A170 with CPR supported beta-nootkatol formation. The selected stereochemical record is explicit.",
+    "noteKo": "문헌의 Alpinia CYP71BB2·CYP71CX8·CYP701A170과 CPR이 beta-nootkatol 형성을 지원했습니다. 선택한 기록의 입체배열을 명시합니다.",
+    "source": "https://doi.org/10.1111/nph.19375",
+    "cofactor": "O₂ · NADPH · CPR",
+    "families": [
+      "sesqui"
+    ]
+  },
+  {
+    "id": "sdr-nootkatone",
+    "enzyme": "sdr",
+    "left": "β-Nootkatol + NAD⁺",
+    "right": "(+)-Nootkatone + NADH",
+    "title": "Oxidise an alcohol to a ketone",
+    "ko": "알코올을 케톤으로 산화",
+    "note": "The Alpinia SDRs supported the final oxidation. Purified AoSDR3 accepted NAD+ or NADP+ in the published assay; the illustrated NAD+ equation is one cofactor example.",
+    "noteKo": "Alpinia SDR들이 최종 산화를 지원했습니다. 정제 AoSDR3는 NAD+와 NADP+를 사용할 수 있었으며 표시한 NAD+ 반응식은 한 가지 보조인자 예입니다.",
+    "source": "https://doi.org/10.1111/nph.19375",
+    "cofactor": "NAD⁺ / NADP⁺",
+    "families": [
+      "sesqui"
+    ]
+  },
+  {
+    "id": "phosphatase-farnesol",
+    "enzyme": "phosphatase",
+    "left": "FPP + H₂O",
+    "right": "Farnesol + PPi",
+    "title": "Hydrolyse FPP without cyclisation",
+    "ko": "고리화 없이 FPP 가수분해",
+    "note": "Farnesol formation by farnesyl-diphosphatase is a hydrolysis, not class I terpene cyclisation.",
+    "noteKo": "Farnesyl-diphosphatase의 farnesol 생성은 가수분해이며 class I terpene 고리화와 구분됩니다.",
+    "source": "https://iubmb.qmul.ac.uk/enzyme/EC3/1/7/6.html",
+    "cofactor": "Hydrolysis",
+    "families": [
+      "sesqui"
+    ]
   }
 ]

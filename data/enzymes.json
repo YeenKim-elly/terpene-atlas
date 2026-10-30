@@ -199,5 +199,32 @@
       "acyltransferase",
       "act"
     ]
+  },
+  "sdr": {
+    "name": "Alcohol dehydrogenase / ketoreductase",
+    "ko": "알코올 탈수소효소 / 케톤 환원효소",
+    "aliases": [
+      "sdr",
+      "short chain dehydrogenase reductase",
+      "alcohol dehydrogenase",
+      "ketoreductase",
+      "dehydrogenase",
+      "menthone reductase",
+      "mmr",
+      "mnr",
+      "탈수소효소",
+      "케톤 환원효소"
+    ]
+  },
+  "eneReductase": {
+    "name": "Ene reductase",
+    "ko": "이중결합 환원효소",
+    "aliases": [
+      "ene reductase",
+      "pulegone reductase",
+      "double bond reductase",
+      "pr",
+      "이중결합 환원효소"
+    ]
   }
 }

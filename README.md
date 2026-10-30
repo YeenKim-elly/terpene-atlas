@@ -5,12 +5,12 @@ and biosynthetic relationships.
 
 ## Features
 
-- Searchable reference library with **72 molecule entries**, **15 precursors**,
-  **19 scaffold and ring models**, **37 functional motifs** and **28 enzyme reactions**.
-- Four structure webs: precursors, carotenoids, diterpenes, and scaffolds and rings.
+- Searchable reference library with **83 molecule entries**, **17 precursors**,
+  **33 scaffold and ring models**, **37 functional motifs** and **40 enzyme reactions**.
+- Six family tabs with seven structure-web views, including C10/C15 precursor–enzyme–framework maps and a C40 end-group overview.
 - Fullscreen graph viewing with zoom, full-network Fit and Escape-to-close.
 - Multiple-choice and typed-answer practice, hints, feedback and review.
-- Eight aligned structure comparisons, including stereochemical and functional-group differences.
+- Eighteen aligned structure comparisons, including stereochemical and functional-group differences.
 - English and Korean interface.
 - Source references, stereochemical qualifications and figure attribution.
 

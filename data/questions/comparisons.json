@@ -494,5 +494,1081 @@
       "comparePair": "cpp-syn",
       "numbered": false
     }
+  },
+  {
+    "id": "family-menthone-reduction",
+    "name": "Which local transformation relates A (menthone) to B (menthol)?",
+    "ko": "A(menthone)에서 B(menthol)로 어떤 국소 변화가 보이나요?",
+    "prompt": "Which local transformation relates A (menthone) to B (menthol)?",
+    "promptKo": "A(menthone)에서 B(menthol)로 어떤 국소 변화가 보이나요?",
+    "answer": "Ketone reduction to an alcohol",
+    "answerKo": "케톤의 알코올 환원",
+    "aliases": [
+      "Ketone reduction to an alcohol",
+      "케톤의 알코올 환원",
+      "ketone to alcohol",
+      "ketone reduction",
+      "reduction",
+      "환원",
+      "케톤 환원"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "Ketone reduction to an alcohol",
+        "ko": "케톤의 알코올 환원"
+      },
+      {
+        "id": "o1",
+        "label": "Alcohol oxidation to a ketone",
+        "ko": "알코올의 케톤 산화"
+      },
+      {
+        "id": "o2",
+        "label": "Addition of glucose",
+        "ko": "포도당 추가"
+      },
+      {
+        "id": "o3",
+        "label": "Removal of a ring",
+        "ko": "고리 제거"
+      }
+    ],
+    "correctId": "o0",
+    "note": "The carbonyl becomes an alcohol. Peppermint MMR favours (−)-menthol and also forms minor (+)-neomenthol.",
+    "noteKo": "Carbonyl이 alcohol로 바뀝니다. Peppermint MMR은 (−)-menthol을 주로 만들며 소량의 (+)-neomenthol도 만듭니다.",
+    "hint": "Compare the oxygen-bearing site.",
+    "hintKo": "산소가 연결된 자리를 비교하세요.",
+    "figure": {
+      "comparePair": "menthone-menthol",
+      "numbered": false
+    },
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1065388/"
+  },
+  {
+    "id": "family-menthone-carbon",
+    "name": "How many carbon atoms are retained in both structures?",
+    "ko": "두 구조에 공통으로 유지되는 탄소 수는 얼마인가요?",
+    "prompt": "How many carbon atoms are retained in both structures?",
+    "promptKo": "두 구조에 공통으로 유지되는 탄소 수는 얼마인가요?",
+    "answer": "10",
+    "answerKo": "10",
+    "aliases": [
+      "10",
+      "C10",
+      "ten",
+      "10개"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "10",
+        "ko": "10"
+      },
+      {
+        "id": "o1",
+        "label": "15",
+        "ko": "15"
+      },
+      {
+        "id": "o2",
+        "label": "20",
+        "ko": "20"
+      },
+      {
+        "id": "o3",
+        "label": "40",
+        "ko": "40"
+      }
+    ],
+    "correctId": "o0",
+    "note": "The p-menthane carbon framework remains C10; the ketone-to-alcohol change adds hydrogen, not carbon.",
+    "noteKo": "P-menthane 골격은 C10으로 유지되며 케톤→알코올 변화는 수소를 더합니다.",
+    "hint": "This is a monoterpenoid pair.",
+    "hintKo": "Monoterpenoid 구조 쌍입니다.",
+    "figure": {
+      "comparePair": "menthone-menthol",
+      "numbered": false
+    },
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1065388/"
+  },
+  {
+    "id": "family-menthol-epimers",
+    "name": "What is the relationship between these selected menthol and neomenthol records?",
+    "ko": "선택한 menthol과 neomenthol 기록의 관계는 무엇인가요?",
+    "prompt": "What is the relationship between these selected menthol and neomenthol records?",
+    "promptKo": "선택한 menthol과 neomenthol 기록의 관계는 무엇인가요?",
+    "answer": "Epimers",
+    "answerKo": "에피머",
+    "aliases": [
+      "Epimers",
+      "에피머",
+      "epimer",
+      "epimers",
+      "diastereomers",
+      "부분입체이성질체"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "Epimers",
+        "ko": "에피머"
+      },
+      {
+        "id": "o1",
+        "label": "Enantiomers",
+        "ko": "거울상 이성질체"
+      },
+      {
+        "id": "o2",
+        "label": "Identical stereoisomers",
+        "ko": "동일 입체이성질체"
+      },
+      {
+        "id": "o3",
+        "label": "Different carbon counts",
+        "ko": "서로 다른 탄소 수"
+      }
+    ],
+    "correctId": "o0",
+    "note": "They differ at the alcohol-bearing stereocentre while the other two configured centres are retained. They are diastereomers, specifically epimers.",
+    "noteKo": "알코올이 붙은 입체중심 하나가 다르고 다른 두 중심은 유지됩니다. 부분입체이성질체 중 epimer 관계입니다.",
+    "hint": "Ask whether one centre or all centres change.",
+    "hintKo": "입체중심 하나가 바뀌는지 모두 바뀌는지 보세요.",
+    "figure": {
+      "comparePair": "menthol-neomenthol",
+      "numbered": false
+    },
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1065388/"
+  },
+  {
+    "id": "family-menthol-centre",
+    "name": "Which site changes configuration in this pair?",
+    "ko": "이 구조 쌍에서 배열이 달라지는 자리는 어디인가요?",
+    "prompt": "Which site changes configuration in this pair?",
+    "promptKo": "이 구조 쌍에서 배열이 달라지는 자리는 어디인가요?",
+    "answer": "The alcohol-bearing stereocentre",
+    "answerKo": "알코올이 붙은 입체중심",
+    "aliases": [
+      "The alcohol-bearing stereocentre",
+      "알코올이 붙은 입체중심",
+      "alcohol-bearing carbon",
+      "alcohol centre",
+      "hydroxyl-bearing carbon",
+      "C3",
+      "C1",
+      "수산기 탄소",
+      "알코올 탄소"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "The alcohol-bearing stereocentre",
+        "ko": "알코올이 붙은 입체중심"
+      },
+      {
+        "id": "o1",
+        "label": "Every stereocentre",
+        "ko": "모든 입체중심"
+      },
+      {
+        "id": "o2",
+        "label": "Only a methyl carbon",
+        "ko": "메틸 탄소만"
+      },
+      {
+        "id": "o3",
+        "label": "The total carbon count",
+        "ko": "전체 탄소 수"
+      }
+    ],
+    "correctId": "o0",
+    "note": "This is conventional p-menthane C3, or alcohol-based IUPAC C1. No conventional numbering is overlaid on these drawings.",
+    "noteKo": "P-Menthane 관용 번호 C3이며 알코올 기준 IUPAC 번호는 C1입니다. 이 그림에는 관용 번호를 덧씌우지 않았습니다.",
+    "hint": "Look at the OH stereobond.",
+    "hintKo": "OH의 입체결합을 보세요.",
+    "figure": {
+      "comparePair": "menthol-neomenthol",
+      "numbered": false
+    },
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1065388/"
+  },
+  {
+    "id": "family-nootkatol-oxidation",
+    "name": "Which local transformation gives nootkatone from the selected β-nootkatol?",
+    "ko": "선택한 β-nootkatol에서 nootkatone으로 어떤 국소 변화가 일어나나요?",
+    "prompt": "Which local transformation gives nootkatone from the selected β-nootkatol?",
+    "promptKo": "선택한 β-nootkatol에서 nootkatone으로 어떤 국소 변화가 일어나나요?",
+    "answer": "Alcohol oxidation to a ketone",
+    "answerKo": "알코올의 케톤 산화",
+    "aliases": [
+      "Alcohol oxidation to a ketone",
+      "알코올의 케톤 산화",
+      "alcohol to ketone",
+      "oxidation",
+      "alcohol oxidation",
+      "산화",
+      "알코올 산화"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "Alcohol oxidation to a ketone",
+        "ko": "알코올의 케톤 산화"
+      },
+      {
+        "id": "o1",
+        "label": "Ketone reduction to an alcohol",
+        "ko": "케톤의 알코올 환원"
+      },
+      {
+        "id": "o2",
+        "label": "Glycosylation",
+        "ko": "배당화"
+      },
+      {
+        "id": "o3",
+        "label": "C5 chain extension",
+        "ko": "C5 사슬 연장"
+      }
+    ],
+    "correctId": "o0",
+    "note": "The characterised Alpinia SDR step oxidises β-nootkatol to nootkatone. An enzyme assignment in another species needs its own evidence.",
+    "noteKo": "규명된 Alpinia SDR 반응은 β-nootkatol을 nootkatone으로 산화합니다. 다른 종의 효소 지정에는 별도 근거가 필요합니다.",
+    "hint": "Compare C–OH and C=O.",
+    "hintKo": "C–OH와 C=O를 비교하세요.",
+    "figure": {
+      "comparePair": "nootkatol-nootkatone",
+      "numbered": false
+    },
+    "source": "https://doi.org/10.1111/nph.19375"
+  },
+  {
+    "id": "family-nootkatol-framework",
+    "name": "Which C15 framework is shared by valencene, β-nootkatol and nootkatone?",
+    "ko": "Valencene·β-nootkatol·nootkatone이 공유하는 C15 골격은 무엇인가요?",
+    "prompt": "Which C15 framework is shared by valencene, β-nootkatol and nootkatone?",
+    "promptKo": "Valencene·β-nootkatol·nootkatone이 공유하는 C15 골격은 무엇인가요?",
+    "answer": "Eremophilane",
+    "answerKo": "Eremophilane",
+    "aliases": [
+      "Eremophilane",
+      "eremophilane skeleton",
+      "eremophilane framework"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "Eremophilane",
+        "ko": "Eremophilane"
+      },
+      {
+        "id": "o1",
+        "label": "Pinane",
+        "ko": "Pinane"
+      },
+      {
+        "id": "o2",
+        "label": "Bornane",
+        "ko": "Bornane"
+      },
+      {
+        "id": "o3",
+        "label": "Clerodane",
+        "ko": "Clerodane"
+      }
+    ],
+    "correctId": "o0",
+    "note": "Oxygenation retains the eremophilane C15 framework in this selected pathway.",
+    "noteKo": "이 경로의 산소화는 eremophilane C15 골격을 유지합니다.",
+    "hint": "Follow the valencene branch in the C15 map.",
+    "hintKo": "C15 지도에서 valencene 분기를 따라가세요.",
+    "figure": {
+      "comparePair": "nootkatol-nootkatone",
+      "numbered": false
+    },
+    "source": "https://doi.org/10.1111/nph.19375"
+  },
+  {
+    "id": "family-carotene-hydroxyl",
+    "name": "What additional groups are present in zeaxanthin relative to β-carotene?",
+    "ko": "β-Carotene과 비교해 zeaxanthin에는 어떤 기가 추가되어 있나요?",
+    "prompt": "What additional groups are present in zeaxanthin relative to β-carotene?",
+    "promptKo": "β-Carotene과 비교해 zeaxanthin에는 어떤 기가 추가되어 있나요?",
+    "answer": "Two hydroxyl groups",
+    "answerKo": "하이드록실기 두 개",
+    "aliases": [
+      "Two hydroxyl groups",
+      "하이드록실기 두 개",
+      "two OH groups",
+      "2 hydroxyl groups",
+      "two alcohol groups",
+      "수산기 두 개",
+      "2 OH"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "Two hydroxyl groups",
+        "ko": "하이드록실기 두 개"
+      },
+      {
+        "id": "o1",
+        "label": "Two ketone groups",
+        "ko": "케톤기 두 개"
+      },
+      {
+        "id": "o2",
+        "label": "Two glucose units",
+        "ko": "포도당 두 개"
+      },
+      {
+        "id": "o3",
+        "label": "Two diphosphates",
+        "ko": "Diphosphate 두 개"
+      }
+    ],
+    "correctId": "o0",
+    "note": "Hydroxylation adds terminal-ring OH groups, commonly through β-cryptoxanthin. The C40 carbon framework is retained.",
+    "noteKo": "수산화로 말단 고리에 OH가 추가되며 일반적으로 β-cryptoxanthin을 거칩니다. C40 탄소 골격은 유지됩니다.",
+    "hint": "Inspect both end rings.",
+    "hintKo": "양쪽 말단 고리를 보세요.",
+    "figure": {
+      "comparePair": "carotene-zeaxanthin",
+      "numbered": false
+    },
+    "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/14/15/24.html"
+  },
+  {
+    "id": "family-carotene-c40",
+    "name": "How many carbon atoms are present in each molecule?",
+    "ko": "각 분자의 탄소 수는 얼마인가요?",
+    "prompt": "How many carbon atoms are present in each molecule?",
+    "promptKo": "각 분자의 탄소 수는 얼마인가요?",
+    "answer": "40",
+    "answerKo": "40",
+    "aliases": [
+      "40",
+      "C40",
+      "forty",
+      "40개"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "40",
+        "ko": "40"
+      },
+      {
+        "id": "o1",
+        "label": "20",
+        "ko": "20"
+      },
+      {
+        "id": "o2",
+        "label": "30",
+        "ko": "30"
+      },
+      {
+        "id": "o3",
+        "label": "42",
+        "ko": "42"
+      }
+    ],
+    "correctId": "o0",
+    "note": "β-Carotene and zeaxanthin are C40 carotenoids. Adding oxygen does not add carbon.",
+    "noteKo": "β-Carotene과 zeaxanthin은 C40 carotenoid입니다. 산소 추가는 탄소 추가가 아닙니다.",
+    "hint": "Read the carbon part of each formula.",
+    "hintKo": "분자식의 탄소 부분을 보세요.",
+    "figure": {
+      "comparePair": "carotene-zeaxanthin",
+      "numbered": false
+    },
+    "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/14/15/24.html"
+  },
+  {
+    "id": "family-canthaxanthin-oh",
+    "name": "Which groups distinguish astaxanthin from canthaxanthin here?",
+    "ko": "여기서 astaxanthin과 canthaxanthin을 구분하는 기는 무엇인가요?",
+    "prompt": "Which groups distinguish astaxanthin from canthaxanthin here?",
+    "promptKo": "여기서 astaxanthin과 canthaxanthin을 구분하는 기는 무엇인가요?",
+    "answer": "Two hydroxyl groups",
+    "answerKo": "하이드록실기 두 개",
+    "aliases": [
+      "Two hydroxyl groups",
+      "하이드록실기 두 개",
+      "two OH groups",
+      "2 hydroxyl groups",
+      "수산기 두 개"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "Two hydroxyl groups",
+        "ko": "하이드록실기 두 개"
+      },
+      {
+        "id": "o1",
+        "label": "Two extra carbon atoms",
+        "ko": "탄소 두 개"
+      },
+      {
+        "id": "o2",
+        "label": "A glucose unit",
+        "ko": "포도당 한 개"
+      },
+      {
+        "id": "o3",
+        "label": "A diphosphate",
+        "ko": "Diphosphate 한 개"
+      }
+    ],
+    "correctId": "o0",
+    "note": "Both structures already have two ketones; astaxanthin additionally has two hydroxyl groups. The hydroxylase must accept ketolated rings.",
+    "noteKo": "두 구조 모두 케톤 두 개를 갖고 astaxanthin에는 하이드록실기 두 개가 더 있습니다. Hydroxylase의 ketolated 고리 수용 여부를 확인해야 합니다.",
+    "hint": "The carbonyls are present in both drawings.",
+    "hintKo": "Carbonyl은 두 그림에 모두 있습니다.",
+    "figure": {
+      "comparePair": "canthaxanthin-astaxanthin",
+      "numbered": false
+    },
+    "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/14/15/24.html"
+  },
+  {
+    "id": "family-canthaxanthin-ketones",
+    "name": "How many ketone groups are present in each of these structures?",
+    "ko": "이 두 구조 각각에 케톤기가 몇 개 있나요?",
+    "prompt": "How many ketone groups are present in each of these structures?",
+    "promptKo": "이 두 구조 각각에 케톤기가 몇 개 있나요?",
+    "answer": "2",
+    "answerKo": "2",
+    "aliases": [
+      "2",
+      "two",
+      "two ketones",
+      "2 ketones",
+      "두 개"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "2",
+        "ko": "2"
+      },
+      {
+        "id": "o1",
+        "label": "0",
+        "ko": "0"
+      },
+      {
+        "id": "o2",
+        "label": "1",
+        "ko": "1"
+      },
+      {
+        "id": "o3",
+        "label": "4",
+        "ko": "4"
+      }
+    ],
+    "correctId": "o0",
+    "note": "There is one ketone at each end ring in both structures. Hydroxyl groups account for the additional oxygen sites in astaxanthin.",
+    "noteKo": "두 구조 모두 양쪽 말단 고리에 케톤이 하나씩 있습니다. Astaxanthin의 추가 산소 자리는 hydroxyl입니다.",
+    "hint": "Count C=O bonds, not OH groups.",
+    "hintKo": "OH가 아닌 C=O를 세어보세요.",
+    "figure": {
+      "comparePair": "canthaxanthin-astaxanthin",
+      "numbered": false
+    },
+    "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/14/15/24.html"
+  },
+  {
+    "id": "family-zeaxanthin-ketones",
+    "name": "Which additional functional groups occur in astaxanthin relative to zeaxanthin?",
+    "ko": "Zeaxanthin과 비교해 astaxanthin에 추가된 작용기는 무엇인가요?",
+    "prompt": "Which additional functional groups occur in astaxanthin relative to zeaxanthin?",
+    "promptKo": "Zeaxanthin과 비교해 astaxanthin에 추가된 작용기는 무엇인가요?",
+    "answer": "Two ketone groups",
+    "answerKo": "케톤기 두 개",
+    "aliases": [
+      "Two ketone groups",
+      "케톤기 두 개",
+      "two ketones",
+      "2 ketone groups",
+      "two carbonyls",
+      "케톤 두 개"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "Two ketone groups",
+        "ko": "케톤기 두 개"
+      },
+      {
+        "id": "o1",
+        "label": "Two glucose units",
+        "ko": "포도당 두 개"
+      },
+      {
+        "id": "o2",
+        "label": "Two diphosphates",
+        "ko": "Diphosphate 두 개"
+      },
+      {
+        "id": "o3",
+        "label": "Two extra methyl groups",
+        "ko": "추가 메틸기 두 개"
+      }
+    ],
+    "correctId": "o0",
+    "note": "The summary adds two ketones to hydroxylated β rings. A compatible ketolase is required; not every β-carotene ketolase accepts zeaxanthin.",
+    "noteKo": "수산화된 β 고리에 케톤 두 개가 추가되는 요약입니다. 호환되는 ketolase가 필요하며 모든 β-carotene ketolase가 zeaxanthin을 받는 것은 아닙니다.",
+    "hint": "Look for C=O in the end rings.",
+    "hintKo": "말단 고리의 C=O를 보세요.",
+    "figure": {
+      "comparePair": "zeaxanthin-astaxanthin",
+      "numbered": false
+    },
+    "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/14/99/64.html"
+  },
+  {
+    "id": "family-zeaxanthin-compatibility",
+    "name": "What must be checked before assigning this transformation to a ketolase?",
+    "ko": "이 전환을 특정 ketolase에 부여하기 전에 무엇을 확인해야 하나요?",
+    "prompt": "What must be checked before assigning this transformation to a ketolase?",
+    "promptKo": "이 전환을 특정 ketolase에 부여하기 전에 무엇을 확인해야 하나요?",
+    "answer": "Substrate compatibility",
+    "answerKo": "기질 호환성",
+    "aliases": [
+      "Substrate compatibility",
+      "기질 호환성",
+      "substrate specificity",
+      "accepts zeaxanthin",
+      "enzyme assay",
+      "기질 특이성",
+      "효소 기질 호환성"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "Substrate compatibility",
+        "ko": "기질 호환성"
+      },
+      {
+        "id": "o1",
+        "label": "Only the C40 carbon count",
+        "ko": "C40 탄소 수만"
+      },
+      {
+        "id": "o2",
+        "label": "Only an orange colour",
+        "ko": "주황색만"
+      },
+      {
+        "id": "o3",
+        "label": "Only the enzyme name BKT",
+        "ko": "BKT라는 효소 이름만"
+      }
+    ],
+    "correctId": "o0",
+    "note": "IUBMB distinguishes zeaxanthin-accepting EC 1.14.99.64 from EC 1.14.99.63, which excludes β rings already hydroxylated at position 3.",
+    "noteKo": "IUBMB는 zeaxanthin을 받는 EC 1.14.99.64와 3번 위치가 이미 수산화된 β 고리를 제외하는 EC 1.14.99.63을 구분합니다.",
+    "hint": "The acceptor ring already carries an OH.",
+    "hintKo": "기질 고리에는 이미 OH가 있습니다.",
+    "figure": {
+      "comparePair": "zeaxanthin-astaxanthin",
+      "numbered": false
+    },
+    "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/14/99/64.html"
+  },
+  {
+    "id": "family-carotene-endgroups",
+    "name": "Which end-group pair describes α-carotene (B)?",
+    "ko": "α-Carotene(B)의 말단 고리 조합은 무엇인가요?",
+    "prompt": "Which end-group pair describes α-carotene (B)?",
+    "promptKo": "α-Carotene(B)의 말단 고리 조합은 무엇인가요?",
+    "answer": "β,ε",
+    "answerKo": "β,ε",
+    "aliases": [
+      "β,ε",
+      "beta epsilon",
+      "beta,epsilon",
+      "beta-epsilon",
+      "β ε",
+      "베타 엡실론"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "β,ε",
+        "ko": "β,ε"
+      },
+      {
+        "id": "o1",
+        "label": "β,β",
+        "ko": "β,β"
+      },
+      {
+        "id": "o2",
+        "label": "ψ,ψ",
+        "ko": "ψ,ψ"
+      },
+      {
+        "id": "o3",
+        "label": "ε,ε",
+        "ko": "ε,ε"
+      }
+    ],
+    "correctId": "o0",
+    "note": "β-Carotene has β,β end groups; the selected α-carotene has β,ε end groups. These labels describe ring types, not E/Z geometry.",
+    "noteKo": "β-Carotene은 β,β, 선택한 α-carotene은 β,ε 말단입니다. 이는 고리 유형이며 E/Z 기하배열 표기가 아닙니다.",
+    "hint": "Compare double-bond placement in the changed ring.",
+    "hintKo": "달라진 고리의 이중결합 위치를 비교하세요.",
+    "figure": {
+      "comparePair": "beta-alpha-carotene",
+      "numbered": false
+    },
+    "source": "https://doi.org/10.1073/pnas.051618398"
+  },
+  {
+    "id": "family-carotene-formula",
+    "name": "Do identical formulas establish that these are the same compound?",
+    "ko": "분자식이 같으면 이 두 구조가 같은 물질이라고 할 수 있나요?",
+    "prompt": "Do identical formulas establish that these are the same compound?",
+    "promptKo": "분자식이 같으면 이 두 구조가 같은 물질이라고 할 수 있나요?",
+    "answer": "No",
+    "answerKo": "아니요",
+    "aliases": [
+      "No",
+      "아니요",
+      "no",
+      "not identical",
+      "cannot establish",
+      "아니다",
+      "동일하지 않다"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "No",
+        "ko": "아니요"
+      },
+      {
+        "id": "o1",
+        "label": "Yes, always",
+        "ko": "항상 그렇다"
+      },
+      {
+        "id": "o2",
+        "label": "Only if both are C40",
+        "ko": "둘 다 C40이면 그렇다"
+      },
+      {
+        "id": "o3",
+        "label": "Only if both are orange",
+        "ko": "둘 다 주황색이면 그렇다"
+      }
+    ],
+    "correctId": "o0",
+    "note": "Both are C40H56, but end-ring double-bond placement differs, and the selected α-carotene record specifies a stereocentre.",
+    "noteKo": "두 구조 모두 C40H56이지만 말단 고리의 이중결합 위치가 다르고 선택한 α-carotene 기록은 입체중심도 지정합니다.",
+    "hint": "Formula does not encode bonding or configuration.",
+    "hintKo": "분자식은 결합 위치나 입체배열을 담지 않습니다.",
+    "figure": {
+      "comparePair": "beta-alpha-carotene",
+      "numbered": false
+    },
+    "source": "https://doi.org/10.1073/pnas.051618398"
+  },
+  {
+    "id": "family-lutein-endgroups",
+    "name": "Which end-group types occur in lutein (B)?",
+    "ko": "Lutein(B)에는 어떤 말단 고리 유형이 있나요?",
+    "prompt": "Which end-group types occur in lutein (B)?",
+    "promptKo": "Lutein(B)에는 어떤 말단 고리 유형이 있나요?",
+    "answer": "β,ε",
+    "answerKo": "β,ε",
+    "aliases": [
+      "β,ε",
+      "beta epsilon",
+      "beta,epsilon",
+      "beta-epsilon",
+      "β ε"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "β,ε",
+        "ko": "β,ε"
+      },
+      {
+        "id": "o1",
+        "label": "β,β",
+        "ko": "β,β"
+      },
+      {
+        "id": "o2",
+        "label": "ψ,ψ",
+        "ko": "ψ,ψ"
+      },
+      {
+        "id": "o3",
+        "label": "Two diphosphates",
+        "ko": "Diphosphate 두 개"
+      }
+    ],
+    "correctId": "o0",
+    "note": "Zeaxanthin has hydroxylated β,β ends; lutein has hydroxylated β,ε ends. The selected records also require the displayed stereobonds to be read.",
+    "noteKo": "Zeaxanthin은 수산화된 β,β 말단이며 lutein은 수산화된 β,ε 말단입니다. 선택한 기록의 입체결합도 함께 읽어야 합니다.",
+    "hint": "Inspect the end-ring double-bond position.",
+    "hintKo": "말단 고리의 이중결합 위치를 보세요.",
+    "figure": {
+      "comparePair": "zeaxanthin-lutein",
+      "numbered": false
+    },
+    "source": "https://doi.org/10.1073/pnas.051618398"
+  },
+  {
+    "id": "family-lutein-relationship",
+    "name": "Are these selected zeaxanthin and lutein structures an enantiomer pair?",
+    "ko": "선택한 zeaxanthin과 lutein 구조는 거울상 이성질체 쌍인가요?",
+    "prompt": "Are these selected zeaxanthin and lutein structures an enantiomer pair?",
+    "promptKo": "선택한 zeaxanthin과 lutein 구조는 거울상 이성질체 쌍인가요?",
+    "answer": "No",
+    "answerKo": "아니요",
+    "aliases": [
+      "No",
+      "아니요",
+      "no",
+      "not enantiomers",
+      "아니다"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "No",
+        "ko": "아니요"
+      },
+      {
+        "id": "o1",
+        "label": "Yes",
+        "ko": "예"
+      },
+      {
+        "id": "o2",
+        "label": "Identical structures",
+        "ko": "동일 구조이다"
+      },
+      {
+        "id": "o3",
+        "label": "Only different conformations",
+        "ko": "입체배좌만 다르다"
+      }
+    ],
+    "correctId": "o0",
+    "note": "Their ring double-bond placement differs; the selected records also show stereochemical distinctions. This is not a direct zeaxanthin-to-lutein reaction.",
+    "noteKo": "고리 이중결합 위치가 다르며 선택한 기록에는 입체배열 차이도 보입니다. 직접적인 zeaxanthin→lutein 반응을 나타내지 않습니다.",
+    "hint": "Enantiomers require the same connectivity.",
+    "hintKo": "거울상 이성질체는 결합 관계가 같아야 합니다.",
+    "figure": {
+      "comparePair": "zeaxanthin-lutein",
+      "numbered": false
+    },
+    "source": "https://doi.org/10.1073/pnas.051618398"
+  },
+  {
+    "id": "family-phytoene-ez",
+    "name": "Which kind of difference distinguishes these phytoene structures?",
+    "ko": "이 두 phytoene 구조를 구분하는 차이는 무엇인가요?",
+    "prompt": "Which kind of difference distinguishes these phytoene structures?",
+    "promptKo": "이 두 phytoene 구조를 구분하는 차이는 무엇인가요?",
+    "answer": "E/Z geometric isomerism",
+    "answerKo": "E/Z 기하이성질",
+    "aliases": [
+      "E/Z geometric isomerism",
+      "E/Z 기하이성질",
+      "geometric isomers",
+      "geometrical isomers",
+      "cis trans",
+      "E/Z",
+      "기하이성질체",
+      "시스 트랜스"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "E/Z geometric isomerism",
+        "ko": "E/Z 기하이성질"
+      },
+      {
+        "id": "o1",
+        "label": "Different carbon counts",
+        "ko": "서로 다른 탄소 수"
+      },
+      {
+        "id": "o2",
+        "label": "Glucose addition",
+        "ko": "포도당 추가"
+      },
+      {
+        "id": "o3",
+        "label": "Ring opening",
+        "ko": "고리 열림"
+      }
+    ],
+    "correctId": "o0",
+    "note": "The central C15=C15′ geometry differs. Both records are C40H64. The cis bend is retained rather than forcing full-chain alignment.",
+    "noteKo": "중앙 C15=C15′ 기하배열이 다릅니다. 두 기록 모두 C40H64이며 전체 사슬을 억지로 정렬하지 않고 cis 굴곡을 유지했습니다.",
+    "hint": "Compare the central double bond.",
+    "hintKo": "중앙 이중결합을 비교하세요.",
+    "figure": {
+      "comparePair": "phytoene-geometry",
+      "numbered": false
+    },
+    "source": "https://iubmb.qmul.ac.uk/enzyme/EC2/5/1/32.html"
+  },
+  {
+    "id": "family-phytoene-psy",
+    "name": "Which phytoene is the PSY product used in this pathway?",
+    "ko": "이 경로에서 사용하는 PSY 산물은 어느 phytoene인가요?",
+    "prompt": "Which phytoene is the PSY product used in this pathway?",
+    "promptKo": "이 경로에서 사용하는 PSY 산물은 어느 phytoene인가요?",
+    "answer": "15-cis-Phytoene",
+    "answerKo": "15-cis-Phytoene",
+    "aliases": [
+      "15-cis-Phytoene",
+      "15 cis phytoene",
+      "15Z phytoene",
+      "cis phytoene"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "15-cis-Phytoene",
+        "ko": "15-cis-Phytoene"
+      },
+      {
+        "id": "o1",
+        "label": "All-trans-phytoene",
+        "ko": "All-trans-phytoene"
+      },
+      {
+        "id": "o2",
+        "label": "Lycopene",
+        "ko": "Lycopene"
+      },
+      {
+        "id": "o3",
+        "label": "β-Carotene",
+        "ko": "β-Carotene"
+      }
+    ],
+    "correctId": "o0",
+    "note": "EC 2.5.1.32 forms 15-cis-phytoene from two GGPP molecules. The all-trans structure is a geometric reference, not an obligatory intermediate.",
+    "noteKo": "EC 2.5.1.32는 GGPP 두 분자에서 15-cis-phytoene을 만듭니다. All-trans 구조는 기하배열 참고 자료이며 필수 중간체가 아닙니다.",
+    "hint": "Look for the cis product in the C40 framework map.",
+    "hintKo": "C40 골격 지도에서 cis 산물을 보세요.",
+    "figure": {
+      "comparePair": "phytoene-geometry",
+      "numbered": false
+    },
+    "source": "https://iubmb.qmul.ac.uk/enzyme/EC2/5/1/32.html"
+  },
+  {
+    "id": "family-gpp-npp-ez",
+    "name": "Which difference separates GPP and NPP here?",
+    "ko": "여기서 GPP와 NPP를 구분하는 차이는 무엇인가요?",
+    "prompt": "Which difference separates GPP and NPP here?",
+    "promptKo": "여기서 GPP와 NPP를 구분하는 차이는 무엇인가요?",
+    "answer": "E/Z geometric isomerism",
+    "answerKo": "E/Z 기하이성질",
+    "aliases": [
+      "E/Z geometric isomerism",
+      "E/Z 기하이성질",
+      "E/Z",
+      "cis trans",
+      "geometric isomers",
+      "기하이성질체"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "E/Z geometric isomerism",
+        "ko": "E/Z 기하이성질"
+      },
+      {
+        "id": "o1",
+        "label": "C10 versus C15",
+        "ko": "C10과 C15"
+      },
+      {
+        "id": "o2",
+        "label": "Alcohol versus ketone",
+        "ko": "알코올과 케톤"
+      },
+      {
+        "id": "o3",
+        "label": "Different phosphate counts",
+        "ko": "서로 다른 인산기 수"
+      }
+    ],
+    "correctId": "o0",
+    "note": "GPP and NPP share C10H20O7P2 but differ at the double bond near the diphosphate head. Formula alone does not specify geometry.",
+    "noteKo": "GPP와 NPP는 C10H20O7P2를 공유하지만 diphosphate 가까운 이중결합의 기하배열이 다릅니다. 분자식만으로 기하배열을 정할 수 없습니다.",
+    "hint": "Inspect the head-proximal double bond.",
+    "hintKo": "Diphosphate에 가까운 이중결합을 보세요.",
+    "figure": {
+      "comparePair": "gpp-npp",
+      "numbered": false
+    },
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2705607/"
+  },
+  {
+    "id": "family-npp-branch",
+    "name": "Which precursor is accepted by the characterised tomato PHS1 branch shown in the map?",
+    "ko": "지도에 표시한 규명된 토마토 PHS1 분기가 받는 전구체는 무엇인가요?",
+    "prompt": "Which precursor is accepted by the characterised tomato PHS1 branch shown in the map?",
+    "promptKo": "지도에 표시한 규명된 토마토 PHS1 분기가 받는 전구체는 무엇인가요?",
+    "answer": "NPP",
+    "answerKo": "NPP",
+    "aliases": [
+      "NPP",
+      "neryl diphosphate",
+      "neryl pyrophosphate"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "NPP",
+        "ko": "NPP"
+      },
+      {
+        "id": "o1",
+        "label": "CPP",
+        "ko": "CPP"
+      },
+      {
+        "id": "o2",
+        "label": "GGPP",
+        "ko": "GGPP"
+      },
+      {
+        "id": "o3",
+        "label": "Squalene",
+        "ko": "Squalene"
+      }
+    ],
+    "correctId": "o0",
+    "note": "Tomato NDPS1 makes NPP from DMAPP and IPP. PHS1 uses NPP and forms β-phellandrene as a major product along with coproducts.",
+    "noteKo": "토마토 NDPS1은 DMAPP와 IPP에서 NPP를 만듭니다. PHS1은 NPP를 사용해 β-phellandrene을 주산물로, 다른 산물도 함께 만듭니다.",
+    "hint": "Follow the alternative C10 substrate branch.",
+    "hintKo": "대체 C10 기질 분기를 따라가세요.",
+    "figure": {
+      "comparePair": "gpp-npp",
+      "numbered": false
+    },
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2705607/"
+  },
+  {
+    "id": "family-borapetol-a-sugar",
+    "name": "Which motif is added in the glycoside relative to its paired aglycone?",
+    "ko": "짝지은 aglycone과 비교해 glycoside에 추가된 부분은 무엇인가요?",
+    "prompt": "Which motif is added in the glycoside relative to its paired aglycone?",
+    "promptKo": "짝지은 aglycone과 비교해 glycoside에 추가된 부분은 무엇인가요?",
+    "answer": "A glucose residue",
+    "answerKo": "포도당 잔기",
+    "aliases": [
+      "A glucose residue",
+      "포도당 잔기",
+      "glucose",
+      "glucosyl",
+      "glucosyl residue",
+      "sugar",
+      "포도당",
+      "당"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "A glucose residue",
+        "ko": "포도당 잔기"
+      },
+      {
+        "id": "o1",
+        "label": "A diphosphate",
+        "ko": "Diphosphate"
+      },
+      {
+        "id": "o2",
+        "label": "A β-carotene end ring",
+        "ko": "β-Carotene 말단 고리"
+      },
+      {
+        "id": "o3",
+        "label": "An extra C5 isoprene unit",
+        "ko": "추가 C5 isoprene 단위"
+      }
+    ],
+    "correctId": "o0",
+    "note": "This is a matched structural relationship. It does not establish the native UGT or biosynthetic order; the selected B pair uses the provenance-matched glycoside record.",
+    "noteKo": "출처를 맞춘 구조 관계이며 천연 UGT나 생합성 순서를 입증하지 않습니다. B 쌍에는 aglycone과 출처를 맞춘 glycoside 기록을 사용합니다.",
+    "hint": "Look for the oxygen-rich six-membered sugar ring.",
+    "hintKo": "산소가 많은 6원 당 고리를 보세요.",
+    "figure": {
+      "comparePair": "borapetol-a-glycoside",
+      "numbered": false
+    },
+    "source": "https://doi.org/10.1248/cpb.33.4438"
+  },
+  {
+    "id": "family-borapetol-b-sugar",
+    "name": "Which motif is added in the glycoside relative to its paired aglycone?",
+    "ko": "짝지은 aglycone과 비교해 glycoside에 추가된 부분은 무엇인가요?",
+    "prompt": "Which motif is added in the glycoside relative to its paired aglycone?",
+    "promptKo": "짝지은 aglycone과 비교해 glycoside에 추가된 부분은 무엇인가요?",
+    "answer": "A glucose residue",
+    "answerKo": "포도당 잔기",
+    "aliases": [
+      "A glucose residue",
+      "포도당 잔기",
+      "glucose",
+      "glucosyl",
+      "glucosyl residue",
+      "sugar",
+      "포도당",
+      "당"
+    ],
+    "options": [
+      {
+        "id": "o0",
+        "label": "A glucose residue",
+        "ko": "포도당 잔기"
+      },
+      {
+        "id": "o1",
+        "label": "A diphosphate",
+        "ko": "Diphosphate"
+      },
+      {
+        "id": "o2",
+        "label": "A β-carotene end ring",
+        "ko": "β-Carotene 말단 고리"
+      },
+      {
+        "id": "o3",
+        "label": "An extra C5 isoprene unit",
+        "ko": "추가 C5 isoprene 단위"
+      }
+    ],
+    "correctId": "o0",
+    "note": "This is a matched structural relationship. It does not establish the native UGT or biosynthetic order; the selected B pair uses the provenance-matched glycoside record.",
+    "noteKo": "출처를 맞춘 구조 관계이며 천연 UGT나 생합성 순서를 입증하지 않습니다. B 쌍에는 aglycone과 출처를 맞춘 glycoside 기록을 사용합니다.",
+    "hint": "Look for the oxygen-rich six-membered sugar ring.",
+    "hintKo": "산소가 많은 6원 당 고리를 보세요.",
+    "figure": {
+      "comparePair": "borapetol-b-glycoside",
+      "numbered": false
+    },
+    "source": "https://doi.org/10.1248/cpb.34.2868"
   }
 ]

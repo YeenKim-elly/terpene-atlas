@@ -1,0 +1,227 @@
+{
+  "title": [
+    "Build C40, then choose its end-group framework.",
+    "C40 사슬을 만든 뒤 말단 고리로 분기."
+  ],
+  "intro": [
+    "Two GGPP molecules supply the C40 chain. After desaturation and isomerisation, ring-forming enzymes act on its ends. Read open-chain, one-ring and two-ring classes before opening the full carotenoid pathway.",
+    "GGPP 두 분자가 C40 사슬을 공급합니다. 탈수소화·이성질화 뒤 고리화 효소가 사슬 말단에 작용합니다. 열린 사슬·한 고리·두 고리 계열을 먼저 비교하고 상세 카로티노이드 경로로 펼쳐보세요."
+  ],
+  "width": 1900,
+  "height": 1870,
+  "nodes": [
+    [
+      "ggpp",
+      830,
+      30
+    ],
+    [
+      "15-cis-phytoene",
+      830,
+      310
+    ],
+    [
+      "lycopene",
+      830,
+      620
+    ],
+    [
+      "carotenoid-psi-psi",
+      30,
+      620
+    ],
+    [
+      "gamma-carotene",
+      350,
+      940
+    ],
+    [
+      "delta-carotene",
+      1300,
+      940
+    ],
+    [
+      "carotenoid-beta-psi",
+      30,
+      940
+    ],
+    [
+      "carotenoid-epsilon-psi",
+      1660,
+      940
+    ],
+    [
+      "beta-carotene",
+      350,
+      1260
+    ],
+    [
+      "alpha-carotene",
+      1300,
+      1260
+    ],
+    [
+      "zeaxanthin",
+      700,
+      1260
+    ],
+    [
+      "lutein",
+      1660,
+      1260
+    ],
+    [
+      "carotenoid-beta-beta",
+      350,
+      1580
+    ],
+    [
+      "carotenoid-beta-epsilon",
+      1300,
+      1580
+    ],
+    [
+      "astaxanthin",
+      700,
+      1580
+    ]
+  ],
+  "edges": [
+    {
+      "from": "ggpp",
+      "to": "15-cis-phytoene",
+      "label": "2 GGPP · PSY / CrtB · C40",
+      "type": "step",
+      "detail": "Two C20 GGPP molecules condense to the C40 15-cis product through prephytoene diphosphate within the reaction.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC2/5/1/32.html"
+    },
+    {
+      "from": "15-cis-phytoene",
+      "to": "lycopene",
+      "label": "Desaturation + isomerisation",
+      "type": "summary",
+      "detail": "A condensed sequence. Lycopene-forming CrtI and plant PDS/Z-ISO/ZDS/CRTISO systems have different intermediate geometries and enzyme arrangements.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7713294/"
+    },
+    {
+      "from": "lycopene",
+      "to": "gamma-carotene",
+      "label": "LCYB / CrtY · first β end",
+      "type": "step",
+      "detail": "One beta end group is formed on the full C40 chain. Gamma-carotene need not accumulate as a free intermediate for every enzyme system.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/19.html"
+    },
+    {
+      "from": "gamma-carotene",
+      "to": "beta-carotene",
+      "label": "LCYB / CrtY · second β end",
+      "type": "step",
+      "detail": "Cyclisation of the remaining open end forms the beta,beta framework.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/19.html"
+    },
+    {
+      "from": "lycopene",
+      "to": "delta-carotene",
+      "label": "LCYE · ε-end reference",
+      "type": "step",
+      "detail": "An epsilon cyclisation branch. The displayed delta-carotene record does not assign ring stereochemistry. LCYE ring-number specificity varies among enzymes.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/18.html"
+    },
+    {
+      "from": "delta-carotene",
+      "to": "alpha-carotene",
+      "label": "LCYB · β,ε branch reference",
+      "type": "summary",
+      "detail": "Matched epsilon and beta cyclisation supplies alpha-carotene. This summary does not fill in the unspecified stereocentre in the delta reference.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/34077803/"
+    },
+    {
+      "from": "beta-carotene",
+      "to": "zeaxanthin",
+      "label": "β-Ring hydroxylation · two stages",
+      "type": "summary",
+      "detail": "Two hydroxylations are condensed; beta-cryptoxanthin appears in the full pathway view.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/14/15/24.html"
+    },
+    {
+      "from": "zeaxanthin",
+      "to": "astaxanthin",
+      "label": "Compatible ketolase · two stages",
+      "type": "summary",
+      "detail": "A suitable enzyme adds ketones to hydroxylated beta rings, via adonixanthin. Do not assume every BKT accepts the same substrates.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/14/99/64.html"
+    },
+    {
+      "from": "alpha-carotene",
+      "to": "lutein",
+      "label": "Ring-specific hydroxylases",
+      "type": "summary",
+      "detail": "Beta and epsilon-ring hydroxylations require suitable enzyme combinations. This is not a universal one-step CrtZ conversion.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/34077803/"
+    },
+    {
+      "from": "lycopene",
+      "to": "carotenoid-psi-psi",
+      "label": "Framework membership",
+      "type": "structure",
+      "detail": "An open-chain psi,psi C40 framework; classification only.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/19.html"
+    },
+    {
+      "from": "gamma-carotene",
+      "to": "carotenoid-beta-psi",
+      "label": "Framework membership",
+      "type": "structure",
+      "detail": "One beta ring and one open end; classification only.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/19.html"
+    },
+    {
+      "from": "delta-carotene",
+      "to": "carotenoid-epsilon-psi",
+      "label": "Framework membership",
+      "type": "structure",
+      "detail": "One epsilon ring and one open end; classification only.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/18.html"
+    },
+    {
+      "from": "beta-carotene",
+      "to": "carotenoid-beta-beta",
+      "label": "Framework membership",
+      "type": "structure",
+      "detail": "Shared beta,beta end-group framework. Oxygenation does not by itself replace the parent end-group class.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/14/15/24.html"
+    },
+    {
+      "from": "zeaxanthin",
+      "to": "carotenoid-beta-beta",
+      "label": "Framework membership",
+      "type": "structure",
+      "detail": "Shared beta,beta end-group framework. Oxygenation does not by itself replace the parent end-group class.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/14/15/24.html"
+    },
+    {
+      "from": "astaxanthin",
+      "to": "carotenoid-beta-beta",
+      "label": "Framework membership",
+      "type": "structure",
+      "detail": "Shared beta,beta end-group framework. Oxygenation does not by itself replace the parent end-group class.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/14/15/24.html"
+    },
+    {
+      "from": "alpha-carotene",
+      "to": "carotenoid-beta-epsilon",
+      "label": "Framework membership",
+      "type": "structure",
+      "detail": "Shared beta,epsilon end-group framework. Beta/epsilon distinguishes ring double-bond placement, not E/Z geometry.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/34077803/"
+    },
+    {
+      "from": "lutein",
+      "to": "carotenoid-beta-epsilon",
+      "label": "Framework membership",
+      "type": "structure",
+      "detail": "Shared beta,epsilon end-group framework. Beta/epsilon distinguishes ring double-bond placement, not E/Z geometry.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/34077803/"
+    }
+  ]
+}

@@ -143,5 +143,35 @@
     "name": "Cao et al.: xanthophyll acetyltransferases and branched pathways, 2026",
     "url": "https://pubmed.ncbi.nlm.nih.gov/41955116/",
     "detail": "Source-specific reference transformations and structures."
+  },
+  {
+    "name": "Schilmiller et al., 2009 · Alternative NPP substrate",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2705607/",
+    "detail": "Tomato NDPS1 and NPP-dependent monoterpene formation."
+  },
+  {
+    "name": "Davis et al., 2005 · Menthone reduction and epimers",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1065388/",
+    "detail": "Recombinant ketoreductases with different major alcohol products."
+  },
+  {
+    "name": "IUBMB · Bornyl diphosphate synthase",
+    "url": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/8.html",
+    "detail": "Class I ionisation with diphosphate recapture."
+  },
+  {
+    "name": "Deng et al., 2024 · Valencene–nootkatone pathway",
+    "url": "https://doi.org/10.1111/nph.19375",
+    "detail": "Published Alpinia TPS, CYP and SDR reactions."
+  },
+  {
+    "name": "IUBMB · Lycopene β-cyclase",
+    "url": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/19.html",
+    "detail": "Carotenoid end-group cyclisation on a C40 substrate."
+  },
+  {
+    "name": "IUBMB · Lycopene ε-cyclase",
+    "url": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/18.html",
+    "detail": "Epsilon end-group formation with enzyme-dependent specificity."
   }
 ]

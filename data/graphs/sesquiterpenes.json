@@ -1,0 +1,193 @@
+{
+  "title": [
+    "One FPP pool. Several C15 frameworks.",
+    "FPP에서 갈라지는 다양한 C15 골격."
+  ],
+  "intro": [
+    "Compare acyclic, macrocyclic and bicyclic products from selected FPP-dependent enzymes. Follow the published Alpinia valencene–nootkatone oxidation sequence while keeping framework membership distinct from reactions.",
+    "선택한 FPP 사용 효소의 비고리형·큰 고리·이중 고리 생성물을 비교하세요. Alpinia에서 규명된 valencene–nootkatone 산화 경로와 골격 소속 관계를 구분해 보여줍니다."
+  ],
+  "width": 1900,
+  "height": 1390,
+  "nodes": [
+    [
+      "fpp",
+      800,
+      30
+    ],
+    [
+      "farnesol",
+      30,
+      360
+    ],
+    [
+      "alpha-humulene",
+      390,
+      360
+    ],
+    [
+      "beta-caryophyllene",
+      750,
+      360
+    ],
+    [
+      "amorpha-diene",
+      1110,
+      360
+    ],
+    [
+      "valencene",
+      1500,
+      360
+    ],
+    [
+      "sesqui-acyclic",
+      30,
+      710
+    ],
+    [
+      "humulane",
+      390,
+      710
+    ],
+    [
+      "caryophyllane",
+      750,
+      710
+    ],
+    [
+      "amorphane",
+      1110,
+      710
+    ],
+    [
+      "beta-nootkatol",
+      1500,
+      710
+    ],
+    [
+      "eremophilane",
+      1110,
+      1060
+    ],
+    [
+      "nootkatone",
+      1500,
+      1060
+    ]
+  ],
+  "edges": [
+    {
+      "from": "fpp",
+      "to": "farnesol",
+      "label": "FPP hydrolysis · phosphatase",
+      "type": "step",
+      "detail": "Farnesol formation by hydrolysis is distinct from TPS cyclisation.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC3/1/7/6.html"
+    },
+    {
+      "from": "fpp",
+      "to": "alpha-humulene",
+      "label": "Humulene synthase · TPS I",
+      "type": "step",
+      "detail": "A representative eleven-membered-ring C15 product; minor coproducts depend on the enzyme.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC4/2/3/104.html"
+    },
+    {
+      "from": "fpp",
+      "to": "beta-caryophyllene",
+      "label": "β-Caryophyllene synthase · TPS I",
+      "type": "step",
+      "detail": "The selected common plant beta-caryophyllene stereoisomer is distinct from the positive bacterial product.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC4/2/3/57.html"
+    },
+    {
+      "from": "fpp",
+      "to": "amorpha-diene",
+      "label": "Amorpha-diene synthase · TPS I",
+      "type": "step",
+      "detail": "A fully assigned amorpha-4,11-diene reference is shown. This is a scaffold-forming step, not the complete artemisinin pathway.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC4/2/3/24.html"
+    },
+    {
+      "from": "fpp",
+      "to": "valencene",
+      "label": "Valencene synthase · TPS I",
+      "type": "step",
+      "detail": "A (+)-valencene-forming branch. The map does not imply that all valencene synthases are single-product enzymes.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC4/2/3/73.html"
+    },
+    {
+      "from": "valencene",
+      "to": "beta-nootkatol",
+      "label": "Alpinia CYP + CPR · hydroxylation",
+      "type": "step",
+      "detail": "Published AoCYP6, AoCYP9 and AoCYP18 with AoCPR1 supported beta-nootkatol formation. The selected nootkatol stereoisomer is explicitly defined.",
+      "source": "https://doi.org/10.1111/nph.19375"
+    },
+    {
+      "from": "beta-nootkatol",
+      "to": "nootkatone",
+      "label": "AoSDR3 · alcohol oxidation",
+      "type": "step",
+      "detail": "The published SDRs supported the final oxidation; purified AoSDR3 converted beta-nootkatol to (+)-nootkatone with NAD+ or NADP+. Historical nootkatol names must be checked against the displayed structure.",
+      "source": "https://doi.org/10.1111/nph.19375"
+    },
+    {
+      "from": "farnesol",
+      "to": "sesqui-acyclic",
+      "label": "Framework membership",
+      "type": "structure",
+      "detail": "Shared acyclic C15 framework.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC3/1/7/6.html"
+    },
+    {
+      "from": "alpha-humulene",
+      "to": "humulane",
+      "label": "Framework membership",
+      "type": "structure",
+      "detail": "The eleven-membered ring exemplifies the humulane framework.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC4/2/3/104.html"
+    },
+    {
+      "from": "beta-caryophyllene",
+      "to": "caryophyllane",
+      "label": "Framework membership",
+      "type": "structure",
+      "detail": "The characteristic fused four-membered ring is part of the caryophyllane framework.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC4/2/3/57.html"
+    },
+    {
+      "from": "amorpha-diene",
+      "to": "amorphane",
+      "label": "Framework membership",
+      "type": "structure",
+      "detail": "Amorpha-4,11-diene is the displayed amorphane framework example.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC4/2/3/24.html"
+    },
+    {
+      "from": "valencene",
+      "to": "eremophilane",
+      "label": "Framework membership",
+      "type": "structure",
+      "detail": "An eremophilane-type C15 framework. A decalin-related topology does not establish a diterpenoid carbon class.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6273169/"
+    },
+    {
+      "from": "beta-nootkatol",
+      "to": "eremophilane",
+      "label": "Framework membership",
+      "type": "structure",
+      "detail": "An eremophilane-type C15 framework. A decalin-related topology does not establish a diterpenoid carbon class.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6273169/"
+    },
+    {
+      "from": "nootkatone",
+      "to": "eremophilane",
+      "label": "Framework membership",
+      "type": "structure",
+      "detail": "An eremophilane-type C15 framework. A decalin-related topology does not establish a diterpenoid carbon class.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6273169/"
+    }
+  ]
+}
