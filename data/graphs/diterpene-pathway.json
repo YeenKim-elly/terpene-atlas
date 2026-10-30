@@ -4,8 +4,8 @@
     "GGPP에서 class I 산물과 치환된 diterpenoid까지."
   ],
   "intro": [
-    "Expanded, source-labelled reference routes. Follow class II and class I steps, later oxidation and glycosylation, and the taxane branch. Dashed arrows condense several reactions; tested cross-species TPS pairings and phosphatase assay readouts retain their stated scope.",
-    "출처를 붙인 확장 참고 경로입니다. Class II·class I 단계, 후속 산화·배당화와 taxane 가지를 따라가세요. 점선 화살표는 여러 반응을 요약하며 종간 TPS 조합과 phosphatase 분석 결과는 각 근거의 범위를 유지합니다."
+    "Expanded, source-labelled reference routes. Follow class II and class I steps, later oxidation and glycosylation, and the taxane branch. Dashed arrows condense several reactions; tested cross-species TPS pairings and phosphatase assay readouts retain their stated scope. Amber arrows between Labdane, Halimane and Clerodane show proposed skeleton rearrangements within TPS II.",
+    "출처를 붙인 확장 참고 경로입니다. Class II·class I 단계, 후속 산화·배당화와 taxane 가지를 따라가세요. 점선 화살표는 여러 반응을 요약하며 종간 TPS 조합과 phosphatase 분석 결과는 각 근거의 범위를 유지합니다. Labdane·Halimane·Clerodane 사이의 황갈색 화살표는 TPS II 안에서 제안된 골격 재배열을 보여줍니다."
   ],
   "width": 2460,
   "height": 2070,
@@ -372,6 +372,22 @@
       "type": "summary",
       "detail": "A condensed taxane pathway through oxidation, acylation, oxetane formation, baccatin-type intermediates and side-chain installation. The selected endpoints do not imply a single direct conversion from taxadiene to paclitaxel.",
       "source": "https://www.nature.com/articles/s44160-025-00800-z"
+    },
+    {
+      "from": "labdane",
+      "to": "halimane",
+      "label": "TPS II · hydride + methyl shifts",
+      "type": "mechanism",
+      "detail": "Proposed enzyme-bound skeleton rearrangement: a labdane-related C8⁺ diphosphate carbocation undergoes a 1,2-hydride shift (C9 → C8), then migration of the C20 methyl (C10 → C9), giving a halimane-related C10⁺ intermediate. Product-forming class II TPSs control the cascade from GGPP; MtHPS is a characterised halimane-forming example. The pictured parent skeletons are framework references, not isolated labdane and halimane substrates/products in a separate enzyme reaction.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/36281298/"
+    },
+    {
+      "from": "halimane",
+      "to": "clerodane",
+      "label": "TPS II · hydride + methyl shifts",
+      "type": "mechanism",
+      "detail": "Proposed continued rearrangement within a class II TPS: the halimane-related C10⁺ intermediate undergoes a 1,2-hydride shift (C5 → C10), then migration of the C19 methyl (C4 → C5), giving a clerodane-related C4⁺ intermediate. SdKPS is a characterised GGPP-to-(−)-KPP enzyme with this proposed cascade. The parent-model nodes summarise skeleton relationships, not a free HPP-to-KPP conversion or a Tinospora enzyme assignment; stereochemistry and termination depend on the enzyme.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5441855/"
     }
   ]
 }

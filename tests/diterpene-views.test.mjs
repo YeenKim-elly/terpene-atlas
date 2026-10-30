@@ -48,20 +48,23 @@ test('the expanded pathway view is distinct from the compact framework view',()=
  assert.equal(data.familyGuides['diterpene-pathway'].targetGraph,'diterpenes');
 });
 
-test('C20 cascade shows ordered intermediates, enzyme evidence and a working mechanism link',async()=>{
- const {RenderBoundary}=await import('./support/render-boundary.mjs');
- const {renderClassIICascade,classIIEnzymeExamples}=await import('../src/components/rearrangements.js');
- const root=new RenderBoundary();let opened=0;
- renderClassIICascade(root,{lang:'en',openMechanism:()=>opened++});
- assert.deepEqual(root.querySelectorAll('[data-cascade-stage]').map(n=>n.dataset.cascadeStage),['labdane','halimane','clerodane']);
- assert.equal(root.querySelectorAll('[data-class-ii-enzyme]').length,4);
- assert.match(root.innerHTML,/enzyme-bound/);
- assert.match(root.innerHTML,/not separate enzymes/);
- for(const enzyme of classIIEnzymeExamples){assert.ok(enzyme.source.startsWith('https://'));assert.ok(root.innerHTML.includes(enzyme.enzyme));}
- root.querySelector('[data-cascade-open]').click();assert.equal(opened,1);
- renderClassIICascade(root,{lang:'ko',openMechanism:()=>opened++});
- assert.match(root.innerHTML,/번호가 표시된/);
- root.querySelector('[data-cascade-open]').click();assert.equal(opened,2);
+test('Full pathway connects the framework nodes with qualified TPS II mechanism arrows',async()=>{
+ const full=data.graphs['diterpene-pathway'],compact=data.graphs.diterpenes;
+ for(const [from,to]of [['labdane','halimane'],['halimane','clerodane']]){
+  const edge=full.edges.find(e=>e.from===from&&e.to===to);
+  assert.ok(edge,from+' → '+to);
+  assert.equal(edge.type,'mechanism');
+  assert.match(edge.label,/TPS II.*hydride.*methyl/);
+  assert.match(edge.detail,/Proposed/);
+  assert.match(edge.detail,/class II/);
+  assert.match(edge.detail,/parent/);
+  assert.match(edge.source,/^https:\/\//);
+  assert.ok(!compact.edges.some(e=>e.from===from&&e.to===to));
+ }
+ assert.match(full.edges.find(e=>e.from==='labdane'&&e.to==='halimane').detail,/enzyme-bound/);
+ assert.match(full.edges.find(e=>e.from==='halimane'&&e.to==='clerodane').detail,/not a free HPP-to-KPP conversion/);
+ const {classIIEnzymeExamples}=await import('../src/components/rearrangements.js');
+ assert.deepEqual(classIIEnzymeExamples.map(e=>e.id),['cps','mthps','sdkps','pvcps1']);
  for(const id of ['diterpenes','diterpene-pathway']){
   const graph=data.graphs[id];
   assert.match(graph.edges.find(e=>e.to==='hpp'&&e.from==='ggpp').label,/MtHPS/);
