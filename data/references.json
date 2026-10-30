@@ -183,5 +183,125 @@
     "name": "MtHPS · Class II rearrangement and catalytic termination",
     "detail": "Primary enzyme characterisation · halimadienyl diphosphate synthase Rv3377c.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/36281298/"
+  },
+  {
+    "name": "Miettinen et al., 2014 · Early iridoid enzymes",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3992524/",
+    "detail": "DOI 10.1038/ncomms4606"
+  },
+  {
+    "name": "Lichman et al., 2019 · ISY and NEPS functions",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6513753/",
+    "detail": "DOI 10.1038/s41589-018-0185-2"
+  },
+  {
+    "name": "Teoh et al., 2006 · CYP71AV1",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16458889/",
+    "detail": "DOI 10.1016/j.febslet.2006.01.065"
+  },
+  {
+    "name": "Zhang et al., 2008 · DBR2 characterisation",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18495659/",
+    "detail": "DOI 10.1074/jbc.M803090200"
+  },
+  {
+    "name": "Teoh et al., 2009 · ALDH1 characterisation",
+    "url": "https://doi.org/10.1139/B09-032",
+    "detail": "iridoidsAndArtemisinin"
+  },
+  {
+    "name": "Nazari et al., 2017 · Reconstructed DHAA pathway",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28846664/",
+    "detail": "DOI 10.3390/molecules22091422"
+  },
+  {
+    "name": "Nonenzymatic DHAA-to-artemisinin isotope study, 2020",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31859509/",
+    "detail": "iridoidsAndArtemisinin"
+  },
+  {
+    "name": "Arabidopsis ent-kaurene oxidase catalyzes three steps of gibberellin biosynthesis",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/9952446/",
+    "detail": "DOI 10.1104/pp.119.2.507"
+  },
+  {
+    "name": "Characterization of the kaurene oxidase CYP701A3, a multifunctional cytochrome P450 from gibberellin biosynthesis",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20698828/",
+    "detail": "gibberellinsAndABA"
+  },
+  {
+    "name": "The CYP88A cytochrome P450, ent-kaurenoic acid oxidase, catalyzes three steps of the gibberellin biosynthesis pathway",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/11172076/",
+    "detail": "gibberellinsAndABA"
+  },
+  {
+    "name": "Specific oxidative cleavage of carotenoids by VP14 of maize",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/9188535/",
+    "detail": "DOI 10.1126/science.276.5320.1872"
+  },
+  {
+    "name": "The short-chain alcohol dehydrogenase ABA2 catalyzes the conversion of xanthoxin to abscisic aldehyde",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/12172025/",
+    "detail": "DOI 10.1105/tpc.002477"
+  },
+  {
+    "name": "The Arabidopsis aldehyde oxidase 3 (AAO3) gene product catalyzes the final step in abscisic acid biosynthesis in leaves",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/11050171/",
+    "detail": "DOI 10.1073/pnas.220426197"
+  },
+  {
+    "name": "plant Geometry",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/15503129/",
+    "detail": "Primary literature / enzyme nomenclature"
+  },
+  {
+    "name": "ziso",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20335404/",
+    "detail": "Primary literature / enzyme nomenclature"
+  },
+  {
+    "name": "crtiso",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21209101/",
+    "detail": "Primary literature / enzyme nomenclature"
+  },
+  {
+    "name": "pds Official",
+    "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/3/5/5.html",
+    "detail": "Primary literature / enzyme nomenclature"
+  },
+  {
+    "name": "zds Official",
+    "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/3/5/6.html",
+    "detail": "Primary literature / enzyme nomenclature"
+  },
+  {
+    "name": "ziso Official",
+    "url": "https://iubmb.qmul.ac.uk/enzyme/EC5/2/1/12.html",
+    "detail": "Primary literature / enzyme nomenclature"
+  },
+  {
+    "name": "crtiso Official",
+    "url": "https://iubmb.qmul.ac.uk/enzyme/EC5/2/1/13.html",
+    "detail": "Primary literature / enzyme nomenclature"
+  },
+  {
+    "name": "ester Biosynthesis",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38344823/",
+    "detail": "Primary literature / enzyme nomenclature"
+  },
+  {
+    "name": "hp DGAT1",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S2211926422000911",
+    "detail": "Primary literature / enzyme nomenclature"
+  },
+  {
+    "name": "palmitate Chemistry",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26471660/",
+    "detail": "Primary literature / enzyme nomenclature"
+  },
+  {
+    "name": "analytical Hydrolysis",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0278504",
+    "detail": "Primary literature / enzyme nomenclature"
   }
 ]

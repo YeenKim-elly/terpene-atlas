@@ -7,7 +7,7 @@ import {createQuestion, questionPool, allQuestions, choiceOptions, answerMatches
 import {readProgress, recordAnswer, finishSession} from '../lib/progress.js';
 
 const settings = {
-  kind: 'family', style: 'choice', families: ['mono', 'sesqui', 'di', 'tri', 'tetra'],
+  kind: 'family', style: 'choice', families: ['mono', 'sesqui', 'di', 'tri', 'tetra', 'apo'],
   motifs: null, enzymes: null, challenge: false, count: 10
 };
 let progress = null, session = null, currentRoot = null, context = null;

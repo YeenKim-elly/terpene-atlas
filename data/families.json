@@ -105,5 +105,22 @@
       "테트라테르펜",
       "카로티노이드"
     ]
+  },
+  "apo": {
+    "name": "C40-derived C15 apocarotenoid",
+    "ko": "C40 유래 C15 apocarotenoid",
+    "short": "Apo",
+    "carbon": 15,
+    "units": null,
+    "precursor": "C40 epoxycarotenoid cleavage",
+    "originCarbon": 40,
+    "aliases": [
+      "apocarotenoid",
+      "apocarotenoids",
+      "apo",
+      "carotenoid cleavage product",
+      "ABA",
+      "아포카로티노이드"
+    ]
   }
 }

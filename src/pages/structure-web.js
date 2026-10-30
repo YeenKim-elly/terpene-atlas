@@ -1,12 +1,13 @@
 import {familySubmaps,structureViewGroup,structureGraphId} from '../lib/structure-views.js';
 import {renderScaffoldAtlas} from '../components/scaffold-atlas.js';
-import {renderFamilyGuide,renderFamilyGuideFooter} from '../components/family-guide.js';
+import {renderFamilyGuide,renderFamilyGuideFooter,renderPathwayNotes} from '../components/family-guide.js';
 import {icon as I} from '../components/icons.js';
 import {createWebViewport} from '../components/web-viewport.js';
 import {renderRearrangements} from '../components/rearrangements.js';
 import {routeGraph,overlaps,NODE_WIDTH,NODE_HEIGHT} from '../lib/network-routing.js';
 import {catalogue} from '../lib/catalogue.js';
 const graphs=catalogue.graphs;
+const pathwayNotes=catalogue.pathwayNotes;
 const familyGuides=catalogue.familyGuides,comparisonPairs=catalogue.comparisons;
 const refs={carotenoid:'https://pubmed.ncbi.nlm.nih.gov/22616944/',fuco:'https://pubmed.ncbi.nlm.nih.gov/41955116/',fuco2023:'https://doi.org/10.1093/plcell/koad116',diterpene:'https://pmc.ncbi.nlm.nih.gov/articles/PMC6717049/',clpp:'https://pubmed.ncbi.nlm.nih.gov/30393911/',kpp:'https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/28.html'};
 
@@ -21,6 +22,7 @@ const t=(en,ko)=>ctx.lang==='ko'?ko:en;
 const records=new Map([...ctx.molecules,...ctx.scaffolds,...(ctx.webNotes||[])].map(x=>[x.id,x]));
 const baseGraph=graphs[structureGraphId(active)];let savedLayout={};try{savedLayout=JSON.parse(localStorage.getItem('terpene-atlas/layout-v1-'+active)||'{}');}catch{}
 const graph=restoreGraphLayout(baseGraph,savedLayout);
+graph.edges=graph.edges.map(e=>({...e,label:t(e.label,e.labelKo||e.label),detail:t(e.detail,e.detailKo||e.detail)}));
 const measureCanvas=document.createElement('canvas'),measureContext=measureCanvas.getContext('2d');measureContext.font='600 11px system-ui';const measureText=s=>measureContext.measureText(s).width;
 let routed;try{routed=routeGraph(graph,{measureText});}catch{graph.nodes=baseGraph.nodes.map(n=>[...n]);routed=routeGraph(graph,{measureText});}let dragState=null,ignoreClick=false,dragFrame=0;
 if(!graph.nodes.some(n=>n[0]===selected))selected=graph.nodes[0][0];
@@ -61,7 +63,7 @@ const pos=new Map(graph.nodes.map(n=>[n[0],n]));const W=190,H=132;
 const layers=(graph.layers||[]).map(l=>'<g class="web-layer"><path d="M20 '+l.y+'H'+(graph.width-20)+'"/><text x="24" y="'+(l.y-12)+'">'+esc(l.label)+'</text></g>').join('');
 const edges=routed.routes.map(({edge:e,path,leader})=>{const marker=e.type==='mechanism'?'web-mechanism-arrow':'web-arrow';return '<g class="web-edge '+e.type+((e.from===selected||e.to===selected)?' connected':'')+'" data-edge-from="'+e.from+'" data-edge-to="'+e.to+'"><path d="'+path+'" '+(e.type==='structure'?'':(e.reversible?'marker-start="url(#'+marker+')" ':'')+'marker-end="url(#'+marker+')"')+'/>'+(leader?'<path class="label-leader" d="'+leader+'"/>':'')+'</g>';}).join('');
 const edgeLabels=routed.routes.map(({edge:e,index,label:l})=>'<g class="web-edge-label '+e.type+' '+((e.from===selected||e.to===selected)?'connected':'')+'" data-web-edge-label="'+index+'" transform="translate('+l.x+','+l.y+')"><title>'+esc(e.label)+'</title><rect width="'+l.w+'" height="'+l.h+'" rx="6"/><text x="'+l.w/2+'" text-anchor="middle">'+l.lines.map((line,i)=>'<tspan x="'+l.w/2+'" y="'+(18+i*15)+'">'+esc(line)+'</tspan>').join('')+'</text></g>').join('');
-const nodes=graph.nodes.map(([id,x,y])=>{const r=records.get(id);return '<g class="web-node '+(selected===id?'selected':near.has(id)?'neighbour':'')+'" transform="translate('+x+','+y+')" data-web-node="'+id+'" tabindex="0" role="button" aria-label="'+esc(r.name)+'" aria-pressed="'+(selected===id)+'"><rect width="'+W+'" height="'+H+'" rx="12"/><image href="'+esc(r.image)+'" x="8" y="10" width="174" height="78"/><text x="95" y="107" text-anchor="middle">'+esc(r.name)+'</text><text class="node-sub" x="95" y="123" text-anchor="middle">'+esc(r.category||(r.role==='precursor'?'Precursor · C'+r.skeleton:'C'+r.skeleton+' skeleton'))+'</text></g>';}).join('');
+const nodes=graph.nodes.map(([id,x,y])=>{const r=records.get(id);return '<g class="web-node '+(selected===id?'selected':near.has(id)?'neighbour':'')+'" transform="translate('+x+','+y+')" data-web-node="'+id+'" tabindex="0" role="button" aria-label="'+esc(r.name)+'" aria-pressed="'+(selected===id)+'"><title>'+esc(t(r.name,r.ko||r.name))+'</title><rect width="'+W+'" height="'+H+'" rx="12"/><image href="'+esc(r.image)+'" x="8" y="10" width="174" height="69"/><text x="95" y="98" text-anchor="middle">'+nodeLabelLines(t(r.name,r.ko||r.name),measureText).map((line,i)=>'<tspan x="95" y="'+(98+i*14)+'">'+esc(line)+'</tspan>').join('')+'</text><text class="node-sub" x="95" y="127" text-anchor="middle">'+esc(r.originSkeleton?'C'+r.skeleton+' · from C'+r.originSkeleton:r.category||(r.role==='precursor'?'Precursor · C'+r.skeleton:'C'+r.skeleton+' skeleton'))+'</text></g>';}).join('');
 let svg=root.querySelector('#web-drawing svg');if(!svg){svg=document.createElementNS('http://www.w3.org/2000/svg','svg');root.querySelector('#web-drawing').append(svg);}
 svg.setAttribute('viewBox','0 0 '+graph.width+' '+graph.height);svg.setAttribute('width',graph.width*zoom);svg.setAttribute('height',graph.height*zoom);svg.setAttribute('aria-label',active+' structure relationships');
 svg.innerHTML='<defs><marker id="web-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#77917a"/></marker><marker id="web-mechanism-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#a2783e"/></marker></defs>'+layers+edges+nodes+edgeLabels;
@@ -75,7 +77,7 @@ root.querySelectorAll('[data-web-node]').forEach(b=>{
 }
 function details(){
 const r=records.get(selected),related=graph.edges.filter(e=>e.from===selected||e.to===selected);
-root.querySelector('#web-detail').innerHTML='<div class="eyebrow">'+t('SELECTED STRUCTURE','선택한 구조')+'</div><h2>'+esc(r.name)+'</h2><img src="'+esc(r.image)+'" alt="'+esc(r.name)+' chemical structure"><div class="tag">'+esc(r.MolecularFormula||r.category)+'</div>'+(r.frameworkId?'<button class="web-framework-link" id="web-framework">'+t('Framework: ','골격: ')+esc(records.get(r.frameworkId)?.name||r.frameworkId)+'</button>':'')+(r.structureScope==='framework-example'?'<p class="web-framework-caption">'+t('Illustrated example: ','그림의 예시: ')+esc(r.exampleName||'')+'</p>':'')+'<p>'+esc(t(r.note||'Select Full record for learning notes.',r.noteKo||r.note||'전체 레코드에서 학습 설명을 확인하세요.'))+'</p><button class="secondary" id="web-full">'+t('Full record','전체 레코드')+'</button><h3>'+t('Connections','연결')+' <small>'+related.length+'</small></h3><div class="web-connections">'+related.map(e=>{const target=e.from===selected?e.to:e.from,nr=records.get(target);return '<section><button data-web-related="'+target+'">'+(e.type==='structure'||e.reversible?'↔ ':e.from===selected?'→ ':'← ')+esc(nr.name)+'</button><strong>'+esc(e.label)+'</strong><p>'+esc(e.detail||'A representative connection; organism-specific details can vary.')+'</p>'+(e.source?'<a href="'+esc(e.source)+'" target="_blank" rel="noopener">'+t('Supporting source ↗','출처 ↗')+'</a>':'')+'</section>';}).join('')+'</div>';
+root.querySelector('#web-detail').innerHTML='<div class="eyebrow">'+t('SELECTED STRUCTURE','선택한 구조')+'</div><h2>'+esc(t(r.name,r.ko||r.name))+'</h2><img src="'+esc(r.image)+'" alt="'+esc(r.name)+' chemical structure"><div class="tag">'+esc(r.MolecularFormula||r.category)+'</div>'+(r.frameworkId?'<button class="web-framework-link" id="web-framework">'+t('Framework: ','골격: ')+esc(records.get(r.frameworkId)?.name||r.frameworkId)+'</button>':'')+(r.structureScope==='framework-example'?'<p class="web-framework-caption">'+t('Illustrated example: ','그림의 예시: ')+esc(r.exampleName||'')+'</p>':'')+'<p>'+esc(t(r.note||'Select Full record for learning notes.',r.noteKo||r.note||'전체 레코드에서 학습 설명을 확인하세요.'))+'</p><button class="secondary" id="web-full">'+t('Full record','전체 레코드')+'</button><h3>'+t('Connections','연결')+' <small>'+related.length+'</small></h3><div class="web-connections">'+related.map(e=>{const target=e.from===selected?e.to:e.from,nr=records.get(target);return '<section><button data-web-related="'+target+'">'+(e.type==='structure'||e.reversible?'↔ ':e.from===selected?'→ ':'← ')+esc(nr.name)+'</button><strong>'+esc(e.label)+'</strong><p>'+esc(e.detail||'A representative connection; organism-specific details can vary.')+'</p>'+(e.source?'<a href="'+esc(e.source)+'" target="_blank" rel="noopener">'+t('Supporting source ↗','출처 ↗')+'</a>':'')+'</section>';}).join('')+'</div>';
 root.querySelector('#web-full').onclick=async()=>{await viewport.close();ctx.open(r);};root.querySelector('#web-framework')?.addEventListener('click',()=>showFramework(r.frameworkId));root.querySelectorAll('[data-web-related]').forEach(b=>b.onclick=()=>select(b.dataset.webRelated,true));
 }
 root.querySelector('#web-find').onchange=e=>{if(e.target.value)select(e.target.value,true);};
@@ -106,6 +108,12 @@ if(familyGuides[active]){
  const guide=document.createElement('div'),footer=document.createElement('div'),guideCtx={lang:ctx.lang,records,comparisons:comparisonPairs,jump:showFramework,compare:id=>ctx.openCompare?.(id)};
  root.querySelector('.web-intro').after(guide);stage.after(footer);renderFamilyGuide(guide,familyGuides[active],guideCtx);renderFamilyGuideFooter(footer,familyGuides[active],guideCtx);
 }
+if(pathwayNotes[active]){
+ const notes=document.createElement('div');stage.after(notes);
+ renderPathwayNotes(notes,pathwayNotes[active],{lang:ctx.lang,comparisons:comparisonPairs,compare:id=>ctx.openCompare?.(id)});
+ const scope=document.createElement('p');scope.className='web-pathway-note';scope.textContent=t(...pathwayNotes[active].viewerNote);stage.querySelector('.web-legend').after(scope);
+ root.querySelectorAll(':scope > .note-card').forEach(el=>el.remove());
+}
 if(active==='scaffolds'){
  root.querySelector('.web-intro h2').textContent=t('Scaffolds across C10, C15, C20 and C40.','C10·C15·C20·C40 골격을 함께 살펴보세요.');
  root.querySelector('.web-intro p').textContent=t('Browse framework examples and shared ring topologies. C20 mechanisms and relative stereochemistry are in the Diterpenoids tab.','골격 예시와 공통 고리 형태를 살펴보세요. C20 반응 기작과 상대입체배열은 Diterpenoids 탭에 있습니다.');
@@ -134,3 +142,14 @@ function renderTpsPairs(root,ctx){
 }
 
 export function restoreGraphLayout(baseGraph,saved={}){const fallback=()=>({...baseGraph,nodes:baseGraph.nodes.map(n=>[...n])});if(!saved||typeof saved!=='object'||Array.isArray(saved))return fallback();const nodes=baseGraph.nodes.map(([id,x,y])=>{const p=saved[id];return [id,...(Array.isArray(p)&&p.length===2&&p.every(v=>typeof v==='number'&&Number.isFinite(v))?p:[x,y])];});const boxes=nodes.map(([id,x,y])=>({id,x,y,w:NODE_WIDTH,h:NODE_HEIGHT}));if(boxes.some(b=>b.x<0||b.y<0||b.x+b.w>baseGraph.width||b.y+b.h>baseGraph.height)||boxes.some((b,i)=>boxes.some((other,j)=>j>i&&overlaps(b,other,24))))return fallback();return {...baseGraph,nodes};}
+
+
+export function nodeLabelLines(label,measure,width=170){
+ const words=String(label).split(/\s+/),lines=[];let line='';
+ for(const word of words){const next=line?line+' '+word:word;if(line&&measure(next)>width){lines.push(line);line=word;}else line=next;}
+ if(line)lines.push(line);
+ const shorten=value=>{while(measure(value)>width&&value.length>1)value=value.slice(0,-2)+'…';return value;};
+ if(lines.length<=2)return lines.map(shorten);
+ let last=lines.slice(1).join(' ');while(measure(last+'…')>width&&last.length>1)last=last.slice(0,-1);
+ return [shorten(lines[0]),last+'…'];
+}

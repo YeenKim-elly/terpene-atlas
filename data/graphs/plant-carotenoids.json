@@ -1,0 +1,124 @@
+{
+  "title": [
+    "Plant carotenoids: follow the poly-cis geometry.",
+    "식물 carotenoid: poly-cis 배열을 따라가세요."
+  ],
+  "intro": [
+    "PDS, Z-ISO, ZDS and CRTISO form a dedicated lane to all-trans-lycopene.",
+    "PDS·Z-ISO·ZDS·CRTISO가 all-trans-lycopene까지 이어지는 독립 경로를 이룹니다."
+  ],
+  "width": 1280,
+  "height": 1080,
+  "nodes": [
+    [
+      "ggpp",
+      40,
+      50
+    ],
+    [
+      "15-cis-phytoene",
+      520,
+      50
+    ],
+    [
+      "15-9-dicis-phytofluene",
+      1000,
+      50
+    ],
+    [
+      "tri-cis-zeta-carotene",
+      1000,
+      440
+    ],
+    [
+      "di-cis-zeta-carotene",
+      520,
+      440
+    ],
+    [
+      "tri-cis-neurosporene",
+      40,
+      440
+    ],
+    [
+      "prolycopene",
+      40,
+      830
+    ],
+    [
+      "lycopene",
+      520,
+      830
+    ]
+  ],
+  "edges": [
+    {
+      "from": "ggpp",
+      "to": "15-cis-phytoene",
+      "label": "2 GGPP · PSY · C40",
+      "type": "step",
+      "detail": "Two C20 GGPP molecules condense into C40 phytoene. This branch increases the parent carbon skeleton to C40.",
+      "source": ""
+    },
+    {
+      "from": "15-cis-phytoene",
+      "to": "15-9-dicis-phytofluene",
+      "label": "PDS · first desaturation",
+      "type": "step",
+      "detail": "Plant-type PDS uses plastoquinone as an electron acceptor. This route retains explicitly assigned cis geometry.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/15503129/",
+      "labelKo": "PDS · 첫 번째 불포화화",
+      "detailKo": "식물형 PDS는 전자 수용체로 plastoquinone을 사용합니다. 지정된 cis 배열을 구분합니다."
+    },
+    {
+      "from": "15-9-dicis-phytofluene",
+      "to": "tri-cis-zeta-carotene",
+      "label": "PDS · second desaturation",
+      "type": "step",
+      "detail": "The second PDS desaturation produces tri-cis ζ-carotene.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/15503129/",
+      "labelKo": "PDS · 두 번째 불포화화",
+      "detailKo": "PDS의 두 번째 불포화화는 tri-cis ζ-carotene을 형성합니다."
+    },
+    {
+      "from": "tri-cis-zeta-carotene",
+      "to": "di-cis-zeta-carotene",
+      "label": "Z-ISO · central cis → trans",
+      "type": "step",
+      "detail": "Z-ISO isomerises the central 15–15′ bond. Light can photoisomerise this bond in suitable conditions; that is a distinct physical process.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/20335404/",
+      "labelKo": "Z-ISO · 중앙 cis → trans",
+      "detailKo": "Z-ISO는 중앙 15–15′ 결합을 이성질화합니다. 광이성질화는 별개의 물리 과정입니다."
+    },
+    {
+      "from": "di-cis-zeta-carotene",
+      "to": "tri-cis-neurosporene",
+      "label": "ZDS · first desaturation",
+      "type": "step",
+      "detail": "ZDS processes the appropriate geometric substrate using a quinone electron acceptor.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/15503129/",
+      "labelKo": "ZDS · 첫 번째 불포화화",
+      "detailKo": "ZDS는 quinone 전자 수용체를 사용해 알맞은 기하이성질체 기질을 처리합니다."
+    },
+    {
+      "from": "tri-cis-neurosporene",
+      "to": "prolycopene",
+      "label": "ZDS · second desaturation",
+      "type": "step",
+      "detail": "The second ZDS desaturation gives tetra-cis lycopene.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/15503129/",
+      "labelKo": "ZDS · 두 번째 불포화화",
+      "detailKo": "ZDS의 두 번째 불포화화는 tetra-cis lycopene을 형성합니다."
+    },
+    {
+      "from": "prolycopene",
+      "to": "lycopene",
+      "label": "CRTISO · cis → trans",
+      "type": "step",
+      "detail": "CRTISO converts the poly-cis product toward all-trans lycopene. It uses reduced FAD for a non-redox isomerisation.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/21209101/",
+      "labelKo": "CRTISO · cis → trans",
+      "detailKo": "CRTISO는 poly-cis 생성물을 all-trans lycopene으로 전환하며 비산화환원 이성질화에 환원형 FAD를 사용합니다."
+    }
+  ]
+}

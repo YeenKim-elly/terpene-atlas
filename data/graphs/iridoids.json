@@ -1,0 +1,111 @@
+{
+  "title": [
+    "C10 iridoids: activation, cyclisation and oxidation.",
+    "C10 iridoid: 활성화·고리화·산화."
+  ],
+  "intro": [
+    "Follow geraniol to two nepetalactol cores and their lactones.",
+    "Geraniol에서 두 nepetalactol 골격과 lactone으로 이어집니다."
+  ],
+  "width": 1280,
+  "height": 1080,
+  "nodes": [
+    [
+      "geraniol",
+      40,
+      50
+    ],
+    [
+      "8-hydroxygeraniol",
+      520,
+      50
+    ],
+    [
+      "8-oxogeranial",
+      1000,
+      50
+    ],
+    [
+      "cis-trans-nepetalactol",
+      360,
+      450
+    ],
+    [
+      "cis-cis-nepetalactol",
+      1000,
+      450
+    ],
+    [
+      "cis-trans-nepetalactone",
+      360,
+      850
+    ],
+    [
+      "cis-cis-nepetalactone",
+      1000,
+      850
+    ]
+  ],
+  "edges": [
+    {
+      "from": "geraniol",
+      "to": "8-hydroxygeraniol",
+      "label": "CrG8O / CYP76B6 · hydroxylation",
+      "type": "step",
+      "detail": "Characterised Catharanthus roseus early iridoid chemistry. G8O can also perform further oxidation.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3992524/",
+      "labelKo": "CrG8O / CYP76B6 · 수산화",
+      "detailKo": "Catharanthus roseus의 규명된 초기 iridoid 반응입니다. G8O는 추가 산화도 수행할 수 있습니다."
+    },
+    {
+      "from": "8-hydroxygeraniol",
+      "to": "8-oxogeranial",
+      "label": "Cr8-HGO · two oxidations · NAD+",
+      "type": "summary",
+      "detail": "Condenses two alcohol oxidations. Cr8-HGO accepts 8-hydroxygeraniol and the mono-oxidised intermediates with NAD+.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3992524/",
+      "labelKo": "Cr8-HGO · 두 번의 산화 · NAD+",
+      "detailKo": "두 alcohol 산화를 요약한 연결입니다. Cr8-HGO는 8-hydroxygeraniol과 한쪽이 산화된 중간체를 NAD+와 함께 기질로 사용합니다."
+    },
+    {
+      "from": "8-oxogeranial",
+      "to": "cis-trans-nepetalactol",
+      "label": "ISY + NmNEPS2 · tested cascade",
+      "type": "summary",
+      "detail": "ISY first reduces the substrate to a reactive enol; NmNEPS2 promotes cis-trans cyclisation. Tested combinations include CrISY and NmISY2.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6513753/",
+      "labelKo": "ISY + NmNEPS2 · 검증된 연속 반응",
+      "detailKo": "ISY가 환원하여 반응성 enol을 만들고 NmNEPS2가 cis-trans 고리화를 유도합니다. CrISY 또는 NmISY2 조합이 실험됐습니다."
+    },
+    {
+      "from": "8-oxogeranial",
+      "to": "cis-cis-nepetalactol",
+      "label": "ISY + NmNEPS3 · tested cascade",
+      "type": "summary",
+      "detail": "Reduction and subsequent stereoselective cyclisation are distinct activities. NmNEPS3 forms the 7S cis-cis product.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6513753/",
+      "labelKo": "ISY + NmNEPS3 · 검증된 연속 반응",
+      "detailKo": "환원과 입체선택적 고리화는 서로 다른 활성입니다. NmNEPS3는 7S cis-cis 생성물을 형성합니다."
+    },
+    {
+      "from": "cis-trans-nepetalactol",
+      "to": "cis-trans-nepetalactone",
+      "label": "NmNEPS1 · lactol oxidation · NAD+",
+      "type": "step",
+      "detail": "NAD+-dependent oxidation of the matching lactol to its lactone.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/1/1/419.html",
+      "labelKo": "NmNEPS1 · lactol 산화 · NAD+",
+      "detailKo": "NAD+ 의존적 산화로 대응하는 lactol을 lactone으로 바꿉니다."
+    },
+    {
+      "from": "cis-cis-nepetalactol",
+      "to": "cis-cis-nepetalactone",
+      "label": "NmNEPS1 · lactol oxidation · NAD+",
+      "type": "step",
+      "detail": "NmNEPS1 oxidises both displayed lactol stereoisomers while retaining their assigned core stereochemistry.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/1/1/419.html",
+      "labelKo": "NmNEPS1 · lactol 산화 · NAD+",
+      "detailKo": "NmNEPS1은 두 lactol 입체이성질체를 산화하며 지정된 핵심 골격 입체배열을 유지합니다."
+    }
+  ]
+}

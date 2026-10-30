@@ -15,5 +15,6 @@ export function structureCardHTML(record, category) {
     (record.level === 'challenge' ? '<span class="tag challenge">' + t('Decorated', '추가 작용기') + '</span>' : '') +
     '<p>' + (record.MolecularFormula ? formulaHTML(record.MolecularFormula) : '') +
     (record.skeleton ? ' · ' + t('Parent skeleton', '모체 골격') + ' C' + record.skeleton : '') +
+    (record.originSkeleton ? ' · ' + t('From C', '유래 C') + record.originSkeleton : '') +
     '</p></div></button>';
 }

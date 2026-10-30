@@ -9,7 +9,10 @@ Molecules and precursors use:
 - id: stable identifier, unique across the reference catalogue.
 - name and ko: display labels.
 - family: key from families.json.
-- skeleton: terpene-derived parent carbon count.
+- skeleton: terpene-derived parent carbon count; 15 for the ABA cleavage products.
+- originSkeleton: optional biosynthetic origin, 40 for those C15 apocarotenoids.
+- family apo: C40-derived C15 apocarotenoids; not FPP-derived sesquiterpenoids.
+- fullStructureImage: optional unabridged SVG when image condenses a labelled hydrocarbon tail.
 - MolecularFormula: selected record's total formula.
 - image: relative local illustration path.
 - source: supporting record or publication URL.
@@ -43,8 +46,15 @@ Each file in graphs/ defines:
 - reversible: optional edge flag.
 - layers: optional captions and vertical positions.
 
-Edge types distinguish a reaction, a pathway summary and a structural relation.
-A structural relation does not assert a chemical conversion.
+Edge types distinguish step (reaction), summary (condensed route), structure
+(structural relation without an arrowhead) and mechanism (qualified internal
+TPS II rearrangement). labelKo and detailKo localise pathway annotations.
+A structural relation does not assert a chemical conversion. An optional
+coproduct annotation retains the NCED C25 product and C40 = C15 + C25 balance.
+
+pathway-notes.json supplies bilingual map scope, primary-source callouts and
+reference enzyme/cofactor tables. New focused graph IDs also belong in
+src/lib/catalogue.js and src/lib/structure-views.js.
 
 ## Comparisons and practice
 
