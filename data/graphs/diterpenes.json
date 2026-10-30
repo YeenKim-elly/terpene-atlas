@@ -1,14 +1,14 @@
 {
   "title": [
-    "Class II products. Compatible next steps.",
-    "Class II 산물과 기질이 맞는 후속 단계."
+    "GGPP branches into defined C20 precursors and frameworks.",
+    "GGPP에서 입체배열이 정해진 C20 전구체와 골격으로."
   ],
   "intro": [
-    "Reference class I pairings remain substrate-specific. Added CLPP cards are relative molecular models, not fully assigned Tc products. Kolavenol after phosphatase treatment is an analytical readout; distinguish it from a demonstrated class I product and from kolavelool.",
-    "Class I 참고 조합은 기질 특이성을 가진다. 추가 CLPP 카드는 상대 분자 모형이며 완전히 배정된 Tc 산물이 아니다. Phosphatase 처리 후의 kolavenol은 분석 결과이며 입증된 class I 산물 및 kolavelool과 구분한다."
+    "Follow class II products, match compatible class I enzymes and locate their precursor frameworks. Use the second view for C20 ring fusion, rearrangements and clerodane relative classes.",
+    "Class II 산물과 기질이 맞는 class I 효소를 따라 전구체 골격을 살펴보세요. C20 고리 융합·재배열·clerodane 상대배열은 두 번째 보기에서 확인합니다."
   ],
   "width": 2230,
-  "height": 1470,
+  "height": 1790,
   "layers": [
     {
       "y": 200,
@@ -17,6 +17,10 @@
     {
       "y": 535,
       "label": "CLASS I TPS REFERENCES / DISTINGUISH ANALYTICAL TREATMENT"
+    },
+    {
+      "y": 1400,
+      "label": "PRECURSOR FRAMEWORKS · structural membership"
     }
   ],
   "nodes": [
@@ -92,8 +96,8 @@
     ],
     [
       "clerodane",
-      960,
-      1020
+      1580,
+      1500
     ],
     [
       "clpp-variants",
@@ -119,6 +123,16 @@
       "kolavenol",
       1580,
       1120
+    ],
+    [
+      "labdane",
+      350,
+      1500
+    ],
+    [
+      "halimane",
+      960,
+      1500
     ]
   ],
   "edges": [
@@ -280,6 +294,54 @@
       "type": "summary",
       "detail": "Analytical treatment in the cited SdKPS study. Alcohol detection after phosphatase does not prove a native class I reaction. Kolavenol differs from the tertiary alcohol kolavelool.",
       "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5441855/"
+    },
+    {
+      "from": "cpp",
+      "to": "labdane",
+      "label": "Precursor framework membership",
+      "type": "structure",
+      "detail": "A carbon-framework classification of the diphosphate precursor, not an additional enzyme step. Specific configurations remain attached to the individual precursor record.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/"
+    },
+    {
+      "from": "ent-cpp",
+      "to": "labdane",
+      "label": "Precursor framework membership",
+      "type": "structure",
+      "detail": "A carbon-framework classification of the diphosphate precursor, not an additional enzyme step. Specific configurations remain attached to the individual precursor record.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/"
+    },
+    {
+      "from": "syn-cpp",
+      "to": "labdane",
+      "label": "Precursor framework membership",
+      "type": "structure",
+      "detail": "A carbon-framework classification of the diphosphate precursor, not an additional enzyme step. Specific configurations remain attached to the individual precursor record.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/"
+    },
+    {
+      "from": "hpp",
+      "to": "halimane",
+      "label": "Precursor framework membership",
+      "type": "structure",
+      "detail": "A carbon-framework classification of the diphosphate precursor, not an additional enzyme step. Specific configurations remain attached to the individual precursor record.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/"
+    },
+    {
+      "from": "clpp-cis-trans",
+      "to": "clerodane",
+      "label": "Precursor framework membership",
+      "type": "structure",
+      "detail": "A carbon-framework classification of the diphosphate precursor, not an additional enzyme step. Specific configurations remain attached to the individual precursor record.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/"
+    },
+    {
+      "from": "clpp-cis-cis",
+      "to": "clerodane",
+      "label": "Precursor framework membership",
+      "type": "structure",
+      "detail": "A carbon-framework classification of the diphosphate precursor, not an additional enzyme step. Specific configurations remain attached to the individual precursor record.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/"
     }
   ]
 }

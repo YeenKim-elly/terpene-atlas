@@ -13,7 +13,7 @@ assert.equal(frameworks.length,14);
 for(const frame of frameworks){const example=records.get(frame.exampleId);assert.ok(example,frame.id);assert.equal(frame.CID,null);assert.equal(frame.structureScope,'framework-example');assert.equal(frame.MolecularFormula,example.MolecularFormula);assert.equal(frame.exampleCID,example.CID);assert.ok(frame.note&&frame.noteKo&&frame.structureSource);}
 for(const [id,guide]of Object.entries(guides)){
  const graph=graphs[guide.targetGraph||id],nodeIds=new Set(graph.nodes.map(n=>n[0]));
- for(const branch of guide.branches){assert.ok(nodeIds.has(branch.framework));assert.ok(records.get(branch.framework).framework);for(const example of branch.examples)assert.ok(nodeIds.has(example));}
+ for(const branch of guide.branches){assert.ok(nodeIds.has(branch.framework));assert.ok(scaffolds.some(r=>r.id===branch.framework));for(const example of branch.examples)assert.ok(nodeIds.has(example));}
  for(const pairId of guide.comparisons)assert.ok(comparisons.some(p=>p.id===pairId),pairId);
  for(const callout of guide.callouts)assert.match(callout.source,/^https:\/\//);
 }

@@ -7,8 +7,9 @@ and biosynthetic relationships.
 
 - Searchable reference library with **83 molecule entries**, **17 precursors**,
   **33 scaffold and ring models**, **37 functional motifs** and **40 enzyme reactions**.
-- Six family tabs with seven structure-web views, including C10/C15 precursor–enzyme–framework maps and a C40 end-group overview.
+- Six family tabs with seven structure-web views, including C10/C15/C20 precursor–enzyme–framework maps and a C40 end-group overview.
 - Scaffold galleries with C10, C15, C20, C40 and shared ring-system filters in both the library and Structure web.
+- Diterpenoid subviews for precursor frameworks and for C20 ring fusion, rearrangements and clerodane classes.
 - Fullscreen graph viewing with zoom, full-network Fit and Escape-to-close.
 - Multiple-choice and typed-answer practice, hints, feedback and review.
 - Eighteen aligned structure comparisons, including stereochemical and functional-group differences.

@@ -127,3 +127,5 @@
 .scaffold-c20-detail .web-stage{margin-top:20px}
 @media(max-width:850px){.scaffold-family-groups.is-overview{grid-template-columns:1fr}.scaffold-group-heading>button{max-width:150px}.scaffold-card-grid{grid-template-columns:repeat(auto-fill,minmax(185px,1fr))}}
 @media(max-width:470px){.scaffold-family-group{padding:13px}.scaffold-card-grid,.is-filtered .scaffold-card-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.scaffold-card-image{height:105px;padding:6px}.scaffold-card-copy{padding:8px}.scaffold-card-copy h4{font-size:12px}.scaffold-group-heading{display:block}.scaffold-group-heading>button{max-width:none;margin-top:10px}}
+
+.tps-reference-details>summary{cursor:pointer;font-size:13px;line-height:1.7;font-weight:600;color:#4a663d}.tps-reference-details[open]>summary{margin-bottom:18px}.tps-reference-details>h2{margin-top:18px}

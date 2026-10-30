@@ -125,7 +125,8 @@
     "image": "assets/structures/cpp.svg",
     "carbons": 20,
     "skeleton": 20,
-    "family": "di"
+    "family": "di",
+    "frameworkId": "labdane"
   },
   {
     "id": "ent-cpp",
@@ -146,7 +147,8 @@
     "image": "assets/structures/ent-cpp.svg",
     "carbons": 20,
     "skeleton": 20,
-    "family": "di"
+    "family": "di",
+    "frameworkId": "labdane"
   },
   {
     "id": "syn-cpp",
@@ -167,7 +169,8 @@
     "image": "assets/structures/syn-cpp.svg",
     "carbons": 20,
     "skeleton": 20,
-    "family": "di"
+    "family": "di",
+    "frameworkId": "labdane"
   },
   {
     "id": "kpp",
@@ -192,7 +195,8 @@
     "carbons": 20,
     "skeleton": 20,
     "family": "di",
-    "literature": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5441855/"
+    "literature": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5441855/",
+    "frameworkId": "clerodane"
   },
   {
     "id": "hpp",
@@ -214,7 +218,8 @@
     "image": "assets/structures/hpp.svg",
     "carbons": 20,
     "skeleton": 20,
-    "family": "di"
+    "family": "di",
+    "frameworkId": "halimane"
   },
   {
     "id": "gfpp",
@@ -332,7 +337,8 @@
           9
         ]
       }
-    ]
+    ],
+    "frameworkId": "clerodane"
   },
   {
     "id": "clpp-cis-cis",
@@ -381,7 +387,8 @@
           9
         ]
       }
-    ]
+    ],
+    "frameworkId": "clerodane"
   },
   {
     "CID": 5280528,
