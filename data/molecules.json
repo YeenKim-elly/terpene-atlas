@@ -167,7 +167,8 @@
     "source": "https://pubchem.ncbi.nlm.nih.gov/compound/68827",
     "image": "assets/structures/artemisinin.svg",
     "note": "An oxygen-rich C15 sesquiterpene lactone with an endoperoxide bridge.",
-    "noteKo": "Lactone과 endoperoxide 가교를 가진 산소가 풍부한 C15 sesquiterpenoid이다."
+    "noteKo": "Lactone과 endoperoxide 가교를 가진 산소가 풍부한 C15 sesquiterpenoid이다.",
+    "frameworkId": "artemisinin-ring-system"
   },
   {
     "id": "nootkatone",
@@ -276,7 +277,8 @@
     "source": "https://pubchem.ncbi.nlm.nih.gov/compound/11966109",
     "image": "assets/structures/ent-kaurene.svg",
     "note": "A tetracyclic C20 diterpene. ent-Kaurene synthase converts ent-CPP to this gibberellin-pathway scaffold.",
-    "noteKo": "4고리 C20 diterpene이다. ent-Kaurene synthase가 ent-CPP를 이 gibberellin 경로 골격으로 바꾼다."
+    "noteKo": "4고리 C20 diterpene이다. ent-Kaurene synthase가 ent-CPP를 이 gibberellin 경로 골격으로 바꾼다.",
+    "frameworkId": "kaurane"
   },
   {
     "id": "stevioside",
@@ -936,7 +938,8 @@
       "taxadiene"
     ],
     "source": "https://pubchem.ncbi.nlm.nih.gov/compound/443484",
-    "image": "assets/structures/taxadiene.svg"
+    "image": "assets/structures/taxadiene.svg",
+    "frameworkId": "taxane"
   },
   {
     "name": "Borapetoside C",
@@ -1846,7 +1849,8 @@
       "general-reference"
     ],
     "ko": "cis-trans-네페탈락톨",
-    "noteKo": "4aS,7S,7aR 배열이 지정된 기준 구조입니다. C1의 anomeric 배열은 미지정이며, 하나의 완전히 지정된 lactol anomer를 뜻하지 않습니다."
+    "noteKo": "4aS,7S,7aR 배열이 지정된 기준 구조입니다. C1의 anomeric 배열은 미지정이며, 하나의 완전히 지정된 lactol anomer를 뜻하지 않습니다.",
+    "frameworkId": "iridoid-core"
   },
   {
     "id": "cis-cis-nepetalactol",
@@ -1895,7 +1899,8 @@
       "general-reference"
     ],
     "ko": "cis-trans-네페탈락톤",
-    "noteKo": "4aS,7S,7aR 배열의 lactone 기준 구조입니다. 대응하는 lactol이 산화되면 C1의 anomeric 입체중심이 사라집니다."
+    "noteKo": "4aS,7S,7aR 배열의 lactone 기준 구조입니다. 대응하는 lactol이 산화되면 C1의 anomeric 입체중심이 사라집니다.",
+    "frameworkId": "iridoid-lactone"
   },
   {
     "id": "cis-cis-nepetalactone",
@@ -2174,7 +2179,8 @@
       "general-reference"
     ],
     "ko": "지베렐린 A12",
-    "noteKo": "식물 KO/KAO 경로의 C20 지베렐린 생성물입니다. 문헌의 기준 경로이며, 검증되지 않은 Tinospora 효소에 대한 기능 부여가 아닙니다."
+    "noteKo": "식물 KO/KAO 경로의 C20 지베렐린 생성물입니다. 문헌의 기준 경로이며, 검증되지 않은 Tinospora 효소에 대한 기능 부여가 아닙니다.",
+    "frameworkId": "gibberellin-framework"
   },
   {
     "id": "9-cis-violaxanthin",
@@ -2197,7 +2203,8 @@
       "general-reference"
     ],
     "ko": "9-cis-비올라잔틴",
-    "noteKo": "입체배열이 지정된 NCED 기질입니다. All-trans violaxanthin 기준 구조와 구분해야 합니다."
+    "noteKo": "입체배열이 지정된 NCED 기질입니다. All-trans violaxanthin 기준 구조와 구분해야 합니다.",
+    "frameworkId": "carotenoid-beta-beta"
   },
   {
     "id": "xanthoxin",
@@ -2269,7 +2276,8 @@
       "general-reference"
     ],
     "ko": "(+)-앱시스산",
-    "noteKo": "천연 (+)-(1′S,2Z,4E)-ABA를 중성 산으로 표시합니다. PubChem CID5702609는 trans,trans 배열로, 여기에서 선택한 생성물과 다릅니다."
+    "noteKo": "천연 (+)-(1′S,2Z,4E)-ABA를 중성 산으로 표시합니다. PubChem CID5702609는 trans,trans 배열로, 여기에서 선택한 생성물과 다릅니다.",
+    "frameworkId": "apo-aba-ring"
   },
   {
     "id": "15-9-dicis-phytofluene",
@@ -2384,7 +2392,8 @@
       "general-reference"
     ],
     "ko": "프로라이코펜 · tetra-cis-라이코펜",
-    "noteKo": "CRTISO 기질인 7,9,7′,9′-tetra-cis-lycopene입니다."
+    "noteKo": "CRTISO 기질인 7,9,7′,9′-tetra-cis-lycopene입니다.",
+    "frameworkId": "carotenoid-psi-psi"
   },
   {
     "id": "astaxanthin-monopalmitate-model",

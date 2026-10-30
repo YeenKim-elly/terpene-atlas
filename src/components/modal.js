@@ -15,7 +15,7 @@ export function closeModal() {
 }
 
 export function provenanceHTML(record) {
-  if (record.structureScope === 'framework-example') return esc(t('Framework illustrated with ', '골격 설명용 예시: ')) + esc(record.exampleName) + ' · <a href="' + esc(record.structureSource) + '" target="_blank" rel="noopener noreferrer">' + esc('PubChem CID ' + record.exampleCID) + '</a>. ' + esc(t('The example retains its own functional groups and stereochemistry.', '예시의 작용기와 입체배열을 유지한 그림입니다.'));
+  if (record.structureScope === 'framework-example') return esc(t('Framework illustrated with ', '골격 설명용 예시: ')) + esc(record.exampleName) + ' · <a href="' + esc(record.structureSource) + '" target="_blank" rel="noopener noreferrer">' + esc(record.structureSource.includes('pubchem.ncbi.nlm.nih.gov') ? 'PubChem CID ' + record.exampleCID : t('Source structure', '구조 출처')) + '</a>. ' + esc(t('The example retains its own functional groups and stereochemistry.', '예시의 작용기와 입체배열을 유지한 그림입니다.'));
 
   if (record.structureScope === 'relative-pairs-only') {
     return esc(t(

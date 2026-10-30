@@ -160,3 +160,15 @@
 .web-node text{font-size:11px}
 .web-node .node-sub{font-size:9px}
 @media(max-width:650px){.web-submaps button{flex:1 1 140px}.web-pathway-note{padding:9px 12px}.pathway-enzyme-reference{padding:12px}}
+
+/* Pathway-linked scaffold and ring examples */
+.scaffold-card-item{min-width:0;display:flex;flex-direction:column}
+.scaffold-card-item .scaffold-record-card{width:100%;flex:1}
+.scaffold-card-item.has-pathway .scaffold-record-card{border-radius:9px 9px 0 0}
+.scaffold-pathway-link{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;padding:10px 12px;text-align:left;font-size:10px;line-height:1.5;color:#49683a;background:#f0f5e8;border:1px solid #dce5d2;border-top:0;border-radius:0 0 9px 9px}
+.scaffold-pathway-link:hover,.scaffold-pathway-link:focus-visible{background:#e5efd9}
+.scaffold-pathway-link svg{width:12px;height:12px;flex-shrink:0}
+.scaffold-scope-note{padding:10px 12px;border-left:2px solid #a3b98b;background:#f1f5ea}
+.scaffold-card-copy .scaffold-origin{font-weight:600;color:#45683a}
+.scaffold-card-copy .scaffold-parent{font-size:9px;color:#738364}
+@media(max-width:470px){.scaffold-pathway-link{padding:8px;font-size:9px}}
