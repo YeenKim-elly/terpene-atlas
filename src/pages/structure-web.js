@@ -1,3 +1,4 @@
+import {renderScaffoldAtlas} from '../components/scaffold-atlas.js';
 import {renderFamilyGuide,renderFamilyGuideFooter} from '../components/family-guide.js';
 import {icon as I} from '../components/icons.js';
 import {createWebViewport} from '../components/web-viewport.js';
@@ -103,8 +104,18 @@ if(familyGuides[active]){
  const guide=document.createElement('div'),footer=document.createElement('div'),guideCtx={lang:ctx.lang,records,comparisons:comparisonPairs,jump:showFramework,compare:id=>ctx.openCompare?.(id)};
  root.querySelector('.web-intro').after(guide);stage.after(footer);renderFamilyGuide(guide,familyGuides[active],guideCtx);renderFamilyGuideFooter(footer,familyGuides[active],guideCtx);
 }
-if(active==='scaffolds'){const links=document.createElement('div');links.className='framework-shortcuts';links.innerHTML=[['monoterpenes','C10 frameworks','C10 골격'],['sesquiterpenes','C15 frameworks','C15 골격'],['carotenoid-frameworks','C40 end-group frameworks','C40 말단 골격']].map(([id,en,ko])=>'<button class="secondary" data-framework-view="'+id+'">'+t(en,ko)+'</button>').join('');root.querySelector('.web-intro').append(links);links.querySelectorAll('[data-framework-view]').forEach(b=>b.onclick=()=>{active=b.dataset.frameworkView;selected='';renderStructureWeb(root,ctx);});}
  if(active==='scaffolds'){const panel=document.createElement('div');stage.before(panel);renderRearrangements(panel,ctx.lang);renderClerodaneClasses(root,ctx);}
+if(active==='scaffolds'){
+ root.querySelector('.web-intro h2').textContent=t('Scaffolds across C10, C15, C20 and C40.','C10·C15·C20·C40 골격을 함께 살펴보세요.');
+ root.querySelector('.web-intro p').textContent=t('Browse the family galleries directly. Shared ring topologies and the detailed C20 stereochemistry view have their own sections.','각 계열의 골격을 바로 살펴보세요. 공통 고리 형태와 C20 입체화학 상세 자료는 별도 영역에 있습니다.');
+ const gallery=document.createElement('div');root.querySelector('.web-intro').after(gallery);
+ renderScaffoldAtlas(gallery,{records:ctx.scaffolds,lang:ctx.lang,open:ctx.open,goMap:id=>{active=id;selected='';renderStructureWeb(root,ctx);}});
+ const extra=document.createElement('details');extra.className='scaffold-c20-detail';
+ extra.innerHTML='<summary>'+t('C20 detail · ring fusion, rearrangements and four clerodane classes','C20 상세 · 고리 융합, 재배열과 네 가지 clerodane 유형')+'</summary>';
+ stage.before(extra);
+ const rearrangements=root.querySelector('.rearrangement-panel'),classes=root.querySelector('.clerodane-panel'),notice=root.querySelector('.notice'),naming=root.querySelector('.note-card');
+ for(const section of [rearrangements,stage,classes,notice,naming])if(section)extra.append(section);
+}
  if(active==='diterpenes')renderTpsPairs(root,ctx);
 }
 

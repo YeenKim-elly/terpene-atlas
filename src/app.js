@@ -4,7 +4,7 @@ import {shellHTML, navigation} from './components/shell.js';
 import {openRecord, closeModal} from './components/modal.js';
 import {renderLibrary} from './pages/library.js';
 import {renderPractice, resetPractice, startSinglePractice, startComparisonPractice, handlePracticeKey} from './pages/practice.js';
-import {renderStructureWeb, disposeStructureWeb} from './pages/structure-web.js';
+import {renderStructureWeb, disposeStructureWeb, selectStructureGraph} from './pages/structure-web.js';
 import {renderStructureComparison, selectComparison} from './pages/comparison.js';
 import {renderSources} from './pages/sources.js';
 
@@ -38,7 +38,7 @@ function render() {
   app.innerHTML = shellHTML(view);
   const root = document.querySelector('#page-root');
   if (view === 'practice') renderPractice(root, {openRecord: detail});
-  else if (view === 'library') renderLibrary(root, {openRecord: detail, goCompare: id => {
+  else if (view === 'library') renderLibrary(root, {openRecord: detail, goMap: id => { selectStructureGraph(id); navigate('web'); }, goCompare: id => {
     if (id) selectComparison(id);
     navigate('compare');
   }});

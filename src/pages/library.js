@@ -1,3 +1,4 @@
+import {renderScaffoldAtlas} from '../components/scaffold-atlas.js';
 import {catalogue} from '../lib/catalogue.js';
 import {t, recordName} from '../lib/i18n.js';
 import {$, $$, esc} from '../lib/dom.js';
@@ -47,6 +48,10 @@ export function renderLibrary(root, ctx) {
     const records = filterLibrary(catalogue[state.tab], state.query, family);
     $('#library-count', root).textContent = records.length + ' / ' + catalogue[state.tab].length + ' ' +
       t('records', '항목');
+    if (state.tab === 'scaffolds') {
+      renderScaffoldAtlas($('#library-grid', root), {records, allRecords: catalogue.scaffolds, lang: document.documentElement.lang, open: ctx.openRecord, goMap: ctx.goMap, onCount: count => { $('#library-count', root).textContent = count + ' / ' + catalogue.scaffolds.length + ' ' + t('records', '항목'); }});
+      return;
+    }
     $('#library-grid', root).innerHTML = records.length ?
       records.map(record => structureCardHTML(record, state.tab)).join('') :
       '<div class="empty">' + t('No matching records. Try another name or clear the filters.',

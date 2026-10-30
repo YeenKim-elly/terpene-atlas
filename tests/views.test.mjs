@@ -16,7 +16,7 @@ test('library categories, details, search, empty state and family filters work',
  renderLibrary(root,ctx);
  for(const [tab,count]of [['molecules',83],['precursors',17],['scaffolds',33],['motifs',37],['reactions',40]]){
   root.querySelector('[data-library-tab="'+tab+'"]').click();
-  const cards=root.querySelectorAll('[data-detail]');
+  const cards=(tab==='scaffolds'?root.querySelector('#library-grid'):root).querySelectorAll('[data-detail]');
   assert.equal(cards.length,count,tab);assert.ok(cards.every(card=>typeof card.onclick==='function'));
   cards[0].click();assert.ok(opened?.id);
  }
