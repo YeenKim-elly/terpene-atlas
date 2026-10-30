@@ -6,7 +6,6 @@
                   xml:space='preserve'
 width='620px' height='360px' viewBox='0 0 620 360'>
 <!-- END OF HEADER -->
-<rect style='opacity:1.0;fill:#FFFFFF;stroke:none' width='620.0' height='360.0' x='0.0' y='0.0'> </rect>
 <path class='bond-0 atom-0 atom-1' d='M 103.9,190.9 L 108.8,193.6 L 108.9,199.2 L 72.5,221.0 L 67.6,212.7 Z' style='fill:#E2EFD1;fill-rule:evenodd;fill-opacity:1;stroke:#E2EFD1;stroke-width:0.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
 <path class='bond-1 atom-1 atom-2' d='M 113.5,190.7 L 148.2,210.0 L 148.3,221.1 L 108.9,199.2 L 108.8,193.6 Z' style='fill:#E2EFD1;fill-rule:evenodd;fill-opacity:1;stroke:#E2EFD1;stroke-width:0.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
 <path class='bond-14 atom-1 atom-15' d='M 112.8,148.4 L 113.5,190.7 L 108.8,193.6 L 103.9,190.9 L 103.2,148.6 Z' style='fill:#E2EFD1;fill-rule:evenodd;fill-opacity:1;stroke:#E2EFD1;stroke-width:0.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
