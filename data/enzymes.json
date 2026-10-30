@@ -226,5 +226,127 @@
       "pr",
       "이중결합 환원효소"
     ]
+  },
+  "iridoidCascade": {
+    "name": "ISY + NEPS · reductive cyclisation",
+    "ko": "ISY + NEPS · 환원 뒤 고리화",
+    "aliases": [
+      "isy + neps",
+      "isy neps2",
+      "isy neps3",
+      "iridoid synthase and nepetalactol synthase",
+      "환원 뒤 고리화"
+    ]
+  },
+  "nepsOxidase": {
+    "name": "NEPS1 · lactol dehydrogenase",
+    "ko": "NEPS1 · lactol 탈수소효소",
+    "aliases": [
+      "neps1",
+      "nmneps1",
+      "nepetalactol dehydrogenase",
+      "lactol dehydrogenase",
+      "lactol 탈수소효소"
+    ]
+  },
+  "aldh": {
+    "name": "Aldehyde dehydrogenase · ALDH",
+    "ko": "Aldehyde 탈수소효소 · ALDH",
+    "aliases": [
+      "aldh",
+      "aldh1",
+      "aaaldh1",
+      "aldehyde dehydrogenase",
+      "알데하이드 탈수소효소"
+    ]
+  },
+  "nced": {
+    "name": "9-cis-Epoxycarotenoid dioxygenase · NCED",
+    "ko": "9-cis-Epoxycarotenoid dioxygenase · NCED",
+    "aliases": [
+      "nced",
+      "vp14",
+      "zmvp14",
+      "9 cis epoxycarotenoid dioxygenase",
+      "carotenoid cleavage dioxygenase"
+    ]
+  },
+  "aba2": {
+    "name": "Xanthoxin dehydrogenase · ABA2",
+    "ko": "Xanthoxin 탈수소효소 · ABA2",
+    "aliases": [
+      "aba2",
+      "gin1",
+      "xanthoxin dehydrogenase"
+    ]
+  },
+  "aao": {
+    "name": "Abscisic aldehyde oxidase · AAO3",
+    "ko": "Abscisic aldehyde 산화효소 · AAO3",
+    "aliases": [
+      "aao3",
+      "aldehyde oxidase",
+      "abscisic aldehyde oxidase",
+      "알데하이드 산화효소"
+    ]
+  },
+  "pds": {
+    "name": "Plant phytoene desaturase · PDS",
+    "ko": "식물 phytoene 불포화화효소 · PDS",
+    "aliases": [
+      "pds",
+      "plant phytoene desaturase",
+      "15 cis phytoene desaturase"
+    ]
+  },
+  "ziso": {
+    "name": "ζ-Carotene isomerase · Z-ISO",
+    "ko": "ζ-Carotene 이성질화효소 · Z-ISO",
+    "aliases": [
+      "ziso",
+      "z iso",
+      "zeta carotene isomerase",
+      "15 cis zeta carotene isomerase"
+    ]
+  },
+  "zds": {
+    "name": "Plant ζ-carotene desaturase · ZDS",
+    "ko": "식물 ζ-carotene 불포화화효소 · ZDS",
+    "aliases": [
+      "zds",
+      "zeta carotene desaturase",
+      "9 9 dicis zeta carotene desaturase"
+    ]
+  },
+  "crtiso": {
+    "name": "Prolycopene isomerase · CRTISO",
+    "ko": "Prolycopene 이성질화효소 · CRTISO",
+    "aliases": [
+      "crtiso",
+      "carotene isomerase",
+      "prolycopene isomerase"
+    ]
+  },
+  "xanthophyllAct": {
+    "name": "Xanthophyll acyltransferase · DGAT example",
+    "ko": "Xanthophyll acyltransferase · DGAT 사례",
+    "aliases": [
+      "scdgat2 1",
+      "scdgat21",
+      "xanthophyll acyltransferase",
+      "astaxanthin acyltransferase",
+      "dgat",
+      "dgat2"
+    ]
+  },
+  "esterase": {
+    "name": "Cholesterol esterase · analytical hydrolysis",
+    "ko": "Cholesterol esterase · 분석용 가수분해",
+    "aliases": [
+      "cholesterol esterase",
+      "esterase",
+      "cholesteryl ester hydrolase",
+      "에스터 가수분해효소"
+    ]
   }
 }

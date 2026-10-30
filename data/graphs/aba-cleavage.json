@@ -1,0 +1,89 @@
+{
+  "title": [
+    "C40 cleavage to C15: the ABA branch.",
+    "C40을 절단해 C15로: ABA 분기."
+  ],
+  "intro": [
+    "Start with a defined 9-cis epoxycarotenoid and follow xanthoxin through ABA2 and AAO3.",
+    "정의된 9-cis epoxycarotenoid에서 시작해 xanthoxin·ABA2·AAO3를 따라갑니다."
+  ],
+  "width": 1280,
+  "height": 720,
+  "nodes": [
+    [
+      "violaxanthin",
+      40,
+      60
+    ],
+    [
+      "9-cis-violaxanthin",
+      520,
+      60
+    ],
+    [
+      "xanthoxin",
+      1000,
+      60
+    ],
+    [
+      "aba-aldehyde",
+      1000,
+      460
+    ],
+    [
+      "abscisic-acid",
+      520,
+      460
+    ]
+  ],
+  "edges": [
+    {
+      "from": "violaxanthin",
+      "to": "9-cis-violaxanthin",
+      "label": "Geometric-isomer relationship",
+      "type": "structure",
+      "detail": "Relates the reference violaxanthin drawing to the specifically required 9-cis substrate. This link does not assign an isomerisation enzyme.",
+      "source": "https://www.ebi.ac.uk/chebi/CHEBI:35305",
+      "labelKo": "기하이성질체 관계",
+      "detailKo": "참고 violaxanthin과 정확히 지정된 9-cis 기질의 구조 관계입니다. 이성질화 효소를 배정한 연결이 아닙니다."
+    },
+    {
+      "from": "9-cis-violaxanthin",
+      "to": "xanthoxin",
+      "label": "NCED / VP14 · C15 + C25 cleavage",
+      "type": "step",
+      "detail": "A C40 carotenoid is cleaved into C15 xanthoxin and a C25 apo-aldehyde. The coproduct must remain visible in the reaction annotation: 40 = 15 + 25.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/9188535/",
+      "coproduct": {
+        "name": "(3S,5R,6S)-5,6-epoxy-3-hydroxy-5,6-dihydro-12′-apo-β-caroten-12′-al",
+        "shortName": "C25 apo-aldehyde",
+        "carbons": 25,
+        "MolecularFormula": "C25H34O3",
+        "ChEBI": "CHEBI:34597",
+        "source": "https://www.rhea-db.org/rhea/16542"
+      },
+      "labelKo": "NCED / VP14 · C15 + C25 절단",
+      "detailKo": "C40이 C15 xanthoxin과 C25 apo-aldehyde(C25H34O3)로 절단됩니다. 탄소 수는 40 = 15 + 25입니다."
+    },
+    {
+      "from": "xanthoxin",
+      "to": "aba-aldehyde",
+      "label": "ABA2 · NAD+-dependent conversion",
+      "type": "step",
+      "detail": "Characterised conversion of xanthoxin to abscisic aldehyde. The net reaction oxidises the 4′-hydroxyl to a ketone and rearranges the epoxide to the unsaturated hydroxy ring.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/12172025/",
+      "labelKo": "ABA2 · NAD+ 의존적 전환",
+      "detailKo": "규명된 xanthoxin → abscisic aldehyde 순전환으로 4′-OH의 ketone 산화와 epoxide 재배열을 포함합니다."
+    },
+    {
+      "from": "aba-aldehyde",
+      "to": "abscisic-acid",
+      "label": "AAO3 · aldehyde oxidation",
+      "type": "step",
+      "detail": "Aldehyde oxidation gives natural (+)-ABA. This is an aldehyde-oxidase reference stage, not a P450/CPR reaction.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/11050171/",
+      "labelKo": "AAO3 · aldehyde 산화",
+      "detailKo": "Aldehyde 산화로 천연 (+)-ABA가 형성됩니다. Aldehyde oxidase 참고 반응이며 P450/CPR 반응이 아닙니다."
+    }
+  ]
+}

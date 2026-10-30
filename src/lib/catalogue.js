@@ -1,8 +1,8 @@
-export const graphIds=['precursors','carotenoids','diterpenes','scaffolds','monoterpenes','sesquiterpenes','carotenoid-frameworks','diterpene-pathway'];
+export const graphIds=["precursors","carotenoids","diterpenes","scaffolds","diterpene-pathway","monoterpenes","sesquiterpenes","carotenoid-frameworks","iridoids","artemisinin","gibberellins","aba-cleavage","plant-carotenoids","astaxanthin-esters"];
 export const catalogue = {
   molecules: [], precursors: [], scaffolds: [], motifs: [], reactions: [],
   comparisons: [], comparisonStructures: [], graphNotes: [], comparisonQuestions: [],
-  references: [], families: {}, enzymes: {}, graphs: {}, familyGuides: {}
+  references: [], families: {}, enzymes: {}, graphs: {}, familyGuides: {}, pathwayNotes: {}
 };
 
 export const catalogueFiles = {
@@ -18,7 +18,8 @@ export const catalogueFiles = {
   references: 'references.json',
   families: 'families.json',
   enzymes: 'enzymes.json',
-  familyGuides: 'framework-guides.json'
+  familyGuides: 'framework-guides.json',
+  pathwayNotes: 'pathway-notes.json'
 };
 
 export function hydrateCatalogue(records, graphs) {

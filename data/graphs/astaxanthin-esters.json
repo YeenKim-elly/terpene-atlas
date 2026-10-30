@@ -1,0 +1,71 @@
+{
+  "title": [
+    "Astaxanthin: free form, monoester and diester.",
+    "Astaxanthin: 유리형·monoester·diester."
+  ],
+  "intro": [
+    "Compare hydroxyl acylation. Hydrolysis arrows describe analytical treatment.",
+    "Hydroxyl acyl화를 비교하세요. 가수분해 화살표는 분석 처리 과정을 나타냅니다."
+  ],
+  "width": 1280,
+  "height": 680,
+  "nodes": [
+    [
+      "astaxanthin",
+      40,
+      180
+    ],
+    [
+      "astaxanthin-monopalmitate-model",
+      520,
+      180
+    ],
+    [
+      "astaxanthin-dipalmitate",
+      1000,
+      180
+    ]
+  ],
+  "edges": [
+    {
+      "from": "astaxanthin",
+      "to": "astaxanthin-monopalmitate-model",
+      "label": "One OH acylated · reference example",
+      "type": "summary",
+      "detail": "Shows esterification chemistry with a representative palmitoyl group. Characterised xanthophyll acyltransferases support the reaction class; this illustration does not establish exact donor specificity for any named enzyme.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/26471660/",
+      "labelKo": "OH 하나 acyl화 · 참고 예시",
+      "detailKo": "대표 palmitoyl기로 ester화 화학을 보여줍니다. 특정 효소의 정확한 donor 특이성을 확정하는 그림이 아닙니다."
+    },
+    {
+      "from": "astaxanthin-monopalmitate-model",
+      "to": "astaxanthin-dipalmitate",
+      "label": "Second OH acylated · reference example",
+      "type": "summary",
+      "detail": "Both astaxanthin hydroxyl groups are esterified in this structural comparison. The C40 carotenoid core remains despite the larger total carbon count.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/26471660/",
+      "labelKo": "두 번째 OH acyl화 · 참고 예시",
+      "detailKo": "두 hydroxyl기가 ester화된 구조 비교입니다. 총 탄소 수가 증가해도 C40 핵심 골격은 유지됩니다."
+    },
+    {
+      "from": "astaxanthin-monopalmitate-model",
+      "to": "astaxanthin",
+      "label": "Cholesterol esterase · analytical hydrolysis",
+      "type": "summary",
+      "detail": "An in-vitro analytical treatment that releases free astaxanthin and fatty acid. It is not a native export reaction.",
+      "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0278504",
+      "labelKo": "Cholesterol esterase · 분석용 가수분해",
+      "detailKo": "추출 시료의 시험관 분석 처리로 유리 astaxanthin과 지방산을 방출합니다. 천연 수송 반응이 아닙니다."
+    },
+    {
+      "from": "astaxanthin-dipalmitate",
+      "to": "astaxanthin",
+      "label": "De-esterification · two ester bonds",
+      "type": "summary",
+      "detail": "Condenses hydrolysis of both ester bonds during analytical de-esterification; it does not claim a one-step native conversion.",
+      "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0278504",
+      "labelKo": "탈에스터화 · 두 ester 결합",
+      "detailKo": "분석용 탈에스터화에서 두 ester 결합의 가수분해를 요약합니다. 한 단계의 천연 전환이 아닙니다."
+    }
+  ]
+}

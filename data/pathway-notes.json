@@ -1,0 +1,350 @@
+{
+  "iridoids": {
+    "viewerNote": [
+      "ISY reduces; NEPS controls ring closure. Catharanthus and Nepeta enzymes form a reference reconstruction, not one native pathway.",
+      "ISY는 환원을, NEPS는 고리화를 담당합니다. Catharanthus와 Nepeta 효소를 결합한 참고 재구성이며 한 종의 천연 경로가 아닙니다."
+    ],
+    "modelNote": [
+      "ISY reduces; NEPS controls ring closure. Catharanthus and Nepeta enzymes form a reference reconstruction, not one native pathway.",
+      "ISY는 환원을, NEPS는 고리화를 담당합니다. Catharanthus와 Nepeta 효소를 결합한 참고 재구성이며 한 종의 천연 경로가 아닙니다."
+    ],
+    "comparisons": [],
+    "callouts": [
+      {
+        "title": [
+          "Who builds the ring?",
+          "고리는 누가 만드나요?"
+        ],
+        "text": [
+          "In the characterised Nepeta system, ISY generates a reactive enol. NEPS2 or NEPS3 then directs cyclisation. Dashed arrows condense this multi-enzyme cascade.",
+          "규명된 Nepeta 시스템에서 ISY는 반응성 enol을 만들고 NEPS2 또는 NEPS3가 고리화를 유도합니다. 점선은 이 다중 효소 반응을 요약합니다."
+        ],
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6513753/"
+      },
+      {
+        "title": [
+          "Lactol versus lactone",
+          "Lactol과 lactone"
+        ],
+        "text": [
+          "NEPS1 oxidises a lactol to a lactone with NAD+. The lactol C1 anomer is deliberately unassigned; the core stereochemistry remains specified.",
+          "NEPS1은 NAD+를 사용해 lactol을 lactone으로 산화합니다. Lactol C1 anomer는 미지정이며 핵심 골격의 입체배열은 지정돼 있습니다."
+        ],
+        "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/1/1/419.html"
+      }
+    ],
+    "enzymes": [
+      {
+        "name": "CrG8O · Geraniol 8-oxidase",
+        "organism": "Catharanthus roseus",
+        "cofactor": "O2 · NADPH via CPR",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3992524/"
+      },
+      {
+        "name": "Cr8HGO · 8-Hydroxygeraniol oxidoreductase",
+        "organism": "Catharanthus roseus",
+        "cofactor": "NAD+",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3992524/"
+      },
+      {
+        "name": "ISY · Iridoid synthase",
+        "organism": "CrISY / NmISY2 reference enzymes",
+        "cofactor": "NADPH",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6513753/"
+      },
+      {
+        "name": "NmNEPS2 · cis-trans-Nepetalactol synthase",
+        "organism": "Nepeta mussinii",
+        "cofactor": "Bound NAD+; no redox turnover in cyclisation",
+        "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/34.html"
+      },
+      {
+        "name": "NmNEPS3 · cis-cis-Nepetalactol synthase",
+        "organism": "Nepeta mussinii",
+        "cofactor": "Bound NAD+; no redox turnover in cyclisation",
+        "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/35.html"
+      },
+      {
+        "name": "NmNEPS1 · Nepetalactol dehydrogenase",
+        "organism": "Nepeta mussinii",
+        "cofactor": "NAD+",
+        "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/1/1/419.html"
+      }
+    ]
+  },
+  "artemisinin": {
+    "viewerNote": [
+      "DBR2 acts on artemisinic aldehyde. DHAA → artemisinin is a multi-stage, nonenzymatic oxidative connection.",
+      "DBR2는 artemisinic aldehyde에 작용합니다. DHAA → artemisinin은 여러 단계의 비효소적 산화 연결입니다."
+    ],
+    "modelNote": [
+      "DBR2 acts on artemisinic aldehyde. DHAA → artemisinin is a multi-stage, nonenzymatic oxidative connection.",
+      "DBR2는 artemisinic aldehyde에 작용합니다. DHAA → artemisinin은 여러 단계의 비효소적 산화 연결입니다."
+    ],
+    "comparisons": [],
+    "callouts": [
+      {
+        "title": [
+          "Reduction before acid formation",
+          "산이 되기 전에 환원됩니다"
+        ],
+        "text": [
+          "DBR2 reduces the 11(13) alkene of artemisinic aldehyde. ALDH1 then oxidises the reduced aldehyde to DHAA. Artemisinic acid is a competing branch, not the DBR2 substrate in this route.",
+          "DBR2는 artemisinic aldehyde의 11(13) 이중결합을 환원하고 ALDH1은 환원된 aldehyde를 DHAA로 산화합니다. Artemisinic acid는 경쟁 분기이며 이 경로에서 DBR2의 기질이 아닙니다."
+        ],
+        "source": "https://pubmed.ncbi.nlm.nih.gov/18495659/"
+      },
+      {
+        "title": [
+          "The peroxide is late chemistry",
+          "Peroxide는 후기 화학에서 형성됩니다"
+        ],
+        "text": [
+          "Oxygen-driven DHAA autoxidation proceeds through peroxide intermediates. This condensed route does not establish a single artemisinin-synthase enzyme.",
+          "산소 유도 DHAA 자동산화는 peroxide 중간체를 거칩니다. 요약된 이 경로는 단일 artemisinin synthase 효소를 입증하지 않습니다."
+        ],
+        "source": "https://pubmed.ncbi.nlm.nih.gov/31859509/"
+      }
+    ],
+    "enzymes": [
+      {
+        "name": "AaCYP71AV1 · Amorpha-4,11-diene C12 oxidase",
+        "organism": "Artemisia annua",
+        "cofactor": "O2 · NADPH via CPR",
+        "source": "https://pubmed.ncbi.nlm.nih.gov/16612385/"
+      },
+      {
+        "name": "AaDBR2 · Artemisinic aldehyde delta11(13) reductase",
+        "organism": "Artemisia annua",
+        "cofactor": "NADPH",
+        "source": "https://pubmed.ncbi.nlm.nih.gov/18495659/"
+      },
+      {
+        "name": "AaALDH1 · Artemisinic aldehyde dehydrogenase",
+        "organism": "Artemisia annua",
+        "cofactor": "NAD(P)+",
+        "source": "https://doi.org/10.1139/B09-032"
+      }
+    ]
+  },
+  "gibberellins": {
+    "viewerNote": [
+      "AtKO1/CYP701A3 performs three C19 oxidations. AtKAO1/2/CYP88A3/4 performs hydroxylation, ring-B contraction and aldehyde oxidation.",
+      "AtKO1/CYP701A3는 C19를 세 번 산화합니다. AtKAO1/2/CYP88A3/4는 수산화·ring B 축소·aldehyde 산화를 담당합니다."
+    ],
+    "modelNote": [
+      "AtKO1/CYP701A3 performs three C19 oxidations. AtKAO1/2/CYP88A3/4 performs hydroxylation, ring-B contraction and aldehyde oxidation.",
+      "AtKO1/CYP701A3는 C19를 세 번 산화합니다. AtKAO1/2/CYP88A3/4는 수산화·ring B 축소·aldehyde 산화를 담당합니다."
+    ],
+    "comparisons": [],
+    "callouts": [
+      {
+        "title": [
+          "KO and KAO have different jobs",
+          "KO와 KAO의 역할"
+        ],
+        "text": [
+          "KO converts ent-kaurene through an alcohol and aldehyde to ent-kaurenoic acid. KAO performs three further stages, including ring-B contraction to the gibbane framework.",
+          "KO는 ent-kaurene을 alcohol과 aldehyde를 거쳐 ent-kaurenoic acid로 바꿉니다. KAO는 gibbane 골격을 만드는 ring B 축소를 포함한 후속 세 단계를 수행합니다."
+        ],
+        "source": "https://pubmed.ncbi.nlm.nih.gov/11172076/"
+      },
+      {
+        "title": [
+          "A separate rearrangement",
+          "별개의 재배열"
+        ],
+        "text": [
+          "KAO-mediated contraction occurs after kaurane formation. It is distinct from the class II labdane → halimane → clerodane cascade. GA12 is an intermediate; later GA oxidases are outside this map.",
+          "KAO 고리 축소는 kaurane 형성 뒤에 일어나며 class II labdane → halimane → clerodane 반응과는 별개입니다. GA12는 중간체이며 후속 GA oxidase 단계는 이 지도에서 다루지 않습니다."
+        ],
+        "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/14/14/107.html"
+      }
+    ],
+    "enzymes": [
+      {
+        "name": "atko1 · ent-Kaurene oxidase",
+        "organism": "Arabidopsis thaliana",
+        "cofactor": "O2 · NADPH via a compatible P450 reductase",
+        "source": "https://pubmed.ncbi.nlm.nih.gov/9952446/"
+      },
+      {
+        "name": "atkao · ent-Kaurenoic acid oxidase",
+        "organism": "Arabidopsis thaliana",
+        "cofactor": "O2 · NADPH via a compatible P450 reductase",
+        "source": "https://pubmed.ncbi.nlm.nih.gov/11172076/"
+      }
+    ]
+  },
+  "aba-cleavage": {
+    "viewerNote": [
+      "NCED carbon balance: C40 → C15 xanthoxin + C25 apo-aldehyde. ABA is a C40-derived C15 apocarotenoid, not an FPP-derived sesquiterpenoid.",
+      "NCED 탄소 수: C40 → C15 xanthoxin + C25 apo-aldehyde. ABA는 FPP 유래 sesquiterpenoid가 아닌 C40 유래 C15 apocarotenoid입니다."
+    ],
+    "modelNote": [
+      "NCED carbon balance: C40 → C15 xanthoxin + C25 apo-aldehyde. ABA is a C40-derived C15 apocarotenoid, not an FPP-derived sesquiterpenoid.",
+      "NCED 탄소 수: C40 → C15 xanthoxin + C25 apo-aldehyde. ABA는 FPP 유래 sesquiterpenoid가 아닌 C40 유래 C15 apocarotenoid입니다."
+    ],
+    "comparisons": [],
+    "callouts": [
+      {
+        "title": [
+          "The C25 coproduct",
+          "함께 생성되는 C25"
+        ],
+        "text": [
+          "VP14/NCED produces C15 xanthoxin and a C25 apo-aldehyde (C25H34O3; ChEBI:34597): 40 = 15 + 25. The dotted violaxanthin link is an isomer relationship without an enzyme assignment.",
+          "VP14/NCED는 C15 xanthoxin과 C25 apo-aldehyde(C25H34O3; ChEBI:34597)를 형성합니다: 40 = 15 + 25. Violaxanthin 점선은 효소가 배정되지 않은 이성질체 관계입니다."
+        ],
+        "source": "https://www.rhea-db.org/rhea/16542"
+      },
+      {
+        "title": [
+          "Reference enzymes and natural ABA",
+          "참고 효소와 천연 ABA"
+        ],
+        "text": [
+          "The map uses maize VP14 and Arabidopsis ABA2/AAO3 references. ABA2 performs net oxidation/epoxide rearrangement. AAO3 oxidises the aldehyde with functional molybdenum cofactor; ABA3 activates that cofactor. The endpoint is natural (+)-(1′S,2Z,4E)-ABA.",
+          "옥수수 VP14와 Arabidopsis ABA2/AAO3의 참고 사례입니다. ABA2는 산화·epoxide 재배열의 순전환을 수행합니다. AAO3는 활성 molybdenum cofactor로 aldehyde를 산화하고 ABA3는 cofactor를 활성화합니다. 최종 구조는 천연 (+)-(1′S,2Z,4E)-ABA입니다."
+        ],
+        "source": "https://pubmed.ncbi.nlm.nih.gov/11050171/"
+      }
+    ],
+    "enzymes": [
+      {
+        "name": "zmvp14 · 9-cis-Epoxycarotenoid dioxygenase",
+        "organism": "Zea mays",
+        "cofactor": "O2 · Fe2+",
+        "source": "https://pubmed.ncbi.nlm.nih.gov/9188535/"
+      },
+      {
+        "name": "ataba2 · Xanthoxin dehydrogenase",
+        "organism": "Arabidopsis thaliana",
+        "cofactor": "NAD+",
+        "source": "https://pubmed.ncbi.nlm.nih.gov/12172025/"
+      },
+      {
+        "name": "ataao3 · Abscisic aldehyde oxidase",
+        "organism": "Arabidopsis thaliana",
+        "cofactor": "O2 · functional molybdenum cofactor",
+        "source": "https://pubmed.ncbi.nlm.nih.gov/11050171/"
+      }
+    ]
+  },
+  "plant-carotenoids": {
+    "viewerNote": [
+      "Plant poly-cis intermediates are separate records. The CrtI reference route remains in Full pathway; it does not replace this plant lane.",
+      "식물 poly-cis 중간체는 개별 항목입니다. CrtI 참고 경로는 전체 경로에 유지되며 이 식물 경로를 대체하지 않습니다."
+    ],
+    "modelNote": [
+      "Plant poly-cis intermediates are separate records. The CrtI reference route remains in Full pathway; it does not replace this plant lane.",
+      "식물 poly-cis 중간체는 개별 항목입니다. CrtI 참고 경로는 전체 경로에 유지되며 이 식물 경로를 대체하지 않습니다."
+    ],
+    "comparisons": [],
+    "callouts": [
+      {
+        "title": [
+          "Desaturation versus isomerisation",
+          "불포화화와 이성질화"
+        ],
+        "text": [
+          "PDS and ZDS remove hydrogen. Z-ISO changes the central cis bond to trans with heme b. CRTISO uses reduced FAD for non-redox isomerisation.",
+          "PDS와 ZDS는 수소를 제거합니다. Z-ISO는 heme b를 사용해 중앙 cis 결합을 trans로 바꿉니다. CRTISO는 환원형 FAD를 사용해 비산화환원 이성질화를 수행합니다."
+        ],
+        "source": "https://pubmed.ncbi.nlm.nih.gov/21209101/"
+      },
+      {
+        "title": [
+          "Exact geometric substrates",
+          "정확한 기하이성질체 기질"
+        ],
+        "text": [
+          "Existing all-trans ζ-carotene remains separate from the tri-cis and di-cis substrates. Light-driven photoisomerisation is a separate physical process.",
+          "기존 all-trans ζ-carotene은 tri-cis·di-cis 기질과 별도로 유지됩니다. 빛에 의한 광이성질화는 별개의 물리 과정입니다."
+        ],
+        "source": "https://pubmed.ncbi.nlm.nih.gov/20335404/"
+      }
+    ],
+    "enzymes": [
+      {
+        "name": "pds · Plant-type phytoene desaturase",
+        "organism": "Plant reference enzyme",
+        "cofactor": "plastoquinone",
+        "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/3/5/5.html"
+      },
+      {
+        "name": "ziso · ζ-Carotene isomerase",
+        "organism": "Plant reference enzyme",
+        "cofactor": "heme b",
+        "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/2/1/12.html"
+      },
+      {
+        "name": "zds · 9,9′-di-cis-ζ-Carotene desaturase",
+        "organism": "Plant reference enzyme",
+        "cofactor": "quinone",
+        "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/3/5/6.html"
+      },
+      {
+        "name": "crtiso · Prolycopene isomerase",
+        "organism": "Plant reference enzyme",
+        "cofactor": "reduced FAD",
+        "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/2/1/13.html"
+      }
+    ]
+  },
+  "astaxanthin-esters": {
+    "viewerNote": [
+      "Palmitates are structural examples. Acyltransferase evidence, analytical hydrolysis, storage and extracellular recovery have distinct meanings.",
+      "Palmitate는 구조 예시입니다. Acyltransferase 근거·분석용 가수분해·저장·세포외 회수는 구분합니다."
+    ],
+    "modelNote": [
+      "Palmitates are structural examples. Acyltransferase evidence, analytical hydrolysis, storage and extracellular recovery have distinct meanings.",
+      "Palmitate는 구조 예시입니다. Acyltransferase 근거·분석용 가수분해·저장·세포외 회수는 구분합니다."
+    ],
+    "comparisons": [],
+    "callouts": [
+      {
+        "title": [
+          "What has been demonstrated?",
+          "어디까지 확인됐나요?"
+        ],
+        "text": [
+          "ScDGAT2-1 has astaxanthin–DHA monoester and lipid-droplet evidence. HpDGAT1 has recombinant assay evidence. These studies do not establish the displayed palmitates as their exact products.",
+          "ScDGAT2-1에는 astaxanthin–DHA monoester와 lipid droplet 축적 근거가 있으며 HpDGAT1에는 재조합 실험 근거가 있습니다. 그림의 palmitate를 해당 효소의 정확한 생성물로 확정하지는 않습니다."
+        ],
+        "source": "https://pubmed.ncbi.nlm.nih.gov/38344823/"
+      },
+      {
+        "title": [
+          "Analytical hydrolysis and transport",
+          "분석용 가수분해와 수송"
+        ],
+        "text": [
+          "Cholesterol esterase releases free astaxanthin from extracted esters in tested in-vitro conditions. This is separate from native biosynthesis and transport. Esterification retains the C40 core despite increased total carbon; it does not prove improved export.",
+          "Cholesterol esterase는 실험된 시험관 조건에서 추출된 ester를 유리 astaxanthin으로 가수분해합니다. 천연 생합성·수송과는 구분합니다. Ester화는 총 탄소 수를 늘려도 C40 핵심 골격을 유지하며 수송 향상을 입증하지 않습니다."
+        ],
+        "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0278504"
+      }
+    ],
+    "enzymes": [
+      {
+        "name": "ScDGAT2-1",
+        "organism": "Schizochytrium sp.",
+        "cofactor": "",
+        "source": "https://pubmed.ncbi.nlm.nih.gov/38344823/"
+      },
+      {
+        "name": "HpDGAT1",
+        "organism": "Haematococcus pluvialis",
+        "cofactor": "",
+        "source": "https://www.sciencedirect.com/science/article/abs/pii/S2211926422000911"
+      },
+      {
+        "name": "Cholesterol esterase",
+        "organism": "Pseudomonas sp. enzyme preparation",
+        "cofactor": "",
+        "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0278504"
+      }
+    ]
+  }
+}

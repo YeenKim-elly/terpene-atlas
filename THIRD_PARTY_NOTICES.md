@@ -13,6 +13,17 @@ A selected database depiction is not an independent stereochemical assignment.
 PubChem: https://pubchem.ncbi.nlm.nih.gov/
 RDKit, used in preparing molecular drawings: https://www.rdkit.org/
 
+## ChEBI and pathway reference structures
+
+Additional molecular records retain their ChEBI identifiers and exact source
+stereochemistry. Molecular drawings are generated from the cited SMILES using
+RDKit. Palmitate overview drawings abbreviate only the C15H31 hydrocarbon tail;
+the full structures remain available. The monopalmitate is an explicitly labelled
+derived model, with no assigned PubChem CID.
+
+ChEBI: https://www.ebi.ac.uk/chebi/
+Rhea reaction annotations: https://www.rhea-db.org/
+
 ## Crispene source figures
 
 The following source-derived images are cropped from Figure 1 of:

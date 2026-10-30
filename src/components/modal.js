@@ -60,11 +60,13 @@ export function openRecord(record, {startPractice} = {}) {
     '<div class="facts">' + (family ? '<span class="tag">' + esc(t(family.name, family.ko)) + '</span>' : '') +
     (record.MolecularFormula ? '<span class="tag">' + formulaHTML(record.MolecularFormula) + '</span>' : '') +
     (record.skeleton ? '<span class="tag">' + t('Parent skeleton', '모체 골격') + ': C' + record.skeleton + '</span>' : '') +
+    (record.originSkeleton ? '<span class="tag">' + t('Derived from C', '유래 C') + record.originSkeleton + '</span>' : '') +
     '</div><p>' + esc(recordNote(record)) + '</p><p class="notice">' +
     (record.enzyme ? esc(t(
       'A simplified teaching scheme. Enzyme function and substrate specificity require the cited reaction evidence.',
       '단순화한 학습 반응식입니다. 효소 기능과 기질 특이성은 인용된 반응 근거를 확인하세요.'
     )) : provenanceHTML(record)) + '</p>' +
+    (record.fullStructureImage ? '<p><a href="'+esc(record.fullStructureImage)+'" target="_blank" rel="noopener noreferrer">'+t('View full molecular drawing ↗','전체 분자 구조 보기 ↗')+'</a></p>' : '') +
     (record.source ? '<a href="' + esc(record.source) + '" target="_blank" rel="noopener noreferrer">' +
       t('Supporting source', '관련 출처') + ' ↗</a>' : '') +
     (kind && startPractice ? '<div class="detail-practice"><p>' + t('Practise this card', '이 카드로 연습하기') +

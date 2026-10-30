@@ -1,0 +1,124 @@
+{
+  "title": [
+    "C15 artemisinin: the aldehyde is the branch point.",
+    "C15 artemisinin: aldehyde에서 갈라지는 경로."
+  ],
+  "intro": [
+    "Follow CYP71AV1, DBR2 and ALDH1, then read the separate late oxidative chemistry.",
+    "CYP71AV1·DBR2·ALDH1을 따라간 뒤 후기 산화 화학을 별도로 살펴보세요."
+  ],
+  "width": 1280,
+  "height": 1080,
+  "nodes": [
+    [
+      "fpp",
+      40,
+      50
+    ],
+    [
+      "amorpha-diene",
+      520,
+      50
+    ],
+    [
+      "artemisinic-alcohol",
+      1000,
+      50
+    ],
+    [
+      "artemisinic-aldehyde",
+      1000,
+      440
+    ],
+    [
+      "artemisinic-acid",
+      1000,
+      830
+    ],
+    [
+      "dihydroartemisinic-aldehyde",
+      520,
+      440
+    ],
+    [
+      "dihydroartemisinic-acid",
+      40,
+      440
+    ],
+    [
+      "artemisinin",
+      40,
+      830
+    ]
+  ],
+  "edges": [
+    {
+      "from": "fpp",
+      "to": "amorpha-diene",
+      "label": "Amorpha-diene synthase · TPS I",
+      "type": "step",
+      "detail": "A fully assigned amorpha-4,11-diene reference is shown. This is a scaffold-forming step, not the complete artemisinin pathway.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC4/2/3/24.html"
+    },
+    {
+      "from": "amorpha-diene",
+      "to": "artemisinic-alcohol",
+      "label": "AaCYP71AV1 + CPR · C12 hydroxylation",
+      "type": "step",
+      "detail": "Characterised Artemisia annua P450 chemistry; redox partner supplies electrons.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/16458889/",
+      "labelKo": "AaCYP71AV1 + CPR · C12 수산화",
+      "detailKo": "규명된 Artemisia annua P450 반응입니다. Redox partner가 전자를 공급합니다."
+    },
+    {
+      "from": "artemisinic-alcohol",
+      "to": "artemisinic-aldehyde",
+      "label": "AaCYP71AV1 + CPR · oxidation",
+      "type": "step",
+      "detail": "CYP71AV1 supports sequential C12 oxidation in engineered yeast. AaADH1 provides an additional characterised alcohol-oxidation route.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/16612385/",
+      "labelKo": "AaCYP71AV1 + CPR · 산화",
+      "detailKo": "CYP71AV1은 재조합 효모에서 연속 C12 산화를 수행합니다. AaADH1은 별도로 규명된 alcohol 산화 경로를 제공합니다."
+    },
+    {
+      "from": "artemisinic-aldehyde",
+      "to": "artemisinic-acid",
+      "label": "AaCYP71AV1 / AaALDH1 · acid branch",
+      "type": "step",
+      "detail": "Alternative enzymes can oxidise this aldehyde to the unsaturated acid; this is a branch competing with aldehyde reduction.",
+      "source": "https://doi.org/10.1139/B09-032",
+      "labelKo": "AaCYP71AV1 / AaALDH1 · acid 분기",
+      "detailKo": "여러 효소가 이 aldehyde를 불포화 acid로 산화할 수 있습니다. Aldehyde 환원과 경쟁하는 분기입니다."
+    },
+    {
+      "from": "artemisinic-aldehyde",
+      "to": "dihydroartemisinic-aldehyde",
+      "label": "AaDBR2 · 11(13) reduction · NADPH",
+      "type": "step",
+      "detail": "DBR2 is an enoate reductase acting on the unsaturated aldehyde, not a direct artemisinic-acid-to-DHAA enzyme.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/18495659/",
+      "labelKo": "AaDBR2 · 11(13) 환원 · NADPH",
+      "detailKo": "DBR2는 불포화 aldehyde의 11(13) 이중결합을 환원합니다. Artemisinic acid를 DHAA로 직접 환원하는 효소가 아닙니다."
+    },
+    {
+      "from": "dihydroartemisinic-aldehyde",
+      "to": "dihydroartemisinic-acid",
+      "label": "AaALDH1 · aldehyde oxidation",
+      "type": "step",
+      "detail": "Recombinant AaALDH1 catalyses NAD(P)+-dependent oxidation of the dihydro aldehyde to its acid.",
+      "source": "https://doi.org/10.1139/B09-032",
+      "labelKo": "AaALDH1 · aldehyde 산화",
+      "detailKo": "재조합 AaALDH1은 NAD(P)+ 의존적으로 dihydro aldehyde를 acid로 산화합니다."
+    },
+    {
+      "from": "dihydroartemisinic-acid",
+      "to": "artemisinin",
+      "label": "O2-driven autoxidation · several stages",
+      "type": "summary",
+      "detail": "Experimentally demonstrated nonenzymatic oxidative chemistry via peroxide intermediates. This condensed connection is not a single characterised enzyme reaction.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/31859509/",
+      "labelKo": "O2 유도 자동산화 · 여러 단계",
+      "detailKo": "Peroxide 중간체를 거치는 비효소적 산화 화학이 실험으로 확인됐습니다. 요약 연결이며 단일 효소 반응이 아닙니다."
+    }
+  ]
+}

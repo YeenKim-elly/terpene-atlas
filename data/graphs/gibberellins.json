@@ -1,0 +1,137 @@
+{
+  "title": [
+    "C20 gibberellins: oxidise, then contract ring B.",
+    "C20 gibberellin: 산화 뒤 ring B 축소."
+  ],
+  "intro": [
+    "Connect ent-CPP and ent-kaurene to six plant KO/KAO stages ending at GA12.",
+    "ent-CPP와 ent-kaurene을 GA12까지 이어지는 식물 KO/KAO의 여섯 단계와 연결합니다."
+  ],
+  "width": 1280,
+  "height": 1080,
+  "nodes": [
+    [
+      "ggpp",
+      40,
+      50
+    ],
+    [
+      "ent-cpp",
+      520,
+      50
+    ],
+    [
+      "ent-kaurene",
+      1000,
+      50
+    ],
+    [
+      "ent-kaurenol",
+      1000,
+      440
+    ],
+    [
+      "ent-kaurenal",
+      520,
+      440
+    ],
+    [
+      "ent-kaurenoic-acid",
+      40,
+      440
+    ],
+    [
+      "ent-7alpha-hydroxykaurenoic-acid",
+      40,
+      830
+    ],
+    [
+      "ga12-aldehyde",
+      520,
+      830
+    ],
+    [
+      "ga12",
+      1000,
+      830
+    ]
+  ],
+  "edges": [
+    {
+      "from": "ggpp",
+      "to": "ent-cpp",
+      "label": "ent-CPS · TPS II",
+      "type": "step",
+      "detail": "Produces ent-CPP, a substrate for ent-kaurene synthases.",
+      "source": ""
+    },
+    {
+      "from": "ent-cpp",
+      "to": "ent-kaurene",
+      "label": "AtKS / SrKS · TPS I",
+      "type": "step",
+      "detail": "ent-Kaurene synthases ionize ent-CPP and form a tetracyclic C20 skeleton. This is a specific precursor–enzyme match.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3237789/"
+    },
+    {
+      "from": "ent-kaurene",
+      "to": "ent-kaurenol",
+      "label": "AtKO1 / CYP701A3 · oxidation",
+      "type": "step",
+      "detail": "First C19 oxidation in the characterised plant KO sequence.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/9952446/",
+      "labelKo": "AtKO1 / CYP701A3 · 산화",
+      "detailKo": "규명된 식물 KO 경로의 첫 번째 C19 산화입니다."
+    },
+    {
+      "from": "ent-kaurenol",
+      "to": "ent-kaurenal",
+      "label": "AtKO1 / CYP701A3 · oxidation",
+      "type": "step",
+      "detail": "KO oxidises the alcohol intermediate to the aldehyde. This is a net biochemical stage, not an elementary single-electron mechanism.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/20698828/",
+      "labelKo": "AtKO1 / CYP701A3 · 산화",
+      "detailKo": "KO는 alcohol 중간체를 aldehyde로 산화합니다. 순생화학 단계이며 한 번의 전자 이동을 뜻하지 않습니다."
+    },
+    {
+      "from": "ent-kaurenal",
+      "to": "ent-kaurenoic-acid",
+      "label": "AtKO1 / CYP701A3 · oxidation",
+      "type": "step",
+      "detail": "Further KO-catalysed oxidation produces ent-kaurenoic acid.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/9952446/",
+      "labelKo": "AtKO1 / CYP701A3 · 산화",
+      "detailKo": "KO가 추가 산화하여 ent-kaurenoic acid를 형성합니다."
+    },
+    {
+      "from": "ent-kaurenoic-acid",
+      "to": "ent-7alpha-hydroxykaurenoic-acid",
+      "label": "AtKAO1/2 · hydroxylation",
+      "type": "step",
+      "detail": "First stage of the characterised plant CYP88A/KAO sequence.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/11172076/",
+      "labelKo": "AtKAO1/2 · 수산화",
+      "detailKo": "규명된 식물 CYP88A/KAO 경로의 첫 번째 단계입니다."
+    },
+    {
+      "from": "ent-7alpha-hydroxykaurenoic-acid",
+      "to": "ga12-aldehyde",
+      "label": "AtKAO1/2 · ring-B contraction",
+      "type": "step",
+      "detail": "The second KAO stage contracts ring B and generates the gibbane skeleton. The detailed rearrangement is distinct from the earlier class II labdane/halimane/clerodane cascade.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/14/14/107.html",
+      "labelKo": "AtKAO1/2 · ring B 축소",
+      "detailKo": "KAO의 두 번째 단계는 ring B를 축소하여 gibbane 골격을 만듭니다. 앞선 class II labdane/halimane/clerodane 재배열과는 별개입니다."
+    },
+    {
+      "from": "ga12-aldehyde",
+      "to": "ga12",
+      "label": "AtKAO1/2 · aldehyde oxidation",
+      "type": "step",
+      "detail": "The third KAO stage oxidises the remaining aldehyde to a carboxylic acid.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/11172076/",
+      "labelKo": "AtKAO1/2 · aldehyde 산화",
+      "detailKo": "KAO의 세 번째 단계는 남은 aldehyde를 carboxylic acid로 산화합니다."
+    }
+  ]
+}
