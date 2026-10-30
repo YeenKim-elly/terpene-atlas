@@ -303,5 +303,55 @@
     "name": "analytical Hydrolysis",
     "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0278504",
     "detail": "Primary literature / enzyme nomenclature"
+  },
+  {
+    "name": "IUBMB · β-Carotene 15,15′-dioxygenase",
+    "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/13/11/63.html",
+    "detail": "EC 1.13.11.63 · central cleavage to two all-trans-retinal molecules"
+  },
+  {
+    "name": "Crosas et al., 2003 · Human retinal reductases",
+    "url": "https://doi.org/10.1042/BJ20021818",
+    "detail": "DOI 10.1042/BJ20021818 · primary biochemical characterisation"
+  },
+  {
+    "name": "IUBMB · Retinal dehydrogenase",
+    "url": "https://iubmb.qmul.ac.uk/enzyme/EC1/2/1/36.html",
+    "detail": "EC 1.2.1.36 · retinal oxidation to retinoate"
+  },
+  {
+    "name": "Gong et al., 2022 · NtCCD1-3 and β-ionone production",
+    "url": "https://doi.org/10.3389/fmicb.2022.1011297",
+    "detail": "DOI 10.3389/fmicb.2022.1011297 · characterised plant CCD example"
+  },
+  {
+    "name": "Ramel et al., 2012 · Carotenoid oxidation and β-cyclocitral",
+    "url": "https://doi.org/10.1073/pnas.1115982109",
+    "detail": "DOI 10.1073/pnas.1115982109 · primary excess-light oxidation study"
+  },
+  {
+    "name": "Frusciante et al., 2014 · Sequential CCD2 cleavage",
+    "url": "https://doi.org/10.1073/pnas.1404629111",
+    "detail": "DOI 10.1073/pnas.1404629111 · C30 intermediate, C20 central product and C10 coproducts"
+  },
+  {
+    "name": "Demurtas et al., 2018 · Saffron ALDH and UGT enzymes",
+    "url": "https://doi.org/10.1104/pp.17.01815",
+    "detail": "DOI 10.1104/pp.17.01815 · characterised CsALDH3I1 and UGT74AD1"
+  },
+  {
+    "name": "López-Jiménez et al., 2021 · UGT91P3 and higher crocins",
+    "url": "https://doi.org/10.3390/ijms22168815",
+    "detail": "DOI 10.3390/ijms22168815 · glucose-chain extension"
+  },
+  {
+    "name": "Diretto et al., 2019 · UGT709G1 and picrocrocin",
+    "url": "https://doi.org/10.1111/nph.16079",
+    "detail": "DOI 10.1111/nph.16079 · HTCC O-glucosylation"
+  },
+  {
+    "name": "Carmona et al., 2005 · Saffron drying and ageing",
+    "url": "https://doi.org/10.1021/jf0404748",
+    "detail": "DOI 10.1021/jf0404748 · processing conditions and non-stoichiometric picrocrocin/safranal changes"
   }
 ]

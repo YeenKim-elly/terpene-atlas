@@ -346,5 +346,130 @@
         "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0278504"
       }
     ]
+  },
+  "apocarotenoids": {
+    "viewerNote": [
+      "Apocarotenoids are defined by carotenoid-cleavage origin, not one carbon count. Solid arrows show reference reactions; dashed arrows condense stages; the epoxy-xanthophyll link is a structural relationship.",
+      "Apocarotenoid는 특정 탄소 수가 아닌 carotenoid 절단 기원으로 구분합니다. 실선은 참고 반응, 점선은 여러 단계의 요약이며 epoxy-xanthophyll 연결은 구조 관계입니다."
+    ],
+    "modelNote": [
+      "Plant CCD, NCED, animal BCO1 and nonenzymatic oxidation examples share a map for comparison. They do not form one pathway present in every organism.",
+      "식물 CCD·NCED, 동물 BCO1, 비효소적 산화 예시를 비교하는 지도입니다. 모든 생물에 함께 존재하는 하나의 경로는 아닙니다."
+    ],
+    "comparisons": [],
+    "callouts": [
+      {
+        "title": [
+          "Follow every carbon",
+          "모든 탄소의 행방을 보세요"
+        ],
+        "text": [
+          "BCO1: 40 = 20 + 20. CsCCD2: 40 = 20 + 10 + 10. NCED: 40 = 15 + 25. A displayed fragment is only part of a cleavage reaction.",
+          "BCO1: 40 = 20 + 20. CsCCD2: 40 = 20 + 10 + 10. NCED: 40 = 15 + 25. 표시된 조각 하나가 절단 반응의 전부는 아닙니다."
+        ],
+        "source": "https://doi.org/10.1073/pnas.1404629111"
+      },
+      {
+        "title": [
+          "Core carbons versus attached sugars",
+          "핵심 탄소와 부착된 당"
+        ],
+        "text": [
+          "Crocin I has a C20 apocarotenoid core and four C6 glucose units, giving C44 overall. Picrocrocin has a C10 core plus C6 glucose, giving C16 overall. Neither is classified from total carbon count alone.",
+          "Crocin I은 C20 apocarotenoid 골격과 C6 glucose 네 개로 전체 C44입니다. Picrocrocin은 C10 골격과 C6 glucose로 전체 C16입니다. 전체 탄소 수만으로 계열을 분류하지 않습니다."
+        ],
+        "source": "https://doi.org/10.3390/ijms22168815"
+      },
+      {
+        "title": [
+          "Three oxidation states, one C20 core",
+          "산화 상태 셋, 같은 C20 골격"
+        ],
+        "text": [
+          "Retinal, retinol and retinoic acid retain the same carbon framework. Their aldehyde, alcohol and acid groups distinguish oxidation states. The retinoid examples are a cross-organism comparator, not a claim about a plant route.",
+          "Retinal·retinol·retinoic acid는 같은 탄소 골격을 유지하며 aldehyde·alcohol·acid 작용기로 산화 상태를 구분합니다. Retinoid는 생물 간 비교 예시이며 식물 경로를 지정하지 않습니다."
+        ],
+        "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/2/1/36.html"
+      },
+      {
+        "title": [
+          "Processing is not one enzyme",
+          "가공은 단일 효소가 아닙니다"
+        ],
+        "text": [
+          "β-Cyclocitral formation can involve photooxidation. Safranal formation depends on processing conditions and multi-stage chemistry. Neither summary should be used to infer one universal enzyme from the final structure.",
+          "β-Cyclocitral 형성에는 광산화가 관여할 수 있습니다. Safranal 형성은 가공 조건과 여러 단계의 화학에 영향을 받습니다. 최종 구조만으로 보편적인 단일 효소를 추정하면 안 됩니다."
+        ],
+        "source": "https://doi.org/10.1021/jf0404748"
+      }
+    ],
+    "enzymes": [
+      {
+        "name": "BCO1 · β-Carotene 15,15′-dioxygenase",
+        "organism": "Animal/provitamin-A reference",
+        "cofactor": "O2 · Fe2+",
+        "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/13/11/63.html"
+      },
+      {
+        "name": "CCD1 · β-Ionone-forming reference",
+        "organism": "Nicotiana tabacum NtCCD1-3",
+        "cofactor": "O2 · non-heme iron",
+        "source": "https://doi.org/10.3389/fmicb.2022.1011297"
+      },
+      {
+        "name": "CsCCD2 · Sequential zeaxanthin cleavage",
+        "organism": "Crocus sativus",
+        "cofactor": "O2 · non-heme iron",
+        "source": "https://doi.org/10.1073/pnas.1404629111"
+      },
+      {
+        "name": "CsALDH3I1 · Crocetin dialdehyde oxidation",
+        "organism": "Crocus sativus",
+        "cofactor": "NAD(P)+ · enzyme/assay specificity applies",
+        "source": "https://doi.org/10.1104/pp.17.01815"
+      },
+      {
+        "name": "UGT74AD1 + UGT91P3 · Crocin glucosylation",
+        "organism": "Crocus sativus",
+        "cofactor": "UDP-glucose · several transfers",
+        "source": "https://doi.org/10.3390/ijms22168815"
+      },
+      {
+        "name": "UGT709G1 · HTCC glucosylation",
+        "organism": "Crocus sativus",
+        "cofactor": "UDP-glucose",
+        "source": "https://doi.org/10.1111/nph.16079"
+      },
+      {
+        "name": "AKR retinal reductase examples",
+        "organism": "Human recombinant enzyme references",
+        "cofactor": "NADPH",
+        "source": "https://doi.org/10.1042/BJ20021818"
+      },
+      {
+        "name": "Retinal dehydrogenase",
+        "organism": "Characterised retinal-oxidation reference",
+        "cofactor": "NAD+ · water",
+        "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/2/1/36.html"
+      },
+      {
+        "name": "VP14 / NCED · C40-to-C15 cleavage",
+        "organism": "Maize VP14 reference",
+        "cofactor": "O2 · Fe2+",
+        "source": "https://pubmed.ncbi.nlm.nih.gov/9188535/"
+      },
+      {
+        "name": "ABA2 · Xanthoxin dehydrogenase",
+        "organism": "Arabidopsis thaliana",
+        "cofactor": "NAD+",
+        "source": "https://pubmed.ncbi.nlm.nih.gov/12172025/"
+      },
+      {
+        "name": "AAO3 · Abscisic aldehyde oxidase",
+        "organism": "Arabidopsis thaliana",
+        "cofactor": "O2 · functional molybdenum cofactor",
+        "source": "https://pubmed.ncbi.nlm.nih.gov/11050171/"
+      }
+    ]
   }
 }

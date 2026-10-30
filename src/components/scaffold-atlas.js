@@ -6,7 +6,7 @@ export const scaffoldFamilies=[
  {id:'sesqui',label:['C15 · Sesquiterpenoids','C15 · 세스퀴테르페노이드'],map:'sesquiterpenes',note:['Open chains, macrocycles, bicycles and the artemisinin ring system.','열린 사슬·큰 고리·이중 고리와 artemisinin 고리 구조.']},
  {id:'di',label:['C20 · Diterpenoids','C20 · 디테르페노이드'],map:'diterpenes',note:['Labdane, halimane, clerodane, kaurane, taxane and the contracted GA12 framework.','Labdane·halimane·clerodane·kaurane·taxane과 고리가 축소된 GA12 골격.']},
  {id:'tetra',label:['C40 · Carotenoids','C40 · 카로티노이드'],map:'carotenoid-frameworks',note:['End-group frameworks, geometric variants and epoxidised ring examples.','말단 골격·기하이성질체·epoxide 고리 예시.']},
- {id:'apo',label:['C40-derived · C15 apocarotenoids','C40 유래 · C15 아포카로티노이드'],filter:['C40 → C15','C40 → C15'],map:'aba-cleavage',mapLabel:['ABA cleavage pathway','ABA 절단 경로'],note:['A C15 cleavage framework with a C40 origin, kept separate from FPP-derived C15 frameworks.','C40 절단에서 유래한 C15 골격으로, FPP 유래 C15 골격과 구분합니다.']},
+ {id:'apo',label:['C40-derived · Apocarotenoids','C40 유래 · 아포카로티노이드'],filter:['Apo · C40-derived','Apo · C40 유래'],map:'apocarotenoids',mapLabel:['Carotenoid cleavage branches','카로티노이드 절단 분기'],note:['C10, C13, C15 and C20 core examples: origin and connectivity matter alongside carbon count.','C10·C13·C15·C20 핵심 골격 예시입니다. 탄소 수와 함께 유래와 연결 구조를 살펴보세요.']},
  {id:'rings',label:['Ring systems','고리 구조'],note:['Shared topologies; a ring motif alone does not assign a terpene family.','여러 계열이 공유하는 고리 형태이며 고리 모티프만으로 terpene 계열을 정하지 않습니다.']}
 ];
 export function scaffoldFamily(record){
@@ -20,7 +20,7 @@ export function scaffoldScope(record,t=(en)=>en){
  if(record.referenceKind==='ring-system')return t('Oxygen-bridged ring system','산소 가교 고리계');
  if(record.referenceKind==='geometry-variant')return t('Geometry variant · same framework','기하배열 변형 · 같은 골격');
  if(record.referenceKind==='ring-variant')return t('Ring / oxidation variant','고리 / 산화 상태 변형');
- if(record.referenceKind==='cleavage-framework')return t('C40-derived C15 framework','C40 유래 C15 골격');
+ if(record.referenceKind==='cleavage-framework')return t('C40-derived C'+record.skeleton+' framework','C40 유래 C'+record.skeleton+' 골격');
  if(record.category==='Carotenoid end group')return t('End-ring fragment · part of C40','말단 고리 부분 모형 · C40의 일부');
  if(record.structureScope==='framework-example')return t('Framework example','골격 예시');
  if(record.ringFusion)return t('Relative stereochemical class','상대입체배열 유형');

@@ -8,12 +8,12 @@ const data=await loadTestCatalogue();
 test('the scaffold overview shows C10 and C40 directly with every reference',()=>{
  const root=new RenderBoundary();let opened,map;
  renderScaffoldAtlas(root,{records:data.scaffolds,lang:'en',open:r=>opened=r,goMap:id=>map=id});
- assert.equal(root.querySelectorAll('[data-detail]').length,42);
+ assert.equal(root.querySelectorAll('[data-detail]').length,46);
  assert.deepEqual(root.querySelectorAll('[data-scaffold-group]').map(n=>n.dataset.scaffoldGroup),['mono','sesqui','di','tetra','apo','rings']);
  for(const id of ['mono-acyclic','p-menthane','pinane','bornane','carotenoid-psi-psi','carotenoid-beta-beta','carotenoid-beta-epsilon']){
   const card=root.querySelector('[data-detail="'+id+'"]');assert.ok(card,id);card.click();assert.equal(opened.id,id);
  }
- for(const [family,expected]of [['mono',6],['tetra',9],['sesqui',6],['di',12],['apo',1],['rings',8],['all',42]]){
+ for(const [family,expected]of [['mono',6],['tetra',9],['sesqui',6],['di',12],['apo',5],['rings',8],['all',46]]){
   root.querySelector('[data-scaffold-family="'+family+'"]').click();
   const cards=root.querySelectorAll('[data-detail]');assert.equal(cards.length,expected,family);
   if(family!=='all')for(const card of cards)assert.equal(scaffoldFamily(data.scaffolds.find(r=>r.id===card.dataset.detail)),family);

@@ -36,6 +36,6 @@ test('all added examples open details and their individual pathway links',()=>{
   button.click();assert.equal(map,button.dataset.scaffoldPathway);assert.ok(data.graphs[map]);
  }
  root.querySelector('[data-scaffold-family="apo"]').click();
- assert.equal(root.querySelectorAll('[data-detail]').length,1);assert.ok(root.innerHTML.includes('C40-derived'));
- root.querySelector('[data-scaffold-map="aba-cleavage"]').click();assert.equal(map,'aba-cleavage');
+ assert.equal(root.querySelectorAll('[data-detail]').length,5);assert.ok(root.innerHTML.includes('C40-derived'));
+ root.querySelector('[data-scaffold-map="apocarotenoids"]').click();assert.equal(map,'apocarotenoids');
 });

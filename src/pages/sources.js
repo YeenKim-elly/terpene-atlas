@@ -4,6 +4,9 @@ import {t} from '../lib/i18n.js';
 
 export function renderSources(root) {
   const tips = [
+    [t('Follow carotenoid-cleavage origin.', '카로티노이드 절단 유래를 확인하세요.'),
+     t('Apocarotenoids span different carbon counts. Retinal has a C20 core, β-ionone C13 and cyclocitral C10. Crocin I has 44 carbons overall but retains a C20 crocetin core; picrocrocin has 16 overall and a C10 core.',
+       '아포카로티노이드는 탄소 수가 다양합니다. Retinal의 핵심 골격은 C20, β-ionone은 C13, cyclocitral은 C10입니다. Crocin I은 전체 C44이지만 C20 crocetin 골격을 유지하며 picrocrocin은 전체 C16, 핵심 C10입니다.')],
     [t('Count the parent skeleton.', '모체 골격을 기준으로 분류하세요.'),
      t('Sugars and acyl groups can increase the total carbon count. Stevioside retains a C20 steviol core, while fucoxanthin retains a C40 carotenoid core.',
        '당이나 acyl기가 붙으면 전체 탄소 수가 늘어날 수 있습니다. Stevioside는 C20 steviol 모체를, fucoxanthin은 C40 carotenoid 모체를 유지합니다.')],
@@ -28,7 +31,7 @@ export function renderSources(root) {
     t('Family', '계열') + '</th><th>' + t('Parent skeleton', '모체 골격') + '</th><th>' +
     t('Common precursor route', '대표 전구체 경로') + '</th></tr></thead><tbody>' +
     Object.values(catalogue.families).filter(family => family.carbon !== 5).map(family =>
-      '<tr><td>' + esc(t(family.name, family.ko)) + '</td><td>C' + family.carbon + '</td><td>' +
+      '<tr><td>' + esc(t(family.name, family.ko)) + '</td><td>' + esc(family.carbonLabel ? t(family.carbonLabel,family.carbonLabelKo) : 'C' + family.carbon) + '</td><td>' +
       esc(family.precursor) + '</td></tr>').join('') + '</tbody></table></div></section>' +
     '<section class="note-card wide"><h2>' + t('Reference sources', '참고문헌과 자료') +
     '</h2><p>' + t('Individual structure and reaction cards link to their supporting records. Source-derived figures retain their attribution and licence links.',

@@ -7,8 +7,8 @@ import {nodeLabelLines} from '../src/pages/structure-web.js';
 import {createQuestion,choiceOptions,answerMatches,questionPool} from '../src/lib/quiz.js';
 import fs from 'node:fs/promises';
 const data=await loadTestCatalogue(),m=id=>data.molecules.find(r=>r.id===id),edge=(g,f,t)=>data.graphs[g].edges.find(e=>e.from===f&&e.to===t);
-const routes={iridoids:'monoterpenes',artemisinin:'sesquiterpenes',gibberellins:'diterpenes','plant-carotenoids':'carotenoids','astaxanthin-esters':'carotenoids','aba-cleavage':'carotenoids'};
-test('all six focused pathways have family navigation, bilingual notes and resolved enzyme references',()=>{
+const routes={iridoids:'monoterpenes',artemisinin:'sesquiterpenes',gibberellins:'diterpenes','plant-carotenoids':'carotenoids','astaxanthin-esters':'carotenoids','aba-cleavage':'apocarotenoids',apocarotenoids:'apocarotenoids'};
+test('all seven focused pathways have family navigation, bilingual notes and resolved enzyme references',()=>{
  for(const [id,family]of Object.entries(routes)){
   assert.equal(structureViewGroup(id),family);
   assert.ok(familySubmaps[family].some(v=>v.id===id));
@@ -55,7 +55,7 @@ test('ester overview abbreviations retain full drawings, C40 core and separate h
 });
 test('all new records and reactions support answer choices and typed recall without overflowing node labels',()=>{
  const records=data.molecules.filter(r=>Object.keys(routes).some(id=>data.graphs[id].nodes.some(([n])=>n===r.id)));
- const reactions=data.reactions.filter(r=>r.pathway);assert.equal(reactions.length,19);
+ const reactions=data.reactions.filter(r=>r.pathway);assert.equal(reactions.length,27);
  for(const [kind,items]of [['name',records],['family',records],['enzyme',reactions]])for(const item of items){
   const q=createQuestion(kind,item);assert.ok(choiceOptions(q).some(o=>o.id===q.correctId));assert.ok(answerMatches(q,q.answer));assert.ok(answerMatches(q,q.answerKo));
  }

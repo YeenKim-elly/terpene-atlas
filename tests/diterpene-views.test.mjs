@@ -10,8 +10,10 @@ test('C20 mechanisms belong to the Diterpenoids navigation group',()=>{
  for(const view of views){assert.equal(structureViewGroup(view.id),'diterpenes');assert.ok(data.graphs[structureGraphId(view.id)]);}
  assert.equal(structureViewGroup('scaffolds'),'scaffolds');
  assert.equal(familySubmaps.scaffolds,undefined);
+ assert.deepEqual(familySubmaps.apocarotenoids.map(v=>v.id),['apocarotenoids','aba-cleavage']);
+ assert.equal(structureViewGroup('aba-cleavage'),'apocarotenoids');
  assert.equal(structureGraphId('diterpene-rings'),'scaffolds');
- assert.deepEqual(familySubmaps.carotenoids.map(v=>v.id),['carotenoid-frameworks','carotenoids','plant-carotenoids','astaxanthin-esters','aba-cleavage']);
+ assert.deepEqual(familySubmaps.carotenoids.map(v=>v.id),['carotenoid-frameworks','carotenoids','plant-carotenoids','astaxanthin-esters']);
 });
 test('C20 uses the common family guide and classifies its own precursors',()=>{
  const guide=data.familyGuides.diterpenes,graph=data.graphs.diterpenes;

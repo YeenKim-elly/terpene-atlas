@@ -1,5 +1,7 @@
+import {renderGeraniolXray,bindGeraniolXray} from '../components/geraniol-xray.js';
+import {renderStudioModeCard} from '../components/studio-practice.js';
 import {catalogue} from '../lib/catalogue.js';
-import {t, recordName, recordNote} from '../lib/i18n.js';
+import {t, getLanguage, recordName, recordNote} from '../lib/i18n.js';
 import {$, $$, esc, formulaHTML, reactionHTML, toast} from '../lib/dom.js';
 import {icon as I} from '../components/icons.js';
 import {comparisonQuestionFigure} from './comparison.js';
@@ -10,6 +12,7 @@ const settings = {
   kind: 'family', style: 'choice', families: ['mono', 'sesqui', 'di', 'tri', 'tetra', 'apo'],
   motifs: null, enzymes: null, challenge: false, count: 10
 };
+let expandedKind = null;
 let progress = null, session = null, currentRoot = null, context = null;
 
 const kinds = () => [
@@ -27,7 +30,7 @@ const kinds = () => [
    t('Compare aligned structures and explain what changes.', '정렬된 구조를 비교하고 차이를 설명하세요.'), catalogue.comparisonQuestions.length]
 ];
 
-export function resetPractice() { session = null; currentRoot = null; }
+export function resetPractice() { session = null; currentRoot = null; expandedKind = null; }
 export function startSinglePractice(kind, item, style) {
   startQuestions([createQuestion(kind, item)], style);
 }
@@ -66,85 +69,54 @@ function chip(id, label, selected, type) {
 function renderSetup() {
   const root = currentRoot, pool = questionPool(settings);
   const mode = settings.kind === 'name' ? 'family' : settings.kind;
+  const count = Math.min(settings.count, pool.length);
   let filters = '';
-  if (['family', 'name'].includes(settings.kind)) {
-    filters = '<div class="chip-row">' + Object.entries(catalogue.families).filter(([id]) => id !== 'hemi')
-      .map(([id, family]) => chip(id, family.short + ' · C' + family.carbon, settings.families.includes(id), 'families')).join('') +
-      '</div><label class="switch-row"><input id="challenge" type="checkbox" ' +
-      (settings.challenge ? 'checked' : '') + '>' + t('Include decorated structures', '당·acyl기 등으로 변형된 구조 포함') + '</label>';
+  if (['family','name'].includes(settings.kind)) {
+    filters = '<div class="chip-row">' + Object.entries(catalogue.families).filter(([id])=>id!=='hemi')
+      .map(([id,family])=>chip(id,family.short+' · '+(family.carbonLabel?t(family.carbonLabel,family.carbonLabelKo):'C'+family.carbon),settings.families.includes(id),'families')).join('') +
+      '</div><p class="filter-note">'+t('Choose the skeleton families you want to recognise.','알아보고 싶은 골격 계열을 고르세요.')+'</p><label class="switch-row"><input id="challenge" type="checkbox" '+(settings.challenge?'checked':'')+'>'+t('Include decorated structures','당·acyl기가 부착된 구조 포함')+'</label><button class="inline-name-link" id="name-mode">'+(settings.kind==='name'?t('Switch to family recognition','골격 구분으로 돌아가기'):t('Try molecule-name typing →','분자 이름 타이핑 →'))+'</button>';
   } else if (settings.kind === 'motif') {
-    filters = '<div class="chip-row">' + catalogue.motifs.map(item =>
-      chip(item.id, recordName(item), settings.motifs.includes(item.id), 'motifs')).join('') + '</div>';
+    filters = '<div class="chip-row">'+catalogue.motifs.map(item=>chip(item.id,recordName(item),settings.motifs.includes(item.id),'motifs')).join('')+'</div><p class="filter-note">'+t('Identify the highlighted group or local relationship. Some descriptions can coexist; follow the question prompt.','강조한 작용기나 국소 구조 관계를 구분하세요. 여러 설명이 동시에 맞을 수 있으므로 문제에서 묻는 기준을 따르세요.')+'</p>';
   } else if (settings.kind === 'enzyme') {
-    filters = '<div class="chip-row">' + Object.entries(catalogue.enzymes).map(([id, enzyme]) =>
-      chip(id, t(enzyme.name, enzyme.ko), settings.enzymes.includes(id), 'enzymes')).join('') + '</div>';
+    filters = '<div class="chip-row">'+Object.entries(catalogue.enzymes).map(([id,enzyme])=>chip(id,t(enzyme.name,enzyme.ko),settings.enzymes.includes(id),'enzymes')).join('')+'</div>';
   } else {
-    filters = '<p class="filter-note">' + (settings.kind === 'precursor' ?
-      t('Identify the name or abbreviation. Keep stereochemical prefixes specific.',
-        '이름이나 약어를 답해 보세요. 입체배열을 나타내는 접두사도 구분해야 합니다.') :
-      settings.kind === 'scaffold' ? t('Name the parent skeleton, ring system or labelled relative model.',
-        '모체 골격, 고리 구조, 표시된 상대입체배열 모형의 이름을 답해 보세요.') :
-      t('Compare two structures without difference highlights. Read each question with its source-specific qualifications.',
-        '차이 강조를 숨긴 두 구조를 비교합니다. 문제별 출처와 적용 범위도 확인하세요.')) + '</p>';
+    filters = '<p class="filter-note">'+(settings.kind==='precursor'?t('Identify the name or abbreviation. Keep stereochemical prefixes specific.','이름이나 약어를 구분하세요. 입체화학 접두어를 정확하게 유지하세요.'):settings.kind==='scaffold'?t('Name the parent skeleton, ring system or labelled relative model.','기본 골격, 고리 구조, 표시된 상대입체배열 모형의 이름을 쓰세요.'):t('Compare aligned structures and read the source-specific qualifications.','정렬된 구조를 비교하고 출처에 따른 해석 범위를 확인하세요.'))+'</p>';
   }
-  root.innerHTML = '<div class="eyebrow">' + t('ONE MOLECULE AT A TIME', '분자 하나씩 익혀가기') +
-    '</div><section class="hero"><div><h1>' + t('A little practice.<br><em>A better eye for terpenes.</em>',
-      '조금씩 연습하며,<br><em>테르펜을 알아보는 눈.</em>') +
-    '</h1><p>' + t('Recognise the skeleton. Spot the modification.<br>Understand the enzyme behind the chemistry.',
-      '골격을 알아보고, 구조의 변화를 찾고,<br>반응을 이끄는 효소를 이해하세요.') +
-    '</p></div><div class="hero-sample"><div class="sample-top"><span>IN THE ATLAS</span><span>NO. 002</span></div>' +
-    '<img src="assets/structures/geraniol.svg" alt="Geraniol chemical structure"><div class="sample-bottom">' +
-    '<span><strong>Geraniol</strong> &nbsp; C10H18O</span><span class="microtag">MONOTERPENOID</span></div></div></section>' +
-    '<section aria-labelledby="mode-label"><div class="section-label" id="mode-label"><span class="step-number">01</span>' +
-    t('What would you like to practise?', '무엇을 연습할까요?') + '</div><div class="mode-grid">' +
-    kinds().map(([kind, icon, title, description, count]) => '<button class="mode-card ' +
-      (mode === kind ? 'active' : '') + '" data-mode="' + kind + '" aria-pressed="' + (mode === kind) +
-      '"><span class="check">' + (mode === kind ? I('check') : '') + '</span><div class="mode-icon">' +
-      I(icon) + '</div><h2>' + title + '</h2><p>' + description + '</p><span class="count">' +
-      count + ' ' + t('cards', '카드') + '</span></button>').join('') +
-    '</div></section><section class="configure"><div class="config-left"><div class="section-label">' +
-    '<span class="step-number">02</span>' + t('Curate your session', '연습 범위 선택') +
-    '</div>' + filters + '</div><div class="config-right"><div class="row-label">' +
-    t('PRACTICE STYLE', '연습 방식') + '</div><div class="segmented">' +
-    [['choice', t('Choose an answer', '정답 선택')], ['typing', t('Type from memory', '기억해서 입력')]]
-      .map(([style, label]) => '<button data-style="' + style + '" class="' +
-        (settings.style === style ? 'active' : '') + '" aria-pressed="' + (settings.style === style) +
-        '">' + label + '</button>').join('') + '</div><div class="row-label">' +
-    t('QUESTIONS', '문제 수') + '</div><div class="question-count">' + [5, 10, 20].map(count =>
-      '<button data-count="' + count + '" class="' + (settings.count === count ? 'active' : '') +
-      '" aria-pressed="' + (settings.count === count) + '">' + count + '</button>').join('') +
-    '<span>' + Math.min(settings.count, pool.length) + ' / ' + pool.length + '</span></div>' +
-    '<button class="primary start-button" id="start" ' + (!pool.length ? 'disabled' : '') + '>' +
-    t('Start practising', '연습 시작') + I('arrow') + '</button></div></section>' +
-    '<div class="support-row"><span>' + t('No countdown. Just you and the chemistry.', '시간 제한 없이, 화학에 집중하세요.') +
-    '</span>' + (mode === 'family' ? '<button id="name-mode">' +
-      (settings.kind === 'name' ? t('Switch to family recognition', '계열 구분으로 전환') :
-        t('Practise molecule names →', '분자 이름 연습하기 →')) + '</button>' : '') +
-    '</div><div class="principle">' + I('bulb') + '<p><strong>' +
-    t('Count the skeleton, then read the decorations.', '골격을 세고, 추가된 작용기를 읽어보세요.') +
-    '</strong>' + t('Stevioside has 38 carbons overall, but its C20 steviol core makes it a diterpenoid glycoside.',
-      'Stevioside의 전체 탄소 수는 38개이지만, C20 steviol 모체를 지닌 diterpenoid glycoside입니다.') +
-    '</p></div><div class="support-row"><span>' + progress.answered + ' ' + t('cards practised', '카드 연습') +
-    ' · ' + progress.sessions + ' ' + t('sessions complete', '회차 완료') +
-    '</span><button id="weak-review">' + t('Review tricky cards', '어려웠던 카드 복습') +
-    ' (' + weakQuestions().length + ')</button></div>';
-  $$('[data-mode]', root).forEach(button => button.onclick = () => { settings.kind = button.dataset.mode; renderSetup(); });
-  $$('[data-filter]', root).forEach(button => button.onclick = () => {
-    const key = button.dataset.filter, id = button.dataset.id;
-    settings[key] = settings[key].includes(id) ? settings[key].filter(value => value !== id) : [...settings[key], id];
-    renderSetup();
+  const launchLabels={family:['Launch family practice','골격 계열 연습 시작'],name:['Launch name recall','분자 이름 연습 시작'],precursor:['Launch precursor practice','전구체 연습 시작'],motif:['Launch motif practice','모티프 연습 시작'],enzyme:['Launch reaction practice','효소 반응 연습 시작'],scaffold:['Launch scaffold practice','골격과 고리 연습 시작'],comparison:['Launch comparison practice','구조 비교 연습 시작']};
+  const configuration=`<section class="configure inline-config" aria-labelledby="practice-curate-label"><div class="config-left"><h3 class="section-label" id="practice-curate-label"><span class="step-number">02</span>${t('Curate your session','나만의 문제 구성')}</h3>${filters}</div><div class="config-right"><div class="row-label">${t('PRACTICE STYLE','연습 방식')}</div><div class="segmented">${[['choice',t('Choose an answer','보기에서 선택')],['typing',t('Type from memory','직접 입력')]].map(([style,label])=>`<button data-style="${style}" class="${settings.style===style?'active':''}" aria-pressed="${settings.style===style}">${label}</button>`).join('')}</div><div class="row-label">${t('QUESTIONS','문제 수')}</div><div class="question-count">${[5,10,20].map(n=>`<button data-count="${n}" class="${settings.count===n?'active':''}" aria-pressed="${settings.count===n}">${n}</button>`).join('')}<span>${count} / ${pool.length}</span></div><p class="launch-summary" aria-live="polite">${count} ${t('cards','개 문제')} · ${t(settings.style==='typing'?'Type from memory':'Choose an answer',settings.style==='typing'?'직접 입력':'보기에서 선택')}</p><button class="primary start-button" id="start" ${pool.length?'':'disabled'}>${t(...launchLabels[settings.kind])}${I('arrow')}</button></div></section>`;
+  const modes=kinds();
+  const countLabels={family:['structures','개 구조'],precursor:['precursors','개 전구체'],motif:['motifs','개 모티프'],enzyme:['reactions','개 반응'],scaffold:['scaffolds','개 골격'],comparison:['study cards','학습 문제']};
+  const rows=[];
+  for(let i=0;i<modes.length;i+=2){
+    const row=modes.slice(i,i+2),active=row.findIndex(([kind])=>kind===expandedKind);
+    rows.push(`<div class="studio-practice-row${active>=0?' has-open':''}" data-expanded-column="${active<0?'none':active===0?'left':'right'}">${row.map(([kind,glyph,title,description,n])=>{
+      const expanded=kind===expandedKind,panelId='practice-config-'+kind;
+      return `<article class="studio-practice-option studio-practice-option--${kind}${expanded?' is-open':''}">${renderStudioModeCard({mode:kind,title,description,count:n+' '+t(...countLabels[kind]),selected:expanded,expanded,panelId,lang:getLanguage()})}<div id="${panelId}"${expanded?` class="studio-config-extension" role="region" aria-labelledby="practice-mode-title-${kind}"`:' hidden'}>${expanded?configuration:''}</div></article>`;
+    }).join('')}</div>`);
+  }
+  root.innerHTML=`<div class="eyebrow">${t('A FIELD GUIDE, ONE MOLECULE AT A TIME','한 번에 한 분자씩 익히는 구조 안내서')}</div><section class="hero"><div><h1>${t('A little practice.<br><em>A better eye for terpenes.</em>','조금씩 연습하고,<br><em>테르펜을 알아보는 눈.</em>')}</h1><p>${t('Recognise the skeleton. Spot the modification.<br>Understand the enzyme behind the chemistry.','골격을 알아보고, 달라진 부분을 찾고,<br>그 반응을 만드는 효소를 이해하세요.')}</p><div class="hero-collection" aria-label="${t('Atlas collection','Atlas 자료 모음')}"><span><i aria-hidden="true"></i>${catalogue.molecules.length} ${t('structures','개 구조')}</span><span>${catalogue.scaffolds.length} ${t('scaffolds & rings','개 골격·고리')}</span><span>${catalogue.precursors.length} ${t('precursors','개 전구체')}</span></div></div>${renderGeraniolXray(getLanguage())}</section><section aria-labelledby="mode-label"><div class="section-label" id="mode-label"><span class="step-number">01</span>${t('What would you like to practise?','어떤 내용을 연습할까요?')}</div><div class="mode-grid studio-mode-grid">${rows.join('')}</div></section><div class="support-row"><span>${t('No countdown. Just you and the chemistry.','시간제한 없이, 구조를 천천히 익혀보세요.')}</span></div><div class="principle">${I('bulb')}<p><strong>${t('Count the skeleton, then read the decorations.','골격을 세고, 부착된 구조를 살펴보세요.')}</strong>${t('Stevioside has 38 carbons overall, but its C20 steviol core makes it a diterpenoid glycoside.','Stevioside의 전체 탄소 수는 38개지만, C20 steviol 골격을 가진 diterpenoid glycoside입니다.')}</p></div><div class="support-row"><span>${progress.answered} ${t('cards practised','개 카드 연습')} · ${progress.sessions} ${t('sessions complete','회 세션 완료')}</span><button id="weak-review">${t('Review tricky cards','헷갈린 문제 복습')} (${weakQuestions().length})</button></div>`;
+  bindGeraniolXray(root);
+  $$('[data-mode]',root).forEach(button=>button.onclick=()=>{
+    const kind=button.dataset.mode;expandedKind=expandedKind===kind?null:kind;settings.kind=kind;renderSetup();$('[data-mode="'+kind+'"]',root)?.focus({preventScroll:true});
   });
-  $$('[data-style]', root).forEach(button => button.onclick = () => { settings.style = button.dataset.style; renderSetup(); });
-  $$('[data-count]', root).forEach(button => button.onclick = () => { settings.count = Number(button.dataset.count); renderSetup(); });
-  if ($('#challenge', root)) $('#challenge', root).onchange = event => { settings.challenge = event.target.checked; renderSetup(); };
-  if ($('#name-mode', root)) $('#name-mode', root).onclick = () => { settings.kind = settings.kind === 'name' ? 'family' : 'name'; renderSetup(); };
-  $('#start', root).onclick = () => {
-    startQuestions(shuffle(questionPool(settings)).slice(0, settings.count).map(item => createQuestion(settings.kind, item)));
-    redraw(); window.scrollTo({top: 0});
+  $$('[data-filter]',root).forEach(button=>button.onclick=()=>{
+    const key=button.dataset.filter,id=button.dataset.id;
+    settings[key]=settings[key].includes(id)?settings[key].filter(value=>value!==id):[...settings[key],id];renderSetup();
+    $('[data-filter="'+key+'"][data-id="'+id+'"]',root)?.focus({preventScroll:true});
+  });
+  $$('[data-style]',root).forEach(button=>button.onclick=()=>{const style=button.dataset.style;settings.style=style;renderSetup();$('[data-style="'+style+'"]',root)?.focus({preventScroll:true});});
+  $$('[data-count]',root).forEach(button=>button.onclick=()=>{const n=button.dataset.count;settings.count=Number(n);renderSetup();$('[data-count="'+n+'"]',root)?.focus({preventScroll:true});});
+  if($('#challenge',root))$('#challenge',root).onchange=event=>{settings.challenge=event.target.checked;renderSetup();$('#challenge',root)?.focus({preventScroll:true});};
+  if($('#name-mode',root))$('#name-mode',root).onclick=()=>{settings.kind=settings.kind==='name'?'family':'name';renderSetup();$('#name-mode',root)?.focus({preventScroll:true});};
+  if($('#start',root))$('#start',root).onclick=()=>{
+    startQuestions(shuffle(questionPool(settings)).slice(0,settings.count).map(item=>createQuestion(settings.kind,item)));
+    redraw();window.scrollTo({top:0});
   };
-  $('#weak-review', root).onclick = startWeak;
+  $('#weak-review',root).onclick=startWeak;
 }
+
 function questionPrompt(question) {
+  if(question.prompt) return t(question.prompt,question.promptKo);
   if (question.kind === 'comparison') return t(question.item.prompt, question.item.promptKo);
   if (question.kind === 'family') return t('Which terpene family does this parent skeleton belong to?', '이 모체 골격은 어느 테르펜 계열에 속하나요?');
   if (question.kind === 'enzyme') return t('Which enzyme group fits this transformation?', '이 구조 변화를 만드는 효소 종류는 무엇인가요?');
@@ -162,11 +134,12 @@ function questionFigure(question) {
       t('Identify compound 4 (R=H)', '화합물 4(R=H)의 이름을 답하세요') + '</p>' : '');
 }
 function hintFor(question) {
+  if(question.hint) return t(question.hint,question.hintKo);
   if (question.kind === 'comparison') return t(question.item.hint, question.item.hintKo);
   if (question.kind === 'family') return t('The terpene-derived parent has ', '테르펜 유래 모체에는 탄소가 ') +
     question.item.skeleton + t(' carbons.', '개 있습니다.');
   if (question.kind === 'enzyme') return t('Read the bond changes and the cofactors above the arrow.', '결합의 변화와 화살표 위의 cofactor를 함께 보세요.');
-  if (question.kind === 'motif') return t('Focus on the green-highlighted atoms and bonds.', '초록색으로 강조된 원자와 결합에 집중하세요.');
+  if (question.kind === 'motif') return t('Focus on the highlighted atoms and bonds.', '강조된 원자와 결합에 집중하세요.');
   return t('The English name begins with ', '영문 이름의 첫 부분은 ') + question.answer.slice(0, 2) + '…';
 }
 function renderQuestion() {

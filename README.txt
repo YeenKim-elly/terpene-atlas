@@ -7,15 +7,19 @@ TERPENE ATLAS
 주요 기능
 ---------
 
-- 분자 111개, 전구체 17개, 골격·고리 참고 항목 42개, 모티프 37개, 효소 반응 59개
-- 전구체·C10·C15·C20·C40·골격과 고리를 살펴보는 여섯 탭과 열네 지도
+- C5 단위와 hydroxyl을 강조하는 geraniol 인터랙티브 보기
+- 접을 수 있는 메뉴와 같은 크기의 연습 카드, 선택한 행 아래로 열리는 설정
+- Retinoid·휘발성 절단 산물·saffron·ABA를 연결하는 apocarotenoid 지도
+
+- 분자 122개, 전구체 17개, 골격·고리 참고 항목 46개, 모티프 47개, 효소 반응 67개
+- 전구체·C10·C15·C20·C40·apocarotenoid·골격과 고리를 살펴보는 일곱 탭과 열다섯 지도
 - C10·C15·C20 전구체–효소–골격 분기와 C40 말단 고리 개요
 - 라이브러리와 Structure web의 C10·C15·C20·C40 골격 모음과 공통 고리 필터
 - 관련 경로에 연결되는 iridoid·artemisinin·kaurane·gibberellin·taxane 예시
-- C40 기하배열·고리 변형과 C40 유래 C15 apocarotenoid 구분
+- C40 기하배열·고리 변형과 다양한 탄소 수의 C40 유래 apocarotenoid 구분
 - Diterpenoid 전구체 골격·전체 경로 지도와 C20 고리 융합·재배열·clerodane 유형 보기
 - Iridoid·artemisinin·gibberellin·식물 poly-cis·astaxanthin ester·ABA 절단 경로
-- C40 유래 C15 apocarotenoid 구분과 NCED의 C25 공동 생성물 표시
+- ABA 분기의 C40 유래 C15 골격과 NCED의 C25 공동 생성물 표시
 - 연결망 전체화면, 확대·축소, 전체 맞춤(Fit), Esc로 닫기
 - 객관식과 직접 입력 방식의 연습, 힌트와 복습
 - 정렬된 구조 비교 18개

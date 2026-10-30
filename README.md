@@ -8,14 +8,17 @@ pathways through interactive maps and practice.
 
 ## Features
 
-- Searchable reference library with **111 molecule entries**, **17 precursors**,
-  **42 scaffold and ring references**, **37 functional motifs** and **59 enzyme reactions**.
-- Six family tabs with fourteen structure-web maps, including C10/C15/C20 precursor–enzyme–framework maps and a C40 end-group overview.
+- Interactive geraniol showcase with colour-coded C5 building blocks and a hydroxyl view.
+- Collapsible navigation and equal-width practice cards with session options beneath the selected row.
+- Searchable reference library with **122 molecule entries**, **17 precursors**,
+  **46 scaffold and ring references**, **47 functional motifs** and **67 enzyme reactions**.
+- Seven family tabs with fifteen structure-web maps, including C10/C15/C20 precursor–enzyme–framework maps and a C40 end-group overview.
 - Scaffold galleries with C10, C15, C20, C40, C40-derived apocarotenoid and shared ring-system filters in both the library and Structure web.
 - Pathway-linked iridoid, artemisinin, kaurane, gibberellin and taxane examples, with carotenoid geometry/ring variants explicitly labelled.
 - Diterpenoid subviews for precursor frameworks, expanded pathways and C20 ring fusion, rearrangements and clerodane classes.
 - Focused iridoid, artemisinin, gibberellin, plant poly-cis carotenoid, astaxanthin ester and ABA cleavage pathways.
-- C40-derived C15 apocarotenoid classification, with the NCED C25 coproduct annotated.
+- Connected apocarotenoid branches for retinoids, volatile cleavage products, saffron compounds and ABA, with core carbon counts and coproducts annotated.
+- Alcohol/hydroxyl recognition with specific alcohol classes, conjugated functional groups, endoperoxides and ionised carboxylates.
 - Fullscreen graph viewing with zoom, full-network Fit and Escape-to-close.
 - Multiple-choice and typed-answer practice, hints, feedback and review.
 - Eighteen aligned structure comparisons, including stereochemical and functional-group differences.

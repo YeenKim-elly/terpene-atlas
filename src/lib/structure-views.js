@@ -89,12 +89,21 @@ export const familySubmaps={
         "Astaxanthin esters",
         "Astaxanthin ester"
       ]
+    }
+  ],
+  "apocarotenoids": [
+    {
+      "id": "apocarotenoids",
+      "label": [
+        "Cleavage branches",
+        "절단 분기"
+      ]
     },
     {
       "id": "aba-cleavage",
       "label": [
-        "Cleavage → ABA",
-        "절단 → ABA"
+        "ABA pathway detail",
+        "ABA 경로 상세"
       ]
     }
   ]

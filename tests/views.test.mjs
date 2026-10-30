@@ -14,7 +14,7 @@ test('library categories, details, search, empty state and family filters work',
  const root=new RenderBoundary();let opened;
  const ctx={openRecord:record=>{opened=record;},goCompare(){}};
  renderLibrary(root,ctx);
- for(const [tab,count]of [['molecules',111],['precursors',17],['scaffolds',42],['motifs',37],['reactions',59]]){
+ for(const [tab,count]of [['molecules',122],['precursors',17],['scaffolds',46],['motifs',47],['reactions',67]]){
   root.querySelector('[data-library-tab="'+tab+'"]').click();
   const cards=(tab==='scaffolds'?root.querySelector('#library-grid'):root).querySelectorAll('[data-detail]');
   assert.equal(cards.length,count,tab);assert.ok(cards.every(card=>typeof card.onclick==='function'));

@@ -1,4 +1,4 @@
-export const graphIds=["precursors","carotenoids","diterpenes","scaffolds","diterpene-pathway","monoterpenes","sesquiterpenes","carotenoid-frameworks","iridoids","artemisinin","gibberellins","aba-cleavage","plant-carotenoids","astaxanthin-esters"];
+export const graphIds=["precursors","carotenoids","diterpenes","scaffolds","diterpene-pathway","monoterpenes","sesquiterpenes","carotenoid-frameworks","iridoids","artemisinin","gibberellins","aba-cleavage","plant-carotenoids","astaxanthin-esters","apocarotenoids"];
 export const catalogue = {
   molecules: [], precursors: [], scaffolds: [], motifs: [], reactions: [],
   comparisons: [], comparisonStructures: [], graphNotes: [], comparisonQuestions: [],

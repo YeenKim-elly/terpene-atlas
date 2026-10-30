@@ -11,17 +11,6 @@
     "schematic": true
   },
   {
-    "id": "alcohol",
-    "name": "Alcohol",
-    "ko": "알코올",
-    "image": "assets/motifs/alcohol.svg",
-    "note": "A hydroxyl on a saturated carbon. An alcohol is distinct from a phenol or a carboxylic-acid OH.",
-    "noteKo": "포화 탄소에 붙은 hydroxyl이다. Phenol이나 carboxylic acid의 OH와 구분한다.",
-    "smiles": "CCC(O)CC",
-    "source": "https://goldbook.iupac.org/",
-    "schematic": true
-  },
-  {
     "id": "ketone",
     "name": "Ketone",
     "ko": "케톤",
@@ -676,5 +665,320 @@
     "image": "assets/motifs/unsaturated-lactone.svg",
     "schematic": true,
     "highlightSmarts": "[O]=[C;R]1[O;R][C;R][C;R]=[C;R]1"
+  },
+  {
+    "id": "primary-alcohol",
+    "name": "Primary alcohol",
+    "ko": "1차 알코올",
+    "smiles": "CCCO",
+    "smarts": "[CX4H2]([OX2H1])[#6]",
+    "note": "The saturated carbon bearing –OH is bonded to one other carbon. Geraniol and retinol have primary alcohol groups. Primary/secondary/tertiary describes this carbon, not the number of OH groups.",
+    "noteKo": "–OH가 붙은 포화 탄소가 다른 탄소 한 개와 연결됩니다. Geraniol과 retinol은 1차 알코올기를 가집니다. 1차·2차·3차는 OH의 개수가 아니라 OH가 붙은 탄소의 치환도를 뜻합니다.",
+    "aliases": [
+      "primary alcohol",
+      "primary hydroxyl",
+      "1° alcohol",
+      "1차 알코올",
+      "일차 알코올"
+    ],
+    "source": "https://goldbook.iupac.org/",
+    "image": "assets/structures/motif-primary-alcohol.svg",
+    "schematic": true,
+    "highlightAtoms": [
+      2,
+      3,
+      1
+    ],
+    "highlightSmarts": "[CX4H2]([OX2H1])[#6]",
+    "prompt": "Classify the OH-bearing carbon: primary, secondary or tertiary?",
+    "promptKo": "OH가 붙은 탄소를 1차·2차·3차로 구분하세요."
+  },
+  {
+    "id": "secondary-alcohol",
+    "name": "Secondary alcohol",
+    "ko": "2차 알코올",
+    "smiles": "CC(O)CC",
+    "smarts": "[CX4H1]([OX2H1])([#6])[#6]",
+    "note": "The saturated carbon bearing –OH is bonded to two other carbons and one hydrogen. Menthol and the ring hydroxyl groups of zeaxanthin illustrate this class. The generic model leaves stereochemistry unspecified.",
+    "noteKo": "–OH가 붙은 포화 탄소가 다른 탄소 두 개와 수소 한 개에 연결됩니다. Menthol과 zeaxanthin의 고리 OH가 이 계열에 속합니다. 이 일반 모형의 입체화학은 지정하지 않았습니다.",
+    "aliases": [
+      "secondary alcohol",
+      "secondary hydroxyl",
+      "2° alcohol",
+      "2차 알코올",
+      "이차 알코올"
+    ],
+    "source": "https://goldbook.iupac.org/",
+    "image": "assets/structures/motif-secondary-alcohol.svg",
+    "schematic": true,
+    "highlightAtoms": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "highlightSmarts": "[CX4H1]([OX2H1])([#6])[#6]",
+    "prompt": "Classify the OH-bearing carbon: primary, secondary or tertiary?",
+    "promptKo": "OH가 붙은 탄소를 1차·2차·3차로 구분하세요."
+  },
+  {
+    "id": "tertiary-alcohol",
+    "name": "Tertiary alcohol",
+    "ko": "3차 알코올",
+    "smiles": "CC(C)(O)CC",
+    "smarts": "[CX4H0]([OX2H1])([#6])([#6])[#6]",
+    "note": "The saturated carbon bearing –OH is bonded to three other carbons and has no attached hydrogen. Linalool and the hydroxyl-bearing ring carbon of ABA illustrate this class; this does not identify an enzyme.",
+    "noteKo": "–OH가 붙은 포화 탄소가 다른 탄소 세 개와 연결되어 있고 그 탄소에는 수소가 없습니다. Linalool과 ABA의 OH가 붙은 고리 탄소가 예입니다. 이 작용기만으로 효소를 정할 수는 없습니다.",
+    "aliases": [
+      "tertiary alcohol",
+      "tertiary hydroxyl",
+      "3° alcohol",
+      "3차 알코올",
+      "삼차 알코올"
+    ],
+    "source": "https://goldbook.iupac.org/",
+    "image": "assets/structures/motif-tertiary-alcohol.svg",
+    "schematic": true,
+    "highlightAtoms": [
+      1,
+      3,
+      0,
+      2,
+      4
+    ],
+    "highlightSmarts": "[CX4H0]([OX2H1])([#6])([#6])[#6]",
+    "prompt": "Classify the OH-bearing carbon: primary, secondary or tertiary?",
+    "promptKo": "OH가 붙은 탄소를 1차·2차·3차로 구분하세요."
+  },
+  {
+    "id": "allylic-alcohol",
+    "name": "Allylic alcohol",
+    "ko": "알릴 알코올",
+    "smiles": "CC=CCO",
+    "smarts": "[CX3]=[CX3]-[CX4]-[OX2H1]",
+    "note": "The OH-bearing saturated carbon is directly adjacent to a C=C bond. This positional description can overlap primary, secondary or tertiary alcohol classification. Geraniol is both a primary and an allylic alcohol; an enol has OH directly on an alkene carbon instead.",
+    "noteKo": "OH가 붙은 포화 탄소가 C=C 바로 옆에 있습니다. 위치에 따른 분류이므로 1차·2차·3차 알코올 분류와 함께 쓸 수 있습니다. Geraniol은 1차 알코올이면서 알릴 알코올입니다. Enol은 이와 달리 알켄 탄소에 OH가 직접 붙습니다.",
+    "aliases": [
+      "allylic alcohol",
+      "allyl alcohol motif",
+      "알릴 알코올",
+      "알릴성 알코올"
+    ],
+    "source": "https://goldbook.iupac.org/",
+    "image": "assets/structures/motif-allylic-alcohol.svg",
+    "schematic": true,
+    "highlightAtoms": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "highlightSmarts": "[CX3]=[CX3]-[CX4]-[OX2H1]",
+    "prompt": "Name the alcohol motif by its position beside C=C.",
+    "promptKo": "C=C와의 위치 관계로 이 알코올 모티프를 구분하세요."
+  },
+  {
+    "id": "vicinal-diol",
+    "name": "Vicinal diol · 1,2-diol",
+    "ko": "인접 다이올 · 1,2-다이올",
+    "smiles": "CCC(O)C(O)CC",
+    "smarts": "[OX2H1]-[CX4]-[CX4]-[OX2H1]",
+    "note": "Two hydroxyl groups are attached to adjacent saturated carbons. Two distant OH groups, as in zeaxanthin, do not form a vicinal diol. The generic drawing does not assign relative or absolute stereochemistry.",
+    "noteKo": "서로 이웃한 포화 탄소에 OH가 하나씩 붙습니다. Zeaxanthin처럼 서로 멀리 떨어진 OH 두 개는 인접 다이올이 아닙니다. 이 일반 그림은 상대·절대 입체배열을 지정하지 않습니다.",
+    "aliases": [
+      "vicinal diol",
+      "1,2 diol",
+      "1 2 diol",
+      "adjacent diol",
+      "인접 다이올",
+      "1,2-다이올",
+      "인접 디올"
+    ],
+    "source": "https://goldbook.iupac.org/",
+    "image": "assets/structures/motif-vicinal-diol.svg",
+    "schematic": true,
+    "highlightAtoms": [
+      3,
+      2,
+      4,
+      5
+    ],
+    "highlightSmarts": "[OX2H1]-[CX4]-[CX4]-[OX2H1]",
+    "prompt": "Name the relationship between these two highlighted OH groups.",
+    "promptKo": "강조한 두 OH기의 위치 관계를 구분하세요."
+  },
+  {
+    "id": "enal",
+    "name": "α,β-Unsaturated aldehyde · enal",
+    "ko": "α,β-불포화 알데하이드 · enal",
+    "smiles": "CCC=CC=O",
+    "smarts": "[CX3H1](=[OX1])-[CX3]=[CX3]",
+    "note": "An aldehyde carbonyl is conjugated with a neighbouring C=C bond. Retinal is a polyene aldehyde with this terminal enal pattern. This is more specific than identifying only an aldehyde or alkene.",
+    "noteKo": "알데하이드의 카보닐이 이웃한 C=C와 공액을 이룹니다. Retinal은 말단에 이 enal 배열을 가진 polyene aldehyde입니다. 알데하이드나 알켄만 구분하는 것보다 구체적인 모티프입니다.",
+    "aliases": [
+      "enal",
+      "alpha beta unsaturated aldehyde",
+      "α,β-unsaturated aldehyde",
+      "conjugated aldehyde",
+      "공액 알데하이드",
+      "불포화 알데하이드"
+    ],
+    "source": "https://goldbook.iupac.org/",
+    "image": "assets/structures/motif-enal.svg",
+    "schematic": true,
+    "highlightAtoms": [
+      4,
+      5,
+      3,
+      2
+    ],
+    "highlightSmarts": "[CX3H1](=[OX1])-[CX3]=[CX3]",
+    "prompt": "Name the conjugated aldehyde motif.",
+    "promptKo": "공액된 알데하이드 모티프의 이름은 무엇인가요?"
+  },
+  {
+    "id": "unsaturated-carboxylic-acid",
+    "name": "α,β-Unsaturated carboxylic acid",
+    "ko": "α,β-불포화 카복실산",
+    "smiles": "CCC=CC(=O)O",
+    "smarts": "[OX2H1]-[CX3](=[OX1])-[CX3]=[CX3]",
+    "note": "A carboxylic-acid carbonyl is conjugated with C=C at the α,β positions. Retinoic acid, ABA and crocetin contain this relationship. It is distinct from an enone because the carbonyl belongs to a carboxylic acid, not a ketone.",
+    "noteKo": "카복실산의 카보닐이 α,β 위치의 C=C와 공액을 이룹니다. Retinoic acid, ABA, crocetin에 이런 연결이 있습니다. 카보닐이 케톤이 아닌 카복실산에 속하므로 enone과 구분합니다.",
+    "aliases": [
+      "alpha beta unsaturated carboxylic acid",
+      "α,β-unsaturated carboxylic acid",
+      "conjugated carboxylic acid",
+      "unsaturated carboxylic acid",
+      "공액 카복실산",
+      "불포화 카복실산"
+    ],
+    "source": "https://goldbook.iupac.org/",
+    "image": "assets/structures/motif-unsaturated-carboxylic-acid.svg",
+    "schematic": true,
+    "highlightAtoms": [
+      6,
+      4,
+      5,
+      3,
+      2
+    ],
+    "highlightSmarts": "[OX2H1]-[CX3](=[OX1])-[CX3]=[CX3]",
+    "prompt": "Name the highlighted conjugated acid motif.",
+    "promptKo": "강조한 공액 카복실산 모티프의 이름은 무엇인가요?"
+  },
+  {
+    "id": "unsaturated-ester",
+    "name": "α,β-Unsaturated ester",
+    "ko": "α,β-불포화 에스터",
+    "smiles": "CCC=CC(=O)OCC",
+    "smarts": "[#6]-[OX2]-[CX3](=[OX1])-[CX3]=[CX3]",
+    "note": "An ester carbonyl is conjugated with a C=C bond at the α,β positions. Crocetin glycosyl esters retain this carbonyl–alkene relationship. This model is an acyclic ester; a corresponding cyclic ester can also be an unsaturated lactone.",
+    "noteKo": "에스터의 카보닐이 α,β 위치의 C=C와 공액을 이룹니다. Crocetin의 glycosyl ester에도 이 카보닐–알켄 관계가 남습니다. 이 모형은 비고리형 에스터이며, 이에 대응하는 고리형 에스터는 불포화 락톤일 수 있습니다.",
+    "aliases": [
+      "alpha beta unsaturated ester",
+      "α,β-unsaturated ester",
+      "conjugated ester",
+      "unsaturated ester",
+      "공액 에스터",
+      "불포화 에스터"
+    ],
+    "source": "https://goldbook.iupac.org/",
+    "image": "assets/structures/motif-unsaturated-ester.svg",
+    "schematic": true,
+    "highlightAtoms": [
+      7,
+      6,
+      4,
+      5,
+      3,
+      2
+    ],
+    "highlightSmarts": "[#6]-[OX2]-[CX3](=[OX1])-[CX3]=[CX3]",
+    "prompt": "Name the highlighted conjugated ester motif.",
+    "promptKo": "강조한 공액 에스터 모티프의 이름은 무엇인가요?"
+  },
+  {
+    "id": "endoperoxide",
+    "name": "Cyclic endoperoxide",
+    "ko": "고리형 엔도퍼옥사이드",
+    "smiles": "C1CC2CCC1OO2",
+    "smarts": "[C;R]-[O;R]-[O;R]-[C;R]",
+    "note": "An O–O peroxide bridge is incorporated into the ring system. Artemisinin contains a cyclic endoperoxide. The highlighted motif is not an epoxide (one oxygen in a three-membered ring) or an R–O–O–H hydroperoxide.",
+    "noteKo": "O–O 과산화물 다리가 고리 구조의 일부를 이룹니다. Artemisinin은 고리형 endoperoxide를 포함합니다. 산소 한 개가 들어간 3원 고리인 epoxide나 R–O–O–H인 hydroperoxide와 구분합니다.",
+    "aliases": [
+      "endoperoxide",
+      "cyclic endoperoxide",
+      "cyclic peroxide",
+      "엔도퍼옥사이드",
+      "고리형 과산화물"
+    ],
+    "source": "https://goldbook.iupac.org/",
+    "image": "assets/structures/motif-endoperoxide.svg",
+    "schematic": true,
+    "highlightAtoms": [
+      2,
+      7,
+      6,
+      5
+    ],
+    "highlightSmarts": "[C;R]-[O;R]-[O;R]-[C;R]",
+    "prompt": "Name the highlighted cyclic O–O motif.",
+    "promptKo": "강조한 고리 안 O–O 모티프의 이름은 무엇인가요?"
+  },
+  {
+    "id": "carboxylate",
+    "name": "Carboxylate · –COO⁻",
+    "ko": "카복실레이트 · –COO⁻",
+    "smiles": "CCCC(=O)[O-]",
+    "smarts": "[CX3](=[OX1])[OX1-]",
+    "note": "The conjugate base of a carboxylic acid carries a negative charge. The drawing shows one resonance contributor; the negative charge and bonding are delocalised over the two oxygens. Protonation depends on pH and the molecule’s acid–base properties.",
+    "noteKo": "카복실산의 짝염기가 음전하를 띱니다. 그림은 한 공명 기여 구조이며 전하와 결합은 두 산소에 걸쳐 비편재화됩니다. 양성자화 상태는 pH와 그 분자의 산–염기 성질에 따라 달라집니다.",
+    "aliases": [
+      "carboxylate",
+      "carboxylate anion",
+      "deprotonated carboxylic acid",
+      "COO-",
+      "카복실레이트",
+      "카복실산 음이온"
+    ],
+    "source": "https://goldbook.iupac.org/",
+    "image": "assets/structures/motif-carboxylate.svg",
+    "schematic": true,
+    "highlightAtoms": [
+      3,
+      4,
+      5
+    ],
+    "highlightSmarts": "[CX3](=[OX1])[OX1-]"
+  },
+  {
+    "id": "alcohol",
+    "name": "Alcohol · hydroxyl (–OH)",
+    "ko": "알코올 · 하이드록실기 (–OH)",
+    "image": "assets/structures/motif-alcohol-hydroxyl.svg",
+    "note": "Hydroxyl is the –OH group; alcohol is the compound class when –OH is attached to a saturated carbon. In this generic R–OH model, R attaches through an sp3 carbon, leaving primary/secondary/tertiary unspecified. Phenolic OH and the OH within a carboxylic acid are classified separately. A hydroxyl alone does not identify an enzyme.",
+    "noteKo": "하이드록실기는 –OH이며, 이 기가 포화 탄소에 붙으면 알코올로 분류합니다. 이 일반 R–OH 모형에서 R은 sp3 탄소를 통해 연결되며 1차·2차·3차는 지정하지 않습니다. 페놀의 OH와 카복실산 안의 OH는 별도로 구분합니다. OH만으로 효소를 정할 수는 없습니다.",
+    "smiles": "*O",
+    "source": "https://goldbook.iupac.org/",
+    "schematic": true,
+    "aliases": [
+      "Alcohol",
+      "alcohol group",
+      "hydroxyl",
+      "hydroxyl group",
+      "hydroxy group",
+      "OH",
+      "–OH",
+      "알코올",
+      "하이드록실기",
+      "히드록시기",
+      "수산기"
+    ],
+    "highlightAtoms": [
+      1
+    ],
+    "highlightSmarts": "[OX2H1]",
+    "prompt": "R attaches through a saturated (sp3) carbon; alcohol degree is unspecified. Name the –OH functional-group class.",
+    "promptKo": "R은 포화(sp3) 탄소를 통해 연결되며 1차·2차·3차는 지정하지 않습니다. –OH 작용기의 계열을 쓰세요."
   }
 ]

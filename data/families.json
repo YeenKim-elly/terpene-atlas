@@ -107,20 +107,24 @@
     ]
   },
   "apo": {
-    "name": "C40-derived C15 apocarotenoid",
-    "ko": "C40 유래 C15 apocarotenoid",
+    "name": "Apocarotenoid (C40-derived)",
+    "ko": "아포카로티노이드 (C40 유래)",
     "short": "Apo",
-    "carbon": 15,
+    "carbon": null,
+    "carbonLabel": "Variable",
+    "carbonLabelKo": "다양함",
     "units": null,
-    "precursor": "C40 epoxycarotenoid cleavage",
+    "precursor": "Carotenoid cleavage; diverse fragment sizes",
     "originCarbon": 40,
     "aliases": [
       "apocarotenoid",
       "apocarotenoids",
       "apo",
       "carotenoid cleavage product",
-      "ABA",
-      "아포카로티노이드"
+      "carotenoid cleavage products",
+      "carotenoid-derived compound",
+      "아포카로티노이드",
+      "카로티노이드 절단 산물"
     ]
   }
 }

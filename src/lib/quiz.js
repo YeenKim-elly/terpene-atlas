@@ -25,6 +25,12 @@ export function createQuestion(kind, item) {
   if (kind === 'family') {
     answer = catalogue.families[item.family];
     question.correctId = item.family;
+    if (item.family === 'apo') {
+      question.prompt = 'This molecule comes from carotenoid cleavage. Which family fits?';
+      question.promptKo = '이 분자는 카로티노이드 절단에서 유래합니다. 어느 계열에 속할까요?';
+      question.hint = 'Origin: C40 carotenoid cleavage. Core: C' + item.skeleton + '. Whole-molecule formula: ' + item.MolecularFormula;
+      question.hintKo = '유래: C40 카로티노이드 절단. 핵심 골격: C' + item.skeleton + '. 전체 분자식: ' + item.MolecularFormula;
+    }
     question.options = Object.entries(catalogue.families)
       .filter(([id]) => id !== 'hemi')
       .map(([id, family]) => ({id, label: family.name, ko: family.ko}));
@@ -45,10 +51,12 @@ export function createQuestion(kind, item) {
       kind === 'motif' ? catalogue.motifs : kind === 'scaffold' ? catalogue.scaffolds : catalogue.molecules;
     question.options = entries.map(nameOption);
   }
+  if (kind === 'motif' && item.prompt) { question.prompt = item.prompt; question.promptKo = item.promptKo; }
   question.answer = answer.name;
   question.answerKo = answer.ko || answer.name;
   question.aliases = [
     answer.name, answer.ko, ...(answer.aliases || []),
+    ...(kind === 'enzyme' ? item.answerAliases || [] : []),
     ...(['name', 'precursor', 'scaffold'].includes(kind) ? [item.query] : [])
   ].filter(Boolean);
   return question;

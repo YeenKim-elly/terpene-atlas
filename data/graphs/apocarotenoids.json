@@ -1,0 +1,274 @@
+{
+  "title": [
+    "Apocarotenoids: cleavage connects colour, aroma and signalling.",
+    "Apocarotenoid: 절단에서 색·향·신호 물질로."
+  ],
+  "intro": [
+    "Explore C10, C13, C15 and C20 carotenoid-derived cores, then separate oxidation and glycosylation from skeletal origin.",
+    "Carotenoid 유래 C10·C13·C15·C20 골격을 살펴보고 산화·배당화와 골격의 기원을 구분하세요."
+  ],
+  "width": 2100,
+  "height": 2050,
+  "nodes": [
+    [
+      "beta-carotene",
+      50,
+      50
+    ],
+    [
+      "retinal",
+      530,
+      50
+    ],
+    [
+      "retinol",
+      1010,
+      50
+    ],
+    [
+      "retinoic-acid",
+      1490,
+      50
+    ],
+    [
+      "beta-ionone",
+      530,
+      370
+    ],
+    [
+      "beta-cyclocitral",
+      1010,
+      370
+    ],
+    [
+      "zeaxanthin",
+      50,
+      850
+    ],
+    [
+      "crocetin-dialdehyde",
+      530,
+      700
+    ],
+    [
+      "crocetin",
+      1010,
+      700
+    ],
+    [
+      "crocin-i",
+      1490,
+      700
+    ],
+    [
+      "htcc",
+      530,
+      1040
+    ],
+    [
+      "picrocrocin",
+      1010,
+      1040
+    ],
+    [
+      "safranal",
+      1490,
+      1040
+    ],
+    [
+      "9-cis-violaxanthin",
+      50,
+      1490
+    ],
+    [
+      "xanthoxin",
+      530,
+      1490
+    ],
+    [
+      "aba-aldehyde",
+      1010,
+      1490
+    ],
+    [
+      "abscisic-acid",
+      1490,
+      1490
+    ]
+  ],
+  "edges": [
+    {
+      "from": "beta-carotene",
+      "to": "retinal",
+      "label": "BCO1 · C40 → 2 × C20",
+      "labelKo": "BCO1 · C40 → C20 두 분자",
+      "type": "step",
+      "detail": "β-Carotene 15,15′-dioxygenase uses O2 and Fe2+ to cleave the central bond, producing TWO all-trans-retinal molecules. This is a provitamin-A reference route, not a plant TPS reaction. The accepted enzyme name is dioxygenase, not monooxygenase.",
+      "detailKo": "β-Carotene 15,15′-dioxygenase는 O2와 Fe2+를 사용해 중앙 결합을 절단하며 all-trans-retinal 두 분자를 만듭니다. Provitamin A 참고 경로이며 식물 TPS 반응이 아닙니다. 공식 효소명은 monooxygenase가 아닌 dioxygenase입니다.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/13/11/63.html",
+      "stoichiometry": "C40 + O2 → 2 C20 retinal"
+    },
+    {
+      "from": "retinal",
+      "to": "retinol",
+      "label": "Retinal reductase · NADPH",
+      "labelKo": "Retinal 환원효소 · NADPH",
+      "type": "step",
+      "detail": "Human AKR retinal-reductase examples reduce all-trans-retinal to all-trans-retinol. The C20 core is retained while CHO becomes CH2OH. Retinol oxidation by other RDH enzymes is a separate characterised activity.",
+      "detailKo": "인간 AKR retinal 환원효소 예시는 all-trans-retinal을 all-trans-retinol로 환원합니다. C20 골격을 유지하면서 CHO가 CH2OH로 바뀝니다. 다른 RDH 효소의 retinol 산화는 별도로 규명된 활성입니다.",
+      "source": "https://doi.org/10.1042/BJ20021818"
+    },
+    {
+      "from": "retinal",
+      "to": "retinoic-acid",
+      "label": "Retinal dehydrogenase · oxidation",
+      "labelKo": "Retinal 탈수소효소 · 산화",
+      "type": "step",
+      "detail": "Oxidation converts the aldehyde to retinoate with NAD+ and water. The selected structure is displayed as neutral all-trans-retinoic acid. Do not interpret this branch as a reversible retinal/acid equilibrium.",
+      "detailKo": "NAD+와 물을 사용하는 산화로 aldehyde가 retinoate로 바뀝니다. 구조는 중성 all-trans-retinoic acid로 표시합니다. 이 연결을 retinal과 acid 사이의 가역적 평형으로 해석하면 안 됩니다.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC1/2/1/36.html"
+    },
+    {
+      "from": "beta-carotene",
+      "to": "beta-ionone",
+      "label": "Plant CCD · 9,10 cleavage",
+      "labelKo": "식물 CCD · 9,10 절단",
+      "type": "summary",
+      "detail": "Characterised plant CCD1 examples cleave at 9,10 and 9′,10′. Two terminal cleavages can give two C13 β-ionone fragments plus a C14 dialdehyde; a single cleavage gives C13 and C27 products. This overview omits coproduct structures and does not assign the same specificity to every CCD.",
+      "detailKo": "규명된 식물 CCD1 예시는 9,10 및 9′,10′를 절단합니다. 양쪽 말단 절단 시 C13 β-ionone 두 분자와 C14 dialdehyde가 생길 수 있고, 한 번 절단하면 C13과 C27 생성물이 생깁니다. 부산물 구조를 생략한 요약이며 모든 CCD에 같은 특이성을 부여하지 않습니다.",
+      "source": "https://doi.org/10.3389/fmicb.2022.1011297"
+    },
+    {
+      "from": "beta-carotene",
+      "to": "beta-cyclocitral",
+      "label": "Photooxidative cleavage",
+      "labelKo": "광산화적 절단",
+      "type": "summary",
+      "detail": "β-Cyclocitral is one β-carotene oxidation product observed during excess-light stress in Arabidopsis. Several oxidation products are omitted. This relationship does not assign a universal CCD enzyme or a TPS step.",
+      "detailKo": "β-Cyclocitral은 Arabidopsis의 강한 빛 스트레스에서 관찰되는 β-carotene 산화 생성물 중 하나입니다. 다른 산화 생성물은 생략했습니다. 보편적인 CCD 효소나 TPS 단계를 배정하는 연결이 아닙니다.",
+      "source": "https://doi.org/10.1073/pnas.1115982109"
+    },
+    {
+      "from": "beta-carotene",
+      "to": "zeaxanthin",
+      "label": "CrtZ/BCH · two hydroxylations",
+      "labelKo": "CrtZ/BCH · 두 번의 수산화",
+      "type": "summary",
+      "detail": "Compatible β-ring hydroxylases sequentially form β-cryptoxanthin and zeaxanthin. The intermediate is omitted here. Enzyme-specific electron-transfer systems apply; this is not necessarily a P450/CPR reaction.",
+      "detailKo": "기질이 맞는 β-ring hydroxylase가 β-cryptoxanthin을 거쳐 zeaxanthin을 형성합니다. 중간체는 생략했습니다. 효소에 맞는 전자 전달계가 필요하며 반드시 P450/CPR 반응인 것은 아닙니다.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11205050/"
+    },
+    {
+      "from": "zeaxanthin",
+      "to": "crocetin-dialdehyde",
+      "label": "CsCCD2 · C20 central product",
+      "labelKo": "CsCCD2 · 중앙 C20 생성물",
+      "type": "summary",
+      "detail": "CsCCD2 cleaves 7,8 then 7′,8′ through the C30 intermediate 3-OH-β-apo-8′-carotenal. The overall carbon balance is C40 → C20 crocetin dialdehyde + TWO C10 HTCC fragments. The paired HTCC edge shows coproduct formation, not an additional independent use of all forty carbons.",
+      "detailKo": "CsCCD2는 C30 중간체 3-OH-β-apo-8′-carotenal을 거쳐 7,8과 7′,8′를 순서대로 절단합니다. 전체 탄소 수는 C40 → C20 crocetin dialdehyde + C10 HTCC 두 분자입니다. HTCC 연결은 같은 반응의 공동 생성물을 나타냅니다.",
+      "source": "https://doi.org/10.1073/pnas.1404629111",
+      "reactionGroup": "ccd2-zeaxanthin-cleavage",
+      "stoichiometry": "C40 → C20 + 2 C10"
+    },
+    {
+      "from": "zeaxanthin",
+      "to": "htcc",
+      "label": "CsCCD2 · 2 × C10 coproduct",
+      "labelKo": "CsCCD2 · C10 공동 생성물 두 분자",
+      "type": "summary",
+      "detail": "HTCC (3-hydroxy-β-cyclocitral) is the C10 terminal coproduct of the same sequential cleavage that gives C20 crocetin dialdehyde. This paired branch shares one reaction group: 40 = 20 + 10 + 10.",
+      "detailKo": "HTCC(3-hydroxy-β-cyclocitral)는 C20 crocetin dialdehyde를 만드는 동일한 연속 절단의 C10 말단 공동 생성물입니다. 두 연결은 하나의 반응 그룹을 공유합니다: 40 = 20 + 10 + 10.",
+      "source": "https://doi.org/10.1073/pnas.1404629111",
+      "reactionGroup": "ccd2-zeaxanthin-cleavage",
+      "stoichiometry": "C40 → C20 + 2 C10"
+    },
+    {
+      "from": "crocetin-dialdehyde",
+      "to": "crocetin",
+      "label": "CsALDH3I1 · two oxidations",
+      "labelKo": "CsALDH3I1 · 두 번의 산화",
+      "type": "summary",
+      "detail": "The characterised saffron aldehyde dehydrogenase oxidises both terminal aldehydes to carboxyl groups. A monoacid intermediate and redox cofactors are omitted in this net overview. The C20 core is unchanged.",
+      "detailKo": "규명된 saffron aldehyde dehydrogenase는 양쪽 말단 aldehyde를 carboxyl기로 산화합니다. 순전환 요약에서는 monoacid 중간체와 산화환원 보조인자를 생략했습니다. C20 골격은 유지됩니다.",
+      "source": "https://doi.org/10.1104/pp.17.01815"
+    },
+    {
+      "from": "crocetin",
+      "to": "crocin-i",
+      "label": "UGT74AD1 + UGT91P3 · several transfers",
+      "labelKo": "UGT74AD1 + UGT91P3 · 여러 번의 당 전이",
+      "type": "summary",
+      "detail": "UGT74AD1 forms one- and two-glucose crocins; UGT91P3 extends glucose chains to higher glycosylation states. The selected Crocin I is the trans-crocetin di-gentiobiosyl ester with four glucose units: C44 overall, but a C20 apocarotenoid core. This is not one elementary transfer or the sole activity of UGT74AD1.",
+      "detailKo": "UGT74AD1은 glucose 한 개 또는 두 개를 가진 crocin을 만들고 UGT91P3는 당 사슬을 확장합니다. 선택한 Crocin I은 glucose 네 개를 가진 trans-crocetin di-gentiobiosyl ester입니다. 전체 C44이지만 apocarotenoid 골격은 C20입니다. 단일 당 전이 단계나 UGT74AD1만의 반응이 아닙니다.",
+      "source": "https://doi.org/10.3390/ijms22168815"
+    },
+    {
+      "from": "htcc",
+      "to": "picrocrocin",
+      "label": "UGT709G1 · O-glucosylation",
+      "labelKo": "UGT709G1 · O-배당화",
+      "type": "step",
+      "detail": "UGT709G1 glucosylates the HTCC hydroxyl, forming picrocrocin while retaining its aldehyde. A C6 glucose is added to a C10 apocarotenoid aglycone, so sixteen total carbons do not define a new C16 skeletal class.",
+      "detailKo": "UGT709G1은 HTCC의 hydroxyl에 glucose를 붙여 picrocrocin을 형성하며 aldehyde는 유지합니다. C10 apocarotenoid aglycone에 C6 glucose가 더해지므로 전체 탄소 16개가 별도의 C16 골격 계열을 뜻하지 않습니다.",
+      "source": "https://doi.org/10.1111/nph.16079"
+    },
+    {
+      "from": "picrocrocin",
+      "to": "safranal",
+      "label": "Deglycosylation + dehydration · processing",
+      "labelKo": "탈배당화 + 탈수 · 가공 관련",
+      "type": "summary",
+      "detail": "Processing-associated conversion includes release of the HTCC aglycone and dehydration. Temperature, water activity and enzyme activity affect the outcome; picrocrocin loss is not a stoichiometric guarantee of safranal accumulation. No single universal safranal-synthase enzyme is assigned.",
+      "detailKo": "가공 관련 전환에는 HTCC aglycone의 유리와 탈수가 포함됩니다. 온도·수분 활성·효소 활성에 따라 결과가 달라지며 picrocrocin 감소가 safranal 축적을 화학량론적으로 보장하지는 않습니다. 보편적인 단일 safranal synthase 효소를 배정하지 않습니다.",
+      "source": "https://doi.org/10.1021/jf0404748"
+    },
+    {
+      "from": "zeaxanthin",
+      "to": "9-cis-violaxanthin",
+      "label": "Epoxy-xanthophyll + 9-cis geometry",
+      "labelKo": "Epoxy-xanthophyll과 9-cis 배열",
+      "type": "structure",
+      "detail": "Zeaxanthin epoxidation proceeds through antheraxanthin to violaxanthin; NCED requires a specifically defined 9-cis substrate. This relationship condenses omitted epoxy-xanthophyll structures and distinguishes the geometry requirement without assigning an isomerase or the order of geometry change.",
+      "detailKo": "Zeaxanthin의 epoxidation은 antheraxanthin을 거쳐 violaxanthin으로 이어지며 NCED는 정확히 지정된 9-cis 기질을 요구합니다. 생략된 epoxy-xanthophyll 구조와 필요한 기하배열의 관계를 보여 주며 이성질화 효소나 배열 변화의 순서를 배정하지 않습니다.",
+      "source": "https://enzyme.expasy.org/EC/1.14.15.21"
+    },
+    {
+      "from": "9-cis-violaxanthin",
+      "to": "xanthoxin",
+      "label": "NCED / VP14 · C15 + C25 cleavage",
+      "labelKo": "NCED / VP14 · C15 + C25 절단",
+      "type": "step",
+      "detail": "A C40 carotenoid is cleaved into C15 xanthoxin and a C25 apo-aldehyde. The coproduct must remain visible in the reaction annotation: 40 = 15 + 25.",
+      "detailKo": "C40이 C15 xanthoxin과 C25 apo-aldehyde(C25H34O3)로 절단됩니다. 탄소 수는 40 = 15 + 25입니다.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/9188535/",
+      "coproduct": {
+        "name": "(3S,5R,6S)-5,6-epoxy-3-hydroxy-5,6-dihydro-12′-apo-β-caroten-12′-al",
+        "shortName": "C25 apo-aldehyde",
+        "carbons": 25,
+        "MolecularFormula": "C25H34O3",
+        "ChEBI": "CHEBI:34597",
+        "source": "https://www.rhea-db.org/rhea/16542"
+      }
+    },
+    {
+      "from": "xanthoxin",
+      "to": "aba-aldehyde",
+      "label": "ABA2 · NAD+-dependent conversion",
+      "labelKo": "ABA2 · NAD+ 의존적 전환",
+      "type": "step",
+      "detail": "Characterised conversion of xanthoxin to abscisic aldehyde. The net reaction oxidises the 4′-hydroxyl to a ketone and rearranges the epoxide to the unsaturated hydroxy ring.",
+      "detailKo": "규명된 xanthoxin → abscisic aldehyde 순전환으로 4′-OH의 ketone 산화와 epoxide 재배열을 포함합니다.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/12172025/"
+    },
+    {
+      "from": "aba-aldehyde",
+      "to": "abscisic-acid",
+      "label": "AAO3 · aldehyde oxidation",
+      "labelKo": "AAO3 · aldehyde 산화",
+      "type": "step",
+      "detail": "Aldehyde oxidation gives natural (+)-ABA. This is an aldehyde-oxidase reference stage, not a P450/CPR reaction.",
+      "detailKo": "Aldehyde 산화로 천연 (+)-ABA가 형성됩니다. Aldehyde oxidase 참고 반응이며 P450/CPR 반응이 아닙니다.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/11050171/"
+    }
+  ]
+}

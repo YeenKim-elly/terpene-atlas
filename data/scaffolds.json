@@ -1035,5 +1035,157 @@
         "Carotenoid 절단 → ABA"
       ]
     }
+  },
+  {
+    "id": "apo-retinoid-framework",
+    "name": "Retinoid C20 · β-ring framework",
+    "ko": "레티노이드 C20 · β-고리 골격",
+    "query": "apo retinoid framework",
+    "referenceKind": "cleavage-framework",
+    "family": "apo",
+    "skeleton": 20,
+    "carbons": 20,
+    "originSkeleton": 40,
+    "category": "Apocarotenoid framework",
+    "CID": null,
+    "exampleCID": 638015,
+    "exampleId": "retinal",
+    "exampleName": "all-trans-Retinal",
+    "structureScope": "framework-example",
+    "framework": true,
+    "schematic": true,
+    "MolecularFormula": "C20H28O",
+    "SMILES": "CC1=C(C(CCC1)(C)C)/C=C/C(=C/C=C/C(=C/C=O)/C)/C",
+    "image": "assets/structures/framework-apo-retinoid-framework.svg",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/638015",
+    "structureSource": "https://pubchem.ncbi.nlm.nih.gov/compound/638015",
+    "note": "The exact all-trans retinal reference illustrates a six-membered β-type ring and a C20 conjugated-chain framework. Retinol and retinoic acid retain this carbon connectivity while changing the terminal oxidation state. The highlighted carbons show the real molecule; oxygen and double-bond geometry remain visible. This is not a separate saturated precursor or a new framework for each oxidation variant.",
+    "noteKo": "실제 all-trans-retinal을 예로 든 6원 β형 고리와 C20 공액 사슬 골격입니다. Retinol과 retinoic acid는 말단 산화 상태가 달라도 같은 탄소 연결성을 유지합니다. 실제 분자의 탄소를 강조하며 산소와 이중결합 배열도 그대로 표시합니다. 별도의 포화 전구체나 산화 상태별 새로운 골격을 뜻하지 않습니다.",
+    "aliases": [
+      "apo retinoid framework",
+      "Retinoid C20 · β-ring framework",
+      "레티노이드 C20 · β-고리 골격"
+    ],
+    "pathwayLink": {
+      "graph": "apocarotenoids",
+      "label": [
+        "Cleavage branches",
+        "절단 분기"
+      ]
+    }
+  },
+  {
+    "id": "apo-ionone-framework",
+    "name": "Ionone C13 · β-ring framework",
+    "ko": "아이오논 C13 · β-고리 골격",
+    "query": "apo ionone framework",
+    "referenceKind": "cleavage-framework",
+    "family": "apo",
+    "skeleton": 13,
+    "carbons": 13,
+    "originSkeleton": 40,
+    "category": "Apocarotenoid framework",
+    "CID": null,
+    "exampleCID": 638014,
+    "exampleId": "beta-ionone",
+    "exampleName": "(E)-β-Ionone",
+    "structureScope": "framework-example",
+    "framework": true,
+    "schematic": true,
+    "MolecularFormula": "C13H20O",
+    "SMILES": "CC1=C(C(CCC1)(C)C)/C=C/C(=O)C",
+    "image": "assets/structures/framework-apo-ionone-framework.svg",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/638014",
+    "structureSource": "https://pubchem.ncbi.nlm.nih.gov/compound/638014",
+    "note": "The selected (E)-β-ionone illustrates a six-membered β-type ring with a short C13 enone side chain. The highlight follows its actual carbon framework and retains the ketone and E geometry. Its C13 cleavage framework is distinct from the C20 retinoid reference despite the related ring end group.",
+    "noteKo": "선택한 (E)-β-ionone은 6원 β형 고리와 짧은 enone 곁사슬을 가진 C13 골격의 예입니다. 실제 탄소 골격을 강조하며 케톤과 E 배열도 유지합니다. 고리 말단이 유사해도 C13 절단 골격은 C20 레티노이드 예시와 구분됩니다.",
+    "aliases": [
+      "apo ionone framework",
+      "Ionone C13 · β-ring framework",
+      "아이오논 C13 · β-고리 골격"
+    ],
+    "pathwayLink": {
+      "graph": "apocarotenoids",
+      "label": [
+        "Cleavage branches",
+        "절단 분기"
+      ]
+    }
+  },
+  {
+    "id": "apo-cyclocitral-framework",
+    "name": "Cyclocitral C10 · ring framework",
+    "ko": "사이클로시트랄 C10 · 고리 골격",
+    "query": "apo cyclocitral framework",
+    "referenceKind": "cleavage-framework",
+    "family": "apo",
+    "skeleton": 10,
+    "carbons": 10,
+    "originSkeleton": 40,
+    "category": "Apocarotenoid framework",
+    "CID": null,
+    "exampleCID": 9895,
+    "exampleId": "beta-cyclocitral",
+    "exampleName": "β-Cyclocitral",
+    "structureScope": "framework-example",
+    "framework": true,
+    "schematic": true,
+    "MolecularFormula": "C10H16O",
+    "SMILES": "CC1=C(C(CCC1)(C)C)C=O",
+    "image": "assets/structures/framework-apo-cyclocitral-framework.svg",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/9895",
+    "structureSource": "https://pubchem.ncbi.nlm.nih.gov/compound/9895",
+    "note": "The actual β-cyclocitral molecule illustrates a C10 six-membered-ring apocarotenoid framework with a formyl substituent. HTCC, picrocrocin and safranal provide hydroxylation, glycosylation and unsaturation variants of this carbon core. The aldehyde is retained in the drawing; the reference does not identify these molecules as direct GPP cyclase products.",
+    "noteKo": "실제 β-cyclocitral은 formyl 치환기가 있는 C10 6원 고리 아포카로티노이드 골격의 예입니다. HTCC·picrocrocin·safranal은 이 탄소 골격의 하이드록실화·배당화·불포화도 변형을 보여줍니다. 그림에 알데하이드를 유지하며, 이 분자들을 GPP 고리화 효소의 직접 생성물로 표시하지 않습니다.",
+    "aliases": [
+      "apo cyclocitral framework",
+      "Cyclocitral C10 · ring framework",
+      "사이클로시트랄 C10 · 고리 골격"
+    ],
+    "pathwayLink": {
+      "graph": "apocarotenoids",
+      "label": [
+        "Cleavage branches",
+        "절단 분기"
+      ]
+    }
+  },
+  {
+    "id": "apo-crocetin-framework",
+    "name": "Crocetin C20 · acyclic framework",
+    "ko": "크로세틴 C20 · 비고리 골격",
+    "query": "apo crocetin framework",
+    "referenceKind": "cleavage-framework",
+    "family": "apo",
+    "skeleton": 20,
+    "carbons": 20,
+    "originSkeleton": 40,
+    "category": "Apocarotenoid framework",
+    "CID": null,
+    "exampleCID": 5281232,
+    "exampleId": "crocetin",
+    "exampleName": "all-trans-Crocetin",
+    "structureScope": "framework-example",
+    "framework": true,
+    "schematic": true,
+    "MolecularFormula": "C20H24O4",
+    "SMILES": "C/C(=C\\C=C\\C=C(\\C=C\\C=C(\\C(=O)O)/C)/C)/C=C/C=C(/C(=O)O)\\C",
+    "image": "assets/structures/framework-apo-crocetin-framework.svg",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/compound/5281232",
+    "structureSource": "https://pubchem.ncbi.nlm.nih.gov/compound/5281232",
+    "note": "The exact all-trans crocetin reference illustrates a linear C20 apocarotenoid dicarboxylic acid, with no ring. Crocetin dialdehyde retains the carbon connectivity; crocin I esterifies both ends with sugar chains while retaining the C20 core. The seven E double bonds and acid groups remain visible, rather than being replaced with a fictitious saturated parent.",
+    "noteKo": "실제 all-trans-crocetin은 고리가 없는 선형 C20 아포카로티노이드 다이카복실산 골격의 예입니다. Crocetin dialdehyde는 같은 탄소 연결성을 유지하며, crocin I는 C20 골격을 유지한 채 양쪽 말단이 당 사슬로 에스터화됩니다. 가상의 포화 모체로 바꾸지 않고 일곱 E 이중결합과 산 작용기를 그대로 표시합니다.",
+    "aliases": [
+      "apo crocetin framework",
+      "Crocetin C20 · acyclic framework",
+      "크로세틴 C20 · 비고리 골격"
+    ],
+    "pathwayLink": {
+      "graph": "apocarotenoids",
+      "label": [
+        "Cleavage branches",
+        "절단 분기"
+      ]
+    }
   }
 ]

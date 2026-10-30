@@ -348,5 +348,42 @@
       "cholesteryl ester hydrolase",
       "에스터 가수분해효소"
     ]
+  },
+  "bco1": {
+    "name": "β-Carotene 15,15′-dioxygenase · BCO1",
+    "ko": "β-Carotene 15,15′-dioxygenase · BCO1",
+    "aliases": [
+      "bco1",
+      "bcmo1",
+      "beta carotene 15 15 dioxygenase",
+      "beta carotene dioxygenase",
+      "central cleavage dioxygenase"
+    ]
+  },
+  "ccd": {
+    "name": "Plant CCD1 / CCD2 / CCD4",
+    "ko": "식물 CCD1 / CCD2 / CCD4",
+    "aliases": [
+      "ccd",
+      "ccd1",
+      "ccd2",
+      "ccd4",
+      "csccd2",
+      "ntccd1",
+      "ntccd1 3",
+      "carotenoid cleavage dioxygenase",
+      "carotenoid 절단효소"
+    ]
+  },
+  "retinalReductase": {
+    "name": "AKR retinal reductase",
+    "ko": "AKR retinal 환원효소",
+    "aliases": [
+      "retinal reductase",
+      "retinaldehyde reductase",
+      "aldose reductase",
+      "akr",
+      "retinal 환원효소"
+    ]
   }
 }

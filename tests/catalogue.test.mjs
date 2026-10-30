@@ -6,7 +6,7 @@ import {allReferenceRecords} from '../src/lib/catalogue.js';
 const data = await loadTestCatalogue();
 test('curated records have distinct IDs, sources and local illustrations', async () => {
   assert.deepEqual([data.molecules.length,data.precursors.length,data.scaffolds.length,
-    data.motifs.length,data.reactions.length,data.comparisons.length], [111,17,42,37,59,18]);
+    data.motifs.length,data.reactions.length,data.comparisons.length], [122,17,46,47,67,18]);
   const records = allReferenceRecords();
   assert.equal(new Set(records.map(record => record.id)).size, records.length);
   for (const record of records) {

@@ -9,7 +9,7 @@ test('C10/C15/C40 guides retain chemical and structural boundaries',()=>{
 
 const records=new Map([...molecules,...precursors,...scaffolds].map(r=>[r.id,r]));
 const frameworks=scaffolds.filter(r=>r.framework);
-assert.equal(frameworks.length,23);
+assert.equal(frameworks.length,27);
 for(const frame of frameworks){const example=records.get(frame.exampleId);assert.ok(example,frame.id);assert.equal(frame.CID,null);assert.equal(frame.structureScope,'framework-example');assert.equal(frame.MolecularFormula,example.MolecularFormula);assert.equal(frame.exampleCID,example.CID);assert.ok(frame.note&&frame.noteKo&&frame.structureSource);}
 for(const [id,guide]of Object.entries(guides)){
  const graph=graphs[guide.targetGraph||id],nodeIds=new Set(graph.nodes.map(n=>n[0]));

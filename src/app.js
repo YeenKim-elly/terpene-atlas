@@ -1,3 +1,4 @@
+import {bindStudioShell,closeStudioNavigation} from './components/studio-navigation.js';
 import {loadCatalogue, catalogue} from './lib/catalogue.js';
 import {getLanguage, setLanguage, t} from './lib/i18n.js';
 import {shellHTML, navigation} from './components/shell.js';
@@ -17,6 +18,7 @@ const route = () => {
 };
 
 function navigate(next) {
+  closeStudioNavigation();
   if (!allowedViews.has(next)) return;
   if (view === 'practice' && next !== 'practice') resetPractice();
   closeModal();
@@ -36,6 +38,7 @@ function render() {
   document.documentElement.lang = getLanguage();
   document.title = 'Terpene Atlas · ' + t(...navigation.find(([id]) => id === view)[2]);
   app.innerHTML = shellHTML(view);
+  bindStudioShell();
   const root = document.querySelector('#page-root');
   if (view === 'practice') renderPractice(root, {openRecord: detail});
   else if (view === 'library') renderLibrary(root, {openRecord: detail, goMap: id => { selectStructureGraph(id); navigate('web'); }, goCompare: id => {

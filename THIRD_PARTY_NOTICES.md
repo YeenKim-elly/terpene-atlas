@@ -47,9 +47,13 @@ or adapting these source-derived panels.
 
 ## Interface fonts
 
-The stylesheet optionally requests DM Sans and Manrope from Google Fonts.
+The stylesheets optionally request Inter, Instrument Serif, JetBrains Mono,
+DM Sans and Manrope from Google Fonts.
 The application falls back to system fonts when the service is unavailable.
 Font project information and licence details:
+https://fonts.google.com/specimen/Inter
+https://fonts.google.com/specimen/Instrument+Serif
+https://fonts.google.com/specimen/JetBrains+Mono
 https://fonts.google.com/specimen/DM+Sans
 https://fonts.google.com/specimen/Manrope
 
