@@ -4,9 +4,9 @@ const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const stateByRoot=new WeakMap();
 export const scaffoldFamilies=[
  {id:'mono',label:['C10 · Monoterpenoids','C10 · 모노테르페노이드'],map:'monoterpenes',note:['Acyclic, monocyclic and bridged C10 frameworks.','비고리형·단일 고리·가교형 C10 골격.']},
- {id:'tetra',label:['C40 · Carotenoids','C40 · 카로티노이드'],map:'carotenoid-frameworks',note:['Full C40 end-group combinations, plus labelled end-ring fragments.','전체 C40 말단 조합과 구분 표시한 말단 고리 부분 모형.']},
  {id:'sesqui',label:['C15 · Sesquiterpenoids','C15 · 세스퀴테르페노이드'],map:'sesquiterpenes',note:['Open chains, macrocycles and bicyclic C15 frameworks.','열린 사슬·큰 고리·이중 고리 C15 골격.']},
  {id:'di',label:['C20 · Diterpenoids','C20 · 디테르페노이드'],map:'diterpenes',note:['Labdane, halimane, clerodane and qualified relative models.','Labdane·halimane·clerodane과 범위를 명시한 상대배열 모형.']},
+ {id:'tetra',label:['C40 · Carotenoids','C40 · 카로티노이드'],map:'carotenoid-frameworks',note:['Full C40 end-group combinations, plus labelled end-ring fragments.','전체 C40 말단 조합과 구분 표시한 말단 고리 부분 모형.']},
  {id:'rings',label:['Ring systems','고리 구조'],note:['Shared topologies; a ring motif alone does not assign a terpene family.','여러 계열이 공유하는 고리 형태이며 고리 모티프만으로 terpene 계열을 정하지 않습니다.']}
 ];
 export function scaffoldFamily(record){

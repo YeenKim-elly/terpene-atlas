@@ -454,7 +454,7 @@
       {
         "framework": "halimane",
         "input": "GGPP",
-        "enzyme": "HPS · TPS II",
+        "enzyme": "MtHPS / Rv3377c · TPS II",
         "examples": [
           "hpp"
         ]
@@ -462,7 +462,7 @@
       {
         "framework": "clerodane",
         "input": "GGPP",
-        "enzyme": "KPS / characterised CLPP-forming TPS II",
+        "enzyme": "SdKPS / PvCPS1 · TPS II",
         "examples": [
           "kpp",
           "clpp-cis-trans",
@@ -547,7 +547,7 @@
       {
         "framework": "halimane",
         "input": "GGPP",
-        "enzyme": "HPS · TPS II",
+        "enzyme": "MtHPS / Rv3377c · TPS II",
         "examples": [
           "hpp"
         ]
@@ -555,7 +555,7 @@
       {
         "framework": "clerodane",
         "input": "GGPP",
-        "enzyme": "KPS / characterised CLPP-forming TPS II",
+        "enzyme": "SdKPS / PvCPS1 · TPS II",
         "examples": [
           "kpp",
           "clpp-cis-trans",

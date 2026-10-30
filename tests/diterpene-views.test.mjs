@@ -47,3 +47,25 @@ test('the expanded pathway view is distinct from the compact framework view',()=
  assert.ok(!full.edges.some(e=>/borapetoside|tinosporol/.test(e.to)&&e.type==='step'));
  assert.equal(data.familyGuides['diterpene-pathway'].targetGraph,'diterpenes');
 });
+
+test('C20 cascade shows ordered intermediates, enzyme evidence and a working mechanism link',async()=>{
+ const {RenderBoundary}=await import('./support/render-boundary.mjs');
+ const {renderClassIICascade,classIIEnzymeExamples}=await import('../src/components/rearrangements.js');
+ const root=new RenderBoundary();let opened=0;
+ renderClassIICascade(root,{lang:'en',openMechanism:()=>opened++});
+ assert.deepEqual(root.querySelectorAll('[data-cascade-stage]').map(n=>n.dataset.cascadeStage),['labdane','halimane','clerodane']);
+ assert.equal(root.querySelectorAll('[data-class-ii-enzyme]').length,4);
+ assert.match(root.innerHTML,/enzyme-bound/);
+ assert.match(root.innerHTML,/not separate enzymes/);
+ for(const enzyme of classIIEnzymeExamples){assert.ok(enzyme.source.startsWith('https://'));assert.ok(root.innerHTML.includes(enzyme.enzyme));}
+ root.querySelector('[data-cascade-open]').click();assert.equal(opened,1);
+ renderClassIICascade(root,{lang:'ko',openMechanism:()=>opened++});
+ assert.match(root.innerHTML,/번호가 표시된/);
+ root.querySelector('[data-cascade-open]').click();assert.equal(opened,2);
+ for(const id of ['diterpenes','diterpene-pathway']){
+  const graph=data.graphs[id];
+  assert.match(graph.edges.find(e=>e.to==='hpp'&&e.from==='ggpp').label,/MtHPS/);
+  assert.match(graph.edges.find(e=>e.to==='kpp'&&e.from==='ggpp').label,/SdKPS/);
+  assert.match(graph.edges.find(e=>e.to==='clpp-variants'&&e.from==='ggpp').label,/PvCPS1/);
+ }
+});

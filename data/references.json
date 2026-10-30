@@ -178,5 +178,10 @@
     "name": "Taxol late-pathway elucidation, 2025",
     "url": "https://www.nature.com/articles/s44160-025-00800-z",
     "detail": "Primary pathway study supporting the condensed taxadiene-to-paclitaxel reference branch."
+  },
+  {
+    "name": "MtHPS · Class II rearrangement and catalytic termination",
+    "detail": "Primary enzyme characterisation · halimadienyl diphosphate synthase Rv3377c.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36281298/"
   }
 ]

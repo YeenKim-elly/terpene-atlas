@@ -1,3 +1,4 @@
+import {renderClassIICascade} from './rearrangements.js';
 
 import {icon as I} from './icons.js';
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -8,6 +9,7 @@ export function renderFamilyGuide(root,guide,ctx){
   const framework=ctx.records.get(branch.framework);
   return '<button class="framework-branch" data-framework-jump="'+branch.framework+'"><span class="framework-input">'+esc(branch.input)+'</span><span class="framework-enzyme">'+esc(branch.enzyme)+'</span><strong>'+esc(framework.name)+'</strong><span class="framework-examples">'+branch.examples.map(id=>esc(ctx.records.get(id)?.name||id)).join(' · ')+'</span><span class="framework-locate">'+t('Locate framework','지도에서 보기')+I('arrow')+'</span></button>';
  }).join('')+'</div>';
+ if(guide.family==='di'){const cascade=document.createElement('div');root.append(cascade);renderClassIICascade(cascade,ctx);}
  root.querySelectorAll('[data-framework-jump]').forEach(button=>button.onclick=()=>ctx.jump(button.dataset.frameworkJump));
 }
 export function renderFamilyGuideFooter(root,guide,ctx){

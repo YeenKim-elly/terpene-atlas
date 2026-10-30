@@ -119,18 +119,18 @@
     {
       "from": "ggpp",
       "to": "hpp",
-      "label": "HPS · TPS II",
+      "label": "MtHPS · TPS II",
       "type": "step",
-      "detail": "Produces halimadienyl/tuberculosinyl diphosphate. The HPP stereochemistry and double-bond positions must be stated.",
-      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/"
+      "detail": "MtHPS (Rv3377c) from Mycobacterium tuberculosis converts GGPP to halima-5,13-dienyl (tuberculosinyl) diphosphate. Its class II cascade includes hydride and methyl rearrangements before termination; HPP is not made by a separate enzyme acting on an isolated saturated labdane scaffold.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/36281298/"
     },
     {
       "from": "ggpp",
       "to": "kpp",
-      "label": "KPS · TPS II",
+      "label": "SdKPS · TPS II",
       "type": "step",
-      "detail": "Produces a specific KPP/CLPP stereoisomer. It does not stand for every cis/trans clerodane variant.",
-      "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/28.html"
+      "detail": "SdKPS from Salvia divinorum converts GGPP into the defined (−)-KPP stereoisomer through a class II cyclisation/rearrangement cascade. It is one characterised clerodane-forming enzyme, not a Tinospora enzyme assignment or the source of every clerodane class.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5441855/"
     },
     {
       "from": "ggpp",
@@ -151,9 +151,9 @@
     {
       "from": "ggpp",
       "to": "clpp-variants",
-      "label": "other CLPP configurations · TPS II",
+      "label": "PvCPS1 / variants · TPS II",
       "type": "step",
-      "detail": "Alternative characterized class II products include cis-trans and cis-cis CLPP configurations. A specific downstream TPS pairing must be established for each precursor; the pictured KPP example is not universal.",
+      "detail": "PvCPS1 from Panicum virgatum produces cis-trans-CLPP from GGPP. Tested point variants yield cis-cis-CLPP. The relative molecular models shown here do not assign the full absolute stereochemistry of those experimentally characterised products.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/30393911/"
     },
     {

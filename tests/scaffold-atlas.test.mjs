@@ -9,8 +9,7 @@ test('the scaffold overview shows C10 and C40 directly with every reference',()=
  const root=new RenderBoundary();let opened,map;
  renderScaffoldAtlas(root,{records:data.scaffolds,lang:'en',open:r=>opened=r,goMap:id=>map=id});
  assert.equal(root.querySelectorAll('[data-detail]').length,33);
- assert.ok(root.innerHTML.indexOf('data-scaffold-group="mono"')<root.innerHTML.indexOf('data-scaffold-group="di"'));
- assert.ok(root.innerHTML.indexOf('data-scaffold-group="tetra"')<root.innerHTML.indexOf('data-scaffold-group="di"'));
+ assert.deepEqual(root.querySelectorAll('[data-scaffold-group]').map(n=>n.dataset.scaffoldGroup),['mono','sesqui','di','tetra','rings']);
  for(const id of ['mono-acyclic','p-menthane','pinane','bornane','carotenoid-psi-psi','carotenoid-beta-beta','carotenoid-beta-epsilon']){
   const card=root.querySelector('[data-detail="'+id+'"]');assert.ok(card,id);card.click();assert.equal(opened.id,id);
  }

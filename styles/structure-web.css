@@ -129,3 +129,25 @@
 @media(max-width:470px){.scaffold-family-group{padding:13px}.scaffold-card-grid,.is-filtered .scaffold-card-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.scaffold-card-image{height:105px;padding:6px}.scaffold-card-copy{padding:8px}.scaffold-card-copy h4{font-size:12px}.scaffold-group-heading{display:block}.scaffold-group-heading>button{max-width:none;margin-top:10px}}
 
 .tps-reference-details>summary{cursor:pointer;font-size:13px;line-height:1.7;font-weight:600;color:#4a663d}.tps-reference-details[open]>summary{margin-bottom:18px}.tps-reference-details>h2{margin-top:18px}
+
+
+/* Class II mechanism remains visible from both C20 map views. */
+.class-ii-cascade{margin:20px 0 0;padding:20px;border:1px solid #d9e2cd;border-radius:12px;background:#f8faf4}
+.class-ii-cascade-heading{display:flex;justify-content:space-between;align-items:start;gap:18px}
+.class-ii-cascade-heading h3{font:500 21px/1.35 Georgia,serif;color:#375832;margin:8px 0 0}
+.class-ii-cascade-heading>span{font-size:10px;line-height:1.7;color:#7e8d71;max-width:205px;text-align:right}
+.class-ii-cascade-track{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1fr);gap:12px;align-items:center;margin:18px 0}
+.class-ii-cascade-track>[data-cascade-stage]{border:1px solid #d9e2cf;border-radius:9px;background:#fff;padding:14px 12px;min-width:0}
+.class-ii-cascade-track strong{display:block;color:#45623b;font-size:12px;line-height:1.6}
+.class-ii-cascade-track>[data-cascade-stage]>span{display:block;font-size:10px;color:#8a967c;margin-top:4px}
+.class-ii-shift{display:flex;flex-direction:column;align-items:center;gap:3px;color:#957442}
+.class-ii-shift span{font-size:9px;white-space:nowrap}.class-ii-shift b{font-size:22px;font-weight:400}
+.class-ii-scope{font-size:11px;line-height:1.85;color:var(--muted);margin:0}
+.class-ii-enzyme-examples{margin-top:18px}.class-ii-enzyme-examples>h3{font-size:12px;font-weight:600;color:#536b47;margin:0 0 10px}
+.class-ii-enzyme-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.class-ii-enzyme-grid article{padding:12px 14px;border:1px solid #e0e6d7;border-radius:8px;background:#fff;min-width:0}
+.class-ii-enzyme-grid article>span{font-size:9px;color:#8b977f;display:block;margin-bottom:5px}
+.class-ii-enzyme-grid strong{font-size:11px;line-height:1.6;color:#46603b}.class-ii-enzyme-grid strong b{color:#a2875e;font-weight:400}
+.class-ii-enzyme-grid p{font-size:10px;line-height:1.7;color:var(--muted);margin:5px 0}.class-ii-enzyme-grid a{font-size:9px;color:#698054}
+.class-ii-mechanism-link{margin-top:16px;font-size:11px}
+@media(max-width:650px){.class-ii-cascade{padding:15px}.class-ii-cascade-heading{display:block}.class-ii-cascade-heading>span{display:block;text-align:left;max-width:none;margin-top:8px}.class-ii-cascade-track{gap:7px;grid-template-columns:1fr}.class-ii-cascade-track>[data-cascade-stage]{text-align:center}.class-ii-shift{flex-direction:row;justify-content:center;gap:12px}.class-ii-shift b{transform:rotate(90deg)}.class-ii-enzyme-grid{grid-template-columns:1fr}}

@@ -103,7 +103,7 @@ if(submaps){
  root.querySelector('.web-tabs').after(sub);sub.querySelectorAll('[data-web-map]').forEach(b=>b.onclick=()=>{active=b.dataset.webMap;selected='';renderStructureWeb(root,ctx);});
 }
 if(familyGuides[active]){
- const guide=document.createElement('div'),footer=document.createElement('div'),guideCtx={lang:ctx.lang,records,comparisons:comparisonPairs,jump:showFramework,compare:id=>ctx.openCompare?.(id)};
+ const guide=document.createElement('div'),footer=document.createElement('div'),guideCtx={lang:ctx.lang,records,comparisons:comparisonPairs,jump:showFramework,compare:id=>ctx.openCompare?.(id),openMechanism:()=>{active='diterpene-rings';selected='';renderStructureWeb(root,ctx);root.querySelector('.rearrangement-panel')?.scrollIntoView?.({behavior:'smooth',block:'start'});}};
  root.querySelector('.web-intro').after(guide);stage.after(footer);renderFamilyGuide(guide,familyGuides[active],guideCtx);renderFamilyGuideFooter(footer,familyGuides[active],guideCtx);
 }
 if(active==='scaffolds'){
