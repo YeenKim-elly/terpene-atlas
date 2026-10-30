@@ -118,7 +118,7 @@ if(active==='diterpene-rings'){
  root.querySelector('.web-intro p').textContent=t('Read the rearrangement mechanism alongside the separate structural classification map. Cis/trans ring fusion and the second clerodane relationship are independent.','재배열 반응 기작과 구조 분류 지도를 구분해 살펴보세요. Cis/trans 고리 융합과 clerodane의 두 번째 상대배열 관계는 독립적입니다.');
  const panel=document.createElement('div');stage.before(panel);renderRearrangements(panel,ctx.lang);renderClerodaneClasses(root,ctx);
 }
- if(active==='diterpenes')renderTpsPairs(root,ctx);
+ if(active==='diterpene-pathway')renderTpsPairs(root,ctx);
 }
 
 

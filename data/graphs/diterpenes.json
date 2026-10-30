@@ -1,26 +1,22 @@
 {
   "title": [
-    "GGPP branches into defined C20 precursors and frameworks.",
-    "GGPP에서 입체배열이 정해진 C20 전구체와 골격으로."
+    "C20 precursor branches and their framework families.",
+    "C20 전구체 분기와 골격 계열."
   ],
   "intro": [
-    "Follow class II products, match compatible class I enzymes and locate their precursor frameworks. Use the second view for C20 ring fusion, rearrangements and clerodane relative classes.",
-    "Class II 산물과 기질이 맞는 class I 효소를 따라 전구체 골격을 살펴보세요. C20 고리 융합·재배열·clerodane 상대배열은 두 번째 보기에서 확인합니다."
+    "A compact overview of defined CPP, HPP and CLPP/KPP precursor families. Dotted connections classify their carbon frameworks. Open Full pathway for compatible class I products and downstream tailoring.",
+    "CPP·HPP·CLPP/KPP 전구체 계열을 간단히 살펴보는 지도입니다. 점선은 탄소 골격을 분류합니다. Full pathway에서 기질이 맞는 class I 산물과 후속 치환 단계를 확인하세요."
   ],
   "width": 2230,
-  "height": 1790,
+  "height": 1350,
   "layers": [
     {
-      "y": 200,
-      "label": "CLASS II TPS · protonation-initiated cyclization"
+      "y": 250,
+      "label": "DEFINED C20 DIPHOSPHATE PRECURSORS"
     },
     {
-      "y": 535,
-      "label": "CLASS I TPS REFERENCES / DISTINGUISH ANALYTICAL TREATMENT"
-    },
-    {
-      "y": 1400,
-      "label": "PRECURSOR FRAMEWORKS · structural membership"
+      "y": 960,
+      "label": "FRAMEWORK MEMBERSHIP · structural classification"
     }
   ],
   "nodes": [
@@ -35,104 +31,64 @@
       25
     ],
     [
+      "nnpp",
+      1900,
+      25
+    ],
+    [
       "cpp",
       40,
-      300
+      350
     ],
     [
       "ent-cpp",
       350,
-      300
+      350
     ],
     [
       "syn-cpp",
       650,
-      300
+      350
     ],
     [
       "hpp",
       960,
-      300
+      350
     ],
     [
       "kpp",
       1270,
-      300
-    ],
-    [
-      "miltiradiene",
-      40,
-      670
-    ],
-    [
-      "ent-kaurene",
-      350,
-      670
-    ],
-    [
-      "stemodene",
-      650,
-      670
-    ],
-    [
-      "isotuberculosinol",
-      960,
-      670
-    ],
-    [
-      "kolavelool",
-      1270,
-      670
-    ],
-    [
-      "steviol",
-      350,
-      1020
-    ],
-    [
-      "salvinorin-a",
-      1270,
-      1020
-    ],
-    [
-      "clerodane",
-      1580,
-      1500
+      350
     ],
     [
       "clpp-variants",
       1580,
-      300
-    ],
-    [
-      "nnpp",
-      1900,
-      300
+      350
     ],
     [
       "clpp-cis-trans",
       1580,
-      670
+      700
     ],
     [
       "clpp-cis-cis",
       1900,
-      670
-    ],
-    [
-      "kolavenol",
-      1580,
-      1120
+      700
     ],
     [
       "labdane",
       350,
-      1500
+      1050
     ],
     [
       "halimane",
       960,
-      1500
+      1050
+    ],
+    [
+      "clerodane",
+      1580,
+      1050
     ]
   ],
   "edges": [
@@ -177,68 +133,12 @@
       "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/28.html"
     },
     {
-      "from": "cpp",
-      "to": "miltiradiene",
-      "label": "SmKSL1 · TPS I",
-      "type": "step",
-      "detail": "Characterized Salvia miltiorrhiza class I enzyme converts normal/(+)-CPP to miltiradiene. This is an abietane-related C20 product.",
-      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4634056/"
-    },
-    {
-      "from": "ent-cpp",
-      "to": "ent-kaurene",
-      "label": "AtKS / SrKS · TPS I",
-      "type": "step",
-      "detail": "ent-Kaurene synthases ionize ent-CPP and form a tetracyclic C20 skeleton. This is a specific precursor–enzyme match.",
-      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3237789/"
-    },
-    {
-      "from": "syn-cpp",
-      "to": "stemodene",
-      "label": "OsKSL11 · TPS I",
-      "type": "step",
-      "detail": "Rice stemod-13(17)-ene synthase (historically OsKSL11; also OsKSL8i) uses syn-CPP. It is an example of a class I step after syn-CPS.",
-      "source": "https://iubmb.qmul.ac.uk/enzyme/EC4/2/3/34.html"
-    },
-    {
-      "from": "hpp",
-      "to": "isotuberculosinol",
-      "label": "SsSS · TPS I · tested pairing",
-      "type": "step",
-      "detail": "In the characterized combinatorial system, Salvia sclarea sclareol synthase accepts tuberculosinyl diphosphate and yields (13S)-isotuberculosinol. This is an experimentally demonstrated cross-species pairing, not a claim that SsSS is the native mycobacterial enzyme. The drawing leaves C13 unassigned.",
-      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/"
-    },
-    {
-      "from": "kpp",
-      "to": "kolavelool",
-      "label": "SsSS · TPS I · tested pairing",
-      "type": "step",
-      "detail": "Sclareol synthase SsSS accepts compatible KPP in characterized combinatorial systems and yields kolavelool. This tertiary alcohol differs from kolavenol. The generic PubChem drawing leaves stereochemistry unassigned; the cited experiment specifies the product.",
-      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/"
-    },
-    {
       "from": "ggpp",
       "to": "taxadiene",
       "label": "Taxadiene synthase · TPS I",
       "type": "step",
       "detail": "A direct GGPP-using class I cyclase. Not every diterpene pathway requires a class II step first.",
       "source": "https://iubmb.qmul.ac.uk/enzyme/EC4/2/3/17.html"
-    },
-    {
-      "from": "ent-kaurene",
-      "to": "steviol",
-      "label": "multiple CYP oxidations",
-      "type": "summary",
-      "detail": "Several oxidation steps, not a single enzyme reaction.",
-      "source": ""
-    },
-    {
-      "from": "kpp",
-      "to": "salvinorin-a",
-      "label": "Salvia pathway · multiple steps",
-      "type": "summary",
-      "detail": "A separate route from KPP through multiple reactions. Kolavelool from the SsSS test pairing is not asserted to be an intermediate in salvinorin A biosynthesis.",
-      "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/28.html"
     },
     {
       "from": "kpp",
@@ -286,14 +186,6 @@
       "type": "summary",
       "detail": "NNPP changes product stereochemistry in studied PvCPS1 systems; it does not identify a native Tinospora route.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/30393911/"
-    },
-    {
-      "from": "kpp",
-      "to": "kolavenol",
-      "label": "Added phosphatase - assay",
-      "type": "summary",
-      "detail": "Analytical treatment in the cited SdKPS study. Alcohol detection after phosphatase does not prove a native class I reaction. Kolavenol differs from the tertiary alcohol kolavelool.",
-      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5441855/"
     },
     {
       "from": "cpp",

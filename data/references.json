@@ -173,5 +173,10 @@
     "name": "IUBMB · Lycopene ε-cyclase",
     "url": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/18.html",
     "detail": "Epsilon end-group formation with enzyme-dependent specificity."
+  },
+  {
+    "name": "Taxol late-pathway elucidation, 2025",
+    "url": "https://www.nature.com/articles/s44160-025-00800-z",
+    "detail": "Primary pathway study supporting the condensed taxadiene-to-paclitaxel reference branch."
   }
 ]

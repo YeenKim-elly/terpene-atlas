@@ -503,5 +503,99 @@
       "The labdane, halimane and clerodane drawings are parent-model references with record-specific stereochemistry. Dotted links classify precursor frameworks; they do not add a saturated intermediate or establish a reaction between the parent models.",
       "Labdane·halimane·clerodane 그림은 기록별 입체배열을 유지한 모체 골격 모형입니다. 점선은 전구체 골격을 분류하며 포화 중간체나 모체 모형 사이의 반응을 추가하는 것이 아닙니다."
     ]
+  },
+  "diterpene-pathway": {
+    "family": "di",
+    "title": [
+      "From GGPP to C20 precursor frameworks",
+      "GGPP에서 C20 전구체 골격으로"
+    ],
+    "intro": [
+      "Select a framework to locate it in the map.",
+      "골격을 선택하면 지도에서 해당 골격을 찾습니다."
+    ],
+    "stages": [
+      [
+        "Precursor pool",
+        "전구체"
+      ],
+      [
+        "Product-forming enzymes",
+        "생성물 형성 효소"
+      ],
+      [
+        "Framework membership",
+        "골격 계열"
+      ]
+    ],
+    "frameworkIds": [
+      "labdane",
+      "halimane",
+      "clerodane"
+    ],
+    "branches": [
+      {
+        "framework": "labdane",
+        "input": "GGPP",
+        "enzyme": "CPS · TPS II · defined CPP stereoisomers",
+        "examples": [
+          "cpp",
+          "ent-cpp",
+          "syn-cpp"
+        ]
+      },
+      {
+        "framework": "halimane",
+        "input": "GGPP",
+        "enzyme": "HPS · TPS II",
+        "examples": [
+          "hpp"
+        ]
+      },
+      {
+        "framework": "clerodane",
+        "input": "GGPP",
+        "enzyme": "KPS / characterised CLPP-forming TPS II",
+        "examples": [
+          "kpp",
+          "clpp-cis-trans",
+          "clpp-cis-cis"
+        ]
+      }
+    ],
+    "comparisons": [
+      "cpp-ent",
+      "cpp-syn",
+      "ent-syn"
+    ],
+    "callouts": [
+      {
+        "title": [
+          "After TPS II: choose a compatible TPS I",
+          "TPS II 다음에는 기질이 맞는 TPS I"
+        ],
+        "text": [
+          "CPP stereoisomers, HPP and KPP are distinct substrates. Characterised pairings below show substrate-specific next steps; similar precursor formulas do not establish enzyme compatibility. Later class I products need not retain the same framework as their precursor.",
+          "CPP 입체이성질체·HPP·KPP는 서로 다른 기질입니다. 아래의 규명된 조합은 기질에 맞는 후속 단계를 보여주며, 분자식이 비슷해도 효소 호환성이 입증되는 것은 아닙니다. 후속 class I 산물의 골격이 전구체 골격과 항상 같지는 않습니다."
+        ],
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/"
+      },
+      {
+        "title": [
+          "A direct class I branch is also possible",
+          "Class I 직접 분기도 있습니다"
+        ],
+        "text": [
+          "The map includes GGPP-to-taxadiene as a direct class I example. The class II precursor branches shown here are not a required sequence for every diterpenoid.",
+          "지도에는 GGPP에서 taxadiene으로 가는 class I 직접 반응도 표시합니다. 여기에 보이는 class II 전구체 분기가 모든 diterpenoid의 필수 순서는 아닙니다."
+        ],
+        "source": "https://iubmb.qmul.ac.uk/enzyme/EC4/2/3/17.html"
+      }
+    ],
+    "modelNote": [
+      "The labdane, halimane and clerodane drawings are parent-model references with record-specific stereochemistry. Dotted links classify precursor frameworks; they do not add a saturated intermediate or establish a reaction between the parent models.",
+      "Labdane·halimane·clerodane 그림은 기록별 입체배열을 유지한 모체 골격 모형입니다. 점선은 전구체 골격을 분류하며 포화 중간체나 모체 모형 사이의 반응을 추가하는 것이 아닙니다."
+    ],
+    "targetGraph": "diterpenes"
   }
 }

@@ -1,0 +1,377 @@
+{
+  "title": [
+    "From GGPP to class I products and tailored diterpenoids.",
+    "GGPP에서 class I 산물과 치환된 diterpenoid까지."
+  ],
+  "intro": [
+    "Expanded, source-labelled reference routes. Follow class II and class I steps, later oxidation and glycosylation, and the taxane branch. Dashed arrows condense several reactions; tested cross-species TPS pairings and phosphatase assay readouts retain their stated scope.",
+    "출처를 붙인 확장 참고 경로입니다. Class II·class I 단계, 후속 산화·배당화와 taxane 가지를 따라가세요. 점선 화살표는 여러 반응을 요약하며 종간 TPS 조합과 phosphatase 분석 결과는 각 근거의 범위를 유지합니다."
+  ],
+  "width": 2460,
+  "height": 2070,
+  "layers": [
+    {
+      "y": 200,
+      "label": "CLASS II TPS · protonation-initiated cyclization"
+    },
+    {
+      "y": 535,
+      "label": "CLASS I TPS REFERENCES / DISTINGUISH ANALYTICAL TREATMENT"
+    },
+    {
+      "y": 940,
+      "label": "TAILORING AND ASSAY READOUTS · retain reaction / treatment scope"
+    },
+    {
+      "y": 1710,
+      "label": "PRECURSOR FRAMEWORKS · structural membership"
+    }
+  ],
+  "nodes": [
+    [
+      "ggpp",
+      650,
+      25
+    ],
+    [
+      "taxadiene",
+      2200,
+      25
+    ],
+    [
+      "cpp",
+      40,
+      300
+    ],
+    [
+      "ent-cpp",
+      350,
+      300
+    ],
+    [
+      "syn-cpp",
+      650,
+      300
+    ],
+    [
+      "hpp",
+      960,
+      300
+    ],
+    [
+      "kpp",
+      1270,
+      300
+    ],
+    [
+      "miltiradiene",
+      40,
+      670
+    ],
+    [
+      "ent-kaurene",
+      350,
+      670
+    ],
+    [
+      "stemodene",
+      650,
+      670
+    ],
+    [
+      "isotuberculosinol",
+      960,
+      670
+    ],
+    [
+      "kolavelool",
+      1270,
+      670
+    ],
+    [
+      "steviol",
+      350,
+      1020
+    ],
+    [
+      "salvinorin-a",
+      1270,
+      1020
+    ],
+    [
+      "clerodane",
+      1580,
+      1810
+    ],
+    [
+      "clpp-variants",
+      1580,
+      300
+    ],
+    [
+      "nnpp",
+      1900,
+      300
+    ],
+    [
+      "clpp-cis-trans",
+      1580,
+      670
+    ],
+    [
+      "clpp-cis-cis",
+      1900,
+      670
+    ],
+    [
+      "kolavenol",
+      1580,
+      1120
+    ],
+    [
+      "labdane",
+      350,
+      1810
+    ],
+    [
+      "halimane",
+      960,
+      1810
+    ],
+    [
+      "stevioside",
+      350,
+      1370
+    ],
+    [
+      "paclitaxel",
+      2200,
+      1370
+    ]
+  ],
+  "edges": [
+    {
+      "from": "ggpp",
+      "to": "cpp",
+      "label": "(+)-CPS · TPS II",
+      "type": "step",
+      "detail": "Produces (+)-CPP. Different CPP stereoisomers are separate substrates.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6717049/"
+    },
+    {
+      "from": "ggpp",
+      "to": "ent-cpp",
+      "label": "ent-CPS · TPS II",
+      "type": "step",
+      "detail": "Produces ent-CPP, a substrate for ent-kaurene synthases.",
+      "source": ""
+    },
+    {
+      "from": "ggpp",
+      "to": "syn-cpp",
+      "label": "syn-CPS · TPS II",
+      "type": "step",
+      "detail": "Produces syn-CPP; rice OsCPS4 is a characterized example.",
+      "source": ""
+    },
+    {
+      "from": "ggpp",
+      "to": "hpp",
+      "label": "HPS · TPS II",
+      "type": "step",
+      "detail": "Produces halimadienyl/tuberculosinyl diphosphate. The HPP stereochemistry and double-bond positions must be stated.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/"
+    },
+    {
+      "from": "ggpp",
+      "to": "kpp",
+      "label": "KPS · TPS II",
+      "type": "step",
+      "detail": "Produces a specific KPP/CLPP stereoisomer. It does not stand for every cis/trans clerodane variant.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/28.html"
+    },
+    {
+      "from": "cpp",
+      "to": "miltiradiene",
+      "label": "SmKSL1 · TPS I",
+      "type": "step",
+      "detail": "Characterized Salvia miltiorrhiza class I enzyme converts normal/(+)-CPP to miltiradiene. This is an abietane-related C20 product.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4634056/"
+    },
+    {
+      "from": "ent-cpp",
+      "to": "ent-kaurene",
+      "label": "AtKS / SrKS · TPS I",
+      "type": "step",
+      "detail": "ent-Kaurene synthases ionize ent-CPP and form a tetracyclic C20 skeleton. This is a specific precursor–enzyme match.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3237789/"
+    },
+    {
+      "from": "syn-cpp",
+      "to": "stemodene",
+      "label": "OsKSL11 · TPS I",
+      "type": "step",
+      "detail": "Rice stemod-13(17)-ene synthase (historically OsKSL11; also OsKSL8i) uses syn-CPP. It is an example of a class I step after syn-CPS.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC4/2/3/34.html"
+    },
+    {
+      "from": "hpp",
+      "to": "isotuberculosinol",
+      "label": "SsSS · TPS I · tested pairing",
+      "type": "step",
+      "detail": "In the characterized combinatorial system, Salvia sclarea sclareol synthase accepts tuberculosinyl diphosphate and yields (13S)-isotuberculosinol. This is an experimentally demonstrated cross-species pairing, not a claim that SsSS is the native mycobacterial enzyme. The drawing leaves C13 unassigned.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/"
+    },
+    {
+      "from": "kpp",
+      "to": "kolavelool",
+      "label": "SsSS · TPS I · tested pairing",
+      "type": "step",
+      "detail": "Sclareol synthase SsSS accepts compatible KPP in characterized combinatorial systems and yields kolavelool. This tertiary alcohol differs from kolavenol. The generic PubChem drawing leaves stereochemistry unassigned; the cited experiment specifies the product.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/"
+    },
+    {
+      "from": "ggpp",
+      "to": "taxadiene",
+      "label": "Taxadiene synthase · TPS I",
+      "type": "step",
+      "detail": "A direct GGPP-using class I cyclase. Not every diterpene pathway requires a class II step first.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC4/2/3/17.html"
+    },
+    {
+      "from": "ent-kaurene",
+      "to": "steviol",
+      "label": "Stevia CYP oxidations · several steps",
+      "type": "summary",
+      "detail": "The Stevia reference branch includes oxidation of ent-kaurene to ent-kaurenoic acid and C13 hydroxylation to steviol. Intermediate oxidation states are condensed into this summary.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/16786291/"
+    },
+    {
+      "from": "kpp",
+      "to": "salvinorin-a",
+      "label": "Salvia pathway · multiple steps",
+      "type": "summary",
+      "detail": "A separate route from KPP through multiple reactions. Kolavelool from the SsSS test pairing is not asserted to be an intermediate in salvinorin A biosynthesis.",
+      "source": "https://iubmb.qmul.ac.uk/enzyme/EC5/5/1/28.html"
+    },
+    {
+      "from": "kpp",
+      "to": "clerodane",
+      "label": "C20 clerodane backbone",
+      "type": "structure",
+      "detail": "A structural relationship, not an additional biochemical conversion.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6130043/"
+    },
+    {
+      "from": "ggpp",
+      "to": "clpp-variants",
+      "label": "other CLPP configurations · TPS II",
+      "type": "step",
+      "detail": "Alternative characterized class II products include cis-trans and cis-cis CLPP configurations. A specific downstream TPS pairing must be established for each precursor; the pictured KPP example is not universal.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/30393911/"
+    },
+    {
+      "from": "clpp-variants",
+      "to": "clerodane",
+      "label": "clerodane scaffold membership",
+      "type": "structure",
+      "detail": "Scaffold classification only. These are already C20 clerodane-related intermediates, not a universal pathway through the depicted (−)-KPP."
+    },
+    {
+      "from": "clpp-variants",
+      "to": "clpp-cis-trans",
+      "label": "Source relative class",
+      "type": "structure",
+      "detail": "The model retains a real diphosphate-bearing C20 connectivity while explicitly omitting unassigned absolute and side-chain configurations.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/30393911/"
+    },
+    {
+      "from": "clpp-variants",
+      "to": "clpp-cis-cis",
+      "label": "Source relative class",
+      "type": "structure",
+      "detail": "The model retains a real diphosphate-bearing C20 connectivity while explicitly omitting unassigned absolute and side-chain configurations.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/30393911/"
+    },
+    {
+      "from": "nnpp",
+      "to": "clpp-variants",
+      "label": "Alternative substrate study",
+      "type": "summary",
+      "detail": "NNPP changes product stereochemistry in studied PvCPS1 systems; it does not identify a native Tinospora route.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/30393911/"
+    },
+    {
+      "from": "kpp",
+      "to": "kolavenol",
+      "label": "Added phosphatase - assay",
+      "type": "summary",
+      "detail": "Analytical treatment in the cited SdKPS study. Alcohol detection after phosphatase does not prove a native class I reaction. Kolavenol differs from the tertiary alcohol kolavelool.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5441855/"
+    },
+    {
+      "from": "cpp",
+      "to": "labdane",
+      "label": "Precursor framework membership",
+      "type": "structure",
+      "detail": "A carbon-framework classification of the diphosphate precursor, not an additional enzyme step. Specific configurations remain attached to the individual precursor record.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/"
+    },
+    {
+      "from": "ent-cpp",
+      "to": "labdane",
+      "label": "Precursor framework membership",
+      "type": "structure",
+      "detail": "A carbon-framework classification of the diphosphate precursor, not an additional enzyme step. Specific configurations remain attached to the individual precursor record.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/"
+    },
+    {
+      "from": "syn-cpp",
+      "to": "labdane",
+      "label": "Precursor framework membership",
+      "type": "structure",
+      "detail": "A carbon-framework classification of the diphosphate precursor, not an additional enzyme step. Specific configurations remain attached to the individual precursor record.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/"
+    },
+    {
+      "from": "hpp",
+      "to": "halimane",
+      "label": "Precursor framework membership",
+      "type": "structure",
+      "detail": "A carbon-framework classification of the diphosphate precursor, not an additional enzyme step. Specific configurations remain attached to the individual precursor record.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/"
+    },
+    {
+      "from": "clpp-cis-trans",
+      "to": "clerodane",
+      "label": "Precursor framework membership",
+      "type": "structure",
+      "detail": "A carbon-framework classification of the diphosphate precursor, not an additional enzyme step. Specific configurations remain attached to the individual precursor record.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/"
+    },
+    {
+      "from": "clpp-cis-cis",
+      "to": "clerodane",
+      "label": "Precursor framework membership",
+      "type": "structure",
+      "detail": "A carbon-framework classification of the diphosphate precursor, not an additional enzyme step. Specific configurations remain attached to the individual precursor record.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907819/"
+    },
+    {
+      "from": "steviol",
+      "to": "stevioside",
+      "label": "Stevia UGTs · three glucose additions",
+      "type": "summary",
+      "detail": "Several UDP-glucose-dependent glycosyltransferase reactions lead from the C20 aglycone to stevioside, which contains three glucose residues. Intermediate glycosides are condensed here; this is not a single UGT reaction.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/15610349/"
+    },
+    {
+      "from": "taxadiene",
+      "to": "paclitaxel",
+      "label": "Taxus tailoring · many enzyme steps",
+      "type": "summary",
+      "detail": "A condensed taxane pathway through oxidation, acylation, oxetane formation, baccatin-type intermediates and side-chain installation. The selected endpoints do not imply a single direct conversion from taxadiene to paclitaxel.",
+      "source": "https://www.nature.com/articles/s44160-025-00800-z"
+    }
+  ]
+}
